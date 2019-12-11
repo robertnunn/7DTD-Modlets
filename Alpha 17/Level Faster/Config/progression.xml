@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/progression/level/@exp_to_level">6545</set>
+</configs>

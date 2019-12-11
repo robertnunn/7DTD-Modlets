@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Money_stacks" />
+		<Description value="Increases stack size of duke coins to 32000 and adds compact storage (NB: stack size cannot exceed 32768 [signed int max] without the stack disappearing when logging back in)" />
+		<Author value="yeastygoodness" />
+		<Version value="1.1.1" />
+	</ModInfo>
+</xml>

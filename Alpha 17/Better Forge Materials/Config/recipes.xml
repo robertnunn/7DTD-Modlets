@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/recipes">
+		<!-- Getting stuff OUT of the forge -->
+		<recipe name="Condensed Iron" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_iron" count="100"/>
+		</recipe>
+		<recipe name="Condensed Brass" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_brass" count="100"/>
+		</recipe>
+		<recipe name="Condensed Lead" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_lead" count="100"/>
+		</recipe>
+		<recipe name="Condensed Glass" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_glass" count="100"/>
+		</recipe>
+		<recipe name="Condensed Clay" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_clay" count="100"/>
+		</recipe>
+		<recipe name="Condensed Stone" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="unit_stone" count="100"/>
+		</recipe>
+		<!-- making quick-smelt resources in the backpack -->
+		<recipe name="Condensed Brass" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceScrapBrass" count="100"/>
+		</recipe>
+		<recipe name="Condensed Iron" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceScrapIron" count="100"/>
+		</recipe>
+		<recipe name="Condensed Glass" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceBrokenGlass" count="20"/>
+		</recipe>
+		<recipe name="Condensed Lead" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceScrapLead" count="100"/>
+		</recipe>
+		<recipe name="Condensed Stone" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceRockSmall" count="20"/>
+		</recipe>
+		<recipe name="Condensed Clay" count="1" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="resourceClayLump" count="20"/>
+		</recipe>
+		<!-- convert quick-smelt back to regular resources in the backpack -->
+		<recipe name="resourceScrapIron" count="100" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Iron" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapBrass" count="100" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Brass" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapLead" count="100" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Lead" count="1"/>
+		</recipe>
+		<recipe name="resourceClayLump" count="20" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Clay" count="1"/>
+		</recipe>
+		<recipe name="resourceRockSmall" count="20" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Stone" count="1"/>
+		</recipe>
+		<recipe name="resourceBrokenGlass" count="20" craft_time="0.01" craft_exp_gain="0">
+			<ingredient name="Condensed Glass" count="1"/>
+		</recipe>
+	</append>
+</configs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/recipes">
+		<recipe name="compressedCoin" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="casinoCoin" count="10000"/>
+		</recipe>
+		<recipe name="casinoCoin" count="10000" craft_time="1">
+			<ingredient name="compressedCoin" count="1"/>
+		</recipe>
+	</append>
+</configs>

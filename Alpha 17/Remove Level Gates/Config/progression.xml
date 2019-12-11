@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/progression/perks/perk/level_requirements/requirement[@name='PlayerLevel']/@value">1</set>
+</configs>

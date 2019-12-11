@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Beaker_recipe" />
+		<Description value="Adds a crafting recipe for the beaker to the forge, unlocked at L4 of Hammer and Forge" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>
