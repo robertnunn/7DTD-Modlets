@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Free Relays" />
+		<Description value="Reduces the relay cost from 1W to 0W." />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

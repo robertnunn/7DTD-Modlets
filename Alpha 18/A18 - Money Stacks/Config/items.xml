@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- NB: stack size cannot exceed 32768 [signed int max] without risking a complete character reset (including to original spawn point!) when logging back in -->
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">30000</set>
+	<append xpath="/items">
+		<item name="Compressed Coin">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="5555ff"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Stacknumber" value="50"/>
+		</item>
+	</append>
+</configs>

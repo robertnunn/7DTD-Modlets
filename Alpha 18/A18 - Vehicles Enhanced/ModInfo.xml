@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Vehicles Enhanced" />
+		<Description value="Adds seats and enhances speed, fuel efficiency, and torque" />
+		<Author value="yeastygoodness" />
+		<Version value="1.1.0" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/vehicles/vehicle[@name='vehicle4x4Truck']">
+		<property class="seat2">
+			<property name="position" value="-.4, .56, -2.46"/>
+			<property name="rotation" value="-25, 180, 0"/>
+			<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+		</property>
+		
+		<property class="seat3">
+			<property name="position" value=".4, .56, -2.46"/>
+			<property name="rotation" value="-25, 180, 0"/>
+			<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
+		</property>
+	</append>
+</configs>

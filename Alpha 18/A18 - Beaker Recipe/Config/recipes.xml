@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<append xpath="/recipes">
+	<recipe name="toolBeaker" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" tags="learnable,forgeCrafting">
+		<ingredient name="unit_glass" count="50"/>
+		<ingredient name="unit_lead" count="10"/>
+		<ingredient name="unit_clay" count="5"/>
+	</recipe>
+</append>
+</configs>

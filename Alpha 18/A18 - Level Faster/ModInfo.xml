@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Level faster" />
+		<Description value="Level faster by reducing the XP needed for each level, reducing the XP multiplier, and increasing the number of skill points per level" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

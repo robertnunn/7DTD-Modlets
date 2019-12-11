@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Better Forge Materials" />
+		<Description value="Adds new items to rapidly add/remove resources to/from the forge" />
+		<Author value="yeastygoodness" />
+		<Version value="1.3.1" />
+	</ModInfo>
+</xml>

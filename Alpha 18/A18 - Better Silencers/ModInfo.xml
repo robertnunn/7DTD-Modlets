@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Better_silencers" />
+		<Description value="Further reduces the sound of gunfire to make silencers actually worth it. Silenced weapons are 1/9th the volume of the unsilenced version. Pistols are quieted to almost a whisper" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/progression/level/@exp_to_level">7000</set> <!-- default: 10000 -->
+	<set xpath="/progression/level/@skill_points_per_level">3</set> <!-- default: 1 -->
+	<set xpath="/progression/level/@experience_multiplier">1.02</set> <!-- default: 1.05 -->
+</configs>
