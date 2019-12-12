@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<remove xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@cvar='.DiseaseRoll']" />
+	<remove xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/display_value[@name='dDysenteryRisk']" />
 	<remove xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@buff='buffDysenteryCatch']" />
 </configs>
