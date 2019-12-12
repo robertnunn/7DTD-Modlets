@@ -1,6 +1,8 @@
 # 7DTD-Modlets
 Modlets are organized by which version of the game they are for. Most of the mods are updated when a new version comes out. This readme details the modlets for the current version of 7 Days to Die which is: `Alpha 18`.
 
+All modlets are free to use, but not distribute. Please leave the ModInfo.xml file intact.
+
 ## Current Modlets
 - Beaker Recipe: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Yeah Science.
 - Better Forge Materials: Adds recipes for converting forge materials into quick-smelt versions (100 units/s) and back to regular forge materials.
