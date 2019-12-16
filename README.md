@@ -3,6 +3,8 @@ Modlets are organized by which version of the game they are for. Most of the mod
 
 All modlets are free to use, but not distribute. Please leave the ModInfo.xml file intact.
 
+**Finished mods have a "A18 - " prefix, works in progress don't.**
+
 ## Current Modlets
 - Ammo Stacks 3x: Multiplies stack sizes for ammunition by 3x. 
 - Beaker Recipe: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Yeah Science.
