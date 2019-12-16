@@ -4,6 +4,7 @@ Modlets are organized by which version of the game they are for. Most of the mod
 All modlets are free to use, but not distribute. Please leave the ModInfo.xml file intact.
 
 ## Current Modlets
+- Ammo Stacks 3x: Multiplies stack sizes for ammunition by 3x. 
 - Beaker Recipe: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Yeah Science.
 - Better Forge Materials: Adds recipes for converting forge materials into quick-smelt versions (100 units/s) and back to regular forge materials.
 - Better Silencers: Further reduces the sound of silenced weapons. Much more of a "movie silencer" than a real silencer.
@@ -13,4 +14,8 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - No Boiled Water Dysentery: Removes the chance for dysentery from boiled water.
 - Two Extra 4x4 Seats: Adds two seats to the back bumper of the 4x4.
 - Vehicles Enhanced: Increases speed and fuel efficiency for the 4x4, gyro, and motorcycle. Adds an extra seat to the motorcycle, two extra seats to the gyro.
-- Weapon Damage 5x: Multiplies all player (not zombie) entity weapon damage by 5.
+- Weapon Damage 5x: Multiplies all player (but not zombie) entity weapon damage by 5.
+
+## Works in progress
+- Faster Gyro Reverse: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
+- Vehicles Mods: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented.
