@@ -9,8 +9,8 @@
         <property class="Action1">
             <property name="Class" value="Repair"/>
             <property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
-            <property name="Repair_amount" value="150"/>
-            <property name="Upgrade_hit_offset" value="-1"/>
+            <property name="Repair_amount" value="400"/>
+            <property name="Upgrade_hit_offset" value="-2"/>
             <property name="Sound_start" value="repair_block"/>
             <property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail"/>
             <property name="UsePowerAttackAnimation" value="false"/>

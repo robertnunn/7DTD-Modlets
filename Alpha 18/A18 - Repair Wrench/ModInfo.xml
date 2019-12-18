@@ -4,6 +4,6 @@
 		<Name value="Repair Wrench" />
 		<Description value="Adds back the repair functionality to the wrench" />
 		<Author value="yeastygoodness" />
-		<Version value="1.0.0" />
+		<Version value="1.1.0" />
 	</ModInfo>
 </xml>
