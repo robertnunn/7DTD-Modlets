@@ -21,4 +21,5 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 
 ## Works in progress
 - Faster Gyro Reverse: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
-- Vehicles Mods: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented.
+- Vehicles Mods: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
+- Repair Wrench: Adds the repair functionality to the wrench's secondary use (default: right-click)

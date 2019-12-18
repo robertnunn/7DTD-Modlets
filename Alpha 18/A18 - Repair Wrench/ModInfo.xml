@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Vehicle Mods" />
-		<Description value="Adds item mods for vehicles as well" />
+		<Name value="Repair Wrench" />
+		<Description value="Adds back the repair functionality to the wrench" />
 		<Author value="yeastygoodness" />
 		<Version value="1.0.0" />
 	</ModInfo>

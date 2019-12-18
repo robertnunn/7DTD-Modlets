@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	
+	<append xpath="/item_modifiers">
+        <item_modifier name="ygGyroLightChassisStorage" installable_tags="gyrocopter" modifier_tags="chassis" type="attachment">
+            <!-- <property name="UnlockedBy" value="ygGyroLightChassisStorageSchematic"/> -->
+            <property name="Stacknumber" value="1"/>
+            <property name="Group" value="mods"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="CustomIcon" value="vehicleGyroCopterChassis"/>
+            <property name="CustomIconTint" value="5555ff"/>
+            <effect_group tiered="false">
+                <passive_effect name="VehicleStorageHeight" operation="base_add" value="2" />
+            </effect_group>
+        </item_modifier>
+    </append>
 </configs>
