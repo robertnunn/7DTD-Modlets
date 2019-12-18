@@ -15,6 +15,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - Level Faster: Increases skill points per level, reduces XP needed to level, reduces the rate at which XP requirements grow.
 - Money Stacks: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins -> 1 Compressed Coin).
 - No Boiled Water Dysentery: Removes the chance for dysentery from boiled water.
+- Repair Wrench: Adds the repair functionality to the wrench's secondary use (default: right-click).
 - Two Extra 4x4 Seats: Adds two seats to the back bumper of the 4x4.
 - Vehicles Enhanced: Increases speed and fuel efficiency for the 4x4, gyro, and motorcycle. Adds an extra seat to the motorcycle, two extra seats to the gyro.
 - Weapon Damage 5x: Multiplies all player (but not zombie) entity weapon damage by 5.
@@ -22,4 +23,3 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 ## Works in progress
 - Faster Gyro Reverse: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
 - Vehicles Mods: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
-- Repair Wrench: Adds the repair functionality to the wrench's secondary use (default: right-click)
