@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/item_modifiers">
-        <item_modifier name="ygGyroLightChassisStorage" installable_tags="gyrocopter" modifier_tags="chassis" type="attachment">
+        <item_modifier name="ygGyroLightChassisStorage" installable_tags="vehicle" modifier_tags="chassis" type="attachment">
             <!-- <property name="UnlockedBy" value="ygGyroLightChassisStorageSchematic"/> -->
             <property name="Stacknumber" value="1"/>
             <property name="Group" value="mods"/>
