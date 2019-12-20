@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Entrenching Tool" />
+		<Description value="Adds an entrenching tool (iron and steel) and recipes. Functions as an all-in-one tool (pick/axe/shovel) that performs better than the wrong tool, but not as well as the right tool." />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+        <item name="Iron Entrenching Tool">
+            <property name="Extends" value="meleeToolFireaxeIron"/>
+            <property name="CustomIcon" value="entrenchingToolIron"/>
+            <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="UnlockedBy" value="Entrenching Tool Schematic"/>
+            <property name="SoundDestroy" value="metaldestroy1"/>
+            <property name="EconomicValue" value="400"/>
+            <effect_group name="Iron Entrenching Tool">
+                <passive_effect name="EntityDamage" operation="base_set" value="12"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="37"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="300,1100" tier="1,6" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+                <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+                <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+                <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+                <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+                <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+                <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+                <passive_effect name="HarvestCount" operation="base_set" value=".8" tags="butcherHarvest"/>
+            </effect_group>
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+            </effect_group>
+        </item>
+        <item name="Steel Entrenching Tool">
+            <property name="Extends" value="Iron Entrenching Tool"/>
+            <property name="CustomIcon" value="entrenchingToolSteel"/>
+            <property name="Material" value="MmeleeToolAllSteel"/>
+            <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="UnlockedBy" value="Entrenching Tool Schematic"/>
+            <property name="SoundDestroy" value="metaldestroy1"/>
+            <property name="EconomicValue" value="800"/>
+            <effect_group name="Steel Entrenching Tool">
+                <passive_effect name="EntityDamage" operation="base_set" value="23"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="69"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="300,1100" tier="1,6" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+                <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+                <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+                <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+                <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+                <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+                <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+                <passive_effect name="HarvestCount" operation="base_set" value=".85" tags="butcherHarvest"/>
+            </effect_group>
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+            </effect_group>
+        </item>
+        <item name="Entrenching Tool Schematic">
+            <property name="Extends" value="schematicMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="entrenchingToolSteel"/>
+            <property name="Unlocks" value="Iron Entrenching Tool"/>
+            <property name="DescriptionKey" value="Unlocks crafting recipes for iron and steel entrenching tools."/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Iron Entrenching Tool" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Steel Entrenching Tool" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+</configs>
+
+
+<!-- DamageModifier
+    wood
+    earth
+    stone
+    metal
+    butcherHarvest?
+
+entity damage:
+    PI: 11.2
+    PS: 23.2
+    FI: 15.1 *
+    FS: 28.9 *
+    SI: 11.6
+    SS: 17.4
+    iron avg: 13
+    steel avg: 23
+
+Block damage:
+    PI: 35.5
+    PS: 62.8
+    FI: 45
+    FS: 86.2 *
+    SI: 46 *
+    SS: 69
+    iron avg: 42
+    steel avg: 72 -->

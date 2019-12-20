@@ -23,6 +23,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
 
 ## Works in progress
+- **Entrenching Tool**: Adds Iron and Steel entrenching tools. Functions as a pickaxe/fireaxe/shovel combo, with increased crafting costs compared to regular tools. Doesn't perform as well as the actual tool, but better than the wrong tool (e.g., worse than a pickaxe on metal, better than a fireaxe on metal).
 - **Faster Gyro Reverse**: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
 - **Vehicles Mods**: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
 
