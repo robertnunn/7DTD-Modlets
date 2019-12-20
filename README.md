@@ -10,7 +10,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - **Beaker Recipe**: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Yeah Science.
 - **Better Forge Materials**: Adds recipes for converting forge materials into quick-smelt versions (100 units/s) and back to regular forge materials.
 - **Better Silencers**: Further reduces the sound of silenced weapons. Much more of a "movie silencer" than a real silencer.
-- **Better Starting Inventory**: I wanted a stronger start for nomadic playthroughs, so I added a starting bundle that gives the player a big head start and uses a different scenario for the beginning of the game other than you didn't "pay up" and got left for dead in the wild.
+- **Better Starting Inventory**: I wanted a stronger start for nomadic playthroughs, so I added a starting bundle that gives the player a big head start and uses a different scenario for the beginning of the game other than you didn't "pay up" and got left for dead in the wild. If desired, a version using the entrenching tool (see below) instead of the usual pick/axe/shovel combo is provided.
 - **Entrenching Tool**: Adds Iron and Steel entrenching tools. Functions as a pickaxe/fireaxe/shovel combo, with increased crafting costs compared to regular tools. Doesn't perform as well as the actual tool, but better than the wrong tool (e.g., worse than a pickaxe on metal, better than a fireaxe on metal).
 - **Free Relays**: Makes the electrical relay cost 0W instead of 1W.
 - **L6 Crafting**: Allows players to craft L6 versions of items given the relevant crafting skill is maxed.
