@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
-        <item name="Entrenching Tool Schematic" prob="0.5"/>
+        <item name="Entrenching Tool Schematic"/>
     </append>
 </configs>
