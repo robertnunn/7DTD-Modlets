@@ -2,8 +2,8 @@
 <xml>
 	<ModInfo>
 		<Name value="Copy Schematics" />
-		<Description value="When you read a schematic, it also unlocks a crafting recipe for the schematic itself, costing one paper, craftable in the backpack" />
+		<Description value="When you read a schematic or book, it also unlocks a crafting recipe for the schematic or book itself, costing one paper, craftable in the backpack" />
 		<Author value="yeastygoodness" />
-		<Version value="1.0.0" />
+		<Version value="2.0.0" />
 	</ModInfo>
 </xml>
