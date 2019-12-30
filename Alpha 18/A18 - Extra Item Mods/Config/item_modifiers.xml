@@ -99,7 +99,7 @@
         </item_modifier>
         <item_modifier name="modArmorLongFallBootsImproved" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
             <property name="CustomIcon" value="modArmorLongFallBoots"/>
-            <property name="CustomIconTint" value="ee0000"/>
+            <property name="CustomIconTint" value="ee4444"/>
             <property name="UnlockedBy" value="modArmorLongFallBootsSchematic"/>
             <property name="Stacknumber" value="1"/>
             <property name="Material" value="Msteel"/>
