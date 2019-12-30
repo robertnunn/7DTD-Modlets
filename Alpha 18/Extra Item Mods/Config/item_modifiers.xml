@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<!--
+        <item_modifier name="mod" installable_tags="" modifier_tags="" type="attachment">
+            <property name="CustomIcon" value=""/>
+            <property name="UnlockedBy" value="Schematic"/>
+            <property name="DisplayType" value=""/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="" operation="" value=""/>
+            </effect_group>
+        </item_modifier>
+-->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modArmorBackpackFrame" installable_tags="armorChest" modifier_tags="" type="attachment">
+            <property name="CustomIcon" value="modArmorBackpackFrame"/>
+            <property name="UnlockedBy" value="modArmorBackpackFrameSchematic"/>
+            <property name="DisplayType" value="modCarryCapacity"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="" operation="" value=""/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="modArmorPlatingMilitary" installable_tags="armor" modifier_tags="resistance" type="attachment">
+            <property name="CustomIcon" value="modArmorPlatingMilitary"/>
+            <property name="UnlockedBy" value="modArmorPlatingMilitarySchematic"/>
+            <property name="DisplayType" value="modArmor"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="modArmorLongFallBoots" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
+            <property name="CustomIcon" value="modArmorLongFallBoots"/>
+            <property name="UnlockedBy" value="modArmorLongFallBootsSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Material" value="Msteel"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="ygBuffLongFallBoots"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="ygBuffLongFallBoots"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="modArmorLongFallBootsImproved" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
+            <property name="CustomIcon" value="modArmorLongFallBootsImproved"/>
+            <property name="UnlockedBy" value="modArmorLongFallBootsSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Material" value="Msteel"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="ygBuffLongFallBootsImproved"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="ygBuffLongFallBootsImproved"/>
+            </effect_group>
+        </item_modifier>
+    </append>
+</configs>

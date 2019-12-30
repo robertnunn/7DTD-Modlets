@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@stat='Health']">
+        <requirement name="NotHasBuff" buff="ygBuffLongFallBoots"/>
+    </append>
+    <append xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/requirement[@progression_name='perkParkour']/..">
+        <requirement name="NotHasBuff" buff="ygBuffLongFallBootsImproved"/>
+    </append>
+    <append xpath="/buffs">
+        <buff name="ygBuffLongFallBoots" hidden="true"> <stack_type value="ignore"/> <duration value="0"/> </buff>
+        <buff name="ygBuffLongFallBootsImproved" hidden="true"> <stack_type value="ignore"/> <duration value="0"/> </buff>
+    </append>
+</configs>

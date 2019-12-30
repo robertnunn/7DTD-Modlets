@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+        <!-- <item name="">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value=""/>
+            <property name="Unlocks" value=""/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item> -->
+        <item name="modArmorBackpackFrameSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="modArmorBackpackFrame"/>
+            <property name="Unlocks" value="modArmorBackpackFrame"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBackpackFrame" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="modArmorLongFallBootsSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="modArmorLongFallBoots"/>
+            <property name="Unlocks" value="modArmorLongFallBoots,modArmorLongFallBootsImproved"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBoots" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBootsImproved" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+         <item name="modArmorPlatingMilitarySchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="modArmorPlatingMilitarySchematic"/>
+            <property name="Unlocks" value="modArmorPlatingMilitary"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingMilitarySchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+</configs>

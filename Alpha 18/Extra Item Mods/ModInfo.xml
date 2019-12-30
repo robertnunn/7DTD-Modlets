@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Extra Item Mods" />
+		<Description value="Adds some extra item mods. Extends some existing mods and add completely new ones." />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>
