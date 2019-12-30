@@ -18,5 +18,8 @@
                 <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceLeather,resourceDuctTape"/>
             </effect_group>
         </recipe>
+        <recipe name="Entrenching Tool Schematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
     </append>
 </configs>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/items">
+    <!-- The "unlocks" property needs to only have one item listed if you want the little book icon to open when you read it. -->
         <!-- <item name="Schematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value=""/>
             <property name="CustomIconTint" value=""/>
-            <property name="Unlocks" value=",Schematic"/>
+            <property name="Unlocks" value=""/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Schematic" operation="set" value="1"/>
@@ -18,7 +19,7 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="Unlocks" value="modArmorInsulatedLinerImproved,modArmorInsulatedLinerImprovedSchematic"/>
+            <property name="Unlocks" value="modArmorInsulatedLinerImproved"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
@@ -32,7 +33,7 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="Unlocks" value="modArmorInsulatedLinerAdvanced,modArmorInsulatedLinerAdvancedSchematic"/>
+            <property name="Unlocks" value="modArmorInsulatedLinerAdvanced"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
@@ -46,7 +47,7 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="Unlocks" value="modArmorCoolingMeshImproved,modArmorCoolingMeshImprovedSchematic"/>
+            <property name="Unlocks" value="modArmorCoolingMeshImproved"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
@@ -60,7 +61,7 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="Unlocks" value="modArmorCoolingMeshAdvanced,modArmorCoolingMeshAdvancedSchematic"/>
+            <property name="Unlocks" value="modArmorCoolingMeshAdvanced"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
@@ -86,7 +87,7 @@
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorLongFallBoots"/>
-            <property name="Unlocks" value="modArmorLongFallBoots,modArmorLongFallBootsImproved,modArmorLongFallBootsSchematic"/>
+            <property name="Unlocks" value="modArmorLongFallBoots"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
