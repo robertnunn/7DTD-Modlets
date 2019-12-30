@@ -9,6 +9,8 @@
 			<property name="CustomIconTint" value="5555ff"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="Weight" value="10000"/>
+			<property name="MeltTimePerUnit" value="120"/>
 		</item>
 	</append>
 </configs>
