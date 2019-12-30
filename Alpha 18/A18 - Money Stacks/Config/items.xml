@@ -10,7 +10,7 @@
 			<property name="SellableToTrader" value="false"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="Weight" value="10000"/>
-			<property name="MeltTimePerUnit" value="1.2"/>
+			<property name="MeltTimePerUnit" value="0.012"/>
 		</item>
 	</append>
 </configs>
