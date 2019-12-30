@@ -8,19 +8,19 @@
             <ingredient name="" count=""/>
             <ingredient name="" count=""/>
         </recipe>
-        <recipe name="" count="1" tags="learnable">
+        <recipe name="Schematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe> -->
-        <recipe name="modArmorInsulatedLinerImproved" count="1" tags="learnable">
+        <recipe name="modArmorInsulatedLinerImprovedSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
-        <recipe name="modArmorInsulatedLinerAdvanced" count="1" tags="learnable">
+        <recipe name="modArmorInsulatedLinerAdvancedSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
-        <recipe name="modArmorCoolingMeshImproved" count="1" tags="learnable">
+        <recipe name="modArmorCoolingMeshImprovedSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
-        <recipe name="modArmorCoolingMeshAdvanced" count="1" tags="learnable">
+        <recipe name="modArmorCoolingMeshAdvancedSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
         <recipe name="modArmorLongFallBootsSchematic" count="1" tags="learnable">

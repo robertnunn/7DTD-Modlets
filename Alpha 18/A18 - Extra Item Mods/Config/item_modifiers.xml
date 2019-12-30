@@ -28,7 +28,7 @@
         </item_modifier>
         <item_modifier name="modArmorInsulatedLinerAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
-            <property name="CustomIconTint" value="ffffff"/>
+            <property name="CustomIconTint" value="ffff00"/>
             <property name="UnlockedBy" value="modArmorInsulatedLinerAdvancedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>
@@ -52,7 +52,7 @@
         </item_modifier>
         <item_modifier name="modArmorCoolingMeshAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
-            <property name="CustomIconTint" value="ffffff"/>
+            <property name="CustomIconTint" value="ffff00"/>
             <property name="UnlockedBy" value="modmodArmorCoolingMeshAdvancedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>

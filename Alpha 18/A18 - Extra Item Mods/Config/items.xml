@@ -29,7 +29,7 @@
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
-            <property name="CustomIconTint" value="ffffff"/>
+            <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="modArmorInsulatedLinerAdvanced,modArmorInsulatedLinerAdvancedSchematic"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerAdvanced" operation="set" value="1"/>
@@ -53,7 +53,7 @@
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
-            <property name="CustomIconTint" value="ffffff"/>
+            <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="modArmorCoolingMeshAdvanced,modArmorCoolingMeshAdvancedSchematic"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshAdvanced" operation="set" value="1"/>
