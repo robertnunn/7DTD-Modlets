@@ -19,6 +19,8 @@
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="00ff00"/>
             <property name="Unlocks" value="modArmorInsulatedLinerImproved,modArmorInsulatedLinerImprovedSchematic"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerImproved" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerImprovedSchematic" operation="set" value="1"/>
@@ -31,6 +33,8 @@
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="modArmorInsulatedLinerAdvanced,modArmorInsulatedLinerAdvancedSchematic"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerAdvanced" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerAdvancedSchematic" operation="set" value="1"/>
@@ -43,6 +47,8 @@
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="00ff00"/>
             <property name="Unlocks" value="modArmorCoolingMeshImproved,modArmorCoolingMeshImprovedSchematic"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshImproved" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshImprovedSchematic" operation="set" value="1"/>
@@ -55,6 +61,8 @@
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="modArmorCoolingMeshAdvanced,modArmorCoolingMeshAdvancedSchematic"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshAdvanced" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshAdvancedSchematic" operation="set" value="1"/>
@@ -66,6 +74,8 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorBackpackFrame"/>
             <property name="Unlocks" value="modArmorBackpackFrame"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBackpackFrame" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBackpackFrameSchematic" operation="set" value="1"/>
@@ -77,6 +87,8 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorLongFallBoots"/>
             <property name="Unlocks" value="modArmorLongFallBoots,modArmorLongFallBootsImproved,modArmorLongFallBootsSchematic"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBoots" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBootsImproved" operation="set" value="1"/>
@@ -87,9 +99,12 @@
          <item name="modArmorPlatingMilitarySchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value="modArmorPlatingMilitarySchematic"/>
+            <property name="CustomIcon" value="modArmorPlatingMilitary"/>
             <property name="Unlocks" value="modArmorPlatingMilitary"/>
+            <property name="ItemTypeIcon" value="book"/>
+	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingMilitary" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingMilitarySchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>

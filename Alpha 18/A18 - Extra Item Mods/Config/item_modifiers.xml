@@ -71,7 +71,7 @@
             <property name="Group" value="Mods"/>
             <effect_group tiered="false">
                 <passive_effect name="CarryCapacity" operation="base_add" value="6"/>
-                <display_value name="dCarryCapacity" value="1"/>
+                <display_value name="dCarryCapacity" value="6"/>
             </effect_group>
         </item_modifier>
         <item_modifier name="modArmorPlatingMilitary" installable_tags="armor" modifier_tags="resistance" type="attachment">
