@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<set xpath="/blocks/block[@name='electricwirerelay']/property[@name='RequiredPower']/@value">0</set>
+	<set xpath="/blocks/block[@name='tripwirepost']/property[@name='RequiredPower']/@value">0</set>
 </configs>

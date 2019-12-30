@@ -2,8 +2,8 @@
 <xml>
 	<ModInfo>
 		<Name value="Free Relays" />
-		<Description value="Reduces the relay cost from 1W to 0W." />
+		<Description value="Reduces the relay and tripwire cost from 1W to 0W." />
 		<Author value="yeastygoodness" />
-		<Version value="1.0.0" />
+		<Version value="1.1.0" />
 	</ModInfo>
 </xml>
