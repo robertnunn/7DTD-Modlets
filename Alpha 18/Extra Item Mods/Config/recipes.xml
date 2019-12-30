@@ -7,7 +7,19 @@
             <ingredient name="" count=""/>
             <ingredient name="" count=""/>
             <ingredient name="" count=""/>
+        </recipe>
+        <recipe name="" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
         </recipe> -->
+        <recipe name="modArmorLongFallBootsSchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorPlatingMilitarySchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorBackpackFrameSchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
         <recipe name="modArmorLongFallBoots" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
             <ingredient name="armorMilitarySetParts" count="25"/>
             <ingredient name="armorSteelSetParts" count="25"/>
@@ -28,6 +40,13 @@
             <ingredient name="resourceScrapPolymers" count="4"/>
             <ingredient name="resourceMechanicalParts" count="4"/>
             <ingredient name="resourceSewingKit" count="1"/>
+        </recipe>
+        <recipe name="modArmorBackpackFrame" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceForgedSteel" count="10"/>
+            <ingredient name="resourceScrapPolymers" count="40"/>
+            <ingredient name="resourceDuctTape" count="5"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceSewingKit" count="4"/>
         </recipe>
     </append>
 </configs>

@@ -2,7 +2,7 @@
 <configs>
 	<append xpath="/items">
 		<item name="thrownTimedChargeSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="thrownTimedCharge"/>
 			<property name="Unlocks" value="thrownTimedCharge,thrownTimedChargeSchematic"/>
@@ -15,7 +15,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="resourceLockPickSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="resourceLockPick"/>
 			<property name="Unlocks" value="resourceLockPick,resourceLockPickSchematic"/>
@@ -42,7 +42,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="resourceGunPowderBundleSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="resourceGunPowderBundle"/>
 			<property name="Unlocks" value="resourceGunPowderBundle,resourceGunPowderBundleSchematic"/>
@@ -55,7 +55,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="mineCookingPotSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="mineCookingPot"/>
 			<property name="Unlocks" value="mineCookingPot,mineCookingPotSchematic"/>
@@ -68,7 +68,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="rScrapIronPlateMineSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="rScrapIronPlateMine"/>
 			<property name="Unlocks" value="rScrapIronPlateMine,rScrapIronPlateMineSchematic"/>
@@ -81,7 +81,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="ammoGasCanBundleSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="ammoGasCanBundle"/>
 			<property name="Unlocks" value="ammoGasCanBundle,ammoGasCanBundleSchematic"/>
@@ -94,7 +94,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="drugSteroidsSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="drugSteroids"/>
 			<property name="Unlocks" value="drugSteroids,drugSteroidsSchematic"/>
@@ -107,7 +107,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="mineHubcapSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="mineHubcap"/>
 			<property name="Unlocks" value="mineHubcap,mineHubcapSchematic"/>
@@ -133,7 +133,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="mineAirFilterSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="mineAirFilter"/>
 			<property name="Unlocks" value="mineAirFilter,mineAirFilterSchematic"/>
@@ -146,7 +146,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="drugFortBitesSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="drugFortBites"/>
 			<property name="Unlocks" value="drugFortBites,drugFortBitesSchematic"/>
@@ -159,7 +159,7 @@
 	</append>
 	<append xpath="/items">
 		<item name="drugRecogSchematic">
-			<property name="Extends" value="schematicMaster"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="drugRecog"/>
 			<property name="Unlocks" value="drugRecog,drugRecogSchematic"/>
