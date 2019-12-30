@@ -11,6 +11,18 @@
         <recipe name="" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe> -->
+        <recipe name="modArmorInsulatedLinerImproved" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorInsulatedLinerAdvanced" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorCoolingMeshImproved" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorCoolingMeshAdvanced" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="1"/>
+        </recipe>
         <recipe name="modArmorLongFallBootsSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
@@ -19,6 +31,32 @@
         </recipe>
         <recipe name="modArmorBackpackFrameSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
+        </recipe>
+        <recipe name="modArmorInsulatedLinerImproved" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceCloth" count="20"/>
+            <ingredient name="resourceDuctTape" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+            <ingredient name="resourceSewingKit" count="1"/>
+        </recipe>
+        <recipe name="modArmorInsulatedLinerAdvanced" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceCloth" count="30"/>
+            <ingredient name="resourceDuctTape" count="6"/>
+            <ingredient name="resourceScrapPolymers" count="6"/>
+            <ingredient name="resourceSewingKit" count="1"/>
+        </recipe>
+        <recipe name="modArmorCoolingMeshImproved" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceGlue" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceOil" count="4"/>
+            <ingredient name="resourceSewingKit" count="1"/>
+        </recipe>
+        <recipe name="modArmorCoolingMeshAdvanced" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceGlue" count="6"/>
+            <ingredient name="resourceScrapPolymers" count="30"/>
+            <ingredient name="resourceMechanicalParts" count="6"/>
+            <ingredient name="resourceOil" count="6"/>
+            <ingredient name="resourceSewingKit" count="1"/>
         </recipe>
         <recipe name="modArmorLongFallBoots" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
             <ingredient name="armorMilitarySetParts" count="25"/>

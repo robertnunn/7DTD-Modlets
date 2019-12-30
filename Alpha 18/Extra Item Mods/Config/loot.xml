@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
+    <!-- <item name=""/>
+    <item name="" prob=""/>
+    <append xpath="/lootcontainers/lootgroup[@name='']">
+
+    </append> -->
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+
+    </append> -->
+    <append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">
+        <item name="modArmorInsulatedLinerImproved"/>
+        <item name="modArmorCoolingMeshImproved"/>
+    </append>
 	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
         <item name="modArmorLongFallBoots" prob=".5"/>
         <item name="modArmorLongFallBootsImproved" prob=".25"/>
         <item name="modArmorPlatingMilitary"/>
+        <item name="modArmorInsulatedLinerAdvanced"/>
+        <item name="modArmorCoolingMeshAdvanced"/>
     </append>
     <append xpath="/lootcontainers/lootgroup[@name='schematicsModsRare']">
         <item name="modArmorLongFallBootsSchematic"/>
         <item name="modArmorPlatingMilitarySchematic"/>
+        <item name="modArmorInsulatedLinerAdvancedSchematic"/>
+        <item name="modArmorCoolingMeshAdvancedSchematic"/>
+        <item name="modArmorBackpackFrameSchematic"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='schematicsModsCommon']">
+        <item name="modArmorCoolingMeshImprovedSchematic"/>
+        <item name="modArmorInsulatedLinerImprovedSchematic"/>
     </append>
 </configs>
