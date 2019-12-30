@@ -1,6 +1,7 @@
 # 7DTD-Modlets
 Modlets are organized by which version of the game they are for. Most of the mods are updated when a new version comes out. This readme details the modlets for the current version of 7 Days to Die which is: `Alpha 18`.
 
+Localization for all mods is a WIP.
 All modlets are free to use, but not distribute. Please leave the ModInfo.xml file intact.
 
 **Finished mods have a "A18 - " prefix, works in progress don't.**
