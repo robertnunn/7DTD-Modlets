@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
+    <!--
+    <item name="" loot_prob_template=""/>
+    <item name=""/>
+    <item name="" prob=""/>
+    <append xpath="lootcontainers/lootgroup[@name='']">
+        
+    </append>
+    -->
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
         <item name="Entrenching Tool Schematic"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='groupQuestTools']">
+        <item name="Iron Entrenching Tool" loot_prob_template="GradeBLoot"/>
+        <item name="Steel Entrenching Tool" loot_prob_template="GradeCLoot"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='rareTools']">
+        <item name="Steel Entrenching Tool" prob="0.75"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='tools']">
+        <item name="Iron Entrenching Tool"/>
     </append>
 </configs>
