@@ -15,7 +15,7 @@
                 <property name="Delay" value="0"/>
                 <property name="Use_time" value="0"/>
                 <property name="Sound_start" value="close_garbage"/>
-                <property name="Create_item" value="drinkJarBoiledWater,meleeToolWrench,Steel Entrenching Tool,ammoBundle9mmBulletBall,modArmorWaterPurifier,armorMilitaryHelmet,armorMilitaryStealthBoots,gunPistol,oldCash"/>
+                <property name="Create_item" value="drinkJarBoiledWater,meleeToolWrench,ygEntrenchingToolSteel,ammoBundle9mmBulletBall,modArmorWaterPurifier,armorMilitaryHelmet,armorMilitaryStealthBoots,gunPistol,oldCash"/>
                 <property name="Create_item_count" value="10,1,1,4,1,1,1,1,200"/>
             </property>
         </item>

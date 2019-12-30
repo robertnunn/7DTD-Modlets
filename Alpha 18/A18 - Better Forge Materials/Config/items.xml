@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/items">
-		<item name="Condensed Iron">
+		<item name="ygCondIron">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -12,11 +12,11 @@
 			<property name="CraftingIngredientTime" value="0.001"/>
 			<property name="CustomIcon" value="resourceScrapIron"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of iron made from 100 units of scrap iron. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondIronDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="Condensed Stone">
+		<item name="ygCondStone">
 			<property name="HoldType" value="40"/>
 			<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 			<property name="DropScale" value="6"/>
@@ -26,11 +26,11 @@
 			<property name="Group" value="Resources"/>
 			<property name="CustomIcon" value="resourceRockSmall"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of rock made from 20 small stones. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondStoneDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="Condensed Brass">
+		<item name="ygCondBrass">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -40,11 +40,11 @@
 			<property name="Group" value="Resources"/>
 			<property name="CustomIcon" value="resourceScrapBrass"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of brass made from 100 units of scrap brass. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondBrassDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="Condensed Lead">
+		<item name="ygCondLead">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -54,11 +54,11 @@
 			<property name="Group" value="Resources"/>
 			<property name="CustomIcon" value="resourceScrapLead"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of lead made from 100 units of scrap lead. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondLeadDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="Condensed Sand">
+		<item name="ygCondSand">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -68,11 +68,11 @@
 			<property name="Group" value="Resources"/>
 			<property name="CustomIcon" value="resourceCrushedSand"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of sand made from 25 pieces of sand. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondSandDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="Condensed Clay">
+		<item name="ygCondClay">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -82,7 +82,7 @@
 			<property name="Group" value="Resources"/>
 			<property name="CustomIcon" value="resourceClayLump"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="A condensed form of clay made from 20 clay lumps. Smelts extremely quickly."/>
+			<property name="DescriptionKey" value="ygCondClayDesc"/>
 			<property name="MeltTimePerUnit" value="0.01"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>

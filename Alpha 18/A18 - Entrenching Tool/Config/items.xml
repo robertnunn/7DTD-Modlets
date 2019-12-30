@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/items">
-        <item name="Iron Entrenching Tool">
+        <item name="ygEntrenchingToolIron">
             <property name="Extends" value="meleeToolFireaxeIron"/>
-            <property name="CustomIcon" value="entrenchingToolIron"/>
+            <property name="CustomIcon" value="ygEntrenchingToolIron"/>
             <property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
             <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
             <property name="Material" value="Mmetal"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
             <property name="HoldType" value="18"/>
-            <property name="UnlockedBy" value="Entrenching Tool Schematic"/>
+            <property name="UnlockedBy" value="entrenchingToolSchematic"/>
             <property name="SoundDestroy" value="metaldestroy1"/>
             <property name="EconomicValue" value="400"/>
             <property name="Group" value="Tools/Traps"/>
+            <property name="DescriptionKey" value="ygEntrenchingToolIronDesc"/>
             <property class="Action0">
                 <property name="Class" value="DynamicMelee"/>
                 <property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
@@ -35,7 +37,7 @@
                 <property name="GrazeEnd" value=".5"/>
                 <property name="UseGrazingHits" value="true"/>
             </property>
-            <effect_group name="Iron Entrenching Tool">
+            <effect_group name="ygEntrenchingToolIron">
                 <passive_effect name="EntityDamage" operation="base_set" value="12"/>
                 <passive_effect name="BlockDamage" operation="base_set" value="37"/>
                 <passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
@@ -67,17 +69,19 @@
                 <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
             </effect_group>
         </item>
-        <item name="Steel Entrenching Tool">
-            <property name="Extends" value="Iron Entrenching Tool"/>
-            <property name="CustomIcon" value="entrenchingToolSteel"/>
+        <item name="ygEntrenchingToolSteel">
+            <property name="Extends" value="ygEntrenchingToolIron"/>
+            <property name="CustomIcon" value="ygEntrenchingToolSteel"/>
             <property name="Material" value="MmeleeToolAllSteel"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
             <property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
             <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-            <property name="UnlockedBy" value="Entrenching Tool Schematic"/>
+            <property name="UnlockedBy" value="entrenchingToolSchematic"/>
             <property name="SoundDestroy" value="metaldestroy1"/>
             <property name="EconomicValue" value="800"/>
             <property name="Group" value="Tools/Traps"/>
-            <effect_group name="Steel Entrenching Tool">
+            <property name="DescriptionKey" value="ygEntrenchingToolSteelDesc"/>
+            <effect_group name="ygEntrenchingToolSteel">
                 <passive_effect name="EntityDamage" operation="base_set" value="23"/>
                 <passive_effect name="BlockDamage" operation="base_set" value="69"/>
                 <passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
@@ -109,16 +113,16 @@
                 <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
             </effect_group>
         </item>
-        <item name="Entrenching Tool Schematic">
+        <item name="entrenchingToolSchematic">
             <property name="Extends" value="schematicMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value="entrenchingToolSteel"/>
-            <property name="Unlocks" value="Iron Entrenching Tool"/>
-            <property name="DescriptionKey" value="Unlocks crafting recipes for iron and steel entrenching tools."/>
+            <property name="CustomIcon" value="ygEntrenchingToolSteel"/>
+            <property name="Unlocks" value="ygEntrenchingToolIron"/>
+            <property name="DescriptionKey" value="entrenchingToolSchematicDesc"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Iron Entrenching Tool" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Steel Entrenching Tool" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Entrenching Tool Schematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygEntrenchingToolIron" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygEntrenchingToolSteel" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="entrenchingToolSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/recipes">
-        <recipe name="Iron Entrenching Tool" count="1" craft_area="workbench" tags="learnable,perkMiner69r" craft_time="180">
+        <recipe name="ygEntrenchingToolIron" count="1" craft_area="workbench" tags="learnable,perkMiner69r" craft_time="180">
             <ingredient name="resourceForgedIron" count="30"/>
             <ingredient name="resourceLeather" count="2"/>
             <ingredient name="resourceDuctTape" count="4"/>
@@ -9,7 +9,7 @@
                 <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceLeather,resourceDuctTape"/>
             </effect_group>
         </recipe>
-        <recipe name="Steel Entrenching Tool" count="1" craft_area="workbench" tags="learnable,perkMiner69r" craft_time="180">
+        <recipe name="ygEntrenchingToolSteel" count="1" craft_area="workbench" tags="learnable,perkMiner69r" craft_time="180">
             <ingredient name="meleeToolAllSteelParts" count="7"/>
             <ingredient name="resourceForgedSteel" count="15"/>
             <ingredient name="resourceLeather" count="3"/>
@@ -18,7 +18,7 @@
                 <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceLeather,resourceDuctTape"/>
             </effect_group>
         </recipe>
-        <recipe name="Entrenching Tool Schematic" count="1" tags="learnable">
+        <recipe name="entrenchingToolSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="1"/>
         </recipe>
     </append>

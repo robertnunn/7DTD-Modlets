@@ -9,16 +9,16 @@
     </append>
     -->
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
-        <item name="Entrenching Tool Schematic"/>
+        <item name="entrenchingToolSchematic"/>
     </append>
     <append xpath="lootcontainers/lootgroup[@name='groupQuestTools']">
-        <item name="Iron Entrenching Tool" loot_prob_template="GradeBLoot"/>
-        <item name="Steel Entrenching Tool" loot_prob_template="GradeCLoot"/>
+        <item name="ygEntrenchingToolIron" loot_prob_template="GradeBLoot"/>
+        <item name="ygEntrenchingToolSteel" loot_prob_template="GradeCLoot"/>
     </append>
     <append xpath="lootcontainers/lootgroup[@name='rareTools']">
-        <item name="Steel Entrenching Tool" prob="0.75"/>
+        <item name="ygEntrenchingToolSteel" prob="0.75"/>
     </append>
     <append xpath="lootcontainers/lootgroup[@name='tools']">
-        <item name="Iron Entrenching Tool"/>
+        <item name="ygEntrenchingToolIron"/>
     </append>
 </configs>

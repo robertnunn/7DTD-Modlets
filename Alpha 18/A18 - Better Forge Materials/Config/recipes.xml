@@ -2,61 +2,61 @@
 <configs>
 	<append xpath="/recipes">
 		<!-- Getting stuff OUT of the forge -->
-		<recipe name="Condensed Iron" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondIron" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_iron" count="100"/>
 		</recipe>
-		<recipe name="Condensed Brass" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondBrass" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_brass" count="100"/>
 		</recipe>
-		<recipe name="Condensed Lead" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondLead" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_lead" count="100"/>
 		</recipe>
-		<recipe name="Condensed Sand" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondSand" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_glass" count="100"/>
 		</recipe>
-		<recipe name="Condensed Clay" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondClay" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_clay" count="100"/>
 		</recipe>
-		<recipe name="Condensed Stone" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
+		<recipe name="ygCondStone" count="1" craft_area="forge" material_based="true" craft_time="0.001" craft_exp_gain="0" always_unlocked="true" tags="forgeCrafting" use_ingredient_modifier="false">
 			<ingredient name="unit_stone" count="100"/>
 		</recipe>
 		<!-- making quick-smelt resources in the backpack -->
-		<recipe name="Condensed Brass" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondBrass" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceScrapBrass" count="100"/>
 		</recipe>
-		<recipe name="Condensed Iron" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondIron" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceScrapIron" count="100"/>
 		</recipe>
-		<recipe name="Condensed Sand" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondSand" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceCrushedSand" count="25"/>
 		</recipe>
-		<recipe name="Condensed Lead" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondLead" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceScrapLead" count="100"/>
 		</recipe>
-		<recipe name="Condensed Stone" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondStone" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceRockSmall" count="20"/>
 		</recipe>
-		<recipe name="Condensed Clay" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
+		<recipe name="ygCondClay" count="1" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
 			<ingredient name="resourceClayLump" count="20"/>
 		</recipe>
 		<!-- convert quick-smelt back to regular resources in the backpack -->
 		<recipe name="resourceScrapIron" count="100" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Iron" count="1"/>
+			<ingredient name="ygCondIron" count="1"/>
 		</recipe>
 		<recipe name="resourceScrapBrass" count="100" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Brass" count="1"/>
+			<ingredient name="ygCondBrass" count="1"/>
 		</recipe>
 		<recipe name="resourceScrapLead" count="100" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Lead" count="1"/>
+			<ingredient name="ygCondLead" count="1"/>
 		</recipe>
 		<recipe name="resourceClayLump" count="20" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Clay" count="1"/>
+			<ingredient name="ygCondClay" count="1"/>
 		</recipe>
 		<recipe name="resourceRockSmall" count="20" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Stone" count="1"/>
+			<ingredient name="ygCondStone" count="1"/>
 		</recipe>
 		<recipe name="resourceCrushedSand" count="25" craft_time="0.01" craft_exp_gain="0" use_ingredient_modifier="false">
-			<ingredient name="Condensed Sand" count="1"/>
+			<ingredient name="ygCondSand" count="1"/>
 		</recipe>
 	</append>
 </configs>
