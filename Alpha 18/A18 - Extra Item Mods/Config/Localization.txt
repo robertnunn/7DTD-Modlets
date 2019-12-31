@@ -1,0 +1,18 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+modArmorInsulatedLinerImprovedSchematic,,items,Item,newKey,Improved Insulated Liner Schematic,,,,,
+modArmorInsulatedLinerAdvancedSchematic,,items,Item,newKey,Advanced Insulated Liner Schematic,,,,,
+modArmorCoolingMeshImprovedSchematic,,items,Item,newKey,Improved Cooling Mesh Schematic,,,,,
+modArmorCoolingMeshAdvancedSchematic,,items,Item,newKey,Advanced Cooling Mesh Schematic,,,,,
+modArmorBackpackFrameSchematic,,items,Item,newKey,Backpack Frame Schematic,,,,,
+modArmorLongFallBootsSchematic,,items,Item,newKey,Long Fall Boots Schematic,,,,,
+modArmorPlatingMilitarySchematic,,items,Item,newKey,Military Armor Plating Schematic,,,,,
+modArmorInsulatedLinerImproved,,item_modifiers,mod,newKey,Improved Insulated Liner,,,,,
+modArmorInsulatedLinerAdvanced,,item_modifiers,mod,newKey,Advanced Insulated Liner,,,,,
+modArmorCoolingMeshImproved,,item_modifiers,mod,newKey,Improved Cooling Mesh,,,,,
+modArmorCoolingMeshAdvanced,,item_modifiers,mod,newKey,Advanced Cooling Mesh,,,,,
+modArmorBackpackFrame,,item_modifiers,mod,newKey,Backpack Frame,,,,,
+modArmorPlatingMilitary,,item_modifiers,mod,newKey,Military Armor Plating,,,,,
+modArmorLongFallBoots,,item_modifiers,mod,newKey,Long Fall Boots,,,,,
+modArmorLongFallBootsImproved,,item_modifiers,mod,newKey,Improved Long Fall Boots,,,,,
+modArmorLongFallBootsDesc,,item_modifiers,mod,newKey,Boot mod that negates all fall damage but doesn't prevent sprained/broken legs.,,,,,
+modArmorLongFallBootsImprovedDesc,,item_modifiers,mod,newKey,Improved boot mod that negates all fall damage and prevents sprained/broken legs.
