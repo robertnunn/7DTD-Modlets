@@ -7,7 +7,7 @@ folder_scan = os.scandir(folder_path)
 folder_list = []
 
 for i in folder_scan:
-    if i.name.startswith('A18 - ') and i.is_dir():
+    if i.name.startswith(f'A{str(current_alpha)} - ') and i.is_dir():
         # print(i.name)
         folder_list.append(i.name)
 
