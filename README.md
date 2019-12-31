@@ -1,6 +1,8 @@
 # 7DTD-Modlets
 Modlets are organized by which version of the game they are for. Most of the mods are updated when a new version comes out. This readme details the modlets for the current version of 7 Days to Die which is: `Alpha 18`.
 
+Server admins: clients will need to have the mod in their mod directory to see the localizations. The mods will be usable without them, but may not be as clear about their use.
+
 Localization for all mods is a WIP.
 All modlets are free to use, but not distribute. Please leave the ModInfo.xml file intact.
 
@@ -18,7 +20,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - **Free Relays**: Makes the electrical relay cost 0W instead of 1W.
 - **L6 Crafting**: Allows players to craft L6 versions of items given the relevant crafting skill is maxed.
 - **Level Faster**: Increases skill points per level, reduces XP needed to level, reduces the rate at which XP requirements grow.
-- **Money Stacks**: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins <-> 1 Compressed Coin).
+- **Money Stacks**: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins <-> 1 Compressed Coin). Compressed coins can be smelted 
 - **No Boiled Water Dysentery**: Removes the chance for dysentery from boiled water.
 - **Repair Wrench**: Adds the repair functionality to the wrench's secondary use (default: right-click).
 - **Solar Crafting**: Allows the crafting of solar banks, solar cells, photovoltaic(PV) material, and the old electronic parts. Solar cell quality controlled by the 'Yeah Science!' perk. Only learnable from the schematic.
