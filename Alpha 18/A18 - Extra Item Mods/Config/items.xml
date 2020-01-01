@@ -14,99 +14,111 @@
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item> -->
-        <item name="modArmorInsulatedLinerImprovedSchematic">
+        <item name="ygModArmorStillSuitSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value=""/>
+            <property name="CustomIconTint" value=""/>
+            <property name="Unlocks" value="ygModArmorStillSuit"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorStillSuit" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorStillSuitSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="ygModArmorInsulatedLinerImprovedSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="Unlocks" value="modArmorInsulatedLinerImproved"/>
+            <property name="Unlocks" value="ygModArmorInsulatedLinerImproved"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerImproved" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerImprovedSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerImproved" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerImprovedSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-        <item name="modArmorInsulatedLinerAdvancedSchematic">
+        <item name="ygModArmorInsulatedLinerAdvancedSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="Unlocks" value="modArmorInsulatedLinerAdvanced"/>
+            <property name="Unlocks" value="ygModArmorInsulatedLinerAdvanced"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerAdvanced" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerAdvancedSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerAdvanced" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerAdvancedSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-        <item name="modArmorCoolingMeshImprovedSchematic">
+        <item name="ygModArmorCoolingMeshImprovedSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="Unlocks" value="modArmorCoolingMeshImproved"/>
+            <property name="Unlocks" value="ygModArmorCoolingMeshImproved"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshImproved" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshImprovedSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshImproved" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshImprovedSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-        <item name="modArmorCoolingMeshAdvancedSchematic">
+        <item name="ygModArmorCoolingMeshAdvancedSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="Unlocks" value="modArmorCoolingMeshAdvanced"/>
+            <property name="Unlocks" value="ygModArmorCoolingMeshAdvanced"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshAdvanced" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshAdvancedSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshAdvanced" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshAdvancedSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-        <item name="modArmorBackpackFrameSchematic">
+        <item name="ygModArmorBackpackFrameSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value="modArmorBackpackFrame"/>
-            <property name="Unlocks" value="modArmorBackpackFrame"/>
+            <property name="CustomIcon" value="ygModArmorBackpackFrame"/>
+            <property name="Unlocks" value="ygModArmorBackpackFrame"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBackpackFrame" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBackpackFrameSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorBackpackFrame" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorBackpackFrameSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-        <item name="modArmorLongFallBootsSchematic">
+        <item name="ygModArmorLongFallBootsSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value="modArmorLongFallBoots"/>
-            <property name="Unlocks" value="modArmorLongFallBoots"/>
+            <property name="CustomIcon" value="ygModArmorLongFallBoots"/>
+            <property name="Unlocks" value="ygModArmorLongFallBoots"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBoots" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBootsImproved" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorLongFallBootsSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorLongFallBoots" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorLongFallBootsImproved" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorLongFallBootsSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>
-         <item name="modArmorPlatingMilitarySchematic">
+         <item name="ygModArmorPlatingMilitarySchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value="modArmorPlatingMilitary"/>
-            <property name="Unlocks" value="modArmorPlatingMilitary"/>
+            <property name="CustomIcon" value="ygModArmorPlatingMilitary"/>
+            <property name="Unlocks" value="ygModArmorPlatingMilitary"/>
             <property name="ItemTypeIcon" value="book"/>
 	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingMilitary" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingMilitarySchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorPlatingMilitary" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorPlatingMilitarySchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>

@@ -9,25 +9,27 @@
 
     </append> -->
     <append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">
-        <item name="modArmorInsulatedLinerImproved"/>
-        <item name="modArmorCoolingMeshImproved"/>
+        <item name="ygModArmorInsulatedLinerImproved"/>
+        <item name="ygModArmorCoolingMeshImproved"/>
     </append>
 	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
-        <item name="modArmorLongFallBoots" prob=".5"/>
-        <item name="modArmorLongFallBootsImproved" prob=".25"/>
-        <item name="modArmorPlatingMilitary"/>
-        <item name="modArmorInsulatedLinerAdvanced"/>
-        <item name="modArmorCoolingMeshAdvanced"/>
+        <item name="ygModArmorLongFallBoots" prob=".5"/>
+        <item name="ygModArmorLongFallBootsImproved" prob=".25"/>
+        <item name="ygModArmorPlatingMilitary"/>
+        <item name="ygModArmorInsulatedLinerAdvanced"/>
+        <item name="ygModArmorCoolingMeshAdvanced"/>
+        <item name="ygModArmorStillSuit"/>
     </append>
     <append xpath="/lootcontainers/lootgroup[@name='schematicsModsRare']">
-        <item name="modArmorLongFallBootsSchematic"/>
-        <item name="modArmorPlatingMilitarySchematic"/>
-        <item name="modArmorInsulatedLinerAdvancedSchematic"/>
-        <item name="modArmorCoolingMeshAdvancedSchematic"/>
-        <item name="modArmorBackpackFrameSchematic"/>
+        <item name="ygModArmorLongFallBootsSchematic"/>
+        <item name="ygModArmorPlatingMilitarySchematic"/>
+        <item name="ygModArmorInsulatedLinerAdvancedSchematic"/>
+        <item name="ygModArmorCoolingMeshAdvancedSchematic"/>
+        <item name="ygModArmorBackpackFrameSchematic"/>
+        <item name="ygModArmorStillSuitSchematic"/>
     </append>
     <append xpath="/lootcontainers/lootgroup[@name='schematicsModsCommon']">
-        <item name="modArmorCoolingMeshImprovedSchematic"/>
-        <item name="modArmorInsulatedLinerImprovedSchematic"/>
+        <item name="ygModArmorCoolingMeshImprovedSchematic"/>
+        <item name="ygModArmorInsulatedLinerImprovedSchematic"/>
     </append>
 </configs>
