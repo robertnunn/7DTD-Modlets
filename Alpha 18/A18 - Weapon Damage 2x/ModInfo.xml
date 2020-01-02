@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Weapon Damage 5x" />
+		<Description value="Multiplies all weapon damage done by the player by 5 from the vanilla values (as of Mar 31, 2019)" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>
