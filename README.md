@@ -17,6 +17,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - **Copy Schematics**: When you read a schematic, perk book, or buy ranks, it also unlocks a crafting recipe for the schematic itself, costing three paper, craftable in the backpack. There's an option at the top of items.xml to allow/disallow the selling of schematics to traders.
 - **Entrenching Tool**: Adds Iron and Steel entrenching tools. Functions as a pickaxe/fireaxe/shovel combo, with increased crafting costs compared to regular tools. Doesn't perform as well as the actual tool, but better than the wrong tool (e.g., worse than a pickaxe on metal, better than a fireaxe on metal).
 - **Extra Item Mods**: Adds some extra item mods to the game. See the readme in the mod folder for a full listing of the mods.
+- **Fatal Headshots**: Makes all headshots with projectiles instantly fatal.
 - **Free Relays**: Makes the electrical relay cost 0W instead of 1W.
 - **L6 Crafting**: Allows players to craft L6 versions of items given the relevant crafting skill is maxed.
 - **Level Faster**: Increases skill points per level, reduces XP needed to level, reduces the rate at which XP requirements grow.
@@ -29,6 +30,7 @@ All modlets are free to use, but not distribute. Please leave the ModInfo.xml fi
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
 
 ## Works in progress
+- **Adventure Mod**: Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.
 - **Faster Gyro Reverse**: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
 - **Vehicles Mods**: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
 
