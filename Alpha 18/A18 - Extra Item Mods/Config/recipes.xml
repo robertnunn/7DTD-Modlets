@@ -9,31 +9,38 @@
             <ingredient name="" count=""/>
         </recipe>
         <recipe name="Schematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe> -->
         <recipe name="ygModArmorStillSuitSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorInsulatedLinerImprovedSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorInsulatedLinerAdvancedSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorCoolingMeshImprovedSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorCoolingMeshAdvancedSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorLongFallBootsSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorPlatingMilitarySchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
         </recipe>
         <recipe name="ygModArmorBackpackFrameSchematic" count="1" tags="learnable">
-            <ingredient name="resourcePaper" count="1"/>
+            <ingredient name="resourcePaper" count="3"/>
+        </recipe>
+        <recipe name="ygModArmorStillSuit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceCoal" count="50"/>
+            <ingredient name="resourceScrapPolymers" count="50"/>
+            <ingredient name="resourceLeather" count="5"/>
+            <ingredient name="resourceCloth" count="5"/>
+            <ingredient name="resourceSewingKit" count="1"/>
         </recipe>
         <recipe name="ygModArmorInsulatedLinerImproved" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
             <ingredient name="resourceCloth" count="20"/>

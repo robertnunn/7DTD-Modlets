@@ -2,907 +2,904 @@
 <configs>
 	<append xpath="/recipes">
 		<recipe name="thrownTimedChargeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="resourceLockPickSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="armorMiningHelmetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="resourceGunPowderBundleSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="mineCookingPotSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="rScrapIronPlateMineSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="ammoGasCanBundleSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="drugSteroidsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="mineHubcapSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="carBatterySchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="mineAirFilterSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="drugFortBitesSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="drugRecogSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalCoyotes" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodBlueberryPieSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolHoeIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunRodAndSpringSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookWasteTreasuresCoffins" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersFlamingArrows" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodBaconAndEggsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunMuzzleBrakeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="shotgunTurretSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorInsulatedLinerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="forgeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahMagazine" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerSlumberParty" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookFiremansAlmanacAxes" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorAdvancedMuffledConnectorsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerBlades" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatRoomClearing" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunJunkTurretSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="medicalFirstAidBandageSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarBeerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicle4x4TruckAccessoriesSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeStructuralBraceSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleBicycleHandlebarsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modFuelTankLargeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="toolAnvilSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="medicalBloodDrawKitSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunForegripSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="thrownAmmoPipeBombSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="chemistryStationSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="resourceOilSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolSledgehammerIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodPumpkinCheesecakeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicle4x4TruckChassisSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorMuffledConnectorsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterDukes" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistSprintSneak" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunTriggerGroupSemiSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drugAntibioticsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="batterybankSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleMinibikeChassisSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunMeleeBlessedMetalSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperHeadShot" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatJumping" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunMeleeTheHunterSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookFiremansAlmanacHarvest" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalMountainLions" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookArtOfMiningAvalanche" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersArrowRecovery" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorPlatingReinforcedSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolAugerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorHelmetLightSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsUncontrolledBurst" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookBatterUpConditioning" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedGraceCorn1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterLead" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatSneaking" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatLanding" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerAPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunBowCompoundSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkYuccaJuiceSmoothieSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modFuelTankSmallSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunReflexSightSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="dartTrapSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedPumpkin1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookArtOfMiningDiamondTools" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersAPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorTripleStoragePocketSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookBatterUpSlowPitch" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleGyroCopterAccessoriesSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerArchery" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorStoragePocketSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistSafes" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperCripplingShot" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalDeer" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="toolBellowsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterBrass" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="armorLeatherSetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookFiremansAlmanacMolotov" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodChiliDogSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunSoundSuppressorSilencerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunRetractingStockSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerStealthDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeKnucklesSteelSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerPunks" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatControlledBreathing" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeWoodSplitterSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterFood" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bladeTrapSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="bookBatterUpBigHits" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerTwilightThief" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsDrumMag" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedChrysanthemum1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedCorn1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="tableSawSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookFiremansAlmanacEquipment" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunBowPolymerStringSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedGoldenrod1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunTriggerGroupAutomaticSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistClaimed" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteTakeAim" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunChokeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolSteelSetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunBowWoodenSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunRocketLauncherSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalWolves" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="speakerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeWeightedHeadSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalVultures" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorDoubleStoragePocketSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="armorIronSetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunDuckbillSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterBooks" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorCustomizedFittingsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorPlatingBasicSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodBoiledMeatSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodGrilledMeatSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunPistolSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadDesertWear" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodPumpkinBreadSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleMotorcycleChassisSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistAdrenalineFall" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunFlashlightSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookWasteTreasuresDoors" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarGrandpasLearningElixirSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteSwissKnees" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahBreachingSlugs" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modShotgunSawedOffBarrelSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperGhost" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorCoolingMeshSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="workbenchSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookFiremansAlmanacSpeed" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeFortifyingGripSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedPotato1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookArtOfMiningLantern" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookBatterUpBaseballBats" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="electrictimerrelaySchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunToolNailgunSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeGraveDiggerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodCornOnTheCobSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodBakedPotatoSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistMotionDetection" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersCripplingShot" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahMaintenance" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperControlledBreathing" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunBarrelExtenderSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNightStalkerSilentNight" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadFootwear" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterAmmunition" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolWrenchSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookBatterUpMaintenance" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="ammoGasCanSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleAnySchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedCotton1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookLuckyLooterMedical" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahSlugs" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolKnifeMacheteSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarGrandpasMoonshineSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodShamChowderSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedAloe1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeThrownSpearSteelSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunMR10Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="toolForgeCrucibleSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorBandolierSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunCrippleEmSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarGrandpasAwesomeSauceSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadPufferCoats" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunScopeMediumSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteSteadyHand" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modArmorWaterPurifierSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drugHerbalAntibioticsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsMachineGuns" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunMeleeRadRemoverSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalBears" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookArtOfMiningLuckyStrike" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="autoTurretSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedYucca1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunHuntingRifleSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodCornBreadSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodHoboStewSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerIntimidation" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodVegetableStewSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerApparel" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunAK47Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookHuntingJournalSelfDefense" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsRagdoll" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedCoffee1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersKnockdown" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolKnifeIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunScopeLargeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteMaintenance" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahPartyStarter" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeSerratedBladeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadPockets" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperAPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadWinterWear" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunBipodSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodSteakAndPotatoSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarCoffeeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodMeatStewSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteHPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookWasteTreasuresWater" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeClubBurningShaftSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedHop1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookWasteTreasuresAcid" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodFishTacosSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeThrownSpearIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="spotlightPlayerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistGems" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunSMG5Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarGoldenRodTeaSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookUrbanCombatLandMines" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="electricfencepostSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeKnucklesIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="plantedBlueberry1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="medicalFirstAidKitSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeIronBreakerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookWasteTreasuresSinks" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolIronSetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunCrossbowCompoundSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="gunCrossbowIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="cementMixerSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="pressureplateSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunTriggerGroupBurst3Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeTemperedBladeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleMotorcycleHandlebarsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="drinkJarRedTeaSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookBatterUpKnockdown" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="thrownGrenadeSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modGunMagazineExtenderSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperDamage" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookPistolPeteAPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookRangersForestGuide" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="medicalPlasterCastSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="poweredDoorsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="modMeleeClubBarbedWireSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookArtOfMiningCoffee" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookEnforcerCriminalPursuit" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookSniperHPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookAutoWeaponsRecoil" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="resourceMilitaryFiberSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="foodPumpkinPieSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="motionsensorSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookShotgunMessiahLimbShot" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="bookArtOfMiningBlackStrap" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookFiremansAlmanacHeat" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modArmorCustomizedFittingsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookNightStalkerThiefAdrenaline" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="plantedPotato1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookArtOfMiningPallets" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookPistolPeteTakeAim" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookNeedleAndThreadDusters" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookWasteTreasuresDoors" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookFiremansAlmanacPrevention" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modMeleeGraveDiggerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="armorSteelSetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookUrbanCombatLanding" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="vehicleGyroCopterChassisSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookUrbanCombatRoomClearing" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="gunPumpShotgunSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="foodBaconAndEggsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="gunDoubleBarrelShotgunSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookLuckyLooterBooks" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookEnforcerHPAmmo" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="meleeToolWrenchSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookUrbanCombatAdrenalineRush" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="drinkJarGrandpasMoonshineSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="plantedMushroom1Schematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="vehicleMinibikeChassisSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modArmorImpactBracingSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookGreatHeistTimedCharge" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="vehicleMinibikeHandlebarsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeToolChainsawSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="meleeStunBatonSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="meleeToolHoeIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="modMeleeClubMetalSpikesSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modArmorImprovedFittingsSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="armorSteelSetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="foodCanShamSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookArtOfMiningCoffee" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modMeleeErgonomicGripSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="bookNeedleAndThreadLegwear" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="gunHuntingRifleSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="bookBatterUpGear" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="switchSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="vehicleMotorcycleHandlebarsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modGunScopeSmallSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="foodFishTacosSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="gun44MagnumSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modGunBarrelExtenderSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="meleeClubIronSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-		<recipe name="thrownGrenadeContactSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="foodBlueberryPieSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="bookWasteTreasuresHoney" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookWasteTreasuresCloth" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="bookAutoWeaponsDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="bookAutoWeaponsMaintenance" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="vehicle4x4TruckAccessoriesSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modGunBowArrowRestSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="drinkJarCoffeeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modMeleeBunkerBusterSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modGunRodAndSpringSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodPumpkinBreadSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadDusters" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunMeleeTheHunterSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodVegetableStewSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerTwilightThief" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunDoubleBarrelShotgunSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookBatterUpKnockdown" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolSledgehammerIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolIronSetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunScopeSmallSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkJarGrandpasAwesomeSauceSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacHeat" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerBlades" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bladeTrapSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunCrossbowIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="bookRangersExplodingBolts" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="vehicleBicycleChassisSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modArmorDoubleStoragePocketSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="modGunLaserSightSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="modArmorStoragePocketSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="generatorbankSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="vehicle4x4TruckChassisSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
-		<recipe name="armorMilitarySetSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+		<recipe name="medicalFirstAidBandageSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunMuzzleBrakeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersFlamingArrows" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunBowPolymerStringSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="armorIronSetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunBowArrowRestSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorPlatingBasicSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerPunks" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeClubIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="workbenchSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunBowCompoundSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gun44MagnumSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modFuelTankLargeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedChrysanthemum1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistSafes" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacPrevention" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="motionsensorSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookBatterUpSlowPitch" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookUrbanCombatControlledBreathing" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerSlumberParty" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalSelfDefense" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookArtOfMiningLuckyStrike" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodChiliDogSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="armorLeatherSetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterMedical" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunBipodSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drugHerbalAntibioticsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedGraceCorn1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerArchery" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="toolForgeCrucibleSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="forgeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorImprovedFittingsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="electrictimerrelaySchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="dartTrapSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkYuccaJuiceSmoothieSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="thrownAmmoPipeBombSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsDrumMag" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeKnucklesIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookWasteTreasuresAcid" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperControlledBreathing" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookBatterUpConditioning" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedAloe1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookUrbanCombatAdrenalineRush" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeWoodSplitterSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedHop1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="thrownGrenadeContactSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modShotgunSawedOffBarrelSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodShamChowderSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahMaintenance" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunPistolSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunToolNailgunSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="pressureplateSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunCrossbowCompoundSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacSpeed" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="chemistryStationSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacEquipment" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistMotionDetection" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalVultures" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodMeatStewSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedMushroom1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookUrbanCombatJumping" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerCriminalPursuit" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunRetractingStockSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorHelmetLightSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsRecoil" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunPumpShotgunSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahBreachingSlugs" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="medicalPlasterCastSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersCripplingShot" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistSprintSneak" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterLead" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadWinterWear" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalMountainLions" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsMachineGuns" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerSilentNight" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadLegwear" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeThrownSpearIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunCrippleEmSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunScopeMediumSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookUrbanCombatLandMines" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunScopeLargeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedCoffee1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleGyroCopterChassisSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookBatterUpMaintenance" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodCornOnTheCobSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsMaintenance" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookWasteTreasuresSinks" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorInsulatedLinerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteMaintenance" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="thrownDynamiteSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedYucca1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookUrbanCombatSneaking" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="armorMilitarySetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunChokeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="spotlightPlayerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleAnySchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="medicalFirstAidKitSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeClubBurningShaftSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorTripleStoragePocketSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorAdvancedMuffledConnectorsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolKnifeIronSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolAugerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="resourceOilSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodGrilledMeatSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteSwissKnees" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="toolBellowsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunMagazineExtenderSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeFortifyingGripSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolSteelSetSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeStructuralBraceSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookArtOfMiningAvalanche" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteSteadyHand" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunSMG5Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodHoboStewSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunForegripSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorBandolierSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunLaserSightSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodPumpkinCheesecakeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerIntimidation" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersKnockdown" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacAxes" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleGyroCopterAccessoriesSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookArtOfMiningLantern" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="electricfencepostSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadFootwear" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalDeer" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodCanShamSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerAPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterAmmunition" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersForestGuide" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerThiefAdrenaline" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkJarGrandpasLearningElixirSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="thrownGrenadeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeIronBreakerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeKnucklesSteelSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookWasteTreasuresCloth" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeTemperedBladeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeWeightedHeadSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorMuffledConnectorsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNightStalkerStealthDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterBrass" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersAPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="shotgunTurretSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunMR10Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorPlatingReinforcedSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadPufferCoats" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedPumpkin1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunMeleeBlessedMetalSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperHPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkJarGoldenRodTeaSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleBicycleHandlebarsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeErgonomicGripSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunMeleeRadRemoverSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahMagazine" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupBurst3Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacMolotov" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerHPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunBowWoodenSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunRocketLauncherSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunReflexSightSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerApparel" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistTimedCharge" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteHPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="generatorbankSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="speakerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedCorn1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookWasteTreasuresWater" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistGems" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeStunBatonSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="toolAnvilSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="switchSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookEnforcerDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterDukes" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedGoldenrod1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupAutomaticSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedBlueberry1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookArtOfMiningDiamondTools" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodPumpkinPieSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="poweredDoorsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleMinibikeHandlebarsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadPockets" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookRangersArrowRecovery" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolKnifeMacheteSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperHeadShot" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookFiremansAlmanacHarvest" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperGhost" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunJunkTurretSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsRagdoll" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleBicycleChassisSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodBakedPotatoSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodBoiledMeatSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahPartyStarter" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperCripplingShot" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkJarBeerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookNeedleAndThreadDesertWear" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeThrownSpearSteelSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="vehicleMotorcycleChassisSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperAPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modFuelTankSmallSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorImpactBracingSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodSteakAndPotatoSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahLimbShot" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupSemiSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalCoyotes" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookAutoWeaponsUncontrolledBurst" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookWasteTreasuresCoffins" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="tableSawSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookLuckyLooterFood" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteAPAmmo" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistAdrenalineFall" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="autoTurretSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="resourceMilitaryFiberSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeSerratedBladeSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorWaterPurifierSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeClubBarbedWireSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drugAntibioticsSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="plantedCotton1Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookShotgunMessiahSlugs" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="ammoGasCanSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookBatterUpBaseballBats" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="gunAK47Schematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 		<recipe name="meleeToolSledgehammerSteelSchematic" count="1" tags="learnable">
-			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookPistolPeteDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modMeleeBunkerBusterSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="foodCornBreadSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="batterybankSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalBears" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookSniperDamage" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="cementMixerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunSoundSuppressorSilencerSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="meleeToolChainsawSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modArmorCoolingMeshSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookGreatHeistClaimed" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="drinkJarRedTeaSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookHuntingJournalWolves" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="bookArtOfMiningPallets" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunFlashlightSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
+		</recipe>
+		<recipe name="modGunDuckbillSchematic" count="1" tags="learnable">
+			<ingredient name="resourcePaper" count="3"/>
 		</recipe>
 	</append>
 </configs>

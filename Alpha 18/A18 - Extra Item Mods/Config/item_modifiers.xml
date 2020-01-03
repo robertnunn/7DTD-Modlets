@@ -21,13 +21,14 @@
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
             <property name="Group" value="Mods"/>
             <effect_group tiered="false">
-                <passive_effect name="WaterLossOT" operation="perc_subtract" value="0.4"/>
+                <passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.4"/>
+                <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.4"/>
             </effect_group>
         </item_modifier>
         <item_modifier name="ygModArmorInsulatedLinerImproved" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="UnlockedBy" value="modArmorInsulatedLinerImprovedSchematic"/>
+            <property name="UnlockedBy" value="ygModArmorInsulatedLinerImprovedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -39,7 +40,7 @@
         <item_modifier name="ygModArmorInsulatedLinerAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="UnlockedBy" value="modArmorInsulatedLinerAdvancedSchematic"/>
+            <property name="UnlockedBy" value="ygModArmorInsulatedLinerAdvancedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -51,7 +52,7 @@
         <item_modifier name="ygModArmorCoolingMeshImproved" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="00ff00"/>
-            <property name="UnlockedBy" value="modArmorCoolingMeshImprovedSchematic"/>
+            <property name="UnlockedBy" value="ygModArmorCoolingMeshImprovedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -63,7 +64,7 @@
         <item_modifier name="ygModArmorCoolingMeshAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="ffff00"/>
-            <property name="UnlockedBy" value="modmodArmorCoolingMeshAdvancedSchematic"/>
+            <property name="UnlockedBy" value="ygModArmorCoolingMeshAdvancedSchematic"/>
             <property name="DisplayType" value="modTempResist"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -73,8 +74,8 @@
             </effect_group>
         </item_modifier>
         <item_modifier name="ygModArmorBackpackFrame" installable_tags="armorChest" modifier_tags="carryweight" type="attachment">
-            <property name="CustomIcon" value="modArmorBackpackFrame"/>
-            <property name="UnlockedBy" value="modArmorBackpackFrameSchematic"/>
+            <property name="CustomIcon" value="ygModArmorBackpackFrame"/>
+            <property name="UnlockedBy" value="ygModArmorBackpackFrameSchematic"/>
             <property name="DisplayType" value="modCarryCapacity"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -85,8 +86,8 @@
             </effect_group>
         </item_modifier>
         <item_modifier name="ygModArmorPlatingMilitary" installable_tags="armor" modifier_tags="resistance" type="attachment">
-            <property name="CustomIcon" value="modArmorPlatingMilitary"/>
-            <property name="UnlockedBy" value="modArmorPlatingMilitarySchematic"/>
+            <property name="CustomIcon" value="ygModArmorPlatingMilitary"/>
+            <property name="UnlockedBy" value="ygModArmorPlatingMilitarySchematic"/>
             <property name="DisplayType" value="modArmor"/>
             <property name="Stacknumber" value="1"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -96,8 +97,8 @@
             </effect_group>
         </item_modifier>
         <item_modifier name="ygModArmorLongFallBoots" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
-            <property name="CustomIcon" value="modArmorLongFallBoots"/>
-            <property name="UnlockedBy" value="modArmorLongFallBootsSchematic"/>
+            <property name="CustomIcon" value="ygModArmorLongFallBoots"/>
+            <property name="UnlockedBy" value="ygModArmorLongFallBootsSchematic"/>
             <property name="Stacknumber" value="1"/>
             <property name="Material" value="Msteel"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -108,9 +109,9 @@
             </effect_group>
         </item_modifier>
         <item_modifier name="ygModArmorLongFallBootsImproved" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
-            <property name="CustomIcon" value="modArmorLongFallBoots"/>
+            <property name="CustomIcon" value="ygModArmorLongFallBoots"/>
             <property name="CustomIconTint" value="ee4444"/>
-            <property name="UnlockedBy" value="modArmorLongFallBootsSchematic"/>
+            <property name="UnlockedBy" value="ygModArmorLongFallBootsSchematic"/>
             <property name="Stacknumber" value="1"/>
             <property name="Material" value="Msteel"/>
             <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>

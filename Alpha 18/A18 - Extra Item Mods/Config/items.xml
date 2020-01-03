@@ -17,8 +17,7 @@
         <item name="ygModArmorStillSuitSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>
-            <property name="CustomIcon" value=""/>
-            <property name="CustomIconTint" value=""/>
+            <property name="CustomIcon" value="ygModArmorStillSuit"/>
             <property name="Unlocks" value="ygModArmorStillSuit"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorStillSuit" operation="set" value="1"/>
@@ -32,8 +31,6 @@
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="00ff00"/>
             <property name="Unlocks" value="ygModArmorInsulatedLinerImproved"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerImproved" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerImprovedSchematic" operation="set" value="1"/>
@@ -46,8 +43,6 @@
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
             <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="ygModArmorInsulatedLinerAdvanced"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerAdvanced" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorInsulatedLinerAdvancedSchematic" operation="set" value="1"/>
@@ -60,8 +55,6 @@
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="00ff00"/>
             <property name="Unlocks" value="ygModArmorCoolingMeshImproved"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshImproved" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshImprovedSchematic" operation="set" value="1"/>
@@ -74,8 +67,6 @@
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
             <property name="CustomIconTint" value="ffff00"/>
             <property name="Unlocks" value="ygModArmorCoolingMeshAdvanced"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshAdvanced" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorCoolingMeshAdvancedSchematic" operation="set" value="1"/>
@@ -87,8 +78,6 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="ygModArmorBackpackFrame"/>
             <property name="Unlocks" value="ygModArmorBackpackFrame"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorBackpackFrame" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorBackpackFrameSchematic" operation="set" value="1"/>
@@ -100,8 +89,6 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="ygModArmorLongFallBoots"/>
             <property name="Unlocks" value="ygModArmorLongFallBoots"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorLongFallBoots" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorLongFallBootsImproved" operation="set" value="1"/>
@@ -114,8 +101,6 @@
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="ygModArmorPlatingMilitary"/>
             <property name="Unlocks" value="ygModArmorPlatingMilitary"/>
-            <property name="ItemTypeIcon" value="book"/>
-	        <property name="AltItemTypeIcon" value="book_read"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorPlatingMilitary" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModArmorPlatingMilitarySchematic" operation="set" value="1"/>

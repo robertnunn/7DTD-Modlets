@@ -6,6 +6,7 @@ ygModArmorCoolingMeshAdvancedSchematic,,items,Item,newKey,Advanced Cooling Mesh 
 ygModArmorBackpackFrameSchematic,,items,Item,newKey,Backpack Frame Schematic,,,,,
 ygModArmorLongFallBootsSchematic,,items,Item,newKey,Long Fall Boots Schematic,,,,,
 ygModArmorPlatingMilitarySchematic,,items,Item,newKey,Military Armor Plating Schematic,,,,,
+ygModArmorStillSuitSchematic,,items,Item,newKey,StillSuit Schematic,,,,,
 ygModArmorInsulatedLinerImproved,,item_modifiers,mod,newKey,Improved Insulated Liner Mod,,,,,
 ygModArmorInsulatedLinerAdvanced,,item_modifiers,mod,newKey,Advanced Insulated Liner Mod,,,,,
 ygModArmorCoolingMeshImproved,,item_modifiers,mod,newKey,Improved Cooling Mesh Mod,,,,,
@@ -17,3 +18,4 @@ ygModArmorLongFallBootsImproved,,item_modifiers,mod,newKey,Improved Long Fall Bo
 ygModArmorLongFallBootsDesc,,item_modifiers,mod,newKey,Boot mod that negates all fall damage but doesn't prevent sprained/broken legs.,,,,,
 ygModArmorLongFallBootsImprovedDesc,,item_modifiers,mod,newKey,Improved boot mod that negates all fall damage and prevents sprained/broken legs.
 ygModArmorStillSuit,,item_modifiers,mod,newKey,Stillsuit Mod,,,,,
+ygModArmorStillSuitDesc,,item_modifiers,mod,newKey,"The StillSuit is not as good as the ones found on Arrakis, but it still helps preserve your body's water. Reduces water loss from regaining health and stamina by 40%",,,,,
