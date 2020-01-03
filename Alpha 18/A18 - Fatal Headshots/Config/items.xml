@@ -3,25 +3,4 @@
     <append xpath="items/item[contains(@name, 'ammo') and not(contains(@name, 'Zombie'))]/effect_group[@tiered='false']">
         <passive_effect name="DamageModifier" operation="perc_add" value="1000" tags="head"/>
     </append>
-	<!-- <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifer' and tags='head']/@value"> -->
-	<!-- <set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">900</set>  
-	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/property[@name='Stacknumber']/@value">450</set> 
-	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">450</set>
-	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">450</set> 
-	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">450</set> 
-	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">450</set>
-	<set xpath="/items/item[@name='ammoBlunderbuss']/property[@name='Stacknumber']/@value">450</set> 
-	<set xpath="/items/item[@name='ammoJunkTurret']/property[@name='Stacknumber']/@value">3000</set> 
-	<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">60</set>  
-	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">30000</set>  
-	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">450</set>  
-	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">225</set> 
-	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">450</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">450</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">225</set>
-	<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']/@value">15</set>
-	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">60</set>
-	<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">60</set>
-	<set xpath="/items/item[@name='thrownAmmoFlare']/property[@name='Stacknumber']/@value">120</set> 
-	<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">1500</set> -->
 </configs>
