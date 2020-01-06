@@ -1,4 +1,5 @@
 # Extra Item Mods
+These items have recipes, schematics, and are in the loot tables.
 
 ## Mods
 - **Backpack Frame**: Only installs in chest armor. Adds 6 unencumbered inventory slots (up to the normal maximum).

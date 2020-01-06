@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+        <item name="item_texttest">
+            <property name="Extends" value="questMaster"/>
+            <property class="Action0">
+		        <property name="QuestGiven" value="quest_texttest"/>
+	        </property>
+        </item>
+    </append>
+</configs>
