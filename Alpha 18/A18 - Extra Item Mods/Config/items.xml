@@ -14,6 +14,17 @@
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item> -->
+        <item name="ygApparelBlunt">
+            <property name="Extends" value="apparelCigar"/>
+            <property name="Tags" value="head"/>
+            <property name="UnlockedBy" value="perkUrbanCombatControlledBreathing"/>
+            <property name="CustomIconTint" value="88cc88"/>
+            <effect_group tiered="false">
+                <passive_effect name="ModSlots" operation="base_set" value="0"/>
+                <passive_effect name="BarteringBuying" operation="base_add" value=".2"/>
+                <passive_effect name="BarteringSelling" operation="base_add" value=".2"/>
+            </effect_group>
+        </item>
         <item name="ygModArmorStillSuitSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>

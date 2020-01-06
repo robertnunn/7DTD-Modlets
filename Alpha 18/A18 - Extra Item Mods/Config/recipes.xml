@@ -35,6 +35,10 @@
         <recipe name="ygModArmorBackpackFrameSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
         </recipe>
+        <recipe name="ygBlunt" count="1" tags="learnable">
+            <ingredient name="resourceYuccaFibers" count="200"/>
+            <ingredient name="resourceCropHopsFlower" count="50"/>
+        </recipe>
         <recipe name="ygModArmorStillSuit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
             <ingredient name="resourceCoal" count="50"/>
             <ingredient name="resourceScrapPolymers" count="50"/>

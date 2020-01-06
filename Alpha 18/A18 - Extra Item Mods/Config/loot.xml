@@ -32,4 +32,10 @@
         <item name="ygModArmorCoolingMeshImprovedSchematic"/>
         <item name="ygModArmorInsulatedLinerImprovedSchematic"/>
     </append>
+    <append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
+        <item name="ygApparelBlunt"/>
+    </append>
+    <append xpath="/lootcontainers/lootcontainer[@id='6']">
+        <item name="ygApparelBlunt" prob=".5"/>
+    </append>
 </configs>
