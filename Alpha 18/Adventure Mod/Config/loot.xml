@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+        <item name="resourcePaper"/>
+    </set>
+    <set xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']">
+        <item name="resourcePaper"/>
+    </set>
+</configs>

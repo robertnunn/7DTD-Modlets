@@ -8,4 +8,5 @@
 	        </property>
         </item>
     </append>
+    <!-- <remove xpath="/items/item[contains(@name, 'qc_') or contains(@name, 'qt_')]"/> -->
 </configs>
