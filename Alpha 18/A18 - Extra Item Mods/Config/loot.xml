@@ -27,6 +27,7 @@
         <item name="ygModArmorCoolingMeshAdvancedSchematic"/>
         <item name="ygModArmorBackpackFrameSchematic"/>
         <item name="ygModArmorStillSuitSchematic"/>
+        <item name="resourceRawDiamondSchematic"/>
     </append>
     <append xpath="/lootcontainers/lootgroup[@name='schematicsModsCommon']">
         <item name="ygModArmorCoolingMeshImprovedSchematic"/>

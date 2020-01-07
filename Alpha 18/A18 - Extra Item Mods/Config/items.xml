@@ -14,6 +14,17 @@
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item> -->
+        <item name="resourceRawDiamondSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="resourceRawDiamond"/>
+            <property name="Unlocks" value="resourceRawDiamond"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceRawDiamond" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceRawDiamondSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
         <item name="ygApparelBlunt">
             <property name="Extends" value="apparelCigar"/>
             <property name="Tags" value="head"/>

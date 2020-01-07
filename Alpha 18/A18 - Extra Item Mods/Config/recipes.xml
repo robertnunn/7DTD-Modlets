@@ -11,6 +11,9 @@
         <recipe name="Schematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
         </recipe> -->
+        <recipe name="resourceRawDiamondSchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="3"/>
+        </recipe>
         <recipe name="ygModArmorStillSuitSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
         </recipe>
@@ -34,6 +37,10 @@
         </recipe>
         <recipe name="ygModArmorBackpackFrameSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
+        </recipe>
+        <recipe name="resourceRawDiamond" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+            <ingredient name="resourceCoal" count="18000"/>
+            <ingredient name="resourceAcid" count="15"/>
         </recipe>
         <recipe name="ygBlunt" count="1" tags="learnable">
             <ingredient name="resourceYuccaFibers" count="200"/>
