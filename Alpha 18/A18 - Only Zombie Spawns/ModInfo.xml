@@ -2,7 +2,7 @@
 <xml>
 	<ModInfo>
 		<Name value="Only Zombie Spawns" />
-		<Description value="Nothing but zombies spawn now. Where possible/plausible, non-zombie entities have been replaced with their zombie counterparts" />
+		<Description value="Nothing but zombies spawn now. Where possible/plausible, non-zombie entities have been replaced with their zombie counterparts." />
 		<Author value="yeastygoodness" />
 		<Version value="1.0.0" />
 	</ModInfo>
