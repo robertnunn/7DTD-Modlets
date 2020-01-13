@@ -4,4 +4,6 @@
     <remove xpath="/progression/perks/perk[@name='perkHealingFactor']"/>
     <remove xpath="/progression/perks/perk[@name='perkDaringAdventurer']"/>
     <remove xpath="/progression/perks/perk[@name='perkBetterBarter']"/>
+    <set xpath="/progression/level/@skill_points_per_level">0</set>
+    
 </configs>

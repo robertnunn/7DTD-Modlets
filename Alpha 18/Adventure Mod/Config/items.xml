@@ -8,5 +8,7 @@
 	        </property>
         </item>
     </append>
+    <append xpath="/items/item[@name='gunDoubleBarrelShotgun']/property[@name='Tags']/@value">,noSilencer</append>
+    <append xpath="/items/item[@name='gunPumpShotgun']/property[@name='Tags']/@value">,noSilencer</append>
     <!-- <remove xpath="/items/item[contains(@name, 'qc_') or contains(@name, 'qt_')]"/> -->
 </configs>

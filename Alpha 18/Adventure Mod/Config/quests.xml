@@ -26,4 +26,13 @@
             <reward type="Exp" value="50"/>
         </quest>
     </append>
+    <set xpath="/quests/quest[@id='quest_BasicSurvival1']">
+
+        <reward type="SkillPoints" value="100"/>
+        <reward type="Quest" id="quest_ygMQ01"/>
+    </set>
+    <!-- add the quest items -->
+    <append xpath="/quests/quest_items[@max_count='100']">
+        <quest_item id="3" name="questYGNukeData" description_key="questYGNukeDataDesc" icon="questYGNukeData" icon_color="255,255,255"/>
+    </append>
 </configs>

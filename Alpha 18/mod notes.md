@@ -1,6 +1,3 @@
-# FIND A WAY TO QUERY GIT FOR WHAT FILES HAVE BEEN CHANGED.
-**write a script to compile a list of all the folders that have been changed and only update those zip files, instead of everything.**
-
 ## vehicle mods:
 - aluminum gyro frame: two versions, one that increases speed and km/L, one that adds inventory space
 - fuel efficiency mods for vehicles: increase km/L, decrease turbo speed
@@ -17,10 +14,10 @@
 - obsidian edge: installs in melee tools/weapons, adds block/entity damage, but greatly reduces durability (obsidian is sharp as fuck, but fragile as shit)
 
 ## update UI mod with:
-elevation (helpful for flying, especially in fog/rain/snow)
+- elevation (helpful for flying, especially in fog/rain/snow)
 body temp/outside temp
 
-## Adventure mods
+## Adventure mod
 - **scenario**: the players are soldiers/PMCs whose heli/plane crashed on the wasteland island they were supposed to extract a HVT from. Random quality from starting bundle items represents damage sustained to (or lack of funds to purchase) high-quality tools/weapons. 
     - one spawn point or multiple spawns? Would represent different teams that might want to meet up for safety or help finishing the mission/escaping
     - spawn in a room? would fit with a crash scenario where the team was unconscious for a some time (hours? a day?)
@@ -32,13 +29,31 @@ body temp/outside temp
     - players go find mcguffin #1, then head back to the radio, get the coords for the extraction point
         - evac is swarming with zombies, and must be cleared
         - should evac be a random location (RandomGoto) or a POI with a helipad/landing strip? (Goto) Find a crashed plane POI and recover a black box?
-    - upon arriving at the evac point, players find a crashed aircraft, what was supposed to be their escape. black box data indicates that some unknown weapon brought down the aircraft. players have to head to a larger military base (an actual installation) to read the data they got from their HVT
+    - upon arriving at the evac point, players find a crashed aircraft, what was supposed to be their escape. Flight recorder data is not readable by the tools they have, but they can play back the cockpit voice recording and this indicates that some unknown weapon brought down the aircraft. players have to head to a larger military base (an actual installation) to read the data they got from the FDR
     - arriving at the base, players have to fight their way to a working terminal (deep inside the base)
         - have to upgrade a specific type of block in the facility (this represents fixing the radio or the computer)
         - before entering the facility proper, players encounter hostile mercs trying to loot the place. Another hire? Hoping to ransom the data/material?
     - after deciphering the data, players find the location of the two experimental weapons that brought down their aircraft. 
     - while investigating the first site, players find evidence of an illegal bioweapons lab run by the same corp that developed the weapons that brought them down.
         - use the resident evil mansion POI
+- **quest list**
+
+    0. Players wake up, tell players they have received all their skill points up front and that they should spend them. They check their maps and realize that they'll need some wheels if they want to get this done in a reasonable period of time.
+        - fetchkeep for the entrenching tool or something else guaranteed to be in the starting inventory
+        - goto garage/mechanic POI
+        - fetchkeep vehicle (4x4 or motorcycle)
+    1. Players start looking for working radio equipment (theirs was lost in the crash)
+        - goto cell tower poi
+        - blockupgrade the control panel blocks to something else to indicate repairing the radio (needs 5 electrical parts)
+    1. Command tells them that because their target is almost certainly dead, they still need to retrieve the scientific data he had as there is an unspecified time limit. Drone operator feeds them a warning about a HUGE horde of zombies and tells them that while they can stay ahead of it if they keep moving, eventually it WILL catch up with them
+        - goto military base (decide which kind)
+        - rally point
+        - fetchfromcontainer "Nuclear Test Data"
+    1. Data in hand, players head back to a radio to confirm they have the data and receive the extraction coordinates
+        - goto cell tower poi
+        - blockupgrade the control panel (repairing it with 5 electrical parts)
+        - goto crashed plane or airport poi
+    1. Finding their evac crashed, 
 - **changes from vanilla**:
     - no skill points on leveling up, you get all your skill points right at the beginning from the intro quest
     - how many skill points to get? 100? 75? 150?
@@ -48,6 +63,7 @@ body temp/outside temp
         - parkour 5 requires 21 points
         - pack mule 5 requires 10 points
     - more likely to find working vehicle parts? makes it easier to get a vehicle and get moving. Alternatively, give the GROUP one 4x4 (with extra seats)
+        - reduce the storage on 4x4 and motorcycle: (9,4) and (9,2[1?])
     - more zombies spawning in cities than usual
     - zombies are much tougher at night (they also sprint)
     - can't put silencers on shotguns anymore
