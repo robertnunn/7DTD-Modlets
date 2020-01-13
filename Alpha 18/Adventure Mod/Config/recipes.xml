@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<remove xpath="/recipes/recipe[contains(@name, 'yroCopter')]"/>
+</configs>

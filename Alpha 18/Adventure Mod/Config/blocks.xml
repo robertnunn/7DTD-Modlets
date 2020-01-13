@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">4</set>
+    <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">10</set>
+        <!-- table saw inherits from cement mixer -->
+    <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">4</set>
+    <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">10</set>
+    <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">12</set>
+
+</configs>

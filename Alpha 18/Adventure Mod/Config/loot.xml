@@ -6,4 +6,8 @@
     <set xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']">
         <item name="resourcePaper"/>
     </set>
+    <remove xpath="/lootcontainers/lootgroup/item[contains(@name, 'yroCopter')]"/>
+    <set xpath="/lootcontainers/lootcontainer[@id='77']/@size">9,1</set> <!-- minibike -->
+    <set xpath="/lootcontainers/lootcontainer[@id='78']/@size">9,2</set> <!-- motorcycle -->
+    <set xpath="/lootcontainers/lootcontainer[@id='79']/@size">9,4</set> <!-- 4x4 -->
 </configs>
