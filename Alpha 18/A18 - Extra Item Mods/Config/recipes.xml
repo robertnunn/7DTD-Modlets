@@ -42,7 +42,7 @@
             <ingredient name="resourceCoal" count="18000"/>
             <ingredient name="resourceAcid" count="15"/>
         </recipe>
-        <recipe name="ygBlunt" count="1" tags="learnable">
+        <recipe name="ygApparelBlunt" count="1" tags="learnable">
             <ingredient name="resourceYuccaFibers" count="200"/>
             <ingredient name="resourceCropHopsFlower" count="50"/>
         </recipe>
