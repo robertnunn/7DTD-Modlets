@@ -19,13 +19,14 @@
         - use the resident evil mansion POI
 - **quest list**
 
-    0. Players wake up, tell players they have received all their skill points up front and that they should spend them. They check their maps and realize that they'll need some wheels if they want to get this done in a reasonable period of time.
+    0. Players wake up, tell players they have received all their skill points up front and that they should spend them. 
         - fetchkeep for the entrenching tool or something else guaranteed to be in the starting inventory
+    1. They check their maps and realize that they'll need some wheels if they want to get this done in a reasonable period of time.
         - goto garage/mechanic POI
         - fetchkeep vehicle (4x4 or motorcycle)
     1. Players start looking for working radio equipment (theirs was lost in the crash)
         - goto cell tower poi
-        - blockupgrade the control panel blocks to something else to indicate repairing the radio (needs 5 electrical parts)
+        - blockupgrade the control panel blocks to something else to indicate repairing the radio (needs 5 electrical parts) (upgrade to itself? would allow an arbitrary number of players and elec parts aren't hard to come by)
     1. Command tells them that because their target is almost certainly dead, they still need to retrieve the scientific data he had as there is an unspecified time limit. Drone operator feeds them a warning about a HUGE horde of zombies and tells them that while they can stay ahead of it if they keep moving, eventually it WILL catch up with them
         - goto military base (decide which kind)
         - rally point
@@ -43,9 +44,9 @@
         - 45 skills (all but one have 5 levels)
         - parkour 5 requires 21 points
         - pack mule 5 requires 10 points
-    - more likely to find working vehicle parts? makes it easier to get a vehicle and get moving. Alternatively, give the GROUP one 4x4 (with extra seats)
+    + Give players a vehicle voucher that can be used to create a single vehicle (minibike, motorcycle, 4x4) once they reach the garage/car lot poi
         + reduce the storage on 4x4 and motorcycle: (9,4) and (9,2[1?])
-    - more zombies spawning in cities than usual
+    + more zombies spawning in cities than usual
     + zombies sprint at night (serverconfig.xml setting)
     + can't put silencers on shotguns anymore
     + dramatically increase the heat generated from workstations, more modest increase in heat from firearms (specifically firearms (and explosives), not (cross)bows or melee)

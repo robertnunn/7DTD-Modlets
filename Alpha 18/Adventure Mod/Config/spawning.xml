@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/spawning/biome[@name='city']/spawn[@maxcount='1']/@maxcount">3</set>
+    <set xpath="/spawning/biome[@name='city']/spawn[@maxcount='3']/@maxcount">5</set>
+    <set xpath="/spawning/biome[@name='city']/spawn[@maxcount='5']/@maxcount">7</set>
+</configs>
