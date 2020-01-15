@@ -22,7 +22,7 @@
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
 
 ## Works in progress
-- **Adventure Mod**: Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.
+- **~~Adventure Mod~~**: Currently no way to send players to specific POIs or even specific classes of POIs. Can't have an adventure if players can't be sent to specific places. ~~Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.~~
 - **Faster Gyro Reverse**: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
 - **Only Zombie Spawns**: Only allows zombies and zombie animals to spawn. Regular animals spawns are replaced with zombie or zombie animal spawns.
 - **Vehicles Mods**: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
