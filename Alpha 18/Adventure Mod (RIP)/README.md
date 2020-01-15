@@ -17,7 +17,6 @@ This mod is intended to be used alongside a number of my other mods on specific 
 
 These are the other mods that I intend to be used with this one.
 - Beaker Recipe
-- Better Silencers
 - Better Starting Inventory (entrenching tool)
 - Copy Schematics
 - Extra Item Mods
