@@ -1,3 +1,5 @@
+# XML IS CASE SENSITIVE!
+
 ## vehicle mods:
 - aluminum gyro frame: two versions, one that increases speed and km/L, one that adds inventory space
 - fuel efficiency mods for vehicles: increase km/L, decrease turbo speed

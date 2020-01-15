@@ -14,23 +14,18 @@
 
             <action type="TrackQuest"/>
 
-            <objective type="FetchKeep" id="resourceYuccaFibers" value="10" phase="1"/>
-            <objective type="Craft">
-                <property name="phase" value="2"/>
-                <property name="item" value="bedroll"/>
-                <property name="count" value="1"/>
-            </objective>
+            <objective type="Goto" id="house_old_tudor_01" value="5" phase="1"/>
 
             <objective type="BlockPlace" id="bedroll" value="1" phase="2"/>
 
             <reward type="Exp" value="50"/>
         </quest>
     </append>
-    <set xpath="/quests/quest[@id='quest_BasicSurvival1']">
+    <!-- <set xpath="/quests/quest[@id='quest_BasicSurvival1']">
 
         <reward type="SkillPoints" value="100"/>
         <reward type="Quest" id="quest_ygMQ01"/>
-    </set>
+    </set> -->
     <!-- add the quest items -->
     <append xpath="/quests/quest_items[@max_count='100']">
         <quest_item id="3" name="questYGNukeData" description_key="questYGNukeDataDesc" icon="questYGNukeData" icon_color="255,255,255"/>

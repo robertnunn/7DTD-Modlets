@@ -1,4 +1,4 @@
-# ADVENTURE MOD
+# ~~Adventure mod~~ Goto objectives are hardcoded to send you to traders. Adventure mod is completely unviable until this gets fixed.
 
 ## Overview
 This is my attempt at creating a "story" for a group of players to play through so that there's something else to do with this game other than build a base, kill zombies, create elaborate death traps, get the best gear, smack zombies with your dick, create even more elaborate death traps, achieve ultimate cosmic power, ???, profit.

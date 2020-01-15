@@ -1,4 +1,4 @@
-# Adventure mod
+# ~~Adventure mod~~ Goto objectives are hardcoded to send you to traders. Adventure mod is completely unviable until this gets fixed.
 - **scenario**: the players are soldiers/PMCs whose heli/plane crashed on the wasteland island they were supposed to extract a HVT from. Random quality from starting bundle items represents damage sustained to (or lack of funds to purchase) high-quality tools/weapons. 
     - one spawn point or multiple spawns? Would represent different teams that might want to meet up for safety or help finishing the mission/escaping
     - spawn in a room? would fit with a crash scenario where the team was unconscious for a some time (hours? a day?)
@@ -13,10 +13,9 @@
     - upon arriving at the evac point, players find a crashed aircraft, what was supposed to be their escape. Flight recorder data is not readable by the tools they have, but they can play back the cockpit voice recording and this indicates that some unknown weapon brought down the aircraft. players have to head to a larger military base (an actual installation) to read the data they got from the FDR
     - arriving at the base, players have to fight their way to a working terminal (deep inside the base)
         - have to upgrade a specific type of block in the facility (this represents fixing the radio or the computer)
-        - before entering the facility proper, players encounter hostile mercs trying to loot the place. Another hire? Hoping to ransom the data/material?
     - after deciphering the data, players find the location of the two experimental weapons that brought down their aircraft. 
     - while investigating the first site, players find evidence of an illegal bioweapons lab run by the same corp that developed the weapons that brought them down.
-        - use the resident evil mansion POI
+        - use the resident evil mansion POI (house_old_tudor_01) (upgrade monitor/keyboard/mouse/pc to "overload the system)
 - **quest list**
 
     0. Players wake up, tell players they have received all their skill points up front and that they should spend them. 
@@ -35,8 +34,20 @@
         - goto cell tower poi
         - blockupgrade the control panel (repairing it with 5 electrical parts)
         - goto crashed plane or airport poi
-    1. Finding their evac crashed, 
-- **changes from vanilla**:
+        - fetchfromcontainer "Flight Recorder"
+    1. Finding their evac crashed, they recover the flight recorder. They can't read the FDR, but they can play back the cockpit recorder. Pilots mention a missile incoming. They'll need a military computer to read the data and find the missile silo so their evac doesn't get shot down again.
+        - goto red mesa
+        - blockupgrade control panel
+    1. Flight data indicates that the origin of the missile that shot down the evac is out in some field.
+        - goto cornfield_missile_silo
+        - 
+- **quest technical details**:
+    - \<reward type="Quest" id=""/> this is how you setup a quest chain
+    - offer_key is the popup you get at the beginning of a quest
+    - is there a way to specify spawn distance for quests?
+    - "Goto" objective type uses the id="" as a filter to find the closest POI with a name that matches it
+        - is there a way to specify a minimum distance to search in?
+- **changes from vanilla**:  (All changes made!)
     + no skill points on leveling up, you get all your skill points right at the beginning from the intro quest
     + how many skill points to get? 100? 75? 150?
         - 80 points to max every attribute (16pts/att)
@@ -62,9 +73,3 @@
         + normal intro quest line
         + quest notes, challenges, treasure maps, etc (loot)    
         + normal animals, shit's fucked and so are the aminals (spawning)
-- **quest technical details**:
-    - \<reward type="Quest" id=""/> this is how you setup a quest chain
-    - offer_key is the popup you get at the beginning of a quest
-    - is there a way to specify spawn distance for quests?
-    - "Goto" objective type uses the id="" as a filter to find the closest POI with a name that matches it
-        - is there a way to specify a minimum distance to search in?
