@@ -11,6 +11,9 @@
         <recipe name="Schematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
         </recipe> -->
+        <recipe name="ygModObsidianEdgeSchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="3"/>
+        </recipe>
         <recipe name="resourceRawDiamondSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
         </recipe>
@@ -37,6 +40,11 @@
         </recipe>
         <recipe name="ygModArmorBackpackFrameSchematic" count="1" tags="learnable">
             <ingredient name="resourcePaper" count="3"/>
+        </recipe>
+        <recipe name="ygModObsidianEdge" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="learnable">
+            <ingredient name="unit_glass" count="200"/>
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="100"/>
         </recipe>
         <recipe name="resourceRawDiamond" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
             <ingredient name="resourceCoal" count="18000"/>
