@@ -14,6 +14,17 @@
         </item_modifier>
 -->
     <append xpath="/item_modifiers">
+        <item_modifier name="ygModDiamondEdge" installable_tags="knife,machete,perkJavelinMaster" modifier_tags="damage" type="attachment">
+            <property name="CustomIcon" value="ygModDiamondEdge"/>
+            <property name="UnlockedBy" value="ygModDiamondEdgeSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="0.6"/>
+            </effect_group>
+        </item_modifier>
         <item_modifier name="ygModObsidianEdge" installable_tags="knife,machete,perkJavelinMaster" modifier_tags="damage" type="attachment">
             <property name="CustomIcon" value="ygModObsidianEdge"/>
             <property name="UnlockedBy" value="ygModObsidianEdgeSchematic"/>

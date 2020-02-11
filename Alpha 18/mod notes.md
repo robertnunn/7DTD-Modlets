@@ -12,7 +12,7 @@
 - **still suit**: only installs on chests armor, reduces water consumption rate (just like in Dune)
 - animal detector(?): only installs in helmets, show animals on compass like the huntsman perk but doesn't require sneaking. Longer range than perk?
 - zombie detector(?!): only installs in helmets, shows zombies instead of animals? can you even do this?
-- diamond edge: installs in melee tools/weapons, adds a bunch of block damage and entity damage
+- **diamond edge**: installs in melee tools/weapons, adds a bunch of block damage and entity damage
 - **obsidian edge**: installs in bladed melee tools/weapons, adds block/entity damage, but greatly reduces durability (obsidian is sharp as fuck, but fragile as shit)
 
 ## update UI mod with:

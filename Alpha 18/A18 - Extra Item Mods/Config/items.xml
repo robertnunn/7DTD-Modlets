@@ -14,6 +14,18 @@
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item> -->
+        <item name="ygModDiamondEdgeSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="ygModDiamondEdge"/>
+            <property name="CustomIconTint" value=""/>
+            <property name="Unlocks" value="ygModDiamondEdge"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModDiamondEdge" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygModDiamondEdgeSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
         <item name="ygModObsidianEdgeSchematic">
             <property name="Extends" value="schematicNoQualityMaster"/>
             <property name="CreativeMode" value="Player"/>

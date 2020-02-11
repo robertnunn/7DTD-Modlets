@@ -2,4 +2,5 @@
 <configs>
 	<set xpath="/blocks/block[@name='electricwirerelay']/property[@name='RequiredPower']/@value">0</set>
 	<set xpath="/blocks/block[@name='tripwirepost']/property[@name='RequiredPower']/@value">0</set>
+	<set xpath="/blocks/block[@name='switch']/property[@name='RequiredPower']/@value">0</set>
 </configs>

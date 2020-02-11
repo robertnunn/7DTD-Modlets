@@ -10,7 +10,7 @@
 - **Entrenching Tool**: Adds Iron and Steel entrenching tools. Functions as a pickaxe/fireaxe/shovel combo, with increased crafting costs compared to regular tools. Doesn't perform as well as the actual tool, but better than the wrong tool (e.g., worse than a pickaxe on metal, better than a fireaxe on metal).
 - **Extra Item Mods**: Adds some extra item mods to the game. See the readme in the mod folder for a full listing of the mods.
 - **Fatal Headshots**: Makes all headshots with projectiles instantly fatal.
-- **Free Relays**: Makes the electrical relay cost 0W instead of 1W.
+- **Free Relays**: Makes the electrical relay, switch, and tripwire cost 0W instead of 1W.
 - **L6 Crafting**: Allows players to craft L6 versions of items given the relevant crafting skill is maxed.
 - **Level Faster**: Increases skill points per level, reduces XP needed to level, reduces the rate at which XP requirements grow.
 - **Money Stacks**: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins <-> 1 Compressed Coin). Compressed coins can be smelted 
