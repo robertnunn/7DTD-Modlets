@@ -2,6 +2,7 @@
 
 ## Current Modlets
 - **Ammo Stacks 3x**: Multiplies stack sizes for ammunition by 3x. 
+- **Beaker Recipe**: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Advanced Engineering.
 - **Better Forge Materials**: Adds recipes for converting forge materials into quick-smelt versions (100 units/s) and back to regular forge materials.
 - **Better Silencers**: Further reduces the sound of silenced weapons. Much more of a "movie silencer" than a real silencer.
 - **Better Starting Inventory**: I wanted a stronger start for nomadic playthroughs, so I added a starting bundle that gives the player a big head start and uses a different scenario for the beginning of the game other than you didn't "pay up" and got left for dead in the wild. If desired, a version using the entrenching tool (see below) instead of the usual pick/axe/shovel combo is provided.
@@ -15,14 +16,11 @@
 - **Money Stacks**: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins <-> 1 Compressed Coin). Compressed coins can be smelted 
 - **No Boiled Water Dysentery**: Removes the chance for dysentery from boiled water.
 - **Only Zombie Spawns**: Only allows zombies and zombie animals to spawn. Regular animals spawns are replaced with zombie or zombie animal spawns.
+- **Repair Wrench**: Adds the repair functionality to the wrench's secondary use (default: right-click).
+- **Solar Crafting**: Allows the crafting of solar banks, solar cells, photovoltaic(PV) material, and the old electronic parts. Solar cell quality controlled by the 'Advanced Engineering' perk. Only learnable from the schematic.
 - **Two Extra 4x4 Seats**: Adds two seats to the back bumper of the 4x4.
 - **Vehicles Enhanced**: Increases speed and fuel efficiency for the 4x4, gyro, and motorcycle. Adds an extra seat to the motorcycle, two extra seats to the gyro.
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
-
-## Needs Testing
-- **Beaker Recipe**: Adds a crafting recipe for the beaker to the forge, unlocked at L3 of Advanced Engineering.
-- **Repair Wrench**: Adds the repair functionality to the wrench's secondary use (default: right-click).
-- **Solar Crafting**: Allows the crafting of solar banks, solar cells, photovoltaic(PV) material, and the old electronic parts. Solar cell quality controlled by the 'Advanced Engineering' perk. Only learnable from the schematic.
 
 ## Works in progress
 - **~~Adventure Mod~~**: Currently no way to send players to specific POIs or even specific classes of POIs. Can't have an adventure if players can't be sent to specific places. ~~Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.~~
