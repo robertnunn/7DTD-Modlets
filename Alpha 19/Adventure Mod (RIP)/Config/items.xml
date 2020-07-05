@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+        <item name="item_texttest">
+            <property name="Extends" value="questMaster"/>
+            <property class="Action0">
+		        <property name="QuestGiven" value="quest_texttest"/>
+	        </property>
+        </item>
+        <item name="ygVehicleVoucher">
+            <property name="HoldType" value="21"/>
+            <property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mpaper"/>
+            <property name="CustomIcon" value="questMaster"/>
+            <property name="Stacknumber" value="1"/> <!-- STK book -->
+            <property name="EconomicValue" value="1600"/>
+            <property name="SellableToTrader" value="false"/>
+        </item>
+    </append>
+    <append xpath="/items/item[@name='gunDoubleBarrelShotgun']/property[@name='Tags']/@value">,noSilencer</append>
+    <append xpath="/items/item[@name='gunPumpShotgun']/property[@name='Tags']/@value">,noSilencer</append>
+    <!-- <remove xpath="/items/item[contains(@name, 'qc_') or contains(@name, 'qt_')]"/> -->
+</configs>

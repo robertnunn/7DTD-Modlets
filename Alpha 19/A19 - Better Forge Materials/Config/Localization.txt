@@ -1,0 +1,13 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+ygCondIron,,items,Item,newKey,Condensed Iron,,,,,
+ygCondClay,,items,Item,newKey,Condensed Clay,,,,,
+ygCondLead,,items,Item,newKey,Condensed Lead,,,,,
+ygCondSand,,items,Item,newKey,Condensed Sand,,,,,
+ygCondBrass,,items,Item,newKey,Condensed Brass,,,,,
+ygCondStone,,items,Item,newKey,Condensed Stone,,,,,
+ygCondIronDesc,,items,Item,newKey,A condensed form of iron made from 100 units of scrap iron. Smelts extremely quickly.,,,,,
+ygCondClayDesc,,items,Item,newKey,A condensed form of clay made from 20 clay lumps. Smelts extremely quickly.,,,,,
+ygCondLeadDesc,,items,Item,newKey,A condensed form of lead made from 100 units of scrap lead. Smelts extremely quickly.,,,,,
+ygCondSandDesc,,items,Item,newKey,A condensed form of sand made from 25 pieces of sand. Smelts extremely quickly.,,,,,
+ygCondBrassDesc,,items,Item,newKey,A condensed form of brass made from 100 units of scrap brass. Smelts extremely quickly.,,,,,
+ygCondStoneDesc,,items,Item,newKey,A condensed form of rock made from 20 small stones. Smelts extremely quickly.,,,,,

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/recipes">
+        <!-- perk tags determines the skill that controls quality level -->
+        <recipe name="ygPVMaterial" count="1" craft_area="chemistryStation" tags="learnable,perkAdvancedEngineering" craft_time="300">
+            <ingredient name="resourceBrokenGlass" count="100"/>
+            <ingredient name="resourceScrapBrass" count="100"/>
+            <ingredient name="resourceAcid" count="2"/>
+            <ingredient name="resourceScrapPolymers" count="50"/>
+            <ingredient name="drinkJarPureMineralWater" count="3"/>
+        </recipe>
+        <recipe name="solarCell" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering" craft_time="300">
+            <ingredient name="ygPVMaterial" count="1"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+            <ingredient name="resourceElectricParts" count="15"/>
+            <ingredient name="resourceElectronicParts" count="5"/> 
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,5" tags="ygPVMaterial,resourceScrapPolymers,resourceElectricParts,resourceElectronicParts"/>
+            </effect_group>
+        </recipe>
+        <recipe name="solarbank" count="1" craft_area="workbench" tags="learnable,workbenchCrafting" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="30"/>
+            <ingredient name="resourceForgedSteel" count="20"/>
+            <ingredient name="resourceElectricParts" count="10"/>
+            <ingredient name="resourceElectronicParts" count="5"/>
+        </recipe>
+        <recipe name="resourceElectronicParts" count="5" craft_area="chemistryStation" tags="learnable,chemStationCrafting" craft_time="30">
+            <ingredient name="resourceScrapBrass" count="50"/>
+            <ingredient name="resourceAcid" count="1"/>
+            <ingredient name="resourceScrapLead" count="50"/>
+        </recipe>
+    </append>
+</configs>

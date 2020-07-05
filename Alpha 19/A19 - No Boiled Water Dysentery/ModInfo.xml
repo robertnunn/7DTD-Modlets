@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="No Boiled Water Dysentery" />
+		<Description value="It is just plain silly that boiled water still has a 3%(!) chance of giving you the hershey squirts. Boiling water is specifically done to ELIMINATE this!" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.1" />
+	</ModInfo>
+</xml>

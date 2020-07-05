@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="L6 Crafting" />
+		<Description value="Allows players to craft L6 items, instead of maxing out at L5" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

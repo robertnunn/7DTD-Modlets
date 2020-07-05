@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,ygStarterBundle</set>
+</configs>

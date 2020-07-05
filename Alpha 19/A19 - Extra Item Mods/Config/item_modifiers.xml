@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<!--
+        <item_modifier name="ygMod" installable_tags="" modifier_tags="" type="attachment">
+            <property name="CustomIcon" value=""/>
+            <property name="UnlockedBy" value="Schematic"/>
+            <property name="DisplayType" value=""/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="" operation="" value=""/>
+            </effect_group>
+        </item_modifier>
+-->
+    <append xpath="/item_modifiers">
+        <item_modifier name="ygModDiamondEdge" installable_tags="knife,machete,perkJavelinMaster" modifier_tags="damage" type="attachment">
+            <property name="CustomIcon" value="ygModDiamondEdge"/>
+            <property name="UnlockedBy" value="ygModDiamondEdgeSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="0.6"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModObsidianEdge" installable_tags="knife,machete,perkJavelinMaster" modifier_tags="damage" type="attachment">
+            <property name="CustomIcon" value="ygModObsidianEdge"/>
+            <property name="UnlockedBy" value="ygModObsidianEdgeSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="0.6"/>
+                <passive_effect name="DegradationMax" operation="perc_subtract" value="0.5"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorStillSuit" installable_tags="armorChest" modifier_tags="waterlossot" type="attachment">
+            <property name="CustomIcon" value="ygModArmorStillSuit"/>
+            <property name="UnlockedBy" value="ygModArmorStillSuitSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.4"/>
+                <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.4"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorInsulatedLinerImproved" installable_tags="armor" modifier_tags="temperature" type="attachment">
+            <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+            <property name="CustomIconTint" value="00ff00"/>
+            <property name="UnlockedBy" value="ygModArmorInsulatedLinerImprovedSchematic"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="HypothermalResist" operation="base_add" value="7"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorInsulatedLinerAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
+            <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+            <property name="CustomIconTint" value="ffff00"/>
+            <property name="UnlockedBy" value="ygModArmorInsulatedLinerAdvancedSchematic"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorCoolingMeshImproved" installable_tags="armor" modifier_tags="temperature" type="attachment">
+            <property name="CustomIcon" value="modArmorCoolingMesh"/>
+            <property name="CustomIconTint" value="00ff00"/>
+            <property name="UnlockedBy" value="ygModArmorCoolingMeshImprovedSchematic"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="HyperthermalResist" operation="base_add" value="7"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorCoolingMeshAdvanced" installable_tags="armor" modifier_tags="temperature" type="attachment">
+            <property name="CustomIcon" value="modArmorCoolingMesh"/>
+            <property name="CustomIconTint" value="ffff00"/>
+            <property name="UnlockedBy" value="ygModArmorCoolingMeshAdvancedSchematic"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorBackpackFrame" installable_tags="armorChest" modifier_tags="carryweight" type="attachment">
+            <property name="CustomIcon" value="ygModArmorBackpackFrame"/>
+            <property name="UnlockedBy" value="ygModArmorBackpackFrameSchematic"/>
+            <property name="DisplayType" value="modCarryCapacity"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="CarryCapacity" operation="base_add" value="6"/>
+                <display_value name="dCarryCapacity" value="6"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorPlatingMilitary" installable_tags="armor" modifier_tags="resistance" type="attachment">
+            <property name="CustomIcon" value="ygModArmorPlatingMilitary"/>
+            <property name="UnlockedBy" value="ygModArmorPlatingMilitarySchematic"/>
+            <property name="DisplayType" value="modArmor"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+            </effect_group>
+        </item_modifier>
+        <item_modifier name="ygModArmorLongFallBoots" installable_tags="armorFeet" modifier_tags="falldamage" type="attachment">
+            <property name="CustomIcon" value="ygModArmorLongFallBoots"/>
+            <property name="UnlockedBy" value="ygModArmorLongFallBootsSchematic"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Material" value="Msteel"/>
+            <property name="DropMeshFile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Group" value="Mods"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="ygBuffLongFallBoots"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="ygBuffLongFallBoots"/>
+            </effect_group>
+        </item_modifier>
+        
+    </append>
+</configs>

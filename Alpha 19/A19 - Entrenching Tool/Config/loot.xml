@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!--
+    <item name="" loot_prob_template=""/>
+    <item name=""/>
+    <item name="" prob=""/>
+    <append xpath="lootcontainers/lootgroup[@name='']">
+        
+    </append>
+    -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+        <item name="entrenchingToolSchematic"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='groupToolsT3']">
+        <item name="ygEntrenchingToolSteel" prob="0.75"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='groupToolsT2']">
+        <item name="ygEntrenchingToolIron"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='groupQuestToolsT3']">
+        <item name="ygEntrenchingToolSteel" prob="0.75"/>
+    </append>
+    <append xpath="lootcontainers/lootgroup[@name='groupQuestToolsT2']">
+        <item name="ygEntrenchingToolIron"/>
+    </append>
+</configs>

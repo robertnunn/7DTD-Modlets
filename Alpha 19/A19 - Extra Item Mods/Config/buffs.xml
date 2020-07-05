@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/buffs/buff/effect_group/requirement[@buff='buffDrugOhShitzDrops']/..">
+        <requirement name="NotHasBuff" buff="ygBuffLongFallBoots"/>
+    </append>
+    <append xpath="/buffs/buff/effect_group/triggered_effect/requirement[@buff='buffDrugOhShitzDrops']/..">
+        <requirement name="NotHasBuff" buff="ygBuffLongFallBoots"/>
+    </append>
+    <append xpath="/buffs">
+        <buff name="ygBuffLongFallBoots" hidden="false">
+            <stack_type value="ignore"/> 
+            <duration value="0"/>
+        </buff>
+    </append>
+</configs>

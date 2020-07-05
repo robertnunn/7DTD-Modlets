@@ -1,0 +1,3 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+ygStarterBundle,,items,Item,newKey,Starter Bundle,,,,,
+ygStarterBundleDesc,,items,Item,newKey,Starter Bundle. Use this item to get some sweet loot.,,,,,

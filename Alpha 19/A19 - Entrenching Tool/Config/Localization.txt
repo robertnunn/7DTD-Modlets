@@ -1,0 +1,7 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+entrenchingToolSchematic,,items,Tool,newKey,Entrenching Tool Schematic,,,,,
+ygEntrenchingToolSteel,,items,Tool,--,Steel Entrenching Tool,,,,,
+ygEntrenchingToolIron,,items,Tool,--,Iron Entrenching Tool,,,,,
+entrenchingToolSchematicDesc,,items,Tool,newKey,Schematic for iron and steel entrenching tools.,,,,,
+ygEntrenchingToolSteelDesc,,items,Tool,--,The steel entrenching tool is an upgrade over the iron entrenching tool.\n\nRepair with Repair Kit\nScraps to Steel Tool Parts,,,,,
+ygEntrenchingToolIronDesc,,items,Tool,--,"The iron entrenching tool is a combination of a pickaxe, fireaxe, and shovel. It doesn't work as well as the appropriate tool, but works better than the wrong tool.\n\nRepair with Repair Kit\nScraps to iron.",,,,,

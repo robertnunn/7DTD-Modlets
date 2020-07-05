@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Copy Schematics" />
+		<Description value="When you read a schematic or book, it also unlocks a crafting recipe for the schematic or book itself, costing three paper, craftable in the backpack. The same applies to recipes unlocked via perk progression. An option exists at the top of items.xml to allow/disallow the selling of all schematics to traders." />
+		<Author value="yeastygoodness" />
+		<Version value="3.1.0" />
+	</ModInfo>
+</xml>

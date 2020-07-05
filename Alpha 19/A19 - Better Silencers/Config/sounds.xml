@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/Sounds/SoundDataNode[@name='pistol_s_fire']/Noise/@noise">1</set>  <!-- default: 17-->
+	<set xpath="/Sounds/SoundDataNode[@name='mp5_s_fire']/Noise/@noise">6</set>  <!-- default: 18-->
+	<set xpath="/Sounds/SoundDataNode[@name='pump_shotgun_s_fire']/Noise/@noise">12</set>  <!-- default: 38-->
+	<set xpath="/Sounds/SoundDataNode[@name='hunting_rifle_s_fire']/Noise/@noise">6</set>  <!-- default: 18-->
+	<set xpath="/Sounds/SoundDataNode[@name='sniperrifle_s_fire']/Noise/@noise">11</set>  <!-- default: 34-->
+	<set xpath="/Sounds/SoundDataNode[@name='sharpshooter_s_fire']/Noise/@noise">11</set>  <!-- default: 34-->
+	<set xpath="/Sounds/SoundDataNode[@name='ak47_s_fire']/Noise/@noise">14</set>  <!-- default: 43-->
+	<set xpath="/Sounds/SoundDataNode[@name='m60_s_fire']/Noise/@noise">15</set>  <!-- default: 47-->
+	<!-- fix heat_map_strength values for the m60, silenced made more heat than not silenced -->
+	<set xpath="/Sounds/SoundDataNode[@name='m60_s_fire']/Noise/@heat_map_strength">0.65</set> <!-- default: 0.7 -->
+	<set xpath="/Sounds/SoundDataNode[@name='m60_fire']/Noise/@heat_map_strength">0.7</set> <!-- default: 0.65 -->
+</configs>

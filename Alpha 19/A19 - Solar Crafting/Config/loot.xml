@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
+        <item name="ygSolarCraftingSchematic"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='electricalDevices']">
+        <item name="resourceElectronicParts" count="3,9" prob="1.0"/>
+    </append>
+</configs>

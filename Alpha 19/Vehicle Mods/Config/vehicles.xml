@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/vehicles/vehicle[@name='vehicleGyrocopter']">
+        <property name="tags" value="chassis,engine,gyrocopter,vehicle"/>
+    </append>
+</configs>

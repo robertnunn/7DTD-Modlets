@@ -2,17 +2,15 @@ import xml.etree.ElementTree as et
 import os
 from pprint import pprint as pp
 
-os.chdir("D:/Games/7DTD/7DTD-Modlets/Alpha 18/ignore")
-path = "D:/Games/7DTD/7DTD-Modlets/Alpha 18/A18-Config/"
-filename = 'spawning.xml'
-blank_animal = 'invisibleAnimal'
-blank_enemy = 'invisibleAnimalEnemy'
+os.chdir("D:/Games/7DTD/7DTD-Modlets/Alpha 19")
+path = "D:/Games/7DTD/7DTD-Modlets/Alpha 19/A19-Config/"
 
-tree = et.parse(path+filename)
-nodes = tree.findall('./biome')
-names = list()
+dir_scan = os.scandir()
+dir_list = list()
 
-for i in nodes:
-    names.append(i.get('name'))
+for i in dir_scan:
+    dir_list.append(i.name)
 
-pp(names)
+for i in dir_list:
+    os.rename(i, i[6:])
+pp(dir_list)

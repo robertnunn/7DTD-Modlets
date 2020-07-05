@@ -1,0 +1,43 @@
+Objective Types:
+    FetchKeep
+    Craft
+    BlockPlace
+    Wear
+    BlockUpgrade
+    Goto (hardcoded to only send you to traders! WTF!)
+    InteractWithNPC
+    RandomGoto
+    RallyPoint
+    ZombieKill
+    AnimalKill
+    TreasureChest
+    RandomPOIGoto
+    FetchFromContainer
+    POIStayWithin
+    ReturnToNPC
+    ClearSleepers
+    ClosestPOIGoto
+
+Requirement Types: (use a "Group" type to create sets of requirements (or optional ones))
+    Holding (use id="" to indicate empty hands)
+    Buff
+
+under <action> tags, a <property name="delay" value="3"/> means to delay the <action> for @value seconds
+
+<objective type="Craft">
+    <property name="phase" value="2"/>
+    <property name="item" value="meleeToolStoneAxe"/>
+    <property name="count" value="1"/>
+</objective>
+
+<objective type="Craft" id="apparelPlantFiberPants" value="1" phase="2"/>
+<objective type="Craft" id="apparelPlantFiberShirt" value="1" phase="2"/>
+
+<block>   block upgrade format
+    <property class="UpgradeBlock">
+		<property name="ToBlock" value="woodMaster"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+</block>

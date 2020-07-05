@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/quests">
+        <quest id="quest_texttest">
+            <property name="group_name_key" value="quest_BasicSurvival"/>
+            <property name="name_key" value="quest_Introtest"/>
+            <property name="subtitle_key" value="quest_Introtest_subtitle"/>
+            <property name="description_key" value="quest_Introtest_description"/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category_key" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="offer_key" value="quest_Introtest_offer"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="Goto" id="house_old_tudor_01" value="5" phase="1"/>
+
+            <objective type="BlockPlace" id="bedroll" value="1" phase="2"/>
+
+            <reward type="Exp" value="50"/>
+        </quest>
+    </append>
+    <!-- <set xpath="/quests/quest[@id='quest_BasicSurvival1']">
+
+        <reward type="SkillPoints" value="100"/>
+        <reward type="Quest" id="quest_ygMQ01"/>
+    </set> -->
+    <!-- add the quest items -->
+    <append xpath="/quests/quest_items[@max_count='100']">
+        <quest_item id="3" name="questYGNukeData" description_key="questYGNukeDataDesc" icon="questYGNukeData" icon_color="255,255,255"/>
+    </append>
+</configs>

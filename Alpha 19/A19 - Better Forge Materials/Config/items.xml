@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+		<item name="ygCondIron">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="100"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="CraftingIngredientTime" value="0.001"/>
+			<property name="CustomIcon" value="resourceScrapIron"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondIronDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+		<item name="ygCondStone">
+			<property name="HoldType" value="40"/>
+			<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+			<property name="DropScale" value="6"/>
+			<property name="Material" value="MresourceRockSmall"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Weight" value="100"/>
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="resourceRockSmall"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondStoneDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+		<item name="ygCondBrass">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Weight" value="100"/>
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="resourceScrapBrass"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondBrassDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+		<item name="ygCondLead">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Weight" value="100"/>
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="resourceScrapLead"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondLeadDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+		<item name="ygCondSand">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrushedSand"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Weight" value="100"/>
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="resourceCrushedSand"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondSandDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+		<item name="ygCondClay">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceClayLump"/>
+			<property name="Weight" value="100"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="resourceClayLump"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="ygCondClayDesc"/>
+			<property name="MeltTimePerUnit" value="0.01"/>
+			<property name="SellableToTrader" value="false"/>
+		</item>
+	</append>
+</configs>

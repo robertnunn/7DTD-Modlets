@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Adventure Mod" />
+		<Description value="This mod makes substantial changes to vanilla and is designed to be played with a number of other mods. See the readme at https://github.com/robertnunn/7DTD-Modlets/blob/master/Alpha%2018/Adventure%20Mod/README.md" />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

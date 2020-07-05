@@ -1,0 +1,5 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+quest_Introtest_description,,Quest,Quest Info,,"testing how much text you can fit on an item desc.\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20",,,,,
+quest_Introtest,,Quest,Quest Info,,"text test",,,,,
+quest_Introtest_subtitle,,Quest,Quest Info,,"text test subtitle",,,,,
+quest_Introtest_offer,,Quest,Quest Info,,"offer text test",,,,,

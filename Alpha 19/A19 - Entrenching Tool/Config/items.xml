@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/items">
+        <item name="ygEntrenchingToolIron">
+            <property name="Extends" value="meleeToolAxeT1IronFireaxe"/>
+            <property name="CustomIcon" value="ygEntrenchingToolIron"/>
+            <property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="HoldType" value="18"/>
+            <property name="UnlockedBy" value="entrenchingToolSchematic"/>
+            <property name="SoundDestroy" value="metaldestroy1"/>
+            <property name="EconomicValue" value="400"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DescriptionKey" value="ygEntrenchingToolIronDesc"/>
+            <property class="Action0">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+                <property name="Sound_start" value="swoosh"/>
+                <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+                <property name="ToolCategory.Butcher" value="0" param1="4"/>
+                <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+                <property name="GrazeStart" value=".4"/>
+                <property name="GrazeEnd" value=".5"/>
+                <property name="UseGrazingHits" value="true"/>
+            </property>
+            <property class="Action1">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+                <property name="Sound_start" value="swoosh"/>
+                <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+                <property name="UsePowerAttackAnimation" value="true"/>
+                <property name="ToolCategory.Butcher" value="0" param1="4"/>
+                <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+                <property name="GrazeStart" value=".4"/>
+                <property name="GrazeEnd" value=".5"/>
+                <property name="UseGrazingHits" value="true"/>
+            </property>
+            <effect_group name="ygEntrenchingToolIron">
+                <passive_effect name="EntityDamage" operation="base_set" value="12"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="37"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="300,1100" tier="1,6" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+                <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+                <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+                <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+                <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+                <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+                <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+                <passive_effect name="HarvestCount" operation="base_set" value=".8" tags="butcherHarvest"/>
+            </effect_group>
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+            </effect_group>
+        </item>
+        <item name="ygEntrenchingToolSteel">
+            <property name="Extends" value="ygEntrenchingToolIron"/>
+            <property name="CustomIcon" value="ygEntrenchingToolSteel"/>
+            <property name="Material" value="MmeleeToolAllSteel"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="UnlockedBy" value="entrenchingToolSchematic"/>
+            <property name="SoundDestroy" value="metaldestroy1"/>
+            <property name="EconomicValue" value="800"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DescriptionKey" value="ygEntrenchingToolSteelDesc"/>
+            <effect_group name="ygEntrenchingToolSteel">
+                <passive_effect name="EntityDamage" operation="base_set" value="23"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="69"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="300,1100" tier="1,6" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+                <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+                <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+                <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+                <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+                <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+                <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+                <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+                <passive_effect name="HarvestCount" operation="base_set" value=".85" tags="butcherHarvest"/>
+            </effect_group>
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+            </effect_group>
+        </item>
+        <item name="entrenchingToolSchematic">
+            <property name="Extends" value="schematicMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="ygEntrenchingToolSteel"/>
+            <property name="Unlocks" value="ygEntrenchingToolIron"/>
+            <property name="DescriptionKey" value="entrenchingToolSchematicDesc"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygEntrenchingToolIron" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygEntrenchingToolSteel" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="entrenchingToolSchematic" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+</configs>
+
+
+<!-- DamageModifier
+    wood
+    earth
+    stone
+    metal
+    butcherHarvest?
+
+entity damage:
+    PI: 11.2
+    PS: 23.2
+    FI: 15.1 *
+    FS: 28.9 *
+    SI: 11.6
+    SS: 17.4
+    iron avg: 13
+    steel avg: 23
+
+Block damage:
+    PI: 35.5
+    PS: 62.8
+    FI: 45
+    FS: 86.2 *
+    SI: 46 *
+    SS: 69
+    iron avg: 42
+    steel avg: 72 -->

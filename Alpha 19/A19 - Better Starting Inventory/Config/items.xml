@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath='/items'>
+        <item name="ygStarterBundle">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="CustomIcon" value="backpackMedium"/>
+            <property name="HoldType" value="45"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Material" value="Mcloth"/>
+            <property class="Action0">
+                <property name="Class" value="OpenBundle"/>
+                <property name="Delay" value="0"/>
+                <property name="Use_time" value="0"/>
+                <property name="Sound_start" value="close_garbage"/>
+                <property name="Create_item" value="drinkJarBoiledWater,meleeToolWrench,meleeToolFireaxeSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,ammoBundle9mmBulletBall,modArmorWaterPurifier,armorMilitaryHelmet,armorMilitaryStealthBoots,gunPistol,oldCash"/>
+                <property name="Create_item_count" value="10,1,1,1,1,4,1,1,1,1,200"/>
+            </property>
+        </item>
+    </append>
+</configs>

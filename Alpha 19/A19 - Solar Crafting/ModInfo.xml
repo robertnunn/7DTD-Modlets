@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Solar Crafting" />
+		<Description value="Adds schematics, recipes, and some items to let players craft solar cells and solar panels. Crafting controlled by the 'Yeah Science!' perk." />
+		<Author value="yeastygoodness" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

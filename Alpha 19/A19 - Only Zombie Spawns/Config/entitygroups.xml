@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/entitygroups/entitygroup/entity[@name='animalBear']/@name">animalZombieBear</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalBoar']/@name">animalZombieDog</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalChicken']/@name">animalZombieVulture</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalCoyote']/@name">animalZombieDog</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalDoe']/@name">invisibleAnimal</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalMountainLion']/@name">animalZombieDog</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalRabbit']/@name">invisibleAnimal</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalSnake']/@name">invisibleAnimalEnemy</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalStag']/@name">invisibleAnimal</set>
+    <set xpath="/entitygroups/entitygroup/entity[@name='animalWolf']/@name">animalZombieDog</set>
+</configs>

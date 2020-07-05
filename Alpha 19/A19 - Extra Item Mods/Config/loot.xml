@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- <item name=""/>
+    <item name="" prob=""/>
+    <append xpath="/lootcontainers/lootgroup[@name='']">
+
+    </append> -->
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+
+    </append> -->
+    <append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">
+        <item name="ygModArmorInsulatedLinerImproved"/>
+        <item name="ygModArmorCoolingMeshImproved"/>
+    </append>
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
+        <item name="ygModArmorLongFallBoots" prob=".5"/>
+        <item name="ygModArmorPlatingMilitary"/>
+        <item name="ygModArmorInsulatedLinerAdvanced"/>
+        <item name="ygModArmorCoolingMeshAdvanced"/>
+        <item name="ygModArmorStillSuit"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='schematicsModsRare']">
+        <item name="ygModArmorLongFallBootsSchematic"/>
+        <item name="ygModArmorPlatingMilitarySchematic"/>
+        <item name="ygModArmorInsulatedLinerAdvancedSchematic"/>
+        <item name="ygModArmorCoolingMeshAdvancedSchematic"/>
+        <item name="ygModArmorBackpackFrameSchematic"/>
+        <item name="ygModArmorStillSuitSchematic"/>
+        <item name="resourceRawDiamondSchematic"/>
+        <item name="ygModObsidianEdgeSchematic"/>
+        <item name="ygModDiamondEdgeSchematic"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='schematicsModsCommon']">
+        <item name="ygModArmorCoolingMeshImprovedSchematic"/>
+        <item name="ygModArmorInsulatedLinerImprovedSchematic"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
+        <item name="ygApparelBlunt"/>
+    </append>
+    <append xpath="/lootcontainers/lootcontainer[@id='6']">
+        <item name="ygApparelBlunt" prob=".5"/>
+    </append>
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modMeleeT1']">
+        
+    </append> -->
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
+        
+    </append> -->
+    <append xpath="/lootcontainers/lootgroup[@name='modMeleeT3']">
+        <item name="ygModDiamondEdge" prob="0.5"/>
+        <item name="ygModObsidianEdge"/>
+    </append>
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modGunT1']">
+        
+    </append> -->
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modGunT2']">
+        
+    </append> -->
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
+        
+    </append> -->
+</configs>

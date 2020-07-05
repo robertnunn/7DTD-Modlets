@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">900</set>  <!-- default: 300 -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoBlunderbuss']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Stacknumber']/@value">3000</set>  <!-- default: 1000 -->
+	<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">60</set>  <!-- default: 20 -->
+	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">30000</set>  <!-- default: 10000 -->
+	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">225</set>  <!-- default: 75 -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">450</set>  <!-- default: 150 -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">225</set>  <!-- default: 75 -->
+	<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">15</set>  <!-- default: 5 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletHP']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletBall']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='Stacknumber']/@value">30</set>  <!-- default: 10 -->
+	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">60</set>  <!-- default: 20 -->
+	<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">60</set>  <!-- default: 20 -->
+	<set xpath="/items/item[@name='thrownAmmoFlare']/property[@name='Stacknumber']/@value">120</set>  <!-- default: 40 -->
+	<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">1500</set>  <!-- default: 500 -->
+</configs>

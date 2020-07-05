@@ -1,0 +1,4 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+ygPVMaterial,,item,Item,newKey,PV Material,,,,,
+ygPVMaterialDesc,,item,Item,newKey,PV (PhotoVoltaic) Material is a necessary component in the crafting of solar cells. More material is needed to make higher quality solar cells.,,,,,
+ygSolarCraftingSchematic,,item,Item,newKey,Solar Crafting Schematic,,,,,

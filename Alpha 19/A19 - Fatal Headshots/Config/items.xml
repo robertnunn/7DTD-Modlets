@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="items/item[contains(@name, 'ammo') and not(contains(@name, 'Zombie'))]/effect_group[@tiered='false']">
+        <passive_effect name="DamageModifier" operation="perc_add" value="1000" tags="head"/>
+    </append>
+</configs>

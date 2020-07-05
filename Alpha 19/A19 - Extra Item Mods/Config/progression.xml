@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="progression/perks/perk[@name='perkUrbanCombatCigar']/effect_group/passive_effect/@tags">,ygApparelBlunt</append>
+</configs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<set xpath="/progression/perks/perk/effect_group/passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']/@value">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk/effect_group/passive_effect[@name='CraftingTier' and @value='0,5']/@value">1,6</set>
+</configs>
