@@ -20,10 +20,10 @@
 - **Solar Crafting**: Allows the crafting of solar banks, solar cells, photovoltaic(PV) material, and the old electronic parts. Solar cell quality controlled by the 'Advanced Engineering' perk. Only learnable from the schematic.
 - **Two Extra 4x4 Seats**: Adds two seats to the back bumper of the 4x4.
 - **Vehicles Enhanced**: Increases speed and fuel efficiency for the 4x4, gyro, and motorcycle. Adds an extra seat to the motorcycle, two extra seats to the gyro.
+- **Weapon Damage 2x**: Multiplies all player (but not zombie) entity weapon damage by 2.
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
 
 ## Works in progress
 - **~~Adventure Mod~~**: Currently no way to send players to specific POIs or even specific classes of POIs. Can't have an adventure if players can't be sent to specific places. ~~Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.~~
 - **Faster Gyro Reverse**: Trying to increase the gyrocopter's reverse speed when on the ground, to make maneuvering easier.
 - **Vehicles Mods**: Adds mods for vehicles. Currently vehicles have slots for mods, but no vehicle mods are currently implemented. There seems to be issues with what passive_effects are implemented. This is currently a placeholder for when those features are implemented.
-
