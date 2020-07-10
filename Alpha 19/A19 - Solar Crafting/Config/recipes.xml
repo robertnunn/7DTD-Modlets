@@ -29,5 +29,8 @@
             <ingredient name="resourceAcid" count="1"/>
             <ingredient name="resourceScrapLead" count="50"/>
         </recipe>
+        <recipe name="ygSolarCraftingSchematic" count="1" tags="learnable">
+            <ingredient name="resourcePaper" count="3"/>
+        </recipe>
     </append>
 </configs>

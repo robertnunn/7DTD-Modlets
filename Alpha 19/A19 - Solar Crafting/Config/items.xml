@@ -28,6 +28,7 @@
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbank" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCell" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceElectronicParts" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ygSolarCraftingSchematic" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
             </effect_group>
         </item>

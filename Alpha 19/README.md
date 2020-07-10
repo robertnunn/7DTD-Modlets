@@ -14,7 +14,7 @@
 - **L6 Crafting**: Allows players to craft L6 versions of items given the relevant crafting skill is maxed.
 - **Level Faster**: Increases skill points per level, reduces XP needed to level, reduces the rate at which XP requirements grow.
 - **Money Stacks**: Increases stack size for coins, adds a "Compressed Coin" item and recipe for interconversion (10,000 coins <-> 1 Compressed Coin). Compressed coins can be smelted 
-- **No Boiled Water Dysentery**: Removes the chance for dysentery from boiled water.
+- **No Boiled Water Dysentery**: Obsolete as of A19 Experimental (B163). ~~Removes the chance for dysentery from boiled water.~~
 - **Only Zombie Spawns**: Only allows zombies and zombie animals to spawn. Regular animals spawns are replaced with zombie or zombie animal spawns.
 - **Repair Wrench**: Adds the repair functionality to the wrench's secondary use (default: right-click).
 - **Solar Crafting**: Allows the crafting of solar banks, solar cells, photovoltaic(PV) material, and the old electronic parts. Solar cell quality controlled by the 'Advanced Engineering' perk. Only learnable from the schematic.

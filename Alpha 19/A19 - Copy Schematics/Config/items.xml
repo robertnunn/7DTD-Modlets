@@ -4,6 +4,58 @@
 		<property name="SellableToTrader" value="false"/>
 	</append>
 	<append xpath="/items">
+		<item name="thrownTimedChargeSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="thrownTimedCharge"/>
+			<property name="Unlocks" value="thrownTimedCharge"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownTimedCharge" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownTimedChargeSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="resourceLockPickSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceLockPick"/>
+			<property name="Unlocks" value="resourceLockPick"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceLockPick" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceLockPickSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="armorMiningHelmetSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorMiningHelmet"/>
+			<property name="Unlocks" value="armorMiningHelmet"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMiningHelmet" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMiningHelmetSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="resourceGunPowderBundleSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceGunPowder"/>
+			<property name="Unlocks" value="resourceGunPowderBundle"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceGunPowderBundle" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceGunPowderBundleSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
 		<item name="mineCookingPotSchematic">
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
@@ -30,79 +82,14 @@
 		</item>
 	</append>
 	<append xpath="/items">
-		<item name="mineHubcapSchematic">
+		<item name="ammoGasCanBundleSchematic">
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="mineHubcap"/>
-			<property name="Unlocks" value="mineHubcap"/>
+			<property name="CustomIcon" value="ammoGasCan"/>
+			<property name="Unlocks" value="ammoGasCanBundle"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineHubcap" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineHubcapSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="resourceGunPowderBundleSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="resourceGunPowder"/>
-			<property name="Unlocks" value="resourceGunPowderBundle"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceGunPowderBundle" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceGunPowderBundleSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="thrownTimedChargeSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="thrownTimedCharge"/>
-			<property name="Unlocks" value="thrownTimedCharge"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownTimedCharge" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownTimedChargeSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="mineAirFilterSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="mineAirFilter"/>
-			<property name="Unlocks" value="mineAirFilter"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineAirFilter" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineAirFilterSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="resourceLockPickSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="resourceLockPick"/>
-			<property name="Unlocks" value="resourceLockPick"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceLockPick" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceLockPickSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="drugPainkillersSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="drugPainkillers"/>
-			<property name="Unlocks" value="drugPainkillers"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugPainkillers" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugPainkillersSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanBundle" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanBundleSchematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
@@ -116,6 +103,45 @@
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSteroids" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSteroidsSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="mineHubcapSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="mineHubcap"/>
+			<property name="Unlocks" value="mineHubcap"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineHubcap" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineHubcapSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="carBatterySchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="Unlocks" value="carBattery"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carBattery" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carBatterySchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items">
+		<item name="mineAirFilterSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="mineAirFilter"/>
+			<property name="Unlocks" value="mineAirFilter"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineAirFilter" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="mineAirFilterSchematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
@@ -146,994 +172,865 @@
 			</effect_group>
 		</item>
 	</append>
-	<append xpath="/items">
-		<item name="armorMiningHelmetSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="armorMiningHelmet"/>
-			<property name="Unlocks" value="armorMiningHelmet"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMiningHelmet" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMiningHelmetSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="carBatterySchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="carBattery"/>
-			<property name="Unlocks" value="carBattery"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carBattery" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carBatterySchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items">
-		<item name="ammoGasCanBundleSchematic">
-			<property name="Extends" value="schematicMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ammoGasCan"/>
-			<property name="Unlocks" value="ammoGasCanBundle"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanBundle" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanBundleSchematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerApparel']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerApparel" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleGyroCopterAccessoriesSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterAccessoriesSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterBooks']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterBooks" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacHarvest']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacHarvest" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleMinibikeHandlebarsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeHandlebarsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperHeadShot']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperHeadShot" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='motionsensorSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="motionsensorSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadFootwear']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadFootwear" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsUncontrolledBurst']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsUncontrolledBurst" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling5AdrenalineHealing']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling5AdrenalineHealing" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='toolAnvilSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolAnvilSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeSerratedBladeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeSerratedBladeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='cementMixerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cementMixerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsMachineGuns']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsMachineGuns" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeStructuralBraceSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeStructuralBraceSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodBakedPotatoSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBakedPotatoSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolSalvageT2RatchetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT2RatchetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunTriggerGroupBurst3Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupBurst3Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodCanShamSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCanShamSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunBowT3CompoundBowSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT3CompoundBowSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3MacheteSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleMotorcycleChassisSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleChassisSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='thrownGrenadeContactSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeContactSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunScopeMediumSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeMediumSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeWoodSplitterSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWoodSplitterSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatSneaking']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatSneaking" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacEquipment']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacEquipment" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie1Damage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie1Damage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='dartTrapSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="dartTrapSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling4FinishingMoves']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling4FinishingMoves" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperHPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperHPAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperCripplingShot']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperCripplingShot" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunHandgunT1PistolSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT1PistolSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedCorn1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCorn1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleMotorcycleHandlebarsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleHandlebarsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='armorIronSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorIronSetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterBrass']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterBrass" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorWaterPurifierSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorWaterPurifierSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='toolBellowsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBellowsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerAPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerAPAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedAloe1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedAloe1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunTriggerGroupSemiSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupSemiSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerSlumberParty']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerSlumberParty" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalMountainLions']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalMountainLions" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerSilentNight']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerSilentNight" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresHoney']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresHoney" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodGrilledMeatSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGrilledMeatSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorAdvancedMuffledConnectorsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorAdvancedMuffledConnectorsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodBoiledMeatSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBoiledMeatSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorLeatherSetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling2DropABomb']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling2DropABomb" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie4Shells']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie4Shells" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedGraceCorn1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGraceCorn1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsDrumMag']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsDrumMag" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersAPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersAPAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAxeT3ChainsawSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsRecoil']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsRecoil" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter6PuncturedLung']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter6PuncturedLung" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeWeightedHeadSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWeightedHeadSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpearSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSpearT1IronSpearSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresCloth']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresCloth" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunLaserSightSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunLaserSightSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatRoomClearing']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatRoomClearing" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bladeTrapSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bladeTrapSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleMinibikeChassisSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeChassisSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperControlledBreathing']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperControlledBreathing" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunMeleeBlessedMetalSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeBlessedMetalSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalBears']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalBears" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter7QuickStrike']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter7QuickStrike" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodPumpkinPieSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinPieSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie5Repulsor']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie5Repulsor" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningLuckyStrike']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningLuckyStrike" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodFishTacosSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodFishTacosSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunBotT2JunkTurretSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotT2JunkTurretSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunFlashlightSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunFlashlightSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='pressureplateSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="pressureplateSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='spotlightPlayerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="spotlightPlayerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookGreatHeistSafes']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistSafes" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedCoffee1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCoffee1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeFortifyingGripSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeFortifyingGripSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrelSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='armorMilitarySetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMilitarySetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='resourceMilitaryFiberSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceMilitaryFiberSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drugHerbalAntibioticsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHerbalAntibioticsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterFood']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterFood" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedPotato1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPotato1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersFlamingArrows']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersFlamingArrows" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='forgeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="forgeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterDukes']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterDukes" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerBlades']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerBlades" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunHandgunT3DesertVultureSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT3DesertVultureSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorHelmetLightSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorHelmetLightSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunMGT1AK47Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT1AK47Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatJumping']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatJumping" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolIronSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolIronSetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersForestGuide']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersForestGuide" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorPlatingBasicSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingBasicSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunMagazineExtenderSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMagazineExtenderSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='shotgunTurretSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="shotgunTurretSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacHeat']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacHeat" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodHoboStewSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHoboStewSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriverSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT3ImpactDriverSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolSteelSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSteelSetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkJarGoldenRodTeaSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGoldenRodTeaSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT3SteelSledgehammerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterMedical']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterMedical" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunExplosivesT3RocketLauncherSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresWater']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresWater" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie7Hydraulics']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie7Hydraulics" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunBowPolymerStringSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowPolymerStringSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeIronBreakerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeIronBreakerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling7BoozedUp']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling7BoozedUp" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter5RapidStrike']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter5RapidStrike" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='autoTurretSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="autoTurretSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeTemperedBladeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeTemperedBladeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerIntimidation']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerIntimidation" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperReload']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperReload" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicle4x4TruckAccessoriesSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicle4x4TruckAccessoriesSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadWinterWear']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadWinterWear" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersExplodingBolts']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersExplodingBolts" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='batterybankSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="batterybankSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunForegripSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunForegripSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerPunks']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerPunks" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorImprovedFittingsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImprovedFittingsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningDiamondTools']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningDiamondTools" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolRepairT3NailgunSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolRepairT3NailgunSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorPlatingReinforcedSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingReinforcedSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie3APAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie3APAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='armorSteelSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorSteelSetSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeGraveDiggerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeGraveDiggerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modFuelTankSmallSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankSmallSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modShotgunSawedOffBarrelSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modShotgunSawedOffBarrelSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='medicalFirstAidKitSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidKitSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunHandgunT2Magnum44Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT2Magnum44Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkYuccaJuiceSmoothieSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkYuccaJuiceSmoothieSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunBotT1JunkSledgeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotT1JunkSledgeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='switchSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="switchSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunRifleT1HuntingRifleSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifleSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeClubMetalSpikesSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubMetalSpikesSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningCoffee']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningCoffee" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadLegwear']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadLegwear" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadDesertWear']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadDesertWear" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerThiefAdrenaline']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerThiefAdrenaline" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresCoffins']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresCoffins" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatLanding']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatLanding" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahMagazine']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahMagazine" operation="set" value="1"/>
-	</append>
 	<append xpath="/items/item[@name='bookBatterUpBigHits']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpBigHits" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='generatorbankSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="generatorbankSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedChrysanthemum1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedChrysanthemum1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolPickT3AugerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolPickT3AugerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='electrictimerrelaySchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electrictimerrelaySchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBatterUpMaintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpMaintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteHPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteHPAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersArrowRecovery']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersArrowRecovery" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodBaconAndEggsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBaconAndEggsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='medicalPlasterCastSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalPlasterCastSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodPumpkinBreadSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinBreadSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahBreachingSlugs']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahBreachingSlugs" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodPumpkinCheesecakeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinCheesecakeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodChiliDogSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodChiliDogSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterLead']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterLead" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningPallets']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningPallets" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunChokeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunChokeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter2Maintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter2Maintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='poweredDoorsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="poweredDoorsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahPartyStarter']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahPartyStarter" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunRetractingStockSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunRetractingStockSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunMuzzleBrakeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMuzzleBrakeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodSpaghettiSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodSpaghettiSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatLandMines']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatLandMines" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacSpeed']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacSpeed" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='thrownDynamiteSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownDynamiteSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorStoragePocketSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorStoragePocketSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodCornBreadSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornBreadSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunMGT3M60Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT3M60Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunShotgunT3AutoShotgunSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT3AutoShotgunSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling6RageMode']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling6RageMode" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookGreatHeistGems']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistGems" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacAxes']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacAxes" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkJarCoffeeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarCoffeeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolSalvageT1WrenchSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT1WrenchSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeBunkerBusterSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeBunkerBusterSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling3KillerInstinct']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling3KillerInstinct" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie2Maintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie2Maintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunRifleT3SniperRifleSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT3SniperRifleSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='toolForgeCrucibleSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolForgeCrucibleSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='speakerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="speakerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drugAntibioticsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugAntibioticsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadDusters']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadDusters" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresDoors']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresDoors" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedYucca1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedYucca1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookGreatHeistMotionDetection']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistMotionDetection" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='electricfencepostSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electricfencepostSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsMaintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsMaintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter3SteelSpears']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter3SteelSpears" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkJarGrandpasMoonshineSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasMoonshineSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedGoldenrod1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGoldenrod1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerStealthDamage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerStealthDamage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='workbenchSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="workbenchSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter4StrongArm']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter4StrongArm" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodSteakAndPotatoSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodSteakAndPotatoSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeClubBarbedWireSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBarbedWireSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedPumpkin1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPumpkin1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkJarRedTeaSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarRedTeaSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunDuckbillSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunDuckbillSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunMGT2TacticalARSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT2TacticalARSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningLantern']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningLantern" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteSwissKnees']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteSwissKnees" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedMushroom1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedMushroom1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBatterUpMetalChain']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpMetalChain" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunBarrelExtenderSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBarrelExtenderSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahMaintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahMaintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT3SteelKnucklesSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedBlueberry1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedBlueberry1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorBandolierSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBandolierSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersCripplingShot']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersCripplingShot" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunReflexSightSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunReflexSightSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorDoubleStoragePocketSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorDoubleStoragePocketSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunBowT1IronCrossbowSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1IronCrossbowSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunBowArrowRestSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowArrowRestSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunShotgunT2PumpShotgunSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT2PumpShotgunSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerArchery']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerArchery" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorImpactBracingSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImpactBracingSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalWolves']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalWolves" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunHandgunT3SMG5Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT3SMG5Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteSteadyHand']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteSteadyHand" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahLimbShot']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahLimbShot" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBatterUpBaseballBats']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpBaseballBats" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modFuelTankLargeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankLargeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodVegetableStewSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodVegetableStewSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodShamChowderSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodShamChowderSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteTakeAim']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteTakeAim" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='medicalFirstAidBandageSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidBandageSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookBarBrawling1BasicMoves']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBarBrawling1BasicMoves" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunRifleT2MarksmanRifleSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT2MarksmanRifleSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodTunaFishGravyToastSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodTunaFishGravyToastSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunScopeSmallSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeSmallSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modMeleeClubBurningShaftSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBurningShaftSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='resourceOilSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceOilSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodMeatStewSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodMeatStewSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookGreatHeistSprintSneak']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistSprintSneak" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadPockets']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadPockets" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalDeer']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalDeer" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookPistolPeteMaintenance']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteMaintenance" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalSelfDefense']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalSelfDefense" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatCigar']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatCigar" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSniperAPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperAPAmmo" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacPrevention']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacPrevention" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorTripleStoragePocketSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorTripleStoragePocketSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolFarmT1IronHoeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolFarmT1IronHoeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookTechJunkie6BatonCharge']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookTechJunkie6BatonCharge" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookSpearHunter1Damage']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSpearHunter1Damage" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='gunBowT1WoodenBowSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1WoodenBowSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunBipodSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBipodSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT1IronSledgehammerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='plantedHop1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedHop1Schematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorInsulatedLinerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerCriminalPursuit']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerCriminalPursuit" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleBicycleChassisSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleChassisSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalVultures']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalVultures" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnucklesSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT1IronKnucklesSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunScopeLargeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeLargeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodCornOnTheCobSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornOnTheCobSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorCoolingMeshSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookLuckyLooterAmmunition']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterAmmunition" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunSoundSuppressorSilencerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunSoundSuppressorSilencerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunMeleeRadRemoverSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeRadRemoverSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunMeleeTheHunterSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeTheHunterSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnClubT1BaseballBatSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnClubT1BaseballBatSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleGyroCopterChassisSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterChassisSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='drinkJarBeerSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarBeerSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='foodShepardsPieSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodShepardsPieSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modGunCrippleEmSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunCrippleEmSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookNightStalkerTwilightThief']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerTwilightThief" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookFiremansAlmanacMolotov']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacMolotov" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='modArmorCustomizedFittingsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCustomizedFittingsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='vehicleBicycleHandlebarsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleHandlebarsSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnifeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT1HuntingKnifeSchematic" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookGreatHeistTimedCharge']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistTimedCharge" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresSinks']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresSinks" operation="set" value="1"/>
 	</append>
 	<append xpath="/items/item[@name='bookArtOfMiningBlackStrap']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningBlackStrap" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookWasteTreasuresAcid']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresAcid" operation="set" value="1"/>
+	<append xpath="/items/item[@name='modArmorCustomizedFittingsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCustomizedFittingsSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='foodBlueberryPieSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBlueberryPieSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='plantedPotato1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPotato1Schematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='modGunTriggerGroupAutomaticSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupAutomaticSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookPistolPeteTakeAim']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteTakeAim" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookAutoWeaponsRagdoll']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsRagdoll" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookWasteTreasuresDoors']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresDoors" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookGreatHeistAdrenalineFall']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistAdrenalineFall" operation="set" value="1"/>
+	<append xpath="/items/item[@name='modMeleeGraveDiggerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeGraveDiggerSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='modMeleeErgonomicGripSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeErgonomicGripSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookUrbanCombatLanding']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatLanding" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookShotgunMessiahSlugs']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahSlugs" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookUrbanCombatRoomClearing']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatRoomClearing" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='plantedCotton1Schematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCotton1Schematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='foodBaconAndEggsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBaconAndEggsSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='thrownGrenadeSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookLuckyLooterBooks']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterBooks" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='vehicleAnySchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAnySchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='meleeToolWrenchSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolWrenchSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookBatterUpKnockdown']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpKnockdown" operation="set" value="1"/>
+	<append xpath="/items/item[@name='drinkJarGrandpasMoonshineSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasMoonshineSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='thrownAmmoPipeBombSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownAmmoPipeBombSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='vehicleMinibikeChassisSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeChassisSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='modArmorMuffledConnectorsSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorMuffledConnectorsSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='meleeToolHoeIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolHoeIronSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='chemistryStationSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="chemistryStationSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='modMeleeClubMetalSpikesSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubMetalSpikesSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='ammoGasCanSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='armorSteelSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorSteelSetSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookNeedleAndThreadPufferCoats']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadPufferCoats" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookArtOfMiningCoffee']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningCoffee" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookGreatHeistClaimed']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistClaimed" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookRangersKnockdown']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersKnockdown" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookHuntingJournalCoyotes']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalCoyotes" operation="set" value="1"/>
-	</append>
-	<append xpath="/items/item[@name='bookEnforcerHPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerHPAmmo" operation="set" value="1"/>
+	<append xpath="/items/item[@name='gunHuntingRifleSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHuntingRifleSchematic" operation="set" value="1"/>
 	</append>
 	<append xpath="/items/item[@name='bookBatterUpGear']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpGear" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookArtOfMiningAvalanche']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningAvalanche" operation="set" value="1"/>
+	<append xpath="/items/item[@name='vehicleMotorcycleHandlebarsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleHandlebarsSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookPistolPeteAPAmmo']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteAPAmmo" operation="set" value="1"/>
+	<append xpath="/items/item[@name='foodFishTacosSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodFishTacosSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBatonSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='modGunBarrelExtenderSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBarrelExtenderSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodBlueberryPieSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBlueberryPieSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresHoney']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresHoney" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicle4x4TruckAccessoriesSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicle4x4TruckAccessoriesSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarCoffeeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarCoffeeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunRodAndSpringSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunRodAndSpringSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinBreadSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinBreadSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadDusters']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadDusters" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunMeleeTheHunterSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeTheHunterSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodVegetableStewSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodVegetableStewSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerTwilightThief']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerTwilightThief" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunDoubleBarrelShotgunSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunDoubleBarrelShotgunSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookBatterUpKnockdown']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpKnockdown" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSledgehammerIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSledgehammerIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolIronSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolIronSetSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunScopeSmallSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeSmallSchematic" operation="set" value="1"/>
 	</append>
 	<append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauceSchematic']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasAwesomeSauceSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookBatterUpSlowPitch']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpSlowPitch" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookFiremansAlmanacHeat']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacHeat" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='bookUrbanCombatAdrenalineRush']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatAdrenalineRush" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bookNightStalkerBlades']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerBlades" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='drinkJarGrandpasLearningElixirSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasLearningElixirSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='bladeTrapSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bladeTrapSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='gunBowT3CompoundCrossbowSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT3CompoundCrossbowSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='gunCrossbowIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunCrossbowIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersExplodingBolts']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersExplodingBolts" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorDoubleStoragePocketSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorDoubleStoragePocketSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorStoragePocketSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorStoragePocketSchematic" operation="set" value="1"/>
 	</append>
 	<append xpath="/items/item[@name='vehicle4x4TruckChassisSchematic']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicle4x4TruckChassisSchematic" operation="set" value="1"/>
 	</append>
-	<append xpath="/items/item[@name='foodGumboStewSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGumboStewSchematic" operation="set" value="1"/>
+	<append xpath="/items/item[@name='medicalFirstAidBandageSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidBandageSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunMuzzleBrakeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMuzzleBrakeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersFlamingArrows']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersFlamingArrows" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunBowPolymerStringSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowPolymerStringSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='armorIronSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorIronSetSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunBowArrowRestSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowArrowRestSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorPlatingBasicSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingBasicSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerPunks']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerPunks" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeClubIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeClubIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='workbenchSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="workbenchSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowCompoundSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowCompoundSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gun44MagnumSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gun44MagnumSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modFuelTankLargeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankLargeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedChrysanthemum1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedChrysanthemum1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistSafes']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistSafes" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacPrevention']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacPrevention" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='motionsensorSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="motionsensorSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookBatterUpSlowPitch']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpSlowPitch" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookUrbanCombatControlledBreathing']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatControlledBreathing" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerSlumberParty']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerSlumberParty" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalSelfDefense']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalSelfDefense" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookArtOfMiningLuckyStrike']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningLuckyStrike" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodChiliDogSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodChiliDogSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorLeatherSetSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterMedical']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterMedical" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunBipodSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBipodSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drugHerbalAntibioticsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHerbalAntibioticsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedGraceCorn1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGraceCorn1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerArchery']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerArchery" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='toolForgeCrucibleSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolForgeCrucibleSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='forgeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="forgeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorImprovedFittingsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImprovedFittingsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='electrictimerrelaySchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electrictimerrelaySchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='dartTrapSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="dartTrapSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkYuccaJuiceSmoothieSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkYuccaJuiceSmoothieSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='thrownAmmoPipeBombSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownAmmoPipeBombSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsDrumMag']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsDrumMag" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeKnucklesIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeKnucklesIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresAcid']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresAcid" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperControlledBreathing']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperControlledBreathing" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookBatterUpConditioning']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpConditioning" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedAloe1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedAloe1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookUrbanCombatAdrenalineRush']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatAdrenalineRush" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeWoodSplitterSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWoodSplitterSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedHop1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedHop1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='thrownGrenadeContactSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeContactSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modShotgunSawedOffBarrelSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modShotgunSawedOffBarrelSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodShamChowderSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodShamChowderSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahMaintenance']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahMaintenance" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunPistolSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunPistolSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunToolNailgunSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunToolNailgunSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='pressureplateSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="pressureplateSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunCrossbowCompoundSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunCrossbowCompoundSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacSpeed']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacSpeed" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='chemistryStationSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="chemistryStationSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacEquipment']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacEquipment" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistMotionDetection']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistMotionDetection" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalVultures']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalVultures" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodMeatStewSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodMeatStewSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedMushroom1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedMushroom1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookUrbanCombatJumping']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatJumping" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerCriminalPursuit']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerCriminalPursuit" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunRetractingStockSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunRetractingStockSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorHelmetLightSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorHelmetLightSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsRecoil']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsRecoil" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunPumpShotgunSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunPumpShotgunSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahBreachingSlugs']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahBreachingSlugs" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='medicalPlasterCastSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalPlasterCastSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersCripplingShot']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersCripplingShot" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistSprintSneak']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistSprintSneak" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterLead']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterLead" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadWinterWear']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadWinterWear" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalMountainLions']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalMountainLions" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsMachineGuns']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsMachineGuns" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerSilentNight']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerSilentNight" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadLegwear']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadLegwear" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeThrownSpearIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeThrownSpearIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunCrippleEmSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunCrippleEmSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunScopeMediumSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeMediumSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookUrbanCombatLandMines']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatLandMines" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunScopeLargeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeLargeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedCoffee1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCoffee1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleGyroCopterChassisSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterChassisSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookBatterUpMaintenance']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpMaintenance" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodCornOnTheCobSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornOnTheCobSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsMaintenance']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsMaintenance" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresSinks']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresSinks" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorInsulatedLinerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLinerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteMaintenance']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteMaintenance" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='thrownDynamiteSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownDynamiteSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedYucca1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedYucca1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookUrbanCombatSneaking']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookUrbanCombatSneaking" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='armorMilitarySetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMilitarySetSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunChokeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunChokeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='spotlightPlayerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="spotlightPlayerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleAnySchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAnySchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='medicalFirstAidKitSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidKitSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeClubBurningShaftSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBurningShaftSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorTripleStoragePocketSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorTripleStoragePocketSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorAdvancedMuffledConnectorsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorAdvancedMuffledConnectorsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolKnifeIronSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolKnifeIronSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAugerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAugerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='resourceOilSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceOilSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodGrilledMeatSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGrilledMeatSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteSwissKnees']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteSwissKnees" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='toolBellowsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBellowsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunMagazineExtenderSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMagazineExtenderSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeFortifyingGripSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeFortifyingGripSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSteelSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSteelSetSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeStructuralBraceSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeStructuralBraceSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookArtOfMiningAvalanche']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningAvalanche" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteSteadyHand']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteSteadyHand" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunSMG5Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunSMG5Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodHoboStewSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHoboStewSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunForegripSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunForegripSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorBandolierSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBandolierSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunLaserSightSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunLaserSightSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinCheesecakeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinCheesecakeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerIntimidation']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerIntimidation" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersKnockdown']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersKnockdown" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacAxes']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacAxes" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleGyroCopterAccessoriesSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterAccessoriesSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookArtOfMiningLantern']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningLantern" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='electricfencepostSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electricfencepostSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadFootwear']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadFootwear" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalDeer']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalDeer" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanShamSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCanShamSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerAPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerAPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterAmmunition']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterAmmunition" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersForestGuide']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersForestGuide" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerThiefAdrenaline']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerThiefAdrenaline" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasLearningElixirSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasLearningElixirSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='thrownGrenadeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeIronBreakerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeIronBreakerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeKnucklesSteelSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeKnucklesSteelSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresCloth']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresCloth" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeTemperedBladeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeTemperedBladeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeWeightedHeadSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWeightedHeadSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorMuffledConnectorsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorMuffledConnectorsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNightStalkerStealthDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNightStalkerStealthDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterBrass']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterBrass" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersAPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersAPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='shotgunTurretSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="shotgunTurretSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunMR10Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMR10Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorPlatingReinforcedSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingReinforcedSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadPufferCoats']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadPufferCoats" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedPumpkin1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPumpkin1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunMeleeBlessedMetalSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeBlessedMetalSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperHPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperHPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGoldenRodTeaSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGoldenRodTeaSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleBicycleHandlebarsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleHandlebarsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeErgonomicGripSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeErgonomicGripSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunMeleeRadRemoverSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeRadRemoverSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahMagazine']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahMagazine" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunTriggerGroupBurst3Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupBurst3Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacMolotov']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacMolotov" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerHPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerHPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowWoodenSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowWoodenSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunRocketLauncherSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRocketLauncherSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunReflexSightSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunReflexSightSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerApparel']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerApparel" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistTimedCharge']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistTimedCharge" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteHPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteHPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='generatorbankSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="generatorbankSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='speakerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="speakerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedCorn1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCorn1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresWater']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresWater" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistGems']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistGems" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeStunBatonSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeStunBatonSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='toolAnvilSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolAnvilSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='switchSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="switchSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookEnforcerDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookEnforcerDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterDukes']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterDukes" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedGoldenrod1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGoldenrod1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunTriggerGroupAutomaticSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupAutomaticSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedBlueberry1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedBlueberry1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookArtOfMiningDiamondTools']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningDiamondTools" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodPumpkinPieSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinPieSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='poweredDoorsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="poweredDoorsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleMinibikeHandlebarsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeHandlebarsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadPockets']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadPockets" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookRangersArrowRecovery']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookRangersArrowRecovery" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolKnifeMacheteSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolKnifeMacheteSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperHeadShot']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperHeadShot" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookFiremansAlmanacHarvest']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookFiremansAlmanacHarvest" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperGhost']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperGhost" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunJunkTurretSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunJunkTurretSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsRagdoll']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsRagdoll" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleBicycleChassisSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleChassisSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodBakedPotatoSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBakedPotatoSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodBoiledMeatSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBoiledMeatSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahPartyStarter']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahPartyStarter" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperCripplingShot']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperCripplingShot" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarBeerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarBeerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookNeedleAndThreadDesertWear']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookNeedleAndThreadDesertWear" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeThrownSpearSteelSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeThrownSpearSteelSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleMotorcycleChassisSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleChassisSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperAPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperAPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modFuelTankSmallSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankSmallSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorImpactBracingSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImpactBracingSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodSteakAndPotatoSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodSteakAndPotatoSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahLimbShot']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahLimbShot" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunTriggerGroupSemiSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupSemiSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalCoyotes']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalCoyotes" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookAutoWeaponsUncontrolledBurst']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookAutoWeaponsUncontrolledBurst" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookWasteTreasuresCoffins']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookWasteTreasuresCoffins" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='tableSawSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="tableSawSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookLuckyLooterFood']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookLuckyLooterFood" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteAPAmmo']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteAPAmmo" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistAdrenalineFall']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistAdrenalineFall" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='autoTurretSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="autoTurretSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='resourceMilitaryFiberSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceMilitaryFiberSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeSerratedBladeSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeSerratedBladeSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorWaterPurifierSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorWaterPurifierSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeClubBarbedWireSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBarbedWireSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drugAntibioticsSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugAntibioticsSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='plantedCotton1Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCotton1Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookShotgunMessiahSlugs']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookShotgunMessiahSlugs" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='ammoGasCanSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCanSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookBatterUpBaseballBats']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookBatterUpBaseballBats" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='gunAK47Schematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunAK47Schematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSledgehammerSteelSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSledgehammerSteelSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookPistolPeteDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookPistolPeteDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modMeleeBunkerBusterSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeBunkerBusterSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='foodCornBreadSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornBreadSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='batterybankSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="batterybankSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalBears']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalBears" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookSniperDamage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookSniperDamage" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='cementMixerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cementMixerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunSoundSuppressorSilencerSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunSoundSuppressorSilencerSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolChainsawSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolChainsawSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modArmorCoolingMeshSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMeshSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookGreatHeistClaimed']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookGreatHeistClaimed" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarRedTeaSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarRedTeaSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookHuntingJournalWolves']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookHuntingJournalWolves" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='bookArtOfMiningPallets']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bookArtOfMiningPallets" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunFlashlightSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunFlashlightSchematic" operation="set" value="1"/>
+	</append>
+	<append xpath="/items/item[@name='modGunDuckbillSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunDuckbillSchematic" operation="set" value="1"/>
 	</append>
 </configs>
