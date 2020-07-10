@@ -543,7 +543,7 @@
 				<sprite depth="1" color="[darkGrey]" type="sliced" globalopacity="true" />
 				<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="453" height="272" color="[black]" type="sliced" fillcenter="false" />
 
-				<label depth="3" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" />
+				<label depth="3" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" parse_actions="true" />
 
 				<!--label depth="3" name="statText" pos="6,-2" width="254" height="100%" text="{itemstats1}" />
 				<label depth="3" name="statText2" pos="227,-2" width="220" height="100%" text="{itemstats2}" /> -->
@@ -619,7 +619,7 @@
 
 				<rect visible="{showdescription}">
 					<sprite depth="1" color="[darkGrey]" type="sliced" globalopacity="true" />
-					<label depth="3" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" />
+					<label depth="3" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" parse_actions="true" />
 				</rect>
 				<!--label depth="3" name="statText" pos="6,-2" width="254" height="100%" text="{itemstats1}" />
 				<label depth="3" name="statText2" pos="227,-2" width="220" height="100%" text="{itemstats2}" /> -->

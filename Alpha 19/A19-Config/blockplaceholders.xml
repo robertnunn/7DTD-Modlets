@@ -547,6 +547,13 @@
 		<block name="air"/>
 	</placeholder>
 
+	<placeholder name="cntCoffinWildWestRandomHelper">
+		<block name="cntCoffinWildWestOpen" prob=".45"/>
+		<block name="cntCoffinWildWestClosed" prob=".15"/>
+		<block name="cntCoffinWildWestCracked" prob=".15"/>
+		<block name="cntCoffinWildWestStack" prob=".15"/>
+	</placeholder>
+
 	<placeholder name="cntLockersShortRandomLootHelper">
 		<block name="cntLockersShortOpen" prob=".66"/>
 		<block name="cntLockersShortClosed" prob=".33"/>

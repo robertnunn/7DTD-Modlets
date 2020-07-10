@@ -197,6 +197,14 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
 
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="ak47_s_fire"/>
+			<property name="BarrelOffset" value="-0,-0.007,.0287"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
 		<item_property_overrides name="gunMGT3M60">
 			<property name="Sound_start" value="m60_s_fire"/>
 			<property name="Sound_end" value="silencefiller"/>
@@ -260,6 +268,11 @@ Example of using the seed (creation time) on a weapon to activate an effect
 
 		<item_property_overrides name="gunMGT1AK47">
 			<property name="SideOffset" value="0,0,.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="SideOffset" value="0,0.021,0.258"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
 
@@ -353,6 +366,11 @@ Example of using the seed (creation time) on a weapon to activate an effect
 
 		<item_property_overrides name="gunMGT1AK47">
 			<property name="SideOffset" value="0,0,.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="SideOffset" value="0,0.0,0.23"/>
 			<property name="SideScale" value="1,1,1"/>
 		</item_property_overrides>
 
@@ -450,6 +468,12 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<property name="ScopeCameraOffset" value="0,-.04,0"/>
 		</item_property_overrides>
 
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="ScopeOffset" value="0,0.1047,-0.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-.022,0"/>
+		</item_property_overrides>
+
 		<item_property_overrides name="gunHandgunT2Magnum44">
 			<property name="ScopeOffset" value="0,.1037,.0689"/>
 			<property name="ScopeScale" value="1,1,1"/>
@@ -506,9 +530,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
-			<!-- removed shotgun perk -->
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkGunslinger,revolver,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkGunslinger,revolver,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin">
+			<!-- removed shotgun perk, turrets -->
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".1">
 				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
@@ -532,7 +556,13 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</item_property_overrides>
 
 		<item_property_overrides name="gunMGT1AK47">
-			<property name="ScopeOffset" value="0,.088,-.14"/>
+			<property name="ScopeOffset" value="0,.085,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="ScopeOffset" value="0,0.1,-0.117"/>
 			<property name="ScopeScale" value="1,1,1"/>
 			<property name="ScopeCameraOffset" value="0,-.022,0"/>
 		</item_property_overrides>
@@ -576,8 +606,8 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18"/>
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18">
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".1">
 				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
@@ -647,8 +677,8 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25"/>
-			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25">
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".1">
 				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
@@ -712,6 +742,12 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<property name="ScopeCameraOffset" value="0,-.009,.35"/>
 		</item_property_overrides>
 
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="ScopeOffset" value="0,0.097,-0.098"/>
+			<property name="ScopeScale" value=".63,.63,.63"/>
+			<property name="ScopeCameraOffset" value="0,-0.018,-0.16"/>
+		</item_property_overrides>
+
 		<item_property_overrides name="gunRifleT1HuntingRifle">
 			<property name="ScopeOffset" value="-.0006,.06,.08"/>
 			<property name="ScopeScale" value=".7,.7,.7"/>
@@ -746,7 +782,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<item_property_overrides name="gunHandgunT3DesertVulture">
 			<property name="ScopeCameraOffset" value="0,-.0145,0"/>
 		</item_property_overrides>
-		
+
 		<item_property_overrides name="gunShotgunT3AutoShotgun">
 			<property name="ScopeCameraOffset" value="0,.0245,0.05"/>
 		</item_property_overrides>
@@ -757,6 +793,8 @@ Example of using the seed (creation time) on a weapon to activate an effect
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#Other/Items?Mods/Scopes/scope_laser_reflexPrefab.prefab" parent_transform="Attachments/Scope"/>
 		</effect_group>
 		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="!HoldingItemHasTags" tags="invisibleReflexSight"/>
+
 			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="holosight"/>
 		</effect_group>
@@ -1273,12 +1311,12 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		</item_property_overrides>
 
 		<effect_group tiered="false">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
-				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingTwo"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire"/>
 		</effect_group>
 		<effect_group tiered="false" name="Power Attack">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="40"/>
-				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingTwo"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire"/>
 		</effect_group>
 		<effect_group tiered="false" name="Always extend bleeding">
 			<requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
@@ -1527,10 +1565,8 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="UnlockedBy" value="perkTechJunkie5Repulsor"/>
 		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="stunBatonCharge" operation="GTE" value="40"/>
-			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
-				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="3" force="200"/>
-				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="4" force="200"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffmodMeleeStunBatonRepulsor"/>
 		</effect_group>
 	</item_modifier>
 

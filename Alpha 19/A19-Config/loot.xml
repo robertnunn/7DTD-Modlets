@@ -1357,45 +1357,12 @@ The overall plan for loot distribution:
 	<item name="resourceSewingKit"/>
 </lootgroup>
 
-<lootgroup name="groupArmorT1_Light" loot_quality_template="QLTemplateT0">
+<lootgroup name="groupArmorT0" loot_quality_template="QLTemplateT0">
 	<item name="armorClothPants"/>
 	<item name="armorClothJacket"/>
 	<item name="armorClothBoots"/>
 	<item name="armorClothGloves"/>
 	<item name="armorClothHat"/>
-</lootgroup>
-
-<lootgroup name="groupArmorT2_Light" loot_quality_template="QLTemplateT1">
-	<item name="armorLeatherBoots"/>
-	<item name="armorLeatherPants"/>
-	<item name="armorLeatherChest"/>
-	<item name="armorLeatherGloves"/>
-	<item name="armorLeatherHood"/>
-</lootgroup>
-
-<lootgroup name="groupArmorT3_Light" loot_quality_template="QLTemplateT2">
-	<item name="armorMilitaryGloves"/>
-	<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
-	<item name="armorMilitaryBoots"/>
-	<item name="armorMilitaryLegs"/>
-	<item name="armorMilitaryVest"/>
-</lootgroup>
-
-<lootgroup name="groupArmor_Light">
-	<item group="groupArmorT1_Light" loot_prob_template="ProbT0"/>
-	<item group="groupArmorT2_Light" loot_prob_template="ProbT1"/>
-	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupArmor_LightTPlus">
-	<item group="groupArmorT1_Light" loot_prob_template="ProbT0"/>
-	<item group="groupArmorT2_Light" loot_prob_template="ProbT1"/>
-	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
-	<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
-</lootgroup>
-
-<lootgroup name="groupArmorT1_Heavy" loot_quality_template="QLTemplateT0">
 	<item name="armorScrapHelmet"/>
 	<item name="armorScrapChest"/>
 	<item name="armorScrapGloves"/>
@@ -1403,7 +1370,12 @@ The overall plan for loot distribution:
 	<item name="armorScrapBoots"/>
 </lootgroup>
 
-<lootgroup name="groupArmorT2_Heavy" loot_quality_template="QLTemplateT1">
+<lootgroup name="groupArmorT1" loot_quality_template="QLTemplateT1">
+	<item name="armorLeatherBoots"/>
+	<item name="armorLeatherPants"/>
+	<item name="armorLeatherChest"/>
+	<item name="armorLeatherGloves"/>
+	<item name="armorLeatherHood"/>
 	<item name="armorIronGloves"/>
 	<item name="armorIronHelmet"/>
 	<item name="armorIronBoots"/>
@@ -1411,7 +1383,12 @@ The overall plan for loot distribution:
 	<item name="armorIronChest"/>
 </lootgroup>
 
-<lootgroup name="groupArmorT3_Heavy" loot_quality_template="QLTemplateT2">
+<lootgroup name="groupArmorT2" loot_quality_template="QLTemplateT2">
+	<item name="armorMilitaryGloves"/>
+	<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+	<item name="armorMilitaryBoots"/>
+	<item name="armorMilitaryLegs"/>
+	<item name="armorMilitaryVest"/>
 	<item name="armorSteelBoots"/>
 	<item name="armorSteelLegs"/>
 	<item name="armorSteelChest"/>
@@ -1420,27 +1397,18 @@ The overall plan for loot distribution:
 	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
 </lootgroup>
 
-<lootgroup name="groupArmor_Heavy">
-	<item group="groupArmorT1_Heavy" loot_prob_template="ProbT0"/>
-	<item group="groupArmorT2_Heavy" loot_prob_template="ProbT1"/>
-	<item name="armorSteelSetParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupArmorT3_Heavy" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupArmor_HeavyTPlus">
-	<item group="groupArmorT1_Heavy" loot_prob_template="ProbT0"/>
-	<item group="groupArmorT2_Heavy" loot_prob_template="ProbT1"/>
-	<item name="armorSteelSetParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupArmorT3_Heavy" loot_prob_template="ProbT2"/>
-	<item group="groupArmorT3_Heavy" loot_prob_template="ProbT2"/>
-</lootgroup>
-
 <lootgroup name="groupArmorScaled">
-	<item group="groupArmor_Light"/>
-	<item group="groupArmor_Heavy"/>
+	<item group="groupArmorT0" loot_prob_template="ProbT0"/>
+	<item group="groupArmorT1" loot_prob_template="ProbT1"/>
+	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
+	<item group="groupArmorT2" loot_prob_template="ProbT2"/>
 </lootgroup>
 <lootgroup name="groupArmorScaledTPlus">
-	<item group="groupArmor_LightTPlus"/>
-	<item group="groupArmor_HeavyTPlus"/>
+	<item group="groupArmorT0" loot_prob_template="ProbT0"/>
+	<item group="groupArmorT1" loot_prob_template="ProbT1"/>
+	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
+	<item group="groupArmorT2" loot_prob_template="ProbT2"/>
+	<item group="groupArmorT2" loot_prob_template="ProbT2"/>
 </lootgroup>
 
 <lootgroup name="groupApparelHazmat">
@@ -1550,22 +1518,6 @@ The overall plan for loot distribution:
 
 <!-- Backup group for weapon classes that have no T0 -->
 
-<lootgroup name="groupBackupWeaponsT0Boomstick" count="all" loot_quality_template="QLTemplateT0Backup">
-	<item name="gunShotgunT0Blunderbuss"/>
-	<item name="ammoBlunderbuss" count="5,12"/>
-</lootgroup>
-
-<lootgroup name="groupBackupWeaponsT0Archery" loot_quality_template="QLTemplateT0Backup">
-	<item name="gunBowT0PrimitiveBow"/>
-	<item name="ammoArrowStone" count="3,6"/>
-</lootgroup>
-
-<lootgroup name="groupBackupWeaponsT0" loot_quality_template="QLTemplateT0Backup">
-	<item group="groupBackupWeaponsT0Boomstick"/>
-	<item group="groupBackupWeaponsT0Archery"/>
-	<item name="meleeWpnSpearT0StoneSpear"/>
-</lootgroup>
-
 <!-- Attribute: Perception -->
 <lootgroup name="groupWeaponsT1_DeadEye" count="all" loot_quality_template="QLTemplateT1">
 	<item name="gunRifleT1HuntingRifle"/>
@@ -1580,20 +1532,6 @@ The overall plan for loot distribution:
 <lootgroup name="groupWeaponsT3_DeadEye" count="all" loot_quality_template="QLTemplateT3">
 	<item name="gunRifleT3SniperRifle"/>
 	<item name="ammo762mmBulletBall" count="6,25"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_DeadEye">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_DeadEye" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_DeadEye" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_DeadEye" loot_prob_template="ProbT3"/>
-</lootgroup>
-<lootgroup name="groupWeapons_DeadEyeTPlus">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProProbT0BackupbT0"/>
-	<item group="groupWeaponsT1_DeadEye" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_DeadEye" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_DeadEye" loot_prob_template="ProbT3"/>
-	<item group="groupWeaponsT3_DeadEye" loot_prob_template="ProbT3"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1_Demolitionist">
@@ -1634,30 +1572,6 @@ The overall plan for loot distribution:
 	<item group="groupWeaponsT3_Demolitionist" loot_prob_template="ProbT3"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT0_JavelinMaster" loot_quality_template="QLTemplateT0">
-	<item name="meleeWpnSpearT0StoneSpear"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT1_JavelinMaster" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnSpearT1IronSpear"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT3_JavelinMaster" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnSpearT3SteelSpear"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_JavelinMaster">
-	<item group="groupWeaponsT0_JavelinMaster" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_JavelinMaster" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnSpearT3SteelSpearParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_JavelinMaster" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_JavelinMasterTPlus">
-	<item group="groupWeaponsT0_JavelinMaster" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_JavelinMaster" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnSpearT3SteelSpearParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_JavelinMaster" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_JavelinMaster" loot_prob_template="ProbT2"/>
-</lootgroup>
-
 
 <!-- Attribute: Strength -->
 
@@ -1678,97 +1592,8 @@ The overall plan for loot distribution:
 	<item name="ammoShotgunShell" count="3,9"/>
 </lootgroup>
 
-<lootgroup name="groupWeapons_Boomstick">
-	<item group="groupWeaponsT0_Boomstick" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Boomstick" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Boomstick" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Boomstick" loot_prob_template="ProbT3"/>
-</lootgroup>
-<lootgroup name="groupWeapons_BoomstickTPlus">
-	<item group="groupWeaponsT0_Boomstick" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Boomstick" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Boomstick" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Boomstick" loot_prob_template="ProbT3"/>
-	<item group="groupWeaponsT3_Boomstick" loot_prob_template="ProbT3"/>
-</lootgroup>
-
-
-<lootgroup name="groupWeaponsT0_PummelPete" loot_quality_template="QLTemplateT0">
-	<item name="meleeWpnClubT0WoodenClub"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT1_PummelPete" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnClubT1BaseballBat"/>
-	<!-- <item name="meleeWpnClubT1CandyClub" prob="0.3"/> -->
-</lootgroup>
-<lootgroup name="groupWeaponsT3_PummelPete" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnClubT3SteelClub"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_PummelPete">
-	<item group="groupWeaponsT0_PummelPete" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_PummelPete" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnClubT3SteelClubParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_PummelPete" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_PummelPeteTPlus">
-	<item group="groupWeaponsT0_PummelPete" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_PummelPete" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnClubT3SteelClubParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_PummelPete" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_PummelPete" loot_prob_template="ProbT2"/>
-</lootgroup>
-
-
-<lootgroup name="groupWeaponsT0_SkullCrusher" loot_quality_template="QLTemplateT0">
-	<item name="meleeWpnSledgeT0StoneSledgehammer"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT1_SkullCrusher" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnSledgeT1IronSledgehammer"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT3_SkullCrusher" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_SkullCrusher">
-	<item group="groupWeaponsT0_SkullCrusher" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_SkullCrusher" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_SkullCrusher" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_SkullCrusherTPlus">
-	<item group="groupWeaponsT0_SkullCrusher" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_SkullCrusher" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_SkullCrusher" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_SkullCrusher" loot_prob_template="ProbT2"/>
-</lootgroup>
-
 
 <!-- Attribute: Fortitude -->
-
-<lootgroup name="groupWeaponsT0_Brawler" loot_quality_template="QLTemplateT0">
-	<item name="meleeWpnKnucklesT0LeatherKnuckles"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT1_Brawler" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnKnucklesT1IronKnuckles"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT3_Brawler" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_Brawler">
-	<item group="groupWeaponsT0_Brawler" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Brawler" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_Brawler" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_BrawlerTPlus">
-	<item group="groupWeaponsT0_Brawler" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Brawler" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_Brawler" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Brawler" loot_prob_template="ProbT2"/>
-</lootgroup>
 
 <lootgroup name="groupWeaponsT1_Machinegunner" count="all" loot_quality_template="QLTemplateT1">
 	<item name="gunMGT1AK47"/>
@@ -1781,19 +1606,6 @@ The overall plan for loot distribution:
 <lootgroup name="groupWeaponsT3_Machinegunner" count="all" loot_quality_template="QLTemplateT3">
 	<item name="gunMGT3M60"/>
 	<item name="ammo762mmBulletBall" count="6,25"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_Machinegunner">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_Machinegunner" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Machinegunner" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Machinegunner" loot_prob_template="ProbT3"/>
-</lootgroup>
-<lootgroup name="groupWeapons_MachinegunnerTPlus">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_Machinegunner" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Machinegunner" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Machinegunner" loot_prob_template="ProbT3"/>
 </lootgroup>
 
 
@@ -1829,19 +1641,6 @@ The overall plan for loot distribution:
 	<item group="groupWeaponsT3_Archery02"/>
 </lootgroup>
 
-<lootgroup name="groupWeapons_Archery">
-	<item group="groupWeaponsT0_Archery" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Archery" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_Archery" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_ArcheryTPlus">
-	<item group="groupWeaponsT0_Archery" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_Archery" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_Archery" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Archery" loot_prob_template="ProbT2"/>
-</lootgroup>
-
-
 <lootgroup name="groupWeaponsT1_Gunslinger" count="all" loot_quality_template="QLTemplateT1">
 	<item name="gunHandgunT1Pistol"/>
 	<item name="ammo9mmBulletBall" count="10,40"/>
@@ -1860,146 +1659,159 @@ The overall plan for loot distribution:
 	<item name="gunHandgunT3DesertVulture"/>
 	<item name="ammo44MagnumBulletBall" count="4,19"/>
 </lootgroup>
-
-<lootgroup name="groupWeapons_Gunslinger">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_Gunslinger" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Gunslinger" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Gunslinger01" loot_prob_template="ProbT3"/>
-	<item group="groupWeaponsT3_Gunslinger01" loot_prob_template="ProbT3"/>
-</lootgroup>
-<lootgroup name="groupWeapons_GunslingerTPlus">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_Gunslinger" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Gunslinger" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_Gunslinger01" loot_prob_template="ProbT3"/>
-	<item group="groupWeaponsT3_Gunslinger01" loot_prob_template="ProbT3"/>
-	<item group="groupWeaponsT3_Gunslinger01" loot_prob_template="ProbT3"/>
+<lootgroup name="groupWeaponsT3_Gunslinger">
+	<item group="groupWeaponsT3_Gunslinger01"/>
+	<item group="groupWeaponsT3_Gunslinger02"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT0_DeepCuts" loot_quality_template="QLTemplateT0">
-	<item name="meleeWpnBladeT0BoneKnife"/>
-</lootgroup>
-<lootgroup name="groupWeaponsT1_DeepCuts" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<!-- <item name="meleeWpnBladeT1CandyKnife" prob=".3"/> -->
-</lootgroup>
-<lootgroup name="groupWeaponsT3_DeepCuts" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnBladeT3Machete"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_DeepCuts">
-	<item group="groupWeaponsT0_DeepCuts" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_DeepCuts" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnBladeT3MacheteParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_DeepCuts" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_DeepCutsTPlus">
-	<item group="groupWeaponsT0_DeepCuts" loot_prob_template="ProbT0"/>
-	<item group="groupWeaponsT1_DeepCuts" loot_prob_template="ProbT1"/>
-	<item name="meleeWpnBladeT3MacheteParts" count="2,5" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT3_DeepCuts" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT3_DeepCuts" loot_prob_template="ProbT2"/>
-</lootgroup>
 
 <!-- Attribute: Intellect -->
-<lootgroup name="groupWeaponsT2_Electrocutioner" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnBatonT2StunBaton"/>
-</lootgroup>
-
-<lootgroup name="groupWeapons_Electrocutioner">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT2_Electrocutioner" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Electrocutioner" loot_prob_template="ProbT2"/>
-</lootgroup>
-<lootgroup name="groupWeapons_ElectrocutionerTPlus">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT2_Electrocutioner" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_Electrocutioner" loot_prob_template="ProbT2"/>
-</lootgroup>
 
 <lootgroup name="groupWeaponsT1_TurretsSyndrome" loot_quality_template="QLTemplateT1">
 	<item name="gunBotT1JunkSledge"/>
-	<item name="gunBotRoboticsParts" count="2,5" loot_prob_template="ProbT0"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_TurretsSyndrome" loot_quality_template="QLTemplateT2">
 	<item name="gunBotT2JunkTurret"/>
-	<item name="gunBotRoboticsParts" count="2,5" loot_prob_template="ProbT1"/>
 </lootgroup>
 <lootgroup name="groupWeaponsT3_TurretsSyndrome" loot_quality_template="QLTemplateT3">
-	<item name="gunBotT3JunkDrone"/>
-	<item name="gunBotRoboticsParts" count="2,5" loot_prob_template="ProbT2"/>
+	<item name="gunBotT2JunkTurret"/>
+	<!-- <item name="gunBotT3JunkDrone"/> -->
 </lootgroup>
 
-<lootgroup name="groupWeapons_TurretsSyndrome">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_TurretsSyndrome" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="ProbT2"/>
-	<!-- <item group="groupWeaponsT3_TurretsSyndrome" loot_prob_template="ProbT3"/> -->
-</lootgroup>
-<lootgroup name="groupWeapons_TurretsSyndromeTPlus">
-	<item group="groupBackupWeaponsT0" loot_prob_template="ProbT0Backup"/>
-	<item group="groupWeaponsT1_TurretsSyndrome" loot_prob_template="ProbT1"/>
-	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="ProbT2"/>
-	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="ProbT2"/>
-	<!-- <item group="groupWeaponsT3_TurretsSyndrome" loot_prob_template="ProbT3"/> -->
-</lootgroup>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<lootgroup name="groupWeaponsT1_All">
+<!-- used for primitive tools in backpacks -->
+<lootgroup name="groupWeaponsT0_All">
 	<item group="groupWeaponsT0_Archery"/>
 	<item group="groupWeaponsT0_Boomstick"/>
-	<item group="groupWeaponsT0_Brawler"/>
-	<item group="groupWeaponsT0_DeepCuts"/>
-	<item group="groupWeaponsT0_JavelinMaster"/>
-	<item group="groupWeaponsT0_PummelPete"/>
-	<item group="groupWeaponsT0_SkullCrusher"/>
+	<item name="meleeWpnSpearT0StoneSpear"/>
+	<item name="meleeWpnClubT0WoodenClub"/>
+	<item name="meleeWpnSledgeT0StoneSledgehammer"/>
+	<item name="meleeWpnKnucklesT0LeatherKnuckles"/>
+	<item name="meleeWpnBladeT0BoneKnife"/>
 </lootgroup>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<lootgroup name="groupWeaponsT0_Melee" loot_quality_template="QLTemplateT0">
+	<item name="meleeWpnSpearT0StoneSpear"/>
+	<item name="meleeWpnClubT0WoodenClub"/>
+	<item name="meleeWpnSledgeT0StoneSledgehammer"/>
+	<item name="meleeWpnKnucklesT0LeatherKnuckles"/>
+	<item name="meleeWpnBladeT0BoneKnife"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT1_Melee" loot_quality_template="QLTemplateT1">
+	<item name="meleeWpnSpearT1IronSpear"/>
+	<item name="meleeWpnClubT1BaseballBat"/>
+	<!-- <item name="meleeWpnClubT1CandyClub" prob="0.3"/> -->
+	<item name="meleeWpnSledgeT1IronSledgehammer"/>
+	<item name="meleeWpnKnucklesT1IronKnuckles"/>
+	<item name="meleeWpnBladeT1HuntingKnife"/>
+	<!-- <item name="meleeWpnBladeT1CandyKnife" prob=".3"/> -->
+	<item name="meleeWpnBatonT2StunBaton"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_Melee" loot_quality_template="QLTemplateT2">
+	<item name="meleeWpnSpearT3SteelSpear"/>
+	<item name="meleeWpnClubT3SteelClub"/>
+	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
+	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
+	<item name="meleeWpnBladeT3Machete"/>
+	<item name="meleeWpnBatonT2StunBaton"/>
+</lootgroup>
+
+<lootgroup name="groupWeapons_MeleeParts">
+	<item name="meleeWpnSpearT3SteelSpearParts" count="2,5"/>
+	<item name="meleeWpnClubT3SteelClubParts" count="2,5"/>
+	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="2,5"/>
+	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="2,5"/>
+	<item name="meleeWpnBladeT3MacheteParts" count="2,5"/>
+	<item name="meleeWpnBatonT2StunBatonParts" count="2,5"/>
+</lootgroup>
+
 <lootgroup name="groupWeaponsMeleeScaled">
-	<item group="groupWeapons_JavelinMaster"/>
-	<item group="groupWeapons_PummelPete"/>
-	<item group="groupWeapons_SkullCrusher"/>
-	<item group="groupWeapons_Brawler"/>
-	<item group="groupWeapons_DeepCuts"/>
-	<item group="groupWeapons_Electrocutioner"/>
+	<item group="groupWeaponsT0_Melee" loot_prob_template="ProbT0"/>
+	<item group="groupWeaponsT1_Melee" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2"/>
 </lootgroup>
 <lootgroup name="groupWeaponsMeleeScaledTPlus">
-	<item group="groupWeapons_JavelinMasterTPlus"/>
-	<item group="groupWeapons_PummelPeteTPlus"/>
-	<item group="groupWeapons_SkullCrusherTPlus"/>
-	<item group="groupWeapons_BrawlerTPlus"/>
-	<item group="groupWeapons_DeepCutsTPlus"/>
-	<item group="groupWeapons_ElectrocutionerTPlus"/>
+	<item group="groupWeaponsT0_Melee" loot_prob_template="ProbT0"/>
+	<item group="groupWeaponsT1_Melee" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2"/>
+	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+
+<!-- ranged weapons have to call groups so they can spawn with specific ammo -->
+<lootgroup name="groupWeaponsT0_Ranged">
+	<item group="groupWeaponsT0_Boomstick"/>
+	<item group="groupWeaponsT0_Archery"/>
+	<item group="groupWeaponsT1_Demolitionist" prob=".25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT1_Ranged">
+	<item group="groupWeaponsT1_DeadEye"/>
+	<item group="groupWeaponsT1_Demolitionist" count="1,2"/>
+	<item group="groupWeaponsT1_Boomstick"/>
+	<item group="groupWeaponsT1_Machinegunner"/>
+	<item group="groupWeaponsT1_Archery"/>
+	<item group="groupWeaponsT1_Gunslinger"/>
+	<item group="groupWeaponsT1_TurretsSyndrome"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT2_Ranged">
+	<item group="groupWeaponsT2_DeadEye"/>
+	<item group="groupWeaponsT2_Demolitionist"/>
+	<item group="groupWeaponsT2_Boomstick"/>
+	<item group="groupWeaponsT2_Machinegunner"/>
+	<item group="groupWeaponsT3_Archery"/>
+	<item group="groupWeaponsT2_Gunslinger"/>
+	<item group="groupWeaponsT2_TurretsSyndrome"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT3_Ranged">
+	<item group="groupWeaponsT3_DeadEye"/>
+	<item group="groupWeaponsT3_Demolitionist"/>
+	<item group="groupWeaponsT3_Boomstick"/>
+	<item group="groupWeaponsT3_Machinegunner"/>
+	<item group="groupWeaponsT3_Archery"/>
+	<item group="groupWeaponsT3_Gunslinger" prob="1.3"/>
+	<item group="groupWeaponsT3_TurretsSyndrome"/>
+</lootgroup>
+
+<lootgroup name="groupWeapons_RangedParts">
+	<item name="gunMGT1AK47Parts" count="1,4"/>
+	<item name="gunHandgunT1PistolParts" count="1,4"/>
+	<item name="gunBowT1WoodenBowParts" count="1,4"/>
+	<item name="gunRifleT1HuntingRifleParts" count="1,4"/>
+	<item name="gunShotgunT1DoubleBarrelParts" count="1,4"/>
+	<item name="gunExplosivesT3RocketLauncherParts" count="1,4" prob=".8"/>
+	<item name="gunBotRoboticsParts" count="1,4"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsRangedScaled">
-	<item group="groupWeapons_DeadEye"/>
-	<item group="groupWeapons_Demolitionist"/>
-	<item group="groupWeapons_Boomstick"/>
-	<item group="groupWeapons_Machinegunner"/>
-	<item group="groupWeapons_Archery"/>
-	<item group="groupWeapons_Gunslinger" prob="1.25"/>
-	<item group="groupWeapons_TurretsSyndrome"/>
-</lootgroup>
-<lootgroup name="groupWeaponsRangedScaledTPlus">
-	<item group="groupWeapons_DeadEyeTPlus"/>
-	<item group="groupWeapons_DemolitionistTPlus"/>
-	<item group="groupWeapons_BoomstickTPlus"/>
-	<item group="groupWeapons_MachinegunnerTPlus"/>
-	<item group="groupWeapons_ArcheryTPlus"/>
-	<item group="groupWeapons_GunslingerTPlus" prob="1.25"/>
-	<item group="groupWeapons_TurretsSyndromeTPlus"/>
+	<item group="groupWeaponsT0_Ranged" loot_prob_template="ProbT0"/>
+	<item group="groupWeaponsT1_Ranged" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeaponsT2_Ranged" loot_prob_template="ProbT2"/>
+	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsScaled">
+<lootgroup name="groupWeaponsRangedScaledTPlus">
+	<item group="groupWeaponsT0_Ranged" loot_prob_template="ProbT0"/>
+	<item group="groupWeaponsT1_Ranged" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeaponsT2_Ranged" loot_prob_template="ProbT2"/>
+	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
+	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsAllScaled">
 	<item group="groupWeaponsMeleeScaled"/>
 	<item group="groupWeaponsRangedScaled"/>
 </lootgroup>
-<lootgroup name="groupWeaponsScaledTPlus">
+<lootgroup name="groupWeaponsAllScaledTPlus">
 	<item group="groupWeaponsMeleeScaledTPlus"/>
 	<item group="groupWeaponsRangedScaledTPlus"/>
 </lootgroup>
@@ -2294,74 +2106,87 @@ The overall plan for loot distribution:
 	<item name="bookTechJunkie7Hydraulics"/>
 </lootgroup>
 
-<lootgroup name="schematicsModsCommon">
-	<item name="modArmorHelmetLightSchematic"/>
-	<item name="modArmorBandolierSchematic"/>
-	<item name="modArmorInsulatedLinerSchematic"/>
-	<item name="modArmorCoolingMeshSchematic"/>
-	<item name="modArmorPlatingBasicSchematic"/>
-	<item name="modArmorImprovedFittingsSchematic"/>
-	<item name="modArmorStoragePocketSchematic"/>
-	<item name="modArmorDoubleStoragePocketSchematic"/>
-	<item name="modArmorMuffledConnectorsSchematic"/>
-	<item name="modGunBarrelExtenderSchematic"/>
-	<item name="modGunMuzzleBrakeSchematic"/>
-	<item name="modGunFlashlightSchematic"/>
-	<item name="modGunScopeSmallSchematic"/>
-	<item name="modGunScopeMediumSchematic"/>
-	<item name="modGunReflexSightSchematic"/>
-	<item name="modGunTriggerGroupSemiSchematic"/>
-	<item name="modGunBipodSchematic"/>
-	<item name="modGunForegripSchematic"/>
-	<item name="modGunRetractingStockSchematic"/>
-	<item name="modGunDuckbillSchematic"/>
-	<item name="modGunChokeSchematic"/>
-	<item name="modGunMagazineExtenderSchematic"/>
-	<item name="modShotgunSawedOffBarrelSchematic"/>
-	<item name="modGunCrippleEmSchematic"/>
-	<item name="modGunBowArrowRestSchematic"/>
-	<item name="modGunBowPolymerStringSchematic"/>
-	<item name="modMeleeTemperedBladeSchematic"/>
-	<item name="modMeleeSerratedBladeSchematic"/>
-	<item name="modMeleeWeightedHeadSchematic"/>
-	<item name="modMeleeStructuralBraceSchematic"/>
-	<item name="modMeleeErgonomicGripSchematic"/>
-	<item name="modMeleeFortifyingGripSchematic"/>
-	<item name="modMeleeClubBarbedWireSchematic"/>
-	<item name="modMeleeClubMetalSpikesSchematic"/>
-	<item name="modMeleeClubBurningShaftSchematic"/>
-	<item name="modMeleeGraveDiggerSchematic"/>
-	<item name="modMeleeWoodSplitterSchematic"/>
-	<item name="modFuelTankSmallSchematic"/>
-	<item name="modFuelTankLargeSchematic"/>
+<lootgroup name="schematicsModsAndGeneralT0">
 	<item name="medicalFirstAidBandageSchematic"/>
-	<item name="resourceMilitaryFiberSchematic"/>
+	<item name="modArmorCoolingMeshSchematic"/>
+	<item name="modArmorImprovedFittingsSchematic"/>
+	<item name="modArmorInsulatedLinerSchematic"/>
+	<item name="modArmorMuffledConnectorsSchematic"/>
+	<item name="modArmorPlatingBasicSchematic"/>
+	<item name="modArmorStoragePocketSchematic"/>
+	<item name="modGunBarrelExtenderSchematic"/>
+	<item name="modGunDuckbillSchematic"/>
+	<item name="modGunFlashlightSchematic"/>
+	<item name="modGunForegripSchematic"/>
 	<item name="modGunMeleeTheHunterSchematic"/>
-	<!--<item name="modGunMeleeBlessedMetalSchematic"/>-->
+	<item name="modGunRetractingStockSchematic"/>
+	<item name="modGunScopeSmallSchematic"/>
+	<item name="modGunTriggerGroupSemiSchematic"/>
+	<item name="modMeleeClubBurningShaftSchematic"/>
+	<item name="modMeleeErgonomicGripSchematic"/>
+	<item name="modMeleeGraveDiggerSchematic"/>
+	<item name="modMeleeStructuralBraceSchematic"/>
+	<item name="modMeleeTemperedBladeSchematic"/>
+	<item name="modMeleeWeightedHeadSchematic"/>
+	<item name="modMeleeWoodSplitterSchematic"/>
+	<item name="modShotgunSawedOffBarrelSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsModsRare">
-	<item name="modGunScopeLargeSchematic"/>
-	<item name="modGunLaserSightSchematic"/>
+<lootgroup name="schematicsModsAndGeneralT1">
+	<item name="drugHerbalAntibioticsSchematic"/>
+	<item name="modArmorBandolierSchematic"/>
+	<item name="modArmorDoubleStoragePocketSchematic"/>
+	<item name="modArmorHelmetLightSchematic"/>
+	<item name="modFuelTankSmallSchematic"/>
+	<item name="modGunBipodSchematic"/>
+	<item name="modGunBowArrowRestSchematic"/>
+	<item name="modGunChokeSchematic"/>
+	<item name="modGunCrippleEmSchematic"/>
+	<item name="modGunMagazineExtenderSchematic"/>
+	<item name="modGunMuzzleBrakeSchematic"/>
+	<item name="modGunReflexSightSchematic"/>
+	<item name="modGunScopeMediumSchematic"/>
 	<item name="modGunTriggerGroupBurst3Schematic"/>
-	<item name="modGunSoundSuppressorSilencerSchematic"/>
-	<item name="modGunTriggerGroupAutomaticSchematic"/>
-	<item name="modGunMeleeRadRemoverSchematic"/>
-	<item name="modArmorPlatingReinforcedSchematic"/>
-	<item name="modArmorTripleStoragePocketSchematic"/>
-	<item name="modArmorAdvancedMuffledConnectorsSchematic"/>
-	<item name="modArmorWaterPurifierSchematic"/>
-	<item name="modArmorCustomizedFittingsSchematic"/>
 	<item name="modMeleeBunkerBusterSchematic"/>
+	<item name="modMeleeClubBarbedWireSchematic"/>
+	<item name="modMeleeFortifyingGripSchematic"/>
 	<item name="modMeleeIronBreakerSchematic"/>
-	<item name="modArmorImpactBracingSchematic"/>
+	<item name="modMeleeSerratedBladeSchematic"/>
+</lootgroup>
+
+<lootgroup name="schematicsModsAndGeneralT2">
+	<item name="drugAntibioticsSchematic"/>
 	<item name="medicalFirstAidKitSchematic"/>
 	<item name="medicalPlasterCastSchematic"/>
-	<item name="drugAntibioticsSchematic"/>
-	<item name="drugHerbalAntibioticsSchematic"/>
+	<item name="modArmorAdvancedMuffledConnectorsSchematic"/>
+	<item name="modArmorCustomizedFittingsSchematic"/>
+	<item name="modArmorImpactBracingSchematic"/>
+	<item name="modArmorPlatingReinforcedSchematic"/>
+	<item name="modArmorTripleStoragePocketSchematic"/>
+	<item name="modArmorWaterPurifierSchematic"/>
+	<item name="modFuelTankLargeSchematic"/>
+	<item name="modGunBowPolymerStringSchematic"/>
+	<item name="modGunLaserSightSchematic"/>
+	<item name="modGunMeleeRadRemoverSchematic"/>
+	<item name="modGunScopeLargeSchematic"/>
+	<item name="modGunSoundSuppressorSilencerSchematic"/>
+	<item name="modGunTriggerGroupAutomaticSchematic"/>
+	<item name="modMeleeClubMetalSpikesSchematic"/>
+	<item name="resourceMilitaryFiberSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsToolsCommon">
+<lootgroup name="schematicsModsAndGeneralCommon">
+	<item group="schematicsModsAndGeneralT0"/>
+	<item group="schematicsModsAndGeneralT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsModsAndGeneralT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsModsAndGeneralRare">
+	<item group="schematicsModsAndGeneralT1"/>
+	<item group="schematicsModsAndGeneralT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsToolsT0">
 	<item name="forgeSchematic"/>
 	<item name="meleeToolIronSetSchematic"/>
 	<item name="meleeToolSalvageT1WrenchSchematic"/>
@@ -2369,118 +2194,134 @@ The overall plan for loot distribution:
 	<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
 	<item name="ammoGasCanSchematic"/>
 	<item name="resourceOilSchematic"/>
-	<!--<item name="meleeToolFarmT1IronHoeSchematic"/>-->
 </lootgroup>
 
-<lootgroup name="schematicsToolsRare">
-	<item name="meleeToolRepairT3NailgunSchematic"/>
+<lootgroup name="schematicsToolsT1">
 	<item name="meleeToolSteelSetSchematic"/>
 	<item name="meleeToolSalvageT2RatchetSchematic"/>
-	<item name="meleeToolSalvageT3ImpactDriverSchematic"/>
 	<item name="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
-	<item name="meleeToolPickT3AugerSchematic"/>
-	<item name="meleeToolAxeT3ChainsawSchematic"/>
 	<item name="toolBellowsSchematic"/>
-	<item name="toolForgeCrucibleSchematic"/>
 	<item name="toolAnvilSchematic"/>
 	<item name="cementMixerSchematic"/>
 	<item name="workbenchSchematic"/>
 	<item name="chemistryStationSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsWeaponsCommon">
-	<item name="gunHandgunT1PistolSchematic"/>
-	<item name="gunShotgunT1DoubleBarrelSchematic"/>
-	<item name="gunRifleT1HuntingRifleSchematic"/>
-	<item name="gunMGT1AK47Schematic"/>
-	<item name="gunBowT1WoodenBowSchematic"/>
-	<item name="gunBowT1IronCrossbowSchematic"/>
+<lootgroup name="schematicsToolsT2">
+	<item name="toolForgeCrucibleSchematic"/>
+	<item name="meleeToolPickT3AugerSchematic"/>
+	<item name="meleeToolAxeT3ChainsawSchematic"/>
+	<item name="meleeToolSalvageT3ImpactDriverSchematic"/>
+	<item name="meleeToolRepairT3NailgunSchematic"/>
+</lootgroup>
+
+<lootgroup name="schematicsToolsCommon">
+	<item group="schematicsToolsT0"/>
+	<item group="schematicsToolsT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsToolsT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsToolsRare">
+	<item group="schematicsToolsT1"/>
+	<item group="schematicsToolsT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsWeaponsArmorT0">
 	<item name="gunBotT1JunkSledgeSchematic"/>
-	<item name="thrownAmmoPipeBombSchematic"/>
-	<item name="thrownGrenadeSchematic"/>
+	<item name="gunBowT1IronCrossbowSchematic"/>
+	<item name="gunBowT1WoodenBowSchematic"/>
+	<item name="gunHandgunT1PistolSchematic"/>
+	<item name="gunMGT1AK47Schematic"/>
+	<item name="gunRifleT1HuntingRifleSchematic"/>
+	<item name="gunShotgunT1DoubleBarrelSchematic"/>
+	<item name="meleeWpnBatonT2StunBatonSchematic"/>
 	<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
 	<item name="meleeWpnClubT1BaseballBatSchematic"/>
-	<item name="meleeWpnBatonT2StunBatonSchematic"/>
-	<item name="meleeWpnSpearT1IronSpearSchematic"/>
 	<item name="meleeWpnKnucklesT1IronKnucklesSchematic"/>
+	<item name="meleeWpnSpearT1IronSpearSchematic"/>
+	<item name="thrownAmmoPipeBombSchematic"/>
+	<item name="thrownDynamiteSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsWeaponsRare">
+<lootgroup name="schematicsWeaponsArmorT1">
+	<item name="armorIronSetSchematic"/>
+	<item name="armorLeatherSetSchematic"/>
+	<item name="gunBotT2JunkTurretSchematic"/>
 	<item name="gunBowT3CompoundBowSchematic"/>
 	<item name="gunBowT3CompoundCrossbowSchematic"/>
-	<item name="gunBotT2JunkTurretSchematic"/>
-	<!--<item name="gunBotT3JunkDroneSchematic" prob=".4"/>-->
-	<item name="gunHandgunT3SMG5Schematic"/>
 	<item name="gunHandgunT2Magnum44Schematic"/>
-	<item name="gunHandgunT3DesertVultureSchematic"/>
-	<item name="gunShotgunT2PumpShotgunSchematic"/>
-	<item name="gunShotgunT3AutoShotgunSchematic"/>
-	<item name="gunRifleT2MarksmanRifleSchematic"/>
-	<item name="gunRifleT3SniperRifleSchematic"/>
 	<item name="gunMGT2TacticalARSchematic"/>
-	<item name="gunMGT3M60Schematic"/>
-	<item name="gunExplosivesT3RocketLauncherSchematic"/>
-	<item name="thrownDynamiteSchematic"/>
-	<item name="thrownGrenadeContactSchematic"/>
-	<item name="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
-	<item name="thrownGrenadeContactSchematic"/>
-	<item name="thrownGrenadeSchematic"/>
-	<item name="thrownDynamiteSchematic"/>
+	<item name="gunRifleT2MarksmanRifleSchematic"/>
+	<item name="gunShotgunT2PumpShotgunSchematic"/>
 	<item name="meleeWpnBladeT3MacheteSchematic"/>
+	<item name="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
+	<item name="thrownGrenadeSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsArmorCommon">
-	<item name="armorLeatherSetSchematic"/>
-	<item name="armorIronSetSchematic"/>
-</lootgroup>
-
-<lootgroup name="schematicsArmorRare">
+<lootgroup name="schematicsWeaponsArmorT2">
+	<!--<item name="gunBotT3JunkDroneSchematic" prob=".4"/>-->
 	<item name="armorMilitarySetSchematic"/>
 	<item name="armorSteelSetSchematic"/>
+	<item name="gunExplosivesT3RocketLauncherSchematic"/>
+	<item name="gunHandgunT3DesertVultureSchematic"/>
+	<item name="gunHandgunT3SMG5Schematic"/>
+	<item name="gunMGT3M60Schematic"/>
+	<item name="gunRifleT3SniperRifleSchematic"/>
+	<item name="gunShotgunT3AutoShotgunSchematic"/>
+	<item name="thrownGrenadeContactSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsVehiclesCommon">
+<lootgroup name="schematicsWeaponsArmorCommon">
+	<item group="schematicsWeaponsArmorT0"/>
+	<item group="schematicsWeaponsArmorT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsWeaponsArmorT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsWeaponsArmorRare">
+	<item group="schematicsWeaponsArmorT1"/>
+	<item group="schematicsWeaponsArmorT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsVehiclesT0">
 	<item name="vehicleBicycleChassisSchematic"/>
 	<item name="vehicleBicycleHandlebarsSchematic"/>
-	<item name="vehicleMinibikeChassisSchematic"/>
-	<item name="vehicleMinibikeHandlebarsSchematic"/>
 </lootgroup>
 
-<lootgroup name="schematicsVehiclesRare">
+<lootgroup name="schematicsVehiclesT1">
+	<item name="vehicleMinibikeChassisSchematic"/>
+	<item name="vehicleMinibikeHandlebarsSchematic"/>
 	<item name="vehicleMotorcycleChassisSchematic"/>
 	<item name="vehicleMotorcycleHandlebarsSchematic"/>
+</lootgroup>
+
+<lootgroup name="schematicsVehiclesT2">
 	<item name="vehicle4x4TruckChassisSchematic"/>
 	<item name="vehicle4x4TruckAccessoriesSchematic"/>
 	<item name="vehicleGyroCopterChassisSchematic"/>
 	<item name="vehicleGyroCopterAccessoriesSchematic"/>
 </lootgroup>
 
-<lootgroup name="farmingCookingRecipes">
+<lootgroup name="schematicsVehiclesCommon">
+	<item group="schematicsVehiclesT0"/>
+	<item group="schematicsVehiclesT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsVehiclesT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="schematicsVehiclesRare">
+	<item group="schematicsVehiclesT1"/>
+	<item group="schematicsVehiclesT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="farmingCookingRecipesT0">
 	<item name="drinkJarCoffeeSchematic"/>
 	<item name="drinkJarGoldenRodTeaSchematic"/>
 	<item name="drinkJarRedTeaSchematic"/>
-	<item name="drinkYuccaJuiceSmoothieSchematic"/>
-	<item name="drinkJarBeerSchematic"/>
-	<item name="drinkJarGrandpasAwesomeSauceSchematic"/>
-	<item name="drinkJarGrandpasLearningElixirSchematic"/>
-	<item name="drinkJarGrandpasMoonshineSchematic"/>
 	<item name="foodBaconAndEggsSchematic"/>
 	<item name="foodBakedPotatoSchematic"/>
-	<item name="foodBlueberryPieSchematic"/>
 	<item name="foodBoiledMeatSchematic"/>
 	<item name="foodCornBreadSchematic"/>
 	<item name="foodCornOnTheCobSchematic"/>
 	<item name="foodGrilledMeatSchematic"/>
-	<item name="foodMeatStewSchematic"/>
-	<item name="foodSteakAndPotatoSchematic"/>
-	<item name="foodVegetableStewSchematic"/>
-	<item name="foodShamChowderSchematic"/>
-	<item name="foodHoboStewSchematic"/>
-	<item name="foodFishTacosSchematic"/>
-	<item name="foodChiliDogSchematic"/>
-	<item name="foodPumpkinPieSchematic"/>
-	<item name="foodPumpkinCheesecakeSchematic"/>
-	<item name="foodPumpkinBreadSchematic"/>
 	<item name="plantedAloe1Schematic"/>
 	<item name="plantedBlueberry1Schematic"/>
 	<item name="plantedChrysanthemum1Schematic"/>
@@ -2488,17 +2329,49 @@ The overall plan for loot distribution:
 	<item name="plantedCorn1Schematic"/>
 	<item name="plantedCotton1Schematic"/>
 	<item name="plantedGoldenrod1Schematic"/>
-	<item name="plantedGraceCorn1Schematic"/>
 	<item name="plantedHop1Schematic"/>
 	<item name="plantedMushroom1Schematic"/>
 	<item name="plantedPotato1Schematic"/>
-	<item name="plantedYucca1Schematic"/>
 	<item name="plantedPumpkin1Schematic"/>
+	<item name="plantedYucca1Schematic"/>
+</lootgroup>
 
+<lootgroup name="farmingCookingRecipesT1">
+	<item name="drinkJarBeerSchematic"/>
+	<item name="drinkYuccaJuiceSmoothieSchematic"/>
+	<item name="foodBlueberryPieSchematic"/>
+	<item name="foodChiliDogSchematic"/>
+	<item name="foodFishTacosSchematic"/>
+	<item name="foodHoboStewSchematic"/>
+	<item name="foodMeatStewSchematic"/>
+	<item name="foodPumpkinBreadSchematic"/>
+	<item name="foodPumpkinCheesecakeSchematic"/>
+	<item name="foodPumpkinPieSchematic"/>
+	<item name="foodShamChowderSchematic"/>
+	<item name="foodSteakAndPotatoSchematic"/>
+	<item name="foodVegetableStewSchematic"/>
+	<item name="plantedGraceCorn1Schematic"/>
+</lootgroup>
+
+<lootgroup name="farmingCookingRecipesT2">
+	<item name="drinkJarGrandpasAwesomeSauceSchematic"/>
+	<item name="drinkJarGrandpasLearningElixirSchematic"/>
+	<item name="drinkJarGrandpasMoonshineSchematic"/>
 	<item name="foodGumboStewSchematic" prob=".6"/>
 	<item name="foodShepardsPieSchematic" prob=".6"/>
 	<item name="foodSpaghettiSchematic" prob=".6"/>
 	<item name="foodTunaFishGravyToastSchematic" prob=".6"/>
+</lootgroup>
+
+<lootgroup name="farmingCookingRecipesCommon">
+	<item group="farmingCookingRecipesT0"/>
+	<item group="farmingCookingRecipesT1" loot_prob_template="ProbT1"/>
+	<item group="farmingCookingRecipesT2" loot_prob_template="ProbT2"/>
+</lootgroup>
+
+<lootgroup name="farmingCookingRecipesRare">
+	<item group="farmingCookingRecipesT1"/>
+	<item group="farmingCookingRecipesT2" loot_prob_template="ProbT2"/>
 </lootgroup>
 
 <lootgroup name="rareFoodDrink">
@@ -2531,48 +2404,35 @@ The overall plan for loot distribution:
 
 	<!-- List of book / schematics groups:
 
-	<item group="perkBooks"/>               133
-	<item group="schematicsModsCommon"/>     42
-	<item group="schematicsModsRare"/>       18
-	<item group="schematicsToolsCommon"/>     7
-	<item group="schematicsToolsRare"/>      12
-	<item group="schematicsWeaponsCommon"/>  14
-	<item group="schematicsWeaponsRare"/>    21
-	<item group="schematicsArmorCommon"/>     2
-	<item group="schematicsArmorRare"/>       2
-	<item group="schematicsVehiclesCommon"/>  4
-	<item group="schematicsVehiclesRare"/>    6
-	<item group="farmingCookingRecipes"/>    40
+	<item group="perkBooks"/>                   133
+	<item group="schematicsModsAndGeneralCommon"/>         60
+	<item group="schematicsModsAndGeneralRare"/>           37
+	<item group="schematicsToolsCommon"/>        20
+	<item group="schematicsToolsRare"/>          13
+	<item group="schematicsWeaponsArmorCommon"/> 36
+	<item group="schematicsWeaponsArmorRare"/>   22
+	<item group="schematicsVehiclesCommon"/>     10
+	<item group="schematicsVehiclesRare"/>        8
+	<item group="farmingCookingRecipesCommon"/>  42
+	<item group="farmingCookingRecipesRare"/>    33
 	<item group="groupQuestChallenge"/>	 20
 	-->
 
-<lootgroup name="commonBooks">
+<lootgroup name="booksAllScaled">
 	<item group="perkBooks" prob="133"/>
-	<item group="schematicsModsCommon" prob="42"/>
+	<item group="schematicsModsAndGeneralCommon" prob="60"/>
 	<item group="schematicsToolsCommon" prob="7"/>
-	<item group="schematicsWeaponsCommon" prob="14"/>
-	<item group="schematicsArmorCommon" prob="2"/>
-	<item group="schematicsVehiclesCommon" prob="4"/>
+	<item group="schematicsWeaponsArmorCommon" prob="36"/>
+	<item group="schematicsVehiclesCommon" prob="10"/>
 	<item group="schematicsElectrical" prob="13"/>
 </lootgroup>
 
-<lootgroup name="rareBooks">
-	<item group="schematicsModsRare" prob="18"/>
+<lootgroup name="booksRareOnlyScaled">
+	<item group="schematicsModsAndGeneralRare" prob="18"/>
 	<item group="schematicsToolsRare" prob="12"/>
-	<item group="schematicsWeaponsRare" prob="21"/>
-	<item group="schematicsArmorRare" prob="2"/>
-	<item group="schematicsVehiclesRare" prob="6"/>
+	<item group="schematicsWeaponsArmorRare" prob="22"/>
+	<item group="schematicsVehiclesRare" prob="8"/>
 	<item group="groupQuestChallenge" prob="20"/>
-</lootgroup>
-
-<lootgroup name="booksNoFiller">
-	<item group="commonBooks" prob="0.33"/>
-	<item group="rareBooks" loot_prob_template="probTemplate1.0"/> <!-- .2 => 1.0 -->
-</lootgroup>
-
-<lootgroup name="books">
-	<item group="booksNoFiller"/>
-	<item name="resourcePaper" count="10,25" prob="0.3"/>
 </lootgroup>
 
 <lootgroup name="electricalDevices">
@@ -2747,6 +2607,12 @@ The overall plan for loot distribution:
 	<item name="resourceRepairKit"/>
 </lootgroup>
 
+<lootgroup name="workstationToolsScaled">
+	<item name="toolAnvil"/>
+	<item name="toolBellows" loot_prob_template="ProbT1"/>
+	<item name="toolForgeCrucible" loot_prob_template="ProbT2"/>
+</lootgroup>
+
 <lootgroup name="forgeLoot" count="1,2">
 	<item name="resourceScrapIron" count="20,60" prob="2"/>
 	<item name="resourceScrapBrass" count="25,75"/>
@@ -2758,9 +2624,7 @@ The overall plan for loot distribution:
 	<item name="resourceMetalPipe" count="10,20"/>
 	<item name="resourceForgedIron" count="10,20" prob="2"/>
 	<item name="resourceForgedSteel" count="5,20"/>
-	<item name="toolAnvil"/>
-	<item name="toolBellows" loot_prob_template="probTemplate0.75"/>
-	<item name="toolForgeCrucible" loot_prob_template="probTemplate0.75"/>
+	<item group="workstationToolsScaled" prob="2"/>
 	<item name="resourceNail" count="20,60"/>
 	<item name="resourceArrowHeadIron" count="10,30"/>
 	<item name="resourceArrowHeadSteelAP" count="10,20"/>
@@ -2848,7 +2712,7 @@ The overall plan for loot distribution:
 	<item name="resourceFeather" count="1,5"/>
 	<item name="resourceDuctTape" count="1,3"/>
 	<item group="rottenFood"/>
-	<item group="books"/>
+	<item group="booksAllScaled"/>
 	<item group="seeds"/>
 	<item group="groupQuestChallenge" prob="0.11"/> 	<!-- 0.06 = .23 % -->
 	<item group="groupTreasureMaps" prob="0.092"/>
@@ -2885,6 +2749,7 @@ The overall plan for loot distribution:
 	<item name="meleeToolFlashlight02" prob="0.05" />
 	<item name="resourceElectricParts" count="1,3" prob="0.3"/>
 	<item name="resourceMechanicalParts" count="1,3" prob="0.3"/>
+	<item name="resourceRepairKit" count="1,2"/>
 </lootgroup>
 
 <lootgroup name="garbage">
@@ -2904,9 +2769,8 @@ The overall plan for loot distribution:
 <lootgroup name="toolParts">
 	<item name="meleeToolAllSteelParts" count="1,4"/>
 	<item name="meleeToolAxeT3ChainsawParts" count="1,4"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,4"/>
+	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,4" prob="0.3"/>
 </lootgroup>
-
 
 <lootgroup name="groupToolsT0" loot_quality_template="QLTemplateT0">
 	<item name="meleeToolRepairT0StoneAxe"/>
@@ -2948,33 +2812,22 @@ The overall plan for loot distribution:
 <lootgroup name="groupToolsTiered">
 	<item group="groupToolsT0" loot_prob_template="ProbT0"/>
 	<item group="groupToolsT1" loot_prob_template="ProbT1"/>
+	<item group="toolParts" loot_prob_template="ProbT1"/>
 	<item group="groupToolsT2" loot_prob_template="ProbT2"/>
 	<item group="groupToolsT3" loot_prob_template="ProbT3"/>
 </lootgroup>
 
-<lootgroup name="rareTools">
+<lootgroup name="groupRareToolsTiered">
 	<item group="groupToolsTiered" prob="5"/>
 	<item group="groupToolsT2" loot_prob_template="ProbT2"/>
 	<item group="groupToolsT3" loot_prob_template="ProbT3"/>
-	<item name="smallEngine"/>
-	<item name="toolBellows"/>
-</lootgroup>
-
-<lootgroup name="tools">
-	<item name="resourceRepairKit" count="1,4"/>
-	<item name="resourceForgedIron" count="1,4" prob="0.41"/>
-	<item name="resourceForgedSteel" count="1,4" prob="0.22"/>
-	<item name="meleeToolPaintTool" prob="0.3"/>
-	<item name="meleeToolWireTool"/>
-	<item group="toolParts"/>
 </lootgroup>
 
 <lootgroup name="workingStiffsSub" count="1,2">
 	<item group="groupToolsTiered" prob="6"/>
 	<item name="resourceRepairKit" count="1,4"/>
-	<item name="toolAnvil"/>
-	<item name="toolBellows" loot_prob_template="probTemplate0.75"/>
-	<item name="toolForgeCrucible" loot_prob_template="probTemplate0.75"/>
+	<item name="smallEngine" prob="0.3"/>
+	<item group="workstationToolsScaled" prob="2"/>
 	<item group="automotive" prob="1"/>
 	<item name="resourceForgedIron" count="12,20" prob=".5"/> <!-- together 3% per crate -->
 	<item name="resourceForgedSteel" count="8,14" prob=".5"/>
@@ -3035,7 +2888,6 @@ The overall plan for loot distribution:
 	<item group="groupApparelHats"/>
 	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
 	<item name="apparelWornBoots"/>
-	<item group="groupWeaponsT1_DeepCuts"/><!--Hunting knife-->
 	<item name="armorFootballHelmet"/>
 </lootgroup>
 
@@ -3072,7 +2924,7 @@ The overall plan for loot distribution:
 <lootgroup name="automotive+tools+junk">
 	<item group="junk" prob="1"/>
 	<item group="automotive" prob="0.21"/>
-	<item group="tools" prob="0.21"/>
+	<item group="groupToolsTiered" prob="0.21"/>
 </lootgroup>
 
 <lootgroup name="survivalMedical">
@@ -3088,10 +2940,9 @@ The overall plan for loot distribution:
 
 <lootgroup name="backpacks/survival">
 	<item group="cupboard" prob="0.7"/>
-	<item group="groupWeaponsT1_All" prob="0.1"/>
+	<item group="groupWeaponsT0_All" prob="0.1"/>
 	<item group="groupApparelClothes" prob="0.12"/>
-	<item group="groupArmorT1_Light" prob="0.07"/>
-	<item group="groupArmorT1_Heavy" prob="0.07"/>
+	<item group="groupArmorT0" prob="0.14"/>
 	<item name="meleeToolFlashlight02" prob="0.08"/>
 	<item group="survivalMedical" prob="0.1"/>
 </lootgroup>
@@ -3104,7 +2955,7 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="banditsGeneral">
-	<item group="groupArmorT2_Heavy" prob="3"/>
+	<item group="groupArmorScaled" prob="3"/>
 	<item group="medicine"/>
 	<item group="cannedfood"/>
 	<item group="rottenFood"/>
@@ -3153,7 +3004,7 @@ The overall plan for loot distribution:
 	<item name="carBattery"/>
 </lootgroup>
 
-<lootgroup name="vehicleParts">
+<lootgroup name="vehiclePartsTiered">
 	<item group="bicycleParts"  loot_prob_template="ProbT0"/>
 	<item group="minibikeParts"  loot_prob_template="ProbT1"/>
 	<item group="motorcycleParts" loot_prob_template="ProbT2"/>
@@ -3162,9 +3013,7 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="labEquipment">
-	<item group="books"/>
-	<item group="rareBooks" prob="0.4"/>
-	<item group="perkBooks" prob="0.2"/>
+	<item group="booksAllScaled"/>
 	<item name="resourceScrapPolymers" count="3,10"/>
 	<item name="drinkJarEmpty" count="1,20" prob="2"/>
 	<item name="drinkJarGrainAlcohol" count="5,10"/>
@@ -3180,7 +3029,7 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="brewerySafeFiller" count="1,2">
-	<item group="books"/>
+	<item group="booksRareOnlyScaled"/>
 	<item name="resourcePaper" count="5,20"/>
 	<item name="apparelCigar" prob="1"/>
 </lootgroup>
@@ -3191,7 +3040,7 @@ The overall plan for loot distribution:
 
 <lootgroup name="shamwaySafeFiller" count="1,2">
 	<item name="foodCanSham" count="1,3"/>
-	<item group="books"/>
+	<item group="booksRareOnlyScaled"/>
 	<item name="resourcePaper" count="5,20"/>
 	<item name="apparelCigar" prob="1"/>
 </lootgroup>
@@ -3247,18 +3096,7 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="weaponTestLoot" count="70">
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
-	<item group="groupWeaponsMeleeScaled"/>
-	<item group="groupWeaponsRangedScaled"/>
+	<item group="groupWeaponsAllScaled"/>
 
 <!--
 Gazz, the descending chance thing is in and should function just fine, so the attr names are mods=""
@@ -3338,7 +3176,10 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 -->
 </lootgroup>
 
-<lootgroup name="toolTestLoot" count="all">
+<lootgroup name="toolTestLoot" count="70">
+	<item group="groupToolsTiered"/>
+	<!--
+
 	<item name="meleeToolRepairT0StoneAxe"/>
 	<item name="meleeToolRepairT0StoneAxe"/>
 	<item name="meleeToolRepairT0StoneAxe"/>
@@ -3355,10 +3196,6 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="meleeToolAxeT1IronFireaxe"/>
 	<item name="meleeToolAxeT1IronFireaxe"/>
 	<item name="meleeToolAxeT1IronFireaxe"/>
-	<!--<item name="meleeToolFarmT1IronHoe"/>-->
-	<!--<item name="meleeToolFarmT1IronHoe"/>-->
-	<!--<item name="meleeToolFarmT1IronHoe"/>-->
-	<!--<item name="meleeToolFarmT1IronHoe"/>-->
 	<item name="meleeToolPickT2SteelPickaxe"/>
 	<item name="meleeToolPickT2SteelPickaxe"/>
 	<item name="meleeToolPickT2SteelPickaxe"/>
@@ -3399,6 +3236,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="meleeToolWireTool"/>
 	<item name="meleeToolWireTool"/>
 	<item name="meleeToolWireTool"/>
+	-->
 </lootgroup>
 
 <lootgroup name="clothingTestLoot" count="all">
@@ -3646,11 +3484,23 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootgroup>
 
 <lootgroup name="groupQuestSchematics">
-	<item name="drugHerbalAntibioticsSchematic"/>
-	<item name="foodCanShamSchematic"/>
-	<item group="perkBooks" prob="20"/> <!--133-->
-	<item group="booksNoFiller" prob="20"/>
-	<item group="rareBooks" prob="10"/>
+	<item group="perkBooks" prob="4"/>
+	<item group="schematicsModsAndGeneralT0" loot_prob_template="QuestT1Prob"/>
+	<item group="schematicsModsAndGeneralT1" loot_prob_template="QuestT2Prob"/>
+	<item group="schematicsModsAndGeneralT2" loot_prob_template="QuestT3Prob"/>
+	<item group="schematicsToolsT0" loot_prob_template="QuestT1Prob"/>
+	<item group="schematicsToolsT1" loot_prob_template="QuestT2Prob"/>
+	<item group="schematicsToolsT2" loot_prob_template="QuestT3Prob"/>
+	<item group="schematicsWeaponsArmorT0" loot_prob_template="QuestT1Prob"/>
+	<item group="schematicsWeaponsArmorT1" loot_prob_template="QuestT2Prob"/>
+	<item group="schematicsWeaponsArmorT2" loot_prob_template="QuestT3Prob"/>
+	<item group="schematicsVehiclesT0" loot_prob_template="QuestT1Prob"/>
+	<item group="schematicsVehiclesT1" loot_prob_template="QuestT2Prob"/>
+	<item group="schematicsVehiclesT2" loot_prob_template="QuestT3Prob"/>
+	<item group="farmingCookingRecipesT0" loot_prob_template="QuestT1Prob"/>
+	<item group="farmingCookingRecipesT1" loot_prob_template="QuestT2Prob"/>
+	<item group="farmingCookingRecipesT2" loot_prob_template="QuestT3Prob"/>
+	<item name="foodCanShamSchematic" prob=".05"/>
 </lootgroup>
 
 <lootgroup name="groupQuestMods">
@@ -3665,24 +3515,24 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootgroup name="groupBuriedStashChest" count="all">
 	<item name="drinkJarBoiledWater" count="2,4"/>
 	<item group="cannedfood" count="2,4"/>
-	<item group="farmingCookingRecipes" count="1"/>
+	<item group="farmingCookingRecipesCommon" count="1"/>
 	<item group="rareFoodDrink" count="1"/>
 </lootgroup>
 
 <lootgroup name="groupBuriedWeaponChest">
-	<item group="schematicsModsCommon" prob=".8"/>
-	<item group="schematicsModsRare" prob=".2"/>
+	<item group="schematicsModsAndGeneralCommon" prob=".8"/>
+	<item group="schematicsModsAndGeneralRare" prob=".2"/>
 	<item group="groupModAllScaled" prob="1"/>
-	<item group="groupWeaponsScaled" prob="2"/>
+	<item group="groupWeaponsAllScaled" prob="2"/>
 	<item group="groupArmorScaled" prob="1"/>
 </lootgroup>
 
 <lootgroup name="groupHeroChestLootSub">
-	<item group="groupWeaponsScaledTPlus" prob="0.4"/>
+	<item group="groupWeaponsAllScaledTPlus" prob="0.4"/>
 	<item group="groupArmorScaledTPlus" prob="0.4"/>
 	<item group="groupModAllScaled" prob=".2"/>
 	<item group="rareOres" count="2,5" prob="0.05"/>
-	<item group="rareBooks" count="1,2" prob="0.015"/>
+	<item group="booksRareOnlyScaled" count="1,2" prob="0.015"/>
 	<item group="perkBooks" count="1,2" prob="0.015"/>
 </lootgroup>
 <lootgroup name="groupHeroChestLoot" count="all">
@@ -3692,7 +3542,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <lootgroup name="groupSafeLoot">
 	<item group="groupAmmoRegular" prob=".2"/>
-	<item group="groupWeaponsScaled" prob=".7"/>
+	<item group="groupWeaponsAllScaled" prob=".7"/>
 	<item group="groupModAllScaled" prob=".15"/>
 	<!-- <item group="groupAmmoAdvanced"/> -->
 	<item name="oldCash" count="10,300" prob="0.05"/>
@@ -3702,7 +3552,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootgroup name="groupAmmoPileLootSub">
 	<item group="groupAmmoRegular" prob=".7"/>
 	<!--<item group="groupAmmoAdvanced" prob=".5"/>-->
-	<item group="groupWeaponsScaled" prob=".1"/>
+	<item group="groupWeaponsAllScaled" prob=".1"/>
 	<item group="groupModAllScaled" prob=".15"/>
 </lootgroup>
 <lootgroup name="groupAmmoPileLoot" count="all">
@@ -3712,7 +3562,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <lootgroup name="groupWeaponsBagLoot">
 	<item group="groupAmmoRegular" prob=".2"/>
-	<item group="groupWeaponsScaled" prob=".7"/>
+	<item group="groupWeaponsAllScaled" prob=".7"/>
 	<item group="groupModAllScaled" prob=".15"/>
 </lootgroup>
 
@@ -3727,7 +3577,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootgroup>
 
 <lootgroup name="groupBuriedLootStashTreasureSub" count="0,3">
-	<item group="groupWeaponsScaledTPlus"/>
+	<item group="groupWeaponsAllScaledTPlus"/>
 	<item group="groupArmorScaledTPlus" prob="0.7"/>
 	<item group="rareOres" count="5,11"/>
 	<item name="oldCash" count="50,250" prob="0.5"/>
@@ -3845,7 +3695,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="resourceAcid" count="1,2" />
 	<item name="resourcePotassiumNitratePowder" count="10,20" />
 	<item group="groupAmmoRegular"/>
-	<item group="farmingCookingRecipes"/>
+	<item group="farmingCookingRecipesCommon"/>
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
@@ -3861,7 +3711,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- stove/oven, cooking pots and pans rotten food -->
 <lootcontainer id="11" count="1,2" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate">
 	<item name="toolCookingPot" count="1,2" prob="1.5"/>
-	<item group="farmingCookingRecipes"/>
+	<item group="farmingCookingRecipesCommon"/>
 	<item name="toolCookingGrill"/>
 	<item name="resourceScrapIron" count="1,15" prob="1.5"/>
 	<item name="drinkJarEmpty" count="1,2"/>
@@ -3873,7 +3723,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootcontainer id="12" count="0,2" size="6,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
 	<item group="junk"/>
 	<item group="groupAmmoRegular"/>
-	<item group="books" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.1"/>
 	<item group="dyes" prob="0.08"/>
 	<item name="meleeToolPaintTool" prob="0.04"/>
 </lootcontainer>
@@ -3888,7 +3738,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <!-- misc metal container mailbox-->
 <lootcontainer id="14" count="0,2" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate">
-	<item group="books" prob="0.2"/>
+	<item group="booksAllScaled" prob="0.2"/>
 	<item name="resourcePaper" prob="0.8" count="1,10"/>
 </lootcontainer>
 
@@ -3896,7 +3746,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootcontainer id="15" count="0,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 	<item group="junk"/>
 	<item group="groupAmmoRegular"/>
-	<item group="books" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.1"/>
 	<item group="dyes" prob="0.08"/>
 	<item name="meleeToolPaintTool" prob="0.05"/>
 </lootcontainer>
@@ -3953,7 +3803,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupApparelClothes" prob="40"/>
 	<item group="trophyGroup"/>
 	<item group="groupAmmoRegular"/>
-	<item group="books"/>
+	<item group="booksAllScaled"/>
 	<item name="resourceGlue" />
 	<item group="medicine"/>
 	<item name="meleeToolFlashlight02"/>
@@ -3977,12 +3827,12 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <!-- Supply Crate General, the normal airdrop -->
 <lootcontainer id="34" count="4" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate">
-	<item group="cannedfood" count="3,5" prob="0.2"/>
-	<item group="groupWeaponsScaled" prob="0.2"/>
-	<item group="groupAmmoRegular" count="2" prob="0.2"/>
-	<item group="rareBooks" prob="0.2"/>
-	<item group="airdropMedicine" count="1,4" prob="0.2"/>
-	<item group="groupArmorScaled" prob="0.2"/>
+	<item group="cannedfood" count="3,5"/>
+	<item group="groupWeaponsAllScaled"/>
+	<item group="groupAmmoRegular" count="2"/>
+	<item group="booksRareOnlyScaled"/>
+	<item group="airdropMedicine" count="1,4"/>
+	<item group="groupArmorScaled"/>
 </lootcontainer>
 
 <!-- tree hollowed stump, place where people stash things, -->
@@ -3991,7 +3841,6 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="drinkJarEmpty" count="1,2" prob="2"/>
 	<item name="drinkCanEmpty" count="1,2" prob="5"/>
 	<item group="rottenFood" prob="1"/>
-	<item group="groupWeaponsRangedScaled" prob="1.3"/>
 	<item group="sportingGoods" count="1,2" prob="5"/>
 	<item name="foodHoney"/>
 	<item group="cannedfood"/>
@@ -4005,7 +3854,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="junk"/>
 	<item name="meleeToolFlashlight02" prob="0.1"/>
 	<item group="medicine" prob="0.1"/>
-	<item group="groupWeaponsScaled" prob="0.06"/>
+	<item group="groupWeaponsAllScaled" prob="0.06"/>
 	<item group="groupAmmoRegular"/>
 	<item group="groupArmorScaled" prob="0.1"/>
 	<item group="groupApparelClothes" prob="2"/>
@@ -4026,7 +3875,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="shamwaySafe"/>
 </lootcontainer>
 
-<!-- Brew Master's Safe -->
+<!-- Brew Master's Safe (unused) -->
 <lootcontainer id="39" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
 	<item group="brewerySafe"/>
 </lootcontainer>
@@ -4034,10 +3883,10 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- military munitions ammo box -->
 <lootcontainer id="40" count="2,3" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="8" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob=".7" count="2"/>
-	<item group="groupWeaponsScaled" prob=".3"/>
+	<item group="groupWeaponsAllScaled" prob=".3"/>
 	<item group="groupModAllScaled" prob=".15"/>
 	<!-- <item group="groupAmmoAdvanced"/> -->
-	<item group="groupArmorT3_Light" prob="0.2"/>
+	<item group="groupArmorScaled" prob="0.2"/>
 </lootcontainer>
 
 <!-- cntLootChestHero, small, fancy chest -->
@@ -4050,7 +3899,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupApparelClothes" prob="30"/>
 	<item group="trophyGroup"/>
 	<item group="groupAmmoRegular"/>
-	<item group="books"/>
+	<item group="booksAllScaled"/>
 	<item group="medicine"/>
 	<item name="meleeToolFlashlight02"/>
 	<item name="apparelCigar" prob=".6"/>
@@ -4064,7 +3913,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupApparelHats" prob="5"/>
 	<item group="groupArmorScaled" prob="2"/>
 	<item group="groupAmmoRegular" prob="0.02"/>
-	<item group="books" count="1,2"/>
+	<item group="booksAllScaled" count="1,2"/>
 	<item name="resourcePaper" count="1,2" prob="0.7"/>
 	<item name="oldCash" count="1,40" prob="0.3"/>
 	<item group="medicine" prob="0.05"/>
@@ -4075,8 +3924,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- file cabinet -->
 <lootcontainer id="44" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob="0.05"/>
-	<item group="books"/>
-	<item group="farmingCookingRecipes"/>
+	<item group="booksAllScaled" prob="0.7"/>
 	<item name="resourcePaper" count="10,20"/>
 	<item name="oldCash" count="1,40" prob="0.3"/>
 	<item group="trophyGroup"/>
@@ -4107,7 +3955,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <!-- purse -->
 <lootcontainer id="48" count="0,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
-	<item group="books" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.1"/>
 	<item group="cannedfood"/>
 	<item name="drinkJarBoiledWater"/>
 	<item group="medicine"/>
@@ -4119,13 +3967,13 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- bookcase -->
 <lootcontainer id="49" count="1,2" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="2,8" prob="0.1"/>
-	<item group="books" prob="0.9"/>
+	<item group="booksAllScaled"/>
 </lootcontainer>
 
 <!-- shotgun Messiah -->
 <lootcontainer id="50" count="1,3" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob=".3"/>
-	<item group="groupWeaponsScaled" prob=".4"/>
+	<item group="groupWeaponsAllScaled" prob=".4"/>
 	<item group="groupModAllScaled" prob=".1"/>
 	<item group="weaponParts" count="1,5" prob=".15"/>
 	<item group="groupArmorScaled" prob="0.2"/>
@@ -4201,7 +4049,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- Bookstore bookcase -->
 <lootcontainer id="60" count="1,2" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="2,8" prob="0.1"/>
-	<item group="books" prob="0.9"/>
+	<item group="booksAllScaled"/>
 </lootcontainer>
 
 <!-- cntBuriedLootStashChest, treasure_taylor etc -->
@@ -4241,7 +4089,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="foodRottingFlesh" count="1,2" prob="2"/>
 	<item name="resourceBone" count="10,25" prob="1"/>
 	<item group="junk"/>
-	<item group="books" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.1"/>
 	<item name="resourceGoldNugget" prob="0.05"/>
 </lootcontainer>
 
@@ -4261,18 +4109,18 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="cannedfood" count="1,2" prob="13"/>
 	<item name="drinkJarBeer" count="1,3" prob="5"/>
 	<item name="drinkJarBoiledWater" count="1,4" prob="10"/>
-	<item group="books" prob="6"/>
+	<item group="booksAllScaled" prob="6"/>
 	<item group="brassResource" prob="6"/>
 	<item name="resourceForgedIron" count="2,10" prob="3"/>
 	<item name="resourceForgedSteel" count="2,10" prob="3"/>
-	<item group="tools" prob="6"/>
-	<item group="rareTools" prob="3"/>
+	<item group="groupToolsTiered" prob="6"/>
+	<item group="groupRareToolsTiered" prob="3"/>
 	<item group="groupArmorScaled" prob="7"/>
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" prob="0.5"/>
 	<item group="groupApparelClothes" prob="6"/>
 	<item group="warmClothes" prob=".2"/>
 	<item group="groupAmmoRegular" count="2" prob="20"/>
-	<item group="groupWeaponsScaled" prob="10"/>
+	<item group="groupWeaponsAllScaled" prob="10"/>
 	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate1.0"/>
 	<item name="casinoCoin" count="200,410" prob="6"/>
 	<item name="oldCash" count="150,500" prob="6"/>
@@ -4289,13 +4137,13 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="cannedfood" count="1,2" prob="3.7"/>
 	<item name="drinkJarBeer" count="1,3" prob="2"/>
 	<item name="drinkJarBoiledWater" count="2,5" prob="2.5"/>
-	<item group="books" prob="2.5"/>
+	<item group="booksAllScaled" prob="2.5"/>
 	<item group="brassResource" prob="2.5"/>
 	<item name="resourceForgedIron" count="1,8" prob="1.25"/>
 	<item name="resourceForgedSteel" count="1,8" prob="1.25"/>
 	<item name="resourceMilitaryFiber" count="3,6" prob="0.5"/>
-	<item group="tools" prob="2.5"/>
-	<item group="rareTools" prob=".2"/>
+	<item group="groupToolsTiered" prob="2.5"/>
+	<item group="groupRareToolsTiered" prob=".2"/>
 	<item group="groupArmorScaled" prob="3.75"/>
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" prob="0.5"/>
 	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob="2.5"/>
@@ -4303,8 +4151,8 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupApparelClothes" prob="2.5"/>
 	<item group="warmClothes" prob=".75"/>
 	<item group="groupAmmoRegular" count="2,3" prob="8"/>
-	<item group="groupWeaponsScaled" prob="14"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.75"/>
+	<item group="groupWeaponsAllScaled" prob="14"/>
+	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
 	<item name="casinoCoin" count="10,110" prob="2.5"/>
 	<item name="oldCash" count="150,800" prob="2.5"/>
 	<item name="drugHerbalAntibiotics" count="1,3" prob="0.5"/>
@@ -4314,7 +4162,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupTreasureMaps" prob="0.25"/>
 	<item group="groupQuestChallenge" prob="0.25"/>
 	<item group="groupModAllScaled" prob="1"/>
-	<item group="vehicleParts" loot_prob_template="probTemplate0.5"/>
+	<item group="vehiclePartsTiered" loot_prob_template="probTemplate0.5"/>
 </lootcontainer>
 
 <!-- cntFetchQuestSatchel  -->
@@ -4323,15 +4171,15 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <!-- EntityLootContainerBoss, rare random drop off bosses -->
 <lootcontainer id="73" count="2,4" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
-	<item group="booksNoFiller" prob="2.5"/>
+	<item group="booksRareOnlyScaled" prob="2.5"/>
 	<item name="resourceForgedSteel" count="6,15" prob="1.25"/>
-	<item group="rareTools" prob=".2"/>
+	<item group="groupRareToolsTiered" prob=".2"/>
 	<item group="groupArmorScaled" prob="3.75"/>
 	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".8" prob="2.5"/>
 	<item group="groupApparelHazmat" prob="1.25"/>
 	<item group="groupAmmoRegular" count="3" prob="8"/>
-	<item group="groupWeaponsScaled" prob="14"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate1.0"/>
+	<item group="groupWeaponsAllScaled" prob="14"/>
+	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
 	<item name="oldCash" count="500,900" prob="2.5"/>
 	<item group="rareMedicine" count="1,2" prob="0.75"/>
 	<item name="drugVitamins" count="2,3" prob="1.75"/>
@@ -4339,7 +4187,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupTreasureMaps" prob="0.25"/>
 	<item group="groupQuestChallenge" prob="0.25"/>
 	<item group="groupModAllScaled" prob="1"/>
-	<item group="vehicleParts" loot_prob_template="probTemplate1.0"/>
+	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
 </lootcontainer>
 
 <!-- EntityLootContainerBandit -->
@@ -4349,7 +4197,6 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="meleeWpnClubT0WoodenClub" prob="0.7"/>
 <!-- bandit ranged -->
 	<item group="banditsGeneral"/>
-	<item group="groupWeapons_Gunslinger" prob="0.7"/>
 </lootcontainer>
 
 <!-- cntGasGrillClosed -->
@@ -4388,7 +4235,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- army truck-->
 <lootcontainer id="83" count="1,4" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
 	<item group="cannedfood" prob="0.8"/>
-	<item group="groupWeaponsScaled" prob="0.1"/>
+	<item group="groupWeaponsAllScaled" prob="0.1"/>
 	<item group="groupArmorScaled" prob="0.1"/>
 </lootcontainer>
 
@@ -4442,16 +4289,16 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- bookstore shipping crate -->
 <lootcontainer id="89" count="1,3" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="2,8" prob="0.2"/>
-	<item group="books"/>
+	<item group="booksAllScaled"/>
 	<item name="resourceScrapPolymers" count="2,5" prob="0.15"/>
 </lootcontainer>
 
 <!-- car parts shipping crate -->
 <lootcontainer id="90" count="1,2" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 	<item name="resourceRepairKit" count="10,25" prob=".3"/>
-	<item group="vehicleParts" prob=".4"/>
-	<item group="tools" prob=".5"/>
-	<item group="rareTools" prob="0.1"/>
+	<item group="vehiclePartsTiered" prob=".4"/>
+	<item group="groupToolsTiered" prob=".5"/>
+	<item group="groupRareToolsTiered" prob="0.1"/>
 	<item group="schematicsToolsCommon" prob=".5"/>
 	<item group="schematicsToolsRare" prob=".1"/>
 </lootcontainer>
@@ -4465,9 +4312,9 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- cntCollapsedWorkbench -->
 <lootcontainer id="92" count="1" size="7,4" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="qualBaseTemplate">
 	<item group="workbenchLoot"/>
-	<item group="tools" prob=".2"/>
-	<item group="rareTools"/>
-	<item group="vehicleParts" prob=".2"/>
+	<item group="groupToolsTiered" prob=".2"/>
+	<item group="groupRareToolsTiered"/>
+	<item group="vehiclePartsTiered" prob=".2"/>
 	<item name="workbenchSchematic" prob=".125"/>
 </lootcontainer>
 
@@ -4487,11 +4334,11 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
 <lootcontainer id="95" count="1,2" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template">
 	<item group="groupAmmoRegular" prob=".3" count="2,3"/>
-	<item group="groupWeaponsScaled" prob="0.3"/>
+	<item group="groupWeaponsAllScaled" prob="0.3"/>
 	<item group="groupArmorScaled" prob="0.4"/>
 	<item group="groupModAllScaled" prob=".1"/>
-	<item group="commonBooks" count="1,2" prob="0.1"/>
-	<item group="rareBooks" count="1,2" prob="0.1"/>
+	<item group="booksAllScaled" count="1,2" prob="0.1"/>
+	<item group="booksRareOnlyScaled" count="1" prob="0.1"/>
 </lootcontainer>
 
 <!-- cntLootCrateLabEquipment Lab equipment and medical items -->
@@ -4550,7 +4397,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 clothingTestLoot
 	<item group="clothingTestLoot"/>
 	<item group="weaponTestLoot"/>
-	<item group="rareBooks" />
+	<item group="booksRareOnlyScaled" />
 	<item name="gunBowT3CompoundBow" prob="0.2"/>
 qualBaseTemplate
 treasureTemplate
@@ -4759,7 +4606,7 @@ treasureTemplate
 <!-- cntBookPile01 etc. -->
 <lootcontainer id="135" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 	<item name="resourcePaper" count="2,8" prob="0.11"/>
-	<item group="booksNoFiller"/>
+	<item group="booksAllScaled"/>
 
 	<item name="resourcePaper" count="2,8" prob="7.5"/><!-- temp fix for excessive use of lootable bookshelves instead of random placers -->
 </lootcontainer>
@@ -4767,7 +4614,7 @@ treasureTemplate
 <!-- cntBookShelfSingleBottomFull01 etc. -->
 <lootcontainer id="136" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="2,8" prob="0.11"/>
-	<item group="booksNoFiller"/>
+	<item group="booksAllScaled"/>
 
 	<item name="resourcePaper" count="2,8" prob="7.5"/><!-- temp fix for excessive use of lootable bookshelves instead of random placers -->
 </lootcontainer>
@@ -4779,7 +4626,7 @@ treasureTemplate
 
 <!-- cntGunRackWallGuns01 -->
 <lootcontainer id="138" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
-	<item group="groupWeaponsScaled"/>
+	<item group="groupWeaponsAllScaled"/>
 </lootcontainer>
 
 <!-- JunkDrone -->

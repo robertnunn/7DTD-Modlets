@@ -79,6 +79,7 @@
 			<hold_type id="76" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 76 auto shotgun -->
 			<hold_type id="77" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 77 sharp shooter rifle -->
 			<hold_type id="78" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 78 junk drone -->
+			<hold_type id="79" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />         <!-- 79 knuckles spiked -->
 		</animation>
     <!--
          Add noisy sounds here

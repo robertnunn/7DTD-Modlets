@@ -314,86 +314,98 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="apparelCoatLeatherDuster" prob="0.6"/>
 		</trader_item_group>
 
-		<trader_item_group name="groupArmorLight">
-			<item name="armorClothPants" prob=".7" quality="1,5"/>
-			<item name="armorClothJacket" prob=".7" quality="1,5"/>
-			<item name="armorClothBoots" prob=".7" quality="1,5"/>
-			<item name="armorClothGloves" prob=".7" quality="1,5"/>
-			<item name="armorLeatherBoots" prob=".2" quality="1,5"/>
-			<item name="armorLeatherPants" prob=".2" quality="1,5"/>
-			<item name="armorLeatherChest" prob=".2" quality="1,5"/>
-			<item name="armorLeatherGloves" prob=".2" quality="1,5"/>
-			<item name="armorMilitaryGloves" prob=".1" quality="1,4"/>
-			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".1" quality="1,4"/>
-			<item name="armorMilitaryBoots" prob=".1" quality="1,4"/>
-			<item name="armorMilitaryLegs" prob=".1" quality="1,4"/>
-			<item name="armorMilitaryVest" prob=".1" quality="1,4"/>
+
+		<trader_item_group name="groupArmorLightT0">
+			<item name="armorClothHat" quality="1,4"/>
+			<item name="armorClothPants" quality="1,4"/>
+			<item name="armorClothJacket" quality="1,4"/>
+			<item name="armorClothBoots" quality="1,4"/>
+			<item name="armorClothGloves" quality="1,4"/>
 		</trader_item_group>
 
-		<trader_item_group name="groupArmorHeavy">
-			<item name="armorScrapBoots" prob=".7" quality="1,5"/>
-			<item name="armorScrapLegs" prob=".7" quality="1,5"/>
-			<item name="armorScrapGloves" prob=".7" quality="1,5"/>
-			<item name="armorScrapChest" prob=".7" quality="1,5"/>
-			<item name="armorScrapHelmet" prob=".7" quality="1,5"/>
-			<item name="armorIronGloves" prob=".2" quality="1,5"/>
-			<item name="armorIronHelmet" prob=".2" quality="1,5"/>
-			<item name="armorIronBoots" prob=".2" quality="1,5"/>
-			<item name="armorIronLegs" prob=".2" quality="1,5"/>
-			<item name="armorIronChest" prob=".2" quality="1,5"/>
-			<item name="armorSteelBoots" prob=".1" quality="1,4"/>
-			<item name="armorSteelLegs" prob=".1" quality="1,4"/>
-			<item name="armorSteelChest" prob=".1" quality="1,4"/>
-			<item name="armorSteelGloves" prob=".1" quality="1,4"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".1" quality="1,4"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="1,4"/>
+		<trader_item_group name="groupArmorLightT1">
+			<item name="armorLeatherBoots" quality="1,4"/>
+			<item name="armorLeatherPants" quality="1,4"/>
+			<item name="armorLeatherChest" quality="1,4"/>
+			<item name="armorLeatherGloves" quality="1,4"/>
+			<item name="armorLeatherHood" quality="1,4"/>
+			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="1,3"/>
 		</trader_item_group>
 
-		<trader_item_group name="groupMilitaryArmor">
-			<item name="armorMilitaryGloves" quality="1,4"/>
-			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" quality="1,4"/>
-			<item name="armorMilitaryBoots" quality="1,4"/>
-			<item name="armorMilitaryLegs" quality="1,4"/>
-			<item name="armorMilitaryVest" quality="1,4"/>
-			<item name="resourceMilitaryFiber" count="1,5" prob="2"/>
+		<trader_item_group name="groupArmorLightT2">
+			<item name="armorMilitaryGloves" quality="1,3"/>
+			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" quality="1,3"/>
+			<item name="armorMilitaryBoots" quality="1,3"/>
+			<item name="armorMilitaryLegs" quality="1,3"/>
+			<item name="armorMilitaryVest" quality="1,3"/>
 			<item name="apparelNightvisionGoggles"/>
 		</trader_item_group>
 
-		<trader_item_group name="groupIronArmor">
-			<item name="armorIronGloves" quality="1,5"/>
-			<item name="armorIronHelmet" quality="1,5"/>
-			<item name="armorIronBoots" quality="1,5"/>
-			<item name="armorIronLegs" quality="1,5"/>
-			<item name="armorIronChest" quality="1,5"/>
+		<trader_item_group name="groupArmorLightMixed">
+			<item group="groupArmorLightT0" prob="0.5"/>
+			<item group="groupArmorLightT1" prob="0.3"/>
+			<item group="groupArmorLightT2" prob="0.2"/>
 		</trader_item_group>
 
-		<trader_item_group name="steelArmor">
-			<item name="armorSteelBoots" quality="1,4"/>
-			<item name="armorSteelLegs" quality="1,4"/>
-			<item name="armorSteelChest" quality="1,4"/>
-			<item name="armorSteelGloves" quality="1,4"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" quality="1,4"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="1,4"/>
+
+		<trader_item_group name="groupArmorHeavyT0">
+			<item name="armorScrapBoots" quality="1,4"/>
+			<item name="armorScrapLegs" quality="1,4"/>
+			<item name="armorScrapGloves" quality="1,4"/>
+			<item name="armorScrapChest" quality="1,4"/>
+			<item name="armorScrapHelmet" quality="1,4"/>
 		</trader_item_group>
+
+		<trader_item_group name="groupArmorHeavyT1">
+			<item name="armorIronGloves" quality="1,4"/>
+			<item name="armorIronHelmet" quality="1,4"/>
+			<item name="armorIronBoots" quality="1,4"/>
+			<item name="armorIronLegs" quality="1,4"/>
+			<item name="armorIronChest" quality="1,4"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupArmorHeavyT2">
+			<item name="armorSteelBoots" quality="1,3"/>
+			<item name="armorSteelLegs" quality="1,3"/>
+			<item name="armorSteelChest" quality="1,3"/>
+			<item name="armorSteelGloves" quality="1,3"/>
+			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" quality="1,3"/>
+			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="1,3"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupArmorHeavyMixed">
+			<item group="groupArmorHeavyT0" prob="0.5"/>
+			<item group="groupArmorHeavyT1" prob="0.3"/>
+			<item group="groupArmorHeavyT2" prob="0.2"/>
+		</trader_item_group>
+
 
 		<trader_item_group name="groupAllArmor/Cloth">
 			<item group="clothes"/>
-			<item group="groupArmorLight" prob="0.1"/>
-			<item group="groupArmorHeavy" prob="0.1"/>
+			<item group="groupArmorLightMixed" prob="0.1"/>
+			<item group="groupArmorHeavyMixed" prob="0.1"/>
 		</trader_item_group>
 
-		<trader_item_group name="weaponsMelee">
-			<item name="meleeWpnBladeT1HuntingKnife" prob="0.5" quality="1,5"/>
-			<item name="meleeWpnBladeT3Machete" prob="0.2" quality="1,4"/>
-			<item name="meleeWpnClubT1BaseballBat" prob="0.5" quality="1,5"/>
-			<item name="meleeWpnClubT3SteelClub" prob="0.2" quality="1,4"/>
-			<item name="meleeWpnSpearT1IronSpear" prob="0.5" quality="1,5"/>
-			<item name="meleeWpnSpearT3SteelSpear" prob="0.2" quality="1,4"/>
-			<item name="meleeWpnSledgeT1IronSledgehammer" prob="0.3" quality="1,5"/>
-			<item name="meleeWpnSledgeT3SteelSledgehammer" prob="0.1" quality="1,4"/>
-			<item name="meleeWpnKnucklesT1IronKnuckles" prob="0.5" quality="1,5"/>
-			<item name="meleeWpnKnucklesT3SteelKnuckles" prob="0.2" quality="1,4"/>
-			<item name="meleeWpnBatonT2StunBaton" prob="0.2" quality="1,5"/>
+		<trader_item_group name="weaponsMeleeT0-1">
+			<item name="meleeWpnBladeT1HuntingKnife" quality="1,4"/>
+			<item name="meleeWpnClubT1BaseballBat" quality="1,4"/>
+			<item name="meleeWpnSpearT1IronSpear" quality="1,4"/>
+			<item name="meleeWpnSledgeT1IronSledgehammer" quality="1,4"/>
+			<item name="meleeWpnKnucklesT1IronKnuckles" quality="1,4"/>
+			<item name="meleeWpnBatonT2StunBaton" quality="1,4"/>
+		</trader_item_group>
+
+		<trader_item_group name="weaponsMeleeT2">
+			<item name="meleeWpnBladeT3Machete" quality="1,3"/>
+			<item name="meleeWpnClubT3SteelClub" quality="1,3"/>
+			<item name="meleeWpnSpearT3SteelSpear" quality="1,3"/>
+			<item name="meleeWpnSledgeT3SteelSledgehammer" quality="1,3"/>
+			<item name="meleeWpnKnucklesT3SteelKnuckles" quality="1,3"/>
+		</trader_item_group>
+
+		<trader_item_group name="weaponsMeleeMixed">
+			<item group="weaponsMeleeT0-1"/>
+			<item group="weaponsMeleeT2" prob="0.3"/>
 		</trader_item_group>
 
 		<trader_item_group name="rareMedicine" count="1">
@@ -756,8 +768,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks" count="1">
-			<item name="resourcePaper" count="5,15" prob="0.66"/>
-
 			<item name="meleeWpnBladeT3MacheteSchematic"/>
 			<item name="gunBowT3CompoundBowSchematic"/>
 			<item name="gunBowT3CompoundCrossbowSchematic"/>
@@ -811,27 +821,46 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="perkBooks" prob="1"/>
 		</trader_item_group>
 
+		<trader_item_group name="weaponsGunsT1">
+			<item name="gunHandgunT1Pistol" quality="1,4"/>
+			<item name="gunShotgunT1DoubleBarrel" quality="1,4"/>
+			<item name="gunMGT1AK47" quality="1,4"/>
+			<item name="gunRifleT1HuntingRifle" quality="1,4"/>
+			<item name="gunBowT1WoodenBow" prob="0.7" quality="1,4"/>
+			<item name="gunBowT1IronCrossbow" prob="0.7" quality="1,4"/>
+			<item name="gunBotT1JunkSledge" prob="0.7" quality="1,4"/>
+		</trader_item_group>
+
 		<trader_item_group name="weaponsGunsT2">
-			<item name="gunHandgunT1Pistol" quality="1,5"/>
-			<item name="gunShotgunT1DoubleBarrel" quality="1,5"/>
-			<item name="gunMGT1AK47" quality="1,5"/>
-			<item name="gunRifleT1HuntingRifle" quality="1,5"/>
-			<item name="gunBowT1WoodenBow" prob="0.7" quality="1,5"/>
-			<item name="gunBowT1IronCrossbow" prob="0.7" quality="1,5"/>
+			<item name="gunShotgunT2PumpShotgun" quality="1,3"/>
+			<item name="gunMGT2TacticalAR" quality="1,3"/>
+			<item name="gunRifleT2MarksmanRifle" quality="1,3"/>
+			<item name="gunHandgunT2Magnum44" prob="0.7" quality="1,3"/>
+			<item name="gunBowT3CompoundBow" prob="0.7" quality="1,3"/>
+			<item name="gunBowT3CompoundCrossbow" prob="0.7" quality="1,3"/>
+			<item name="gunBotT2JunkTurret" prob="0.7" quality="1,3"/>
 		</trader_item_group>
 
 		<trader_item_group name="weaponsGunsT3">
-			<item name="gunHandgunT3SMG5" prob="0.7" quality="1,4"/>
-			<item name="gunShotgunT2PumpShotgun" quality="1,4"/>
-			<item name="gunRifleT2MarksmanRifle" quality="1,4"/>
-			<item name="gunMGT3M60" quality="1,4"/>
-			<item name="gunHandgunT2Magnum44" prob="0.7" quality="1,4"/>
-			<item name="gunHandgunT3DesertVulture" prob="0.7" quality="1,4"/>
-			<item name="gunShotgunT3AutoShotgun" prob="0.7" quality="1,4"/>
-			<item name="gunRifleT3SniperRifle" prob="0.7" quality="1,4"/>
-			<item name="gunExplosivesT3RocketLauncher" quality="1,4"/>
-			<item name="gunBowT3CompoundBow" prob="0.7" quality="1,4"/>
-			<item name="gunBowT3CompoundCrossbow" prob="0.7" quality="1,4"/>
+			<item name="gunHandgunT3SMG5" prob="0.7" quality="1,3"/>
+			<item name="gunMGT3M60" quality="1,3"/>
+			<item name="gunHandgunT2Magnum44" prob="0.7" quality="1,3"/>
+			<item name="gunHandgunT3DesertVulture" prob="0.7" quality="1,3"/>
+			<item name="gunShotgunT3AutoShotgun" prob="0.7" quality="1,3"/>
+			<item name="gunRifleT3SniperRifle" prob="0.7" quality="1,3"/>
+			<item name="gunExplosivesT3RocketLauncher" quality="1,3"/>
+			<!-- <item name="gunBotT3JunkDrone" prob="0.7" quality="1,3"/> -->
+		</trader_item_group>
+
+		<trader_item_group name="weaponsGunsT3QL5">
+			<item name="gunHandgunT3SMG5" prob="0.7" quality="2,5"/>
+			<item name="gunMGT3M60" quality="2,5"/>
+			<item name="gunHandgunT2Magnum44" prob="0.7" quality="2,5"/>
+			<item name="gunHandgunT3DesertVulture" prob="0.7" quality="2,5"/>
+			<item name="gunShotgunT3AutoShotgun" prob="0.7" quality="2,5"/>
+			<item name="gunRifleT3SniperRifle" prob="0.7" quality="2,5"/>
+			<item name="gunExplosivesT3RocketLauncher" quality="2,5"/>
+			<!-- <item name="gunBotT3JunkDrone" prob="0.7" quality="2,5"/> -->
 		</trader_item_group>
 
 		<trader_item_group name="weaponsGunParts">
@@ -845,8 +874,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="weaponsGunsMixed">
-			<item group="weaponsGunsT2" prob="3"/>
-			<item group="weaponsGunsT3" prob="1"/>
+			<item group="weaponsGunsT1" prob="3"/>
+			<item group="weaponsGunsT2" prob="1"/>
 			<item group="weaponsGunParts" count="1" prob=".3"/>
 		</trader_item_group>
 
@@ -1033,27 +1062,27 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="rareTools" count="1">
 			<item name="meleeToolAllSteelParts" count="1,3"/>
-			<item name="meleeToolAxeT3Chainsaw" quality="1,4"/>
-			<item name="meleeToolPickT3Auger" quality="1,4"/>
+			<item name="meleeToolAxeT3Chainsaw" quality="1,3"/>
+			<item name="meleeToolPickT3Auger" quality="1,3"/>
 			<item name="meleeToolRepairT3Nailgun"/>
-			<item name="meleeToolSalvageT2Ratchet" quality="1,4"/>
-			<item name="meleeToolSalvageT3ImpactDriver" quality="1,4"/>
+			<item name="meleeToolSalvageT2Ratchet" quality="1,3"/>
+			<item name="meleeToolSalvageT3ImpactDriver" quality="1,3"/>
 			<item name="smallEngine"/>
-			<item name="meleeToolPickT2SteelPickaxe" quality="1,4"/>
-			<item name="meleeToolAxeT2SteelAxe" quality="1,4"/>
-			<item name="meleeToolShovelT2SteelShovel" quality="1,4"/>
-			<item name="meleeWpnSledgeT3SteelSledgehammer" quality="1,4"/>
+			<item name="meleeToolPickT2SteelPickaxe" quality="1,3"/>
+			<item name="meleeToolAxeT2SteelAxe" quality="1,3"/>
+			<item name="meleeToolShovelT2SteelShovel" quality="1,3"/>
+			<item name="meleeWpnSledgeT3SteelSledgehammer" quality="1,3"/>
 			<item name="toolForgeCrucible"/>
 		</trader_item_group>
 
 		<trader_item_group name="tools" count="1">
-			<item name="meleeToolPickT1IronPickaxe" quality="1,5"/>
-			<item name="meleeToolShovelT1IronShovel" quality="1,5"/>
-			<item name="meleeToolAxeT1IronFireaxe" quality="1,5"/>
-			<item name="meleeWpnSledgeT1IronSledgehammer" quality="1,5"/>
+			<item name="meleeToolPickT1IronPickaxe" quality="1,4"/>
+			<item name="meleeToolShovelT1IronShovel" quality="1,4"/>
+			<item name="meleeToolAxeT1IronFireaxe" quality="1,4"/>
+			<item name="meleeWpnSledgeT1IronSledgehammer" quality="1,4"/>
 			<!--<item name="meleeToolFarmT1IronHoe"/>-->
-			<item name="meleeToolRepairT1ClawHammer" quality="1,5"/>
-			<item name="meleeToolSalvageT1Wrench" prob="0.8" quality="1,5"/>
+			<item name="meleeToolRepairT1ClawHammer" quality="1,4"/>
+			<item name="meleeToolSalvageT1Wrench" prob="0.8" quality="1,4"/>
 			<item name="resourceRepairKit" count="1,4"/>
 			<item name="toolAnvil" count="1"/>
 			<item name="toolBellows" prob="0.7"/>
@@ -1063,24 +1092,34 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="meleeToolWireTool"/>
 		</trader_item_group>
 
-		<trader_item_group name="vehicleParts" count="1">
+		<trader_item_group name="vehiclePartsT0" count="1">
 			<item name="vehicleWheels"/>
-			<item name="vehicleMinibikeChassis"/>
-			<item name="vehicleMinibikeHandlebars"/>
 			<item name="smallEngine"/>
-			<item name="vehicleMinibikePlaceable"/>
 			<item name="vehicleBicycleChassis"/>
 			<item name="vehicleBicycleHandlebars"/>
 			<item name="vehicleBicyclePlaceable"/>
+			<item name="vehicleMinibikeChassis"/>
+			<item name="vehicleMinibikeHandlebars"/>
+			<item name="vehicleMinibikePlaceable"/>
 			<item name="vehicleMotorcycleChassis"/>
 			<item name="vehicleMotorcycleHandlebars"/>
 			<item name="vehicleMotorcyclePlaceable"/>
+		</trader_item_group>
+
+		<trader_item_group name="vehiclePartsT1" count="1">
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
 			<item name="vehicle4x4TruckChassis"/>
 			<item name="vehicle4x4TruckAccessories"/>
 			<item name="vehicle4x4TruckPlaceable"/>
 			<item name="vehicleGyroCopterChassis"/>
 			<item name="vehicleGyroCopterAccessories"/>
 			<item name="vehicleGyrocopterPlaceable"/>
+		</trader_item_group>
+
+		<trader_item_group name="vehiclePartsMixed" count="1">
+			<item group="vehiclePartsT0"/>
+			<item group="vehiclePartsT1" prob="0.4"/>
 		</trader_item_group>
 
 		<trader_item_group name="workstations" count="1">
@@ -1154,10 +1193,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="preparedFood" count="1,2"/>
 			<item group="preparedDrink" count="1"/>
 			<item group="constructionSupplies" count="1,3" prob="0.8"/>
-			<item group="rareTools" count="1" prob="0.2" quality="1,3"/>
+			<item group="rareTools" count="1" prob="0.2"/>
 			<item group="rareMedicine" count="1" prob="0.3"/>
 			<item group="medicine" count="1,2" prob="1"/>
-			<item group="vehicleParts" count="1"/>
 			<item group="workstations" count="1"/>
 		</trader_item_group>
 
@@ -1240,7 +1278,7 @@ workstations
 
 -->
 
-	<!-- Trader 1, carries better weapons at higher levels. -->
+	<!-- Trader 1, carries better armor -->
 	<!-- Trader Joel Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
 		reset_interval="3" open_time="6:05" close_time="21:50">
@@ -1250,47 +1288,31 @@ workstations
 			<item group="generalResources" count="9,14"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="1,2" quality="1,3"/>
-			<item group="weaponsMelee" count="1,1" quality="1,3"/>
-			<item group="weaponsGunsT2" count="1" quality="1,3"/>
+			<item group="tools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="1"/>
+			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="clothes" count="1,6"/>
-			<item group="groupArmorLight" count="1,3" quality="1,4"/>
-			<item group="groupArmorHeavy" count="1,3" quality="1,4"/>
+			<item group="groupArmorLightMixed" count="1,3"/>
+			<item group="groupArmorHeavyMixed" count="1,3"/>
 			<item group="traderElectrical" count="1,2"/>
 			<item group="modAllT1SecretStash" count="1,2"/>
-
-<!--
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
-			<item group="weaponsGunsMixed" count="1" quality="1,3"/>
--->
 		</trader_items>
 
 		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-			<item group="tools" count="1" quality="2,4"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,4"/>
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1,2"/>
-			<item group="groupArmorLight" count="1" quality="1,5"/>
-			<item group="groupArmorHeavy" count="1" quality="1,5"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 			<item group="perkBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="1,2"/>
-			<item group="vehicleParts" count="1"/>
+			<item group="vehiclePartsT0" count="1"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
@@ -1298,19 +1320,17 @@ workstations
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1" quality="2,5"/>
-			<item group="rareTools" count="1" quality="2,4"/>
-			<item group="weaponsMelee" count="1,2" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,5"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1,2"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="2,5"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupArmorHeavy" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
-			<item group="groupArmorLight" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
-			<item group="vehicleParts" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
@@ -1319,43 +1339,45 @@ workstations
 		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1,2" quality="2,5"/>
-			<item group="rareTools" count="1,2" quality="2,5"/>
-			<item group="weaponsMelee" count="2,3" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="2,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
 			<item group="ammo" count="3,6"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item group="perkBooks" count="2"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="1,3"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="1,2"/>
 			<item group="modAllT4SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
 		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
 			<item group="traderElectrical" count="3,5"/>
-			<item group="tools" count="1,2" quality="3,5"/>
-			<item group="rareTools" count="3,4" quality="4,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2"/>
-			<item group="weaponsMelee" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsT3" count="1" quality="3,5"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
 			<item group="ammo" count="5,8"/>
-			<item group="steelArmor" count="2,3"/>
-			<item group="groupMilitaryArmor" count="2,3"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item group="perkBooks" count="2,3"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3" quality="3,6"/>
 			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="1,2"/>
 			<item group="modAllT5SecretStash" count="1,4"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
@@ -1365,38 +1387,38 @@ workstations
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
 			<item group="tools" count="2" prob="1"/>
-			<item group="vehicleParts" count="2" prob="1"/>
+			<item group="vehiclePartsMixed" count="2" prob="1"/>
 			<item group="traderElectrical" count="2,4"/>
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
 			<item group="generalResources" count="9,14"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="1,2" quality="1,3"/>
-			<item group="weaponsMelee" count="1,1" quality="1,3"/>
-			<item group="weaponsGunsT2" count="1" quality="1,3"/>
+			<item group="tools" count="1,2"/>
+			<item group="weaponsMeleeT0-1" count="1"/>
+			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="clothes" count="1,4"/>
-			<item group="groupArmorLight" count="1,2" quality="1,4"/>
-			<item group="groupArmorHeavy" count="1,2" quality="1,4"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="traderElectrical" count="1,2"/>
 			<item group="modAllT1SecretStash" count="1,2"/>
 		</trader_items>
 
 		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-			<item group="tools" count="1" quality="2,4"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,4"/>
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1,2"/>
-			<item group="groupArmorLight" count="1" quality="1,5"/>
-			<item group="groupArmorHeavy" count="1" quality="1,5"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 			<item group="perkBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="1,2"/>
-			<item group="vehicleParts" count="1"/>
+			<item group="vehiclePartsMixed" count="1"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
@@ -1404,19 +1426,17 @@ workstations
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1" quality="2,5"/>
-			<item group="rareTools" count="1" quality="2,4"/>
-			<item group="weaponsMelee" count="1,2" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,5"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1,2"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="2,5"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupArmorHeavy" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
-			<item group="groupArmorLight" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
-			<item group="vehicleParts" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
@@ -1425,43 +1445,45 @@ workstations
 		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1,2" quality="2,5"/>
-			<item group="rareTools" count="1,2" quality="2,5"/>
-			<item group="weaponsMelee" count="2,3" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="2,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
 			<item group="ammo" count="3,6"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item group="perkBooks" count="2"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="1,3"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="1,2"/>
 			<item group="modAllT4SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
 		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
 			<item group="traderElectrical" count="3,5"/>
-			<item group="tools" count="1,2" quality="3,5"/>
-			<item group="rareTools" count="3,4" quality="4,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2"/>
-			<item group="weaponsMelee" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsT3" count="1" quality="3,5"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
 			<item group="ammo" count="5,8"/>
-			<item group="steelArmor" count="2,3"/>
-			<item group="groupMilitaryArmor" count="2,3"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item group="perkBooks" count="2,3"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3" quality="3,6"/>
 			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="1,2"/>
 			<item group="modAllT5SecretStash" count="1,4"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
@@ -1478,31 +1500,31 @@ workstations
 			<item group="generalResources" count="9,14"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="1,2" quality="1,3"/>
-			<item group="weaponsMelee" count="1,1" quality="1,3"/>
-			<item group="weaponsGunsT2" count="1" quality="1,3"/>
+			<item group="tools" count="1,2"/>
+			<item group="weaponsMeleeT0-1" count="1"/>
+			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="clothes" count="1,4"/>
-			<item group="groupArmorLight" count="1,2" quality="1,4"/>
-			<item group="groupArmorHeavy" count="1,2" quality="1,4"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="traderElectrical" count="1,2"/>
 			<item group="modAllT1SecretStash" count="1,2"/>
 		</trader_items>
 
 		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-			<item group="tools" count="1" quality="2,4"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,4"/>
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1,2"/>
-			<item group="groupArmorLight" count="1" quality="1,5"/>
-			<item group="groupArmorHeavy" count="1" quality="1,5"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 			<item group="perkBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="1,2"/>
-			<item group="vehicleParts" count="1"/>
+			<item group="vehiclePartsT0" count="1"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
@@ -1510,19 +1532,17 @@ workstations
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1" quality="2,5"/>
-			<item group="rareTools" count="1" quality="2,4"/>
-			<item group="weaponsMelee" count="1,2" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,5"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1,2"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="2,5"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupArmorHeavy" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
-			<item group="groupArmorLight" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
-			<item group="vehicleParts" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
@@ -1531,43 +1551,45 @@ workstations
 		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1,2" quality="2,5"/>
-			<item group="rareTools" count="1,2" quality="2,5"/>
-			<item group="weaponsMelee" count="2,3" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="2,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
 			<item group="ammo" count="3,6"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item group="perkBooks" count="2"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="1,3"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="1,2"/>
 			<item group="modAllT4SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
 		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
 			<item group="traderElectrical" count="3,5"/>
-			<item group="tools" count="1,2" quality="3,5"/>
-			<item group="rareTools" count="3,4" quality="4,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2"/>
-			<item group="weaponsMelee" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsT3" count="1" quality="3,5"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
 			<item group="ammo" count="5,8"/>
-			<item group="steelArmor" count="2,3"/>
-			<item group="groupMilitaryArmor" count="2,3"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item group="perkBooks" count="2,3"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3" quality="3,6"/>
 			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="1,2"/>
 			<item group="modAllT5SecretStash" count="1,4"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
@@ -1577,8 +1599,9 @@ workstations
 	<trader_info id="7" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="weaponsMelee" count="2,4" quality="1,3"/>
-			<item group="weaponsGunsT2" count="1,2" quality="1,3"/>
+			<item group="weaponsMeleeT0-1" count="2,4"/>
+			<item group="weaponsGunsT1" count="2"/>
+			<item group="weaponsGunsT2" count="1,2"/>
 			<item group="weaponsGunParts" count="1,2"/>
 			<item group="ammo" count="1"/>
 			<item group="ammoSupplies" count="1"/>
@@ -1587,28 +1610,28 @@ workstations
 			<item group="generalResources" count="9,14"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="1,2" quality="1,3"/>
+			<item group="tools" count="1,2"/>
 			<item group="clothes" count="1,4"/>
-			<item group="groupArmorLight" count="1,2" quality="1,4"/>
-			<item group="groupArmorHeavy" count="1,2" quality="1,4"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="traderElectrical" count="1,2"/>
 			<item group="modAllT1SecretStash" count="1,2"/>
 		</trader_items>
 
 		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-			<item group="tools" count="1" quality="2,4"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,4"/>
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1,2"/>
-			<item group="groupArmorLight" count="1" quality="1,5"/>
-			<item group="groupArmorHeavy" count="1" quality="1,5"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 			<item group="perkBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="1,2"/>
-			<item group="vehicleParts" count="1"/>
+			<item group="vehiclePartsT0" count="1"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
@@ -1616,19 +1639,17 @@ workstations
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1" quality="2,5"/>
-			<item group="rareTools" count="1" quality="2,4"/>
-			<item group="weaponsMelee" count="1,2" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,5"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1,2"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="2,5"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupArmorHeavy" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
-			<item group="groupArmorLight" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
-			<item group="vehicleParts" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
@@ -1637,49 +1658,51 @@ workstations
 		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1,2" quality="2,5"/>
-			<item group="rareTools" count="1,2" quality="2,5"/>
-			<item group="weaponsMelee" count="2,3" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="2,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
 			<item group="ammo" count="3,6"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item group="perkBooks" count="2"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="1,3"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="2,3"/>
 			<item group="modAllT4SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
 		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
 			<item group="traderElectrical" count="3,5"/>
-			<item group="tools" count="1,2" quality="3,5"/>
-			<item group="rareTools" count="3,4" quality="4,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2"/>
-			<item group="weaponsMelee" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsT3" count="1" quality="3,5"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
 			<item group="ammo" count="5,8"/>
-			<item group="steelArmor" count="2,3"/>
-			<item group="groupMilitaryArmor" count="2,3"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item group="perkBooks" count="2,3"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3" quality="3,6"/>
 			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="2,3"/>
 			<item group="modAllT5SecretStash" count="1,4"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 	</trader_info>
 
-	<!-- Trader Rekt, id=8, carries more guns and ammo at all levels -->
+	<!-- Trader Rekt, id=8, carries more food, seeds farming stuff -->
 	<trader_info id="8" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
@@ -1690,31 +1713,31 @@ workstations
 			<item group="generalResources" count="9,14"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="1,2" quality="1,3"/>
-			<item group="weaponsMelee" count="1,1" quality="1,3"/>
-			<item group="weaponsGunsT2" count="1" quality="1,3"/>
+			<item group="tools" count="1,2"/>
+			<item group="weaponsMeleeT0-1" count="1"/>
+			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="clothes" count="1,4"/>
-			<item group="groupArmorLight" count="1,2" quality="1,4"/>
-			<item group="groupArmorHeavy" count="1,2" quality="1,4"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="traderElectrical" count="1,2"/>
 			<item group="modAllT1SecretStash" count="1,2"/>
 		</trader_items>
 
 		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
-			<item group="tools" count="1" quality="2,4"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,4"/>
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1,2"/>
-			<item group="groupArmorLight" count="1" quality="1,5"/>
-			<item group="groupArmorHeavy" count="1" quality="1,5"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 			<item group="perkBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="1,2"/>
-			<item group="vehicleParts" count="1"/>
+			<item group="vehiclePartsT0" count="1"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
@@ -1722,19 +1745,17 @@ workstations
 			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1" quality="2,5"/>
-			<item group="rareTools" count="1" quality="2,4"/>
-			<item group="weaponsMelee" count="1,2" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="1,2" quality="2,5"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="2,5"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupArmorHeavy" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
-			<item group="groupArmorLight" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
-			<item group="vehicleParts" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
@@ -1743,43 +1764,45 @@ workstations
 		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
 			<item group="traderElectrical" count="2,3"/>
 			<item name="cntVendingMachine" count="1"/>
-			<item group="tools" count="1,2" quality="2,5"/>
-			<item group="rareTools" count="1,2" quality="2,5"/>
-			<item group="weaponsMelee" count="2,3" quality="2,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="2,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
 			<item group="ammo" count="3,6"/>
-			<item group="steelArmor" count="1,2"/>
-			<item group="groupMilitaryArmor" count="1,2"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item group="perkBooks" count="2"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="1,3"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="1,2"/>
 			<item group="modAllT4SecretStash" count="1,2"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 
 		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
 			<item group="traderElectrical" count="3,5"/>
-			<item group="tools" count="1,2" quality="3,5"/>
-			<item group="rareTools" count="3,4" quality="4,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2"/>
-			<item group="weaponsMelee" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsMixed" count="2,3" quality="3,5"/>
-			<item group="weaponsGunsT3" count="1" quality="3,5"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
 			<item group="ammo" count="5,8"/>
-			<item group="steelArmor" count="2,3"/>
-			<item group="groupMilitaryArmor" count="2,3"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item group="perkBooks" count="2,3"/>
-			<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-			<item group="vehicleParts" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3" quality="3,6"/>
 			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="1,2"/>
 			<item group="modAllT5SecretStash" count="1,4"/>
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
@@ -1797,36 +1820,36 @@ workstations
 			<item group="constructionSupplies" count="4,12"/>
 			<item group="decorativeBlocks" count="2,7"/>
 			<item group="tools" count="0,2"/>
-			<item group="groupArmorLight" count="1,3"/>
+			<item group="groupArmorLightMixed" count="1,3"/>
 			<item group="traderElectrical" count="0,1"/>
 		</trader_items>
 
 		<tier_items level="1,25" count="1,3">
 			<item group="traderElectrical" count="1,2"/>
-			<item group="weaponsGunsT2" count="1" prob="0.5"/>
+			<item group="weaponsGunsT1" count="1" prob="0.5"/>
 			<item group="constructionSupplies" count="2,3" prob="1"/>
 			<item group="generalResources" count="4,7" prob="1"/>
 			<item group="tools" count="1,2" prob="1"/>
 			<item group="rareTools" count="1" prob="0.5"/>
 			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="groupIronArmor" count="1" prob="0.4"/>
+			<item group="groupArmorHeavyT1" count="1" prob="0.4"/>
 			<item name="armorMiningHelmet" prob="0.5"/>
 			<item group="ammo" count="1,2" prob="1"/>
 		</tier_items>
 
 		<tier_items level="25,50" count="1,4">
 			<item group="traderElectrical" count="2,3"/>
-			<item group="weaponsGunsT2" count="1" prob="0.8"/>
-			<item group="weaponsGunsT3" count="1" prob="0.2"/>
+			<item group="weaponsGunsT1" count="1" prob="0.8"/>
+			<item group="weaponsGunsT2" count="1" prob="0.2"/>
 			<item group="constructionSupplies" count="2,3" prob="1"/>
 			<item group="generalResources" count="3,4" prob="1"/>
 			<item group="tools" count="1,2" prob="1"/>
 			<item group="rareTools" count="1" prob="0.5"/>
 			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="groupIronArmor" count="1" prob="0.4"/>
+			<item group="groupArmorHeavyT1" count="1" prob="0.4"/>
 			<item group="hazmatGear" count="1" prob="0.2"/>
 			<item group="workstations" count="1" prob="0.3"/>
-			<item group="vehicleParts" count="1" prob="0.2"/>
+			<item group="vehiclePartsMixed" count="1" prob="0.2"/>
 			<item name="armorMiningHelmet" prob="0.5"/>
 			<item group="ammo" count="1,4" prob="1"/>
 		</tier_items>
@@ -1834,17 +1857,17 @@ workstations
 		<tier_items level="50,-1" count="2,6">
 			<item group="traderElectrical" count="3"/>
 			<item name="cntVendingMachine" count="1" prob="1"/>
-			<item group="weaponsGunsT2" count="1" prob="1"/>
-			<item group="weaponsGunsT3" count="1" prob="0.3"/>
+			<item group="weaponsGunsT1" count="1" prob="1"/>
+			<item group="weaponsGunsT2" count="1" prob="0.3"/>
 			<item group="constructionSupplies" count="2,3" prob="1"/>
 			<item group="generalResources" count="3,4" prob="1"/>
 			<item group="tools" count="1,2" prob="0.9"/>
 			<item group="rareTools" count="1" prob="0.6"/>
 			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="groupIronArmor" count="1" prob="0.4"/>
+			<item group="groupArmorHeavyT1" count="1" prob="0.4"/>
 			<item group="hazmatGear" count="1" prob="0.4"/>
 			<item group="workstations" count="1" prob="0.5"/>
-			<item group="vehicleParts" count="1" prob="0.4"/>
+			<item group="vehiclePartsMixed" count="1" prob="0.4"/>
 			<item name="apparelNightvisionGoggles" count="1" prob="0.2"/>
 			<item name="armorMiningHelmet" prob="0.5"/>
 			<item group="ammo" count="2,4" prob="1"/>

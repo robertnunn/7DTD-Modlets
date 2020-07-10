@@ -18175,6 +18175,28 @@ NOT the TextureNumber.
 	<property name="FilterTags" value="floot"/>
 </block>
 
+<block name="cntStorageGenericSigned">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntStorageGeneric" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?crate_storeSignablePrefab.prefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="Texture" value="572"/>
+	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="cntStorageGenericInsecure"/>
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
 <block name="cntCabinetBottomFiller">
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
@@ -20752,6 +20774,11 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Furniture/sectionalArm_NewPrefab"/>
 </block>
 
+<block name="sectionalPlaidChair">
+	<property name="Extends" value="sectionalPlaidCouchSofaMiddle" param1="Path"/>
+	<property name="Model" value="Entities/Furniture/sectionalChairPrefab"/>
+</block>
+
 <block name="sectionalLeatherCouchSofaArm">
 	<property name="Material" value="Mfurniture"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -20782,6 +20809,11 @@ NOT the TextureNumber.
 	<property name="Extends" value="sectionalLeatherCouchSofaArm"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Entities/Furniture/sectionalMiddle_LeatherPrefab"/>
+</block>
+
+<block name="sectionalLeatherChair">
+	<property name="Extends" value="sectionalLeatherCouchSofaArm" param1="Path"/>
+	<property name="Model" value="Entities/Furniture/sectionalChairLeatherPrefab"/>
 </block>
 
 <block name="couchSofa01">
@@ -20849,6 +20881,41 @@ NOT the TextureNumber.
 <block name="pew_segment03">
 	<property name="Extends" value="pew_segment01"/>
 	<property name="Model" value="Furniture/pew_segment03" param1="main_mesh"/>
+</block>
+
+<block name="bleachersTopMiddle">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleTopPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersTopSupport">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportTopPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersUnderneathMiddle">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersUnderneathSupport">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersBottomMiddle">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersBottomSupport">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
+</block>
+
+<block name="bleachersSupport">
+	<property name="Extends" value="decoEntityWoodMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportPrefab"/>	<property name="CreativeMode" value="Test"/>
 </block>
 
 <block name="parkBenchA">
@@ -21842,6 +21909,72 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
 	<drop event="Harvest" name="resourceSilverNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
 	<drop event="Harvest" name="resourceGoldNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
+</block>
+
+<block name="cntCoffinWildWestRandomHelper">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+	<property name="Path" value="solid"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="1"/>
+	<property name="CustomIcon" value="cntCoffinWildWestClosed"/> <property name="CustomIconTint" value="ff8080"/>
+	<property name="DescriptionKey" value="cntGenericRandomLootHelperDesc"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<property name="FilterTags" value="floot,ffurniture,fdesign"/>
+	<drop event="Harvest" name="resourceBone" prob=".05" count="1,4" tag="WasteTreasuresCoffinHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
+</block>
+
+<block name="cntCoffinWildWestOpen">
+	<property name="Extends" value="cntCoffinWildWestRandomHelper" param1="DescriptionKey,DisplayInfo,CustomIcon,CustomIconTint"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestOpenPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="cntCoffinWildWestClosed">
+	<property name="Extends" value="cntCoffinWildWestOpen"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="15"/>
+</block>
+
+<block name="cntCoffinWildWestCracked">
+	<property name="Extends" value="cntCoffinWildWestClosed"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestCrackedPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="cntCoffinWildWestStack">
+	<property name="Extends" value="cntCoffinWildWestClosed"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestStackPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="cntCoffinWildWestLeaning">
+	<property name="Extends" value="cntCoffinWildWestClosed"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestLeaningPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="cntCoffinWildWestLidLeaning">
+	<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestLidLeaningPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="cntBathTubEmpty">
@@ -26736,7 +26869,29 @@ NOT the TextureNumber.
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LootList" value="7"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="3" tag="allHarvest"/>
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="flagPoleAmerican">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Decor/flagPoleAmericanPrefab"/>
+	<property name="MultiBlockDim" value="1,20,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="LootList" value="7"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="3" tag="allHarvest"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 </block>
 
@@ -31356,7 +31511,7 @@ NOT the TextureNumber.
 	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="cntStorageGeneric,cntCabinetBottomFiller,cntCabinetBottom,cntCabinetBottomOpen,cntCupboardCabinetRedTopOpen,cntCupboardCabinetRedTopClosed,cntCupboardCornerCNRRed,cntCupboardCabinetFullRedTopClosed,cntCabinetBottomBrokenDoor,cntCabinetOldBottomOpen,cntCabinetOldBottom,cntCabinetOldCNRRoundFiller,cntCupboardCabinetOldTopOpen,cntCupboardCabinetOldTopClosed,cntCupboardCornerCNROld,cntCupboardCabinetFullOldTopClosed,cntBookcaseEmpty,cntBookcaseFull,cntPillCase,cntNightstandOpen,cntNightstandClosed,cntWoodDesk01Open,cntWoodDesk01Closed,woodChair1,oldChair1,decoPicnicTable,coffeeTable,endTable,tableDynamic,woodTable,heatVent,woodSawhorse,decoWildWestWagonWheelBack,decoWildWestWagonWheelFront,decoClassicDogHouse,wineBarrel,wineBarrelSet,wineBarrelPlain,parkBenchA,parkBenchB,pew_segment01,pew_segment02,pew_segment03"/>
+	<property name="PlaceAltBlockValue" value="cntStorageGeneric,cntStorageGenericSigned,cntCabinetBottomFiller,cntCabinetBottom,cntCabinetBottomOpen,cntCupboardCabinetRedTopOpen,cntCupboardCabinetRedTopClosed,cntCupboardCornerCNRRed,cntCupboardCabinetFullRedTopClosed,cntCabinetBottomBrokenDoor,cntCabinetOldBottomOpen,cntCabinetOldBottom,cntCabinetOldCNRRoundFiller,cntCupboardCabinetOldTopOpen,cntCupboardCabinetOldTopClosed,cntCupboardCornerCNROld,cntCupboardCabinetFullOldTopClosed,cntBookcaseEmpty,cntBookcaseFull,cntPillCase,cntNightstandOpen,cntNightstandClosed,cntWoodDesk01Open,cntWoodDesk01Closed,woodChair1,oldChair1,decoPicnicTable,coffeeTable,endTable,tableDynamic,woodTable,heatVent,woodSawhorse,decoWildWestWagonWheelBack,decoWildWestWagonWheelFront,decoClassicDogHouse,wineBarrel,wineBarrelSet,wineBarrelPlain,parkBenchA,parkBenchB,pew_segment01,pew_segment02,pew_segment03"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="Group" value="Building,advBuilding"/>
 </block>
@@ -31488,7 +31643,7 @@ NOT the TextureNumber.
 <block name="cntLootWeapons"> <!-- Loot test block -->
 	<property name="Extends" value="controlPanelBase01"/>
 	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="controlPanelTop07"/>
+	<property name="CustomIcon" value="controlPanelTop07"/><property name="CustomIconTint" value="ff8080"/>
 	<property name="Model" value="Industrial/control_panel_top_07" param1="main_mesh"/>
 	<property name="MaxDamage" value="1"/>
 	<property name="DescriptionKey" value="cntLootGroupDesc"/>
@@ -31499,7 +31654,7 @@ NOT the TextureNumber.
 
 <block name="cntLootWeaponsInsecure"> <!-- Loot test block -->
 	<property name="Extends" value="cntLootWeapons" param1="DowngradeBlock"/>
-	<property name="CreativeMode" value="Test"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="controlPanelTop03"/>
 	<property name="Model" value="Industrial/control_panel_top_03" param1="main_mesh"/>
 	<property name="Class" value="Loot"/>
@@ -31509,7 +31664,7 @@ NOT the TextureNumber.
 <block name="cntLootTools"> <!-- Loot test block -->
 	<property name="Extends" value="cntLootWeapons"/>
 	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="controlPanelBase06"/>
+	<property name="CustomIcon" value="controlPanelBase06"/><property name="CustomIconTint" value="ff8080"/>
 	<property name="Model" value="Industrial/control_panel_base_06" param1="main_mesh"/>
 	<property name="DowngradeBlock" value="cntLootToolsInsecure"/>
 </block>
@@ -31520,7 +31675,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Industrial/control_panel_base_05" param1="main_mesh"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="105"/>
-	<property name="CreativeMode" value="Test"/>
+	<property name="CreativeMode" value="None"/>
 </block>
 
 <block name="adobeWhiteWindowArch3MCNR"> <!-- used in prefabs. Ignore, do not deprecate. -->
@@ -31955,57 +32110,6 @@ ore block visualisation end -->
 	<property name="Extends" value="signBathroomSignMenCeilingMount"/>
 	<property name="CustomIcon" value="signBathroomSignMenCeilingMount"/>
 	<property name="CreativeMode" value="None"/>
-</block>
-
-<block name="bleachersTopMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleTopPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersTopSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportTopPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersUnderneathMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersUnderneathSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersBottomMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersBottomSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="bleachersSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportPrefab"/>	<property name="CreativeMode" value="Test"/>
-</block>
-
-<block name="flagPoleAmerican">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="DisplayType" value="blockHardenedMulti"/>
-	<property name="Material" value="Mmetal_hard"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Path" value="solid"/>
-	<property name="Model" value="Entities/Decor/flagPoleAmericanPrefab"/>
-	<property name="MultiBlockDim" value="1,20,1"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="LootList" value="7"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<drop event="Destroy" count="0"/>
-	<property name="FilterTags" value="fdecor,fother"/>
 </block>
 
 <block name="chimneyPOI">

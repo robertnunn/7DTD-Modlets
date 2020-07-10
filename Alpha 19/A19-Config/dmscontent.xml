@@ -759,45 +759,45 @@
     <!--Short Effects-->
 
     <property type="ClipSet" name="000CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?000bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?000bCbtSfx.wav"/>
       <property key="Loop" value="#Sounds/Music?000bCbtLfx.wav"/>
       <property key="End" value="#Sounds/Music?000bCbtLfx.wav"/>
     </property>
 
     <property type="ClipSet" name="001CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?001bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?001bCbtSfx.wav"/>
       <property key="Loop" value="#Sounds/Music?001bCbtLfx.wav"/>
       <property key="End" value="#Sounds/Music?001bCbtLfx.wav"/>
     </property>
     
     <property type="ClipSet" name="002CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?002bCbtLfx.wav"/>
-      <property key="Loop" value="#Sounds/Music?002bCbtLfx.wav"/>
-      <property key="End" value="#Sounds/Music?002bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?002bCbtSfx.wav"/>
+      <property key="Loop" value="#Sounds/Music?002bCbtSfx.wav"/>
+      <property key="End" value="#Sounds/Music?002bCbtSfx.wav"/>
     </property>
 
     <property type="ClipSet" name="003CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?003bCbtLfx.wav"/>
-      <property key="Loop" value="#Sounds/Music?003bCbtLfx.wav"/>
-      <property key="End" value="#Sounds/Music?003bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?003bCbtSfx.wav"/>
+      <property key="Loop" value="#Sounds/Music?003bCbtSfx.wav"/>
+      <property key="End" value="#Sounds/Music?003bCbtSfx.wav"/>
     </property>
 
     <property type="ClipSet" name="004CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?004bCbtLfx.wav"/>
-      <property key="Loop" value="#Sounds/Music?004bCbtLfx.wav"/>
-      <property key="End" value="#Sounds/Music?004bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?004bCbtSfx.wav"/>
+      <property key="Loop" value="#Sounds/Music?004bCbtSfx.wav"/>
+      <property key="End" value="#Sounds/Music?004bCbtSfx.wav"/>
     </property>
 
     <property type="ClipSet" name="005CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?005bCbtLfx.wav"/>
-      <property key="Loop" value="#Sounds/Music?005bCbtLfx.wav"/>
-      <property key="End" value="#Sounds/Music?005bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?005bCbtSfx.wav"/>
+      <property key="Loop" value="#Sounds/Music?005bCbtSfx.wav"/>
+      <property key="End" value="#Sounds/Music?005bCbtSfx.wav"/>
     </property>
 
     <property type="ClipSet" name="006CbtSfx" source="Sounds/AudioSource_Combat" layer="ShortEffects" sections="Combat" samples="2185084">
-      <property key="Begin" value="#Sounds/Music?006bCbtLfx.wav"/>
-      <property key="Loop" value="#Sounds/Music?006bCbtLfx.wav"/>
-      <property key="End" value="#Sounds/Music?006bCbtLfx.wav"/>
+      <property key="Begin" value="#Sounds/Music?006bCbtSfx.wav"/>
+      <property key="Loop" value="#Sounds/Music?006bCbtSfx.wav"/>
+      <property key="End" value="#Sounds/Music?006bCbtSfx.wav"/>
     </property>
 
 
@@ -861,13 +861,12 @@
       <layer key="LongEffects" value="0, 2, 2, 0, 2, 2, 0"/>
     </configuration>
 
-
     <configuration sections="Combat">
-      <layer key="Primary" value="1, 2, 3, 0, 0, 1"/>
-      <layer key="PrimarySupporting" value="1, 2, 2, 2, 2, 2"/>
-      <layer key="Secondary" value="1, 2, 2, 2, 2, 2"/>
-      <layer key="LongEffects" value="1, 3, 0, 0, 1, 2"/>
-      <layer key="ShortEffects" value="0, 0, 0, 1, 2, 3"/>
+      <layer key="Primary" value="0, 0, 1, 2, 2, 3, 0, 0, 0, 0, 1, 2, 2, 3, 0"/>
+      <layer key="PrimarySupporting" value="1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2"/>
+      <layer key="Secondary" value="0, 1, 2, 2, 2, 3, 0, 0, 1, 2, 2, 2, 3, 0, 0"/>
+      <layer key="LongEffects" value="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 0"/>
+      <layer key="ShortEffects" value="0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0"/>
     </configuration>
 
   </configurations>

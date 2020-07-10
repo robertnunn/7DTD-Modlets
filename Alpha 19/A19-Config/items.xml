@@ -734,7 +734,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1500"/>
-	<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAxeT3ChainsawSchematic"/>
+	<property name="UnlockedBy" value="meleeToolAxeT3ChainsawSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -816,7 +816,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1500"/>
-	<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolPickT3AugerSchematic"/>
+	<property name="UnlockedBy" value="meleeToolPickT3AugerSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -971,7 +971,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
 	<property name="EconomicValue" value="700"/>
-	<property name="UnlockedBy" value="perkSalvageOperations,meleeToolSalvageT2RatchetSchematic"/>
+	<property name="UnlockedBy" value="meleeToolSalvageT2RatchetSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
@@ -1040,7 +1040,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
 	<property name="EconomicValue" value="1500"/>
-	<property name="UnlockedBy" value="perkSalvageOperations,meleeToolSalvageT3ImpactDriverSchematic"/>
+	<property name="UnlockedBy" value="meleeToolSalvageT3ImpactDriverSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Stacknumber" value="1"/>
 	<property class="Action0">
@@ -1944,9 +1944,29 @@ Mesh files no longer used:
 		<passive_effect name="StaminaLoss" operation="base_set" value="22.6" tags="secondary"/>
 	</effect_group>
 
-	<effect_group name="apply damage buff">
+	<effect_group name="apply damage buff, meleeWpnBatonT1JunkBaton">
 		<requirement name="CVarCompare" cvar="stunBatonCharge" operation="GTE" value="40"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="ItemModEffects/baton_electricityPrefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
 
 			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffShocked"/>
 			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffShocked"/>
@@ -2127,9 +2147,29 @@ needed?
 		<passive_effect name="StaminaLoss" operation="base_set" value="26.4" tags="secondary"/>
 	</effect_group>
 
-	<effect_group name="apply damage buff">
+	<effect_group name="apply damage buff, meleeWpnBatonT2StunBaton">
 		<requirement name="CVarCompare" cvar="stunBatonCharge" operation="GTE" value="40"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="ItemModEffects/baton_electricityPrefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
 
 			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffShocked"/>
 			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffShocked"/>
@@ -2314,7 +2354,7 @@ needed?
 		<passive_effect name="StaminaLoss" operation="base_set" value="22.6" tags="secondary"/>
 	</effect_group>
 
-	<effect_group name="apply damage buff">
+	<effect_group name="apply damage buff, meleeWpnBatonT3PlasmaBaton">
 		<requirement name="CVarCompare" cvar="stunBatonCharge" operation="GTE" value="40"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="ItemModEffects/baton_electricityPrefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"/>
 
@@ -3031,6 +3071,7 @@ needed?
 	<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
 	<property name="Material" value="MmeleeWpnKnucklesParts"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab"/>
+	<property name="HoldType" value="79"/>
 	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
 
 	<effect_group name="meleeWpnKnucklesT3SteelKnuckles">
@@ -3612,7 +3653,7 @@ needed?
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value=".45"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="UnlockedBy" value="perkGunslinger,gunHandgunT2Magnum44Schematic"/>
+	<property name="UnlockedBy" value="gunHandgunT2Magnum44Schematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -3732,7 +3773,7 @@ needed?
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkGunslinger"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random effective rng -->
 
-		<passive_effect name="EntityDamage" operation="base_add" value="-2" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-2" tags="perkGunslinger"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="130" tags="perkGunslinger"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkGunslinger"/>
 
@@ -3961,7 +4002,7 @@ needed?
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value=".45"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="UnlockedBy" value="perkBoomstick,gunShotgunT2PumpShotgunSchematic"/>
+	<property name="UnlockedBy" value="gunShotgunT2PumpShotgunSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -4023,7 +4064,7 @@ needed?
 </item>
 
 <item name="gunShotgunT3AutoShotgun">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,noScopes,invisibleReflexSight"/>
 	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="76"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
@@ -4219,7 +4260,7 @@ needed?
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value=".45"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="UnlockedBy" value="perkDeadEye,gunRifleT2MarksmanRifleSchematic"/>
+	<property name="UnlockedBy" value="gunRifleT2MarksmanRifleSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -4478,8 +4519,7 @@ needed?
 </item>
 
 <item name="gunMGT2TacticalAR">
-
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
@@ -4497,7 +4537,7 @@ needed?
 
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="UnlockedBy" value="perkMachineGunner,gunMGT2TacticalARSchematic"/>
+	<property name="UnlockedBy" value="gunMGT2TacticalARSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Ammo/Weapons"/>
 
@@ -4522,6 +4562,7 @@ needed?
 	<effect_group name="gunMGT2TacticalAR">
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkMachineGunner"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
 		<passive_effect name="EntityDamage" operation="base_add" value="-9" tags="perkMachineGunner"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/> <!-- random EntityDmg -->
@@ -4674,7 +4715,7 @@ needed?
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="UnlockedBy" value="perkDemolitionsExpert,gunExplosivesT3RocketLauncherSchematic"/>
+	<property name="UnlockedBy" value="gunExplosivesT3RocketLauncherSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -5254,6 +5295,7 @@ needed?
 		<property name="Sound_start" value="junksledge_fire"/>
 		<property name="Sound_loop" value="junksledge_fire"/>
 		<property name="Infinite_ammo" value="true"/>
+		<property name="Single_magazine_usage" value="true"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="dryfire"/>
@@ -5280,13 +5322,13 @@ needed?
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkTurrets"/> <!-- random effective rng -->
 		<passive_effect name="MaxRange" operation="base_set" value="2" tags="perkTurrets"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.0" tags="perkTurrets"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="13.5" tags="perkTurrets"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="11.5" tags="perkTurrets"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkTurrets"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkTurrets"/> <!-- tier bonus -->
 
-		<passive_effect name="BlockDamage" operation="base_set" value="11" tags="perkTurrets"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkTurrets"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkTurrets"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="17" tags="turretMelee"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="turretMelee"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="turretMelee"/> <!-- tier bonus -->
 
 		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkTurrets"/> <!-- random DegMax -->
 		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkTurrets"/> <!-- random WeaponHandling -->
@@ -5327,29 +5369,30 @@ needed?
 	<effect_group name="Junk Sledge pushback / knockdown">
 		<requirement name="ItemHasTags" tags="turretMelee"/>
 		<requirement name="!EntityTagCompare" target="other" tags="trader"/>
-		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="150"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0" force="200"/><!-- just knockback -->
 	</effect_group>
 
 	<effect_group name="Junk Sledge pushback / knockdown">
 		<requirement name="ItemHasTags" tags="turretMelee"/>
 		<requirement name="!EntityTagCompare" target="other" tags="trader"/>
-			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="150">
+			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="200">
 				<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="LTE" value="1"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
 			</triggered_effect>
 
-			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="150">
+			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="250">
 				<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="2"/>
 				<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="LTE" value="4"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="35"/>
 			</triggered_effect>
 
-			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="150">
+			<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="300">
 				<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
 			</triggered_effect>
 	</effect_group>
+
 </item>
 
 <item name="gunBotT2JunkTurret">
@@ -5368,7 +5411,7 @@ needed?
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="true"/>
 	<property name="RequiredPower" value="15"/>
-	<property name="UnlockedBy" value="perkTurrets,gunBotT2JunkTurretSchematic"/>
+	<property name="UnlockedBy" value="gunBotT2JunkTurretSchematic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -8040,6 +8083,7 @@ add knockdown resist to armor
 	<property name="Explosion.DamageBonus.earth" value="0"/>
 	<property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.DamageBonus.wood" value="6"/>
+	<property name="Explosion.Buff" value="buffBurningMolotov"/> <!-- molotovs have a ExplosiveDamageArea script that runs this buff for their ground effect -->
 	<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
 	<property name="ExplodeOnHit" value="true"/>
 	<property name="StickPercent" value=".5"/>
@@ -8474,7 +8518,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -8505,7 +8549,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 
 		<passive_effect name="HypothermalResist" operation="base_add" value="21.5,25.5"/>
 	</effect_group>
@@ -8529,7 +8573,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -8551,7 +8595,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -8573,7 +8617,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -8595,7 +8639,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -8638,7 +8682,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8668,7 +8712,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8696,7 +8740,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8724,7 +8768,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8752,7 +8796,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.27,7.47" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8799,7 +8843,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8828,7 +8872,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8856,7 +8900,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8884,7 +8928,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8912,7 +8956,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8941,7 +8985,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400,360" tier="1,5,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -8975,7 +9019,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9010,7 +9054,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9036,7 +9080,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9062,7 +9106,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9088,7 +9132,7 @@ add knockdown resist to armor
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9136,7 +9180,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9172,7 +9216,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9200,7 +9244,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9228,7 +9272,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9256,7 +9300,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9303,7 +9347,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9339,7 +9383,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9368,7 +9412,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9397,7 +9441,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
@@ -9426,7 +9470,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9470,7 +9514,7 @@ add knockdown resist to armor
 
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
@@ -9519,7 +9563,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.055,0.068" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9529,7 +9573,7 @@ add knockdown resist to armor
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
 	</effect_group>
 	<effect_group name="unique effect:">
-		<passive_effect name="HealthLoss" operation="perc_add" value="-0.05">
+		<passive_effect name="HealthLoss" operation="perc_add" value="-.05">
 			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="Equals" value="1"/>
 		</passive_effect>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="15"/>
@@ -9566,7 +9610,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -9608,7 +9652,7 @@ add knockdown resist to armor
 
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
@@ -9639,7 +9683,7 @@ add knockdown resist to armor
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -12090,7 +12134,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12100,7 +12143,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12110,7 +12152,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12121,7 +12162,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12132,7 +12172,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12142,7 +12181,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12153,7 +12191,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12164,7 +12201,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12174,7 +12210,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12184,7 +12219,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12196,7 +12230,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12208,7 +12241,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12219,7 +12251,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12231,7 +12262,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -12243,7 +12273,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13014,7 +13043,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13042,7 +13070,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-3"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13068,7 +13095,6 @@ perkNightStalkerSilentNight
 
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13094,7 +13120,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13108,7 +13133,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceCrop"/>
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
-	<property name="EconomicValue" value="40"/>
+	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
 	<property class="Action0">
@@ -13120,9 +13145,8 @@ perkNightStalkerSilentNight
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13149,7 +13173,6 @@ perkNightStalkerSilentNight
 
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13176,7 +13199,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13203,7 +13225,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="0"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13231,7 +13252,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13432,12 +13452,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
 		<display_value name="dStaminaRegen" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="3"/><display_value name="dDysenteryRisk" value=".03"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
-			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-		</triggered_effect>
 	</effect_group>
 
 	<effect_group tiered="false">
@@ -13448,7 +13462,7 @@ perkNightStalkerSilentNight
 
 <item name="drinkJarPureMineralWater">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterRedTea"/>
+	<property name="DisplayType" value="waterGoldenrodRedTea"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
@@ -13476,6 +13490,10 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="903">
 				<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="903"/></triggered_effect>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+
+			<display_value name="dCureDysentery" value=".2"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDysenteryAddCurePerc" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure"/>
 	</effect_group>
 
 	<effect_group tiered="false">
@@ -18210,7 +18228,8 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
-		<passive_effect name="HealthMax" operation="base_add" value="20000"/><display_value name="dHealthMax" value="20000"/>
+		<passive_effect name="HealthMax" operation="base_add" value="19900"/><display_value name="dHealthMax" value="20000"/>
+		<passive_effect name="HealthMax" operation="base_subtract" value="@$PlayerLevelBonus"/>
 	</effect_group>
 </item>
 
@@ -18278,7 +18297,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="81.25" tags="heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="9999" tags="admin"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="admin"/>
-		<passive_effect name="BuffResistance" operation="base_add" value=".343" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="BuffResistance" operation="base_add" value=".343" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
 	</effect_group>
 </item>
 <!--

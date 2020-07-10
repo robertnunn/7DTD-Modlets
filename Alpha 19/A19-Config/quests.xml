@@ -767,6 +767,7 @@
 		<requirement type="Group" id="requirementGroupShotgun" value="OR" phase="1">
 			<requirement type="Holding" id="gunShotgunT1DoubleBarrel"/>
 			<requirement type="Holding" id="gunShotgunT2PumpShotgun"/>
+			<requirement type="Holding" id="gunShotgunT3AutoShotgun"/>
 		</requirement>
 
 
@@ -907,6 +908,7 @@
 			<property name="nav_object" value="treasure" />
 			<property name="direct_nav_object" value="treasure_direct" />
 			<property name="blocks_per_reduction" value="10" />
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
 			<property name="radius_reduction_sound" value="ui_radius_shrink" />
 		</objective>
 	</quest>

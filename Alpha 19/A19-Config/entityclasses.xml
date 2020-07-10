@@ -146,7 +146,8 @@
 		<!-- Cumulative critical hit chance -->
 
 		<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="self" buff="buffCumChanceCH"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="-.1" tags="buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
 
 <!--
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.75" tags="swimming"/>
@@ -2841,6 +2842,7 @@
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -2985,6 +2987,7 @@
 	<!-- Gameplay -->
 	<property name="MoveSpeedAggro" value="1, 1.1"/>
 	<property name="HandItem" value="meleeHandAnimalDireWolf"/>
+	<property name="PainResistPerHit" value=".9"/>
 
 	<property name="ExperienceGain" value="750"/> <!-- XP strong -->
 	<property name="DeadBodyHitPoints" value="450"/>
@@ -3041,6 +3044,7 @@
 	<property name="MoveSpeedAggro" value="2.1, 2.3"/>
 	<property name="JumpDelay" value=".1"/>
 	<property name="JumpMaxDistance" value="6, 7"/>
+	<property name="PainResistPerHit" value=".8"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/>
@@ -3182,6 +3186,7 @@
 	<property name="HandItem" value="meleeHandAnimalZombieDog"/>
 
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+	<property name="PainResistPerHit" value=".9"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/> <!-- animalZombieDog -->
@@ -3860,7 +3865,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="ModelType" value="NpcUMA"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityNPC"/>
+	<property name="Class" value="EntityTrader"/>
 	<property name="Parent" value="Players"/>
 	<property name="PhysicsBody" value="Player"/>
 	<property name="Weight" value="70"/>
@@ -3919,7 +3924,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="WakeUpTime" value="0.5"/>
 	<property name="FallAsleepTime" value="10"/>
 
-	<property name="YawRange" value="120"/> <!-- horizontal swivel range. Keep under 180. -->
+	<property name="YawRange" value="170"/> <!-- horizontal swivel range. Keep under 180. -->
 	<property name="PitchRange" value="75"/>
 	<property name="TurnSpeed" value="27"/>
 	<property name="MaxDistance" value="2.2"/>
@@ -4050,7 +4055,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="ModelType" value="Npc"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityNPC"/>
+	<property name="Class" value="EntityTrader"/>
 	<property name="Parent" value="Players"/>
 	<property name="PhysicsBody" value="Player"/>
 	<property name="Weight" value="70"/>

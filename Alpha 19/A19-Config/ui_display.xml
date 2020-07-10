@@ -131,7 +131,7 @@ All the perk tags:
 
 		<item_display_info display_type="meleeTurret" display_group="groupMelee">
 			<display_entry name="EntityDamage" title_key="statEntityDamageMelee" tags="perkTurrets"/>
-			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkTurrets"/>
+			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="turretMelee"/>
 			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="turretMelee"/>
 			<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
 		</item_display_info>
@@ -433,6 +433,21 @@ All the perk tags:
 			<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent"/>
 		</item_display_info>
 
+		<item_display_info display_type="waterRedTea" display_group="groupConsumables">
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="waterGoldenrodRedTea" display_group="groupConsumables">
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent"/>
+			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
 		<item_display_info display_type="waterCoffee" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
@@ -470,13 +485,6 @@ All the perk tags:
 
 		<item_display_info display_type="waterGrandpasLearningElixir" display_group="groupConsumables">
 			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
-			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
-		</item_display_info>
-
-		<item_display_info display_type="waterRedTea" display_group="groupConsumables">
-			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
-			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
 
@@ -559,19 +567,19 @@ All the perk tags:
 		<item_display_info display_type="medical" display_group="groupConsumables">
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="dhealAbrasionMult" title_key="statHealAbrasionMult" display_type="Percent"/>
-			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Bool"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
 		</item_display_info>
 
 		<item_display_info display_type="medicalFirstAidKit" display_group="groupConsumables">
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="dhealAbrasionMult" title_key="statHealAbrasionMult" display_type="Percent"/>
-			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Bool"/>
-			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Bool"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
 		</item_display_info>
 
 		<item_display_info display_type="medicalVitamins" display_group="groupConsumables">
 			<display_entry name="dDiseaseResist" title_key="statDiseaseResist" display_type="Percent"/>
-			<display_entry name="dStopsWeakness" title_key="statStopsWeakness" display_type="Bool"/>
+			<display_entry name="dStopsWeakness" title_key="statStopsWeakness" display_type="Percent"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
 
@@ -579,14 +587,14 @@ All the perk tags:
 			<display_entry name="dInstantHealth" title_key="statShowInstantHealth"/>
 			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" />
-			<display_entry name="dStopsConcussion" title_key="statStopsConcussion" display_type="Bool"/>
+			<display_entry name="dStopsConcussion" title_key="statStopsConcussion" display_type="Percent"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
 
 		<item_display_info display_type="sewingKit" display_group="groupConsumables">
-			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Bool"/>
-			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Bool"/>
+			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
 		</item_display_info>
 
 		<item_display_info display_type="drugSteroids" display_group="groupConsumables">
@@ -812,7 +820,8 @@ All the perk tags:
 		<display_entry name="StaminaMaxBlockage" title_key="statStaminaMaxBlockage"/>
 		<display_entry name="PhysicalDamageResist" title_key="statPhysicalDamageResist"/>
 		<display_entry name="ElementalDamageResist" title_key="statExplosionResistance" tags="heat,electrical"/>
-		<display_entry name="BuffResistance" title_key="statBuffResistance" display_type="Percent" show_inverted="true" tags="buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch"/>
+		<display_entry name="BuffResistance" title_key="statBuffResistance" display_type="Percent" show_inverted="true" tags="buffLaceration"/>
+		<!-- <display_entry name="BuffResistance" title_key="total crit resist" display_type="Percent" tags="buffLaceration"/>-->
 		<display_entry name="StaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal"/>
 		<display_entry name="HealthChangeOT" title_key="statHealthChangeOT" display_type="Decimal"/>
 		<display_entry name="HealthMaxModifierOT" title_key="statHealthMaxModifierOT" display_type="Decimal"/>

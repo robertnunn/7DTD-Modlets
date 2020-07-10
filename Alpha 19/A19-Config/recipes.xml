@@ -216,7 +216,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="ammoBundleBlunderbuss" count="1" craft_time="240" tags="learnable">
 	<ingredient name="resourceRockSmall" count="80"/>
-	<ingredient name="resourceGunPowder" count="320"/>
+	<ingredient name="resourceGunPowder" count="160"/>
 	<ingredient name="resourcePaper" count="80"/>
 </recipe>
 
@@ -1061,9 +1061,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="drinkJarYuccaJuice" count="1" tags="perkMasterChef">
+<recipe name="drinkJarYuccaJuice" count="1" craft_area="campfire" tags="perkMasterChef">
 	<ingredient name="foodCropYuccaFruit" count="2"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
 <recipe name="drinkYuccaJuiceSmoothie" count="1" tags="perkMasterChef,learnable">
@@ -1266,6 +1266,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="foodCornMeal" count="1">
 	<ingredient name="foodCropCorn" count="1"/>
 </recipe>
+
+<!--
+<recipe name="foodCornMeal" count="2">
+	<ingredient name="foodCropGraceCorn" count="1"/>
+</recipe>
+-->
 
 <recipe name="foodCornOnTheCob" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodCropCorn" count="1"/>
