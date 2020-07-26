@@ -1112,6 +1112,8 @@
 		<!--<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>-->
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
 	</quest>
 
 	<quest id="tier2_fetch">
@@ -1477,7 +1479,9 @@
 		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>-->
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-	</quest>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+			</quest>
 
 	<quest id="tier2_clear">
 		<property name="name_key" value="quest_tier2_clear"/>
@@ -2153,6 +2157,7 @@
 		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>-->
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestMedical,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
 	</quest>
 
 	<quest id="tier2_buried_supplies">
@@ -2726,6 +2731,8 @@
 		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>-->
 		<!--<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="2"/>-->
 		<!--<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="2"/>-->
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
 	</quest>
 
 	<quest id="quest_tier2complete">

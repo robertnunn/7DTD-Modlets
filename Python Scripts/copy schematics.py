@@ -105,18 +105,18 @@ for i in schematics_set:
     items.append(item)
 
 # write files, these ***SHOULD*** be ready to rename and drop into a mod. But ALWAYS double-check
-dest_folder = f'Alpha {str(v_num)}/ignore/'
-with open(dest_folder + f'A{str(v_num)} copy progression.xml', mode='w') as xml_out:
+dest_folder = f'Alpha {str(v_num)}/ignore/copy schematics'
+with open(dest_folder + 'progression.xml', mode='w') as xml_out:
     xml_out.write('<?xml version="1.0" encoding="UTF-8"?>\n<configs>\n')
     xml_out.write('\n'.join(prog_mods))
     xml_out.write('\n</configs>')
 
-with open(dest_folder + f'A{str(v_num)} copy items.xml', mode='w') as xml_out:
+with open(dest_folder + 'items.xml', mode='w') as xml_out:
     xml_out.write('<?xml version="1.0" encoding="UTF-8"?>\n<configs>\n\t<append xpath="/items/item[@name=\'schematicMaster\']">\n\t\t<property name="SellableToTrader" value="false"/>\n\t</append>\n')
     xml_out.write('\n'.join(items))
     xml_out.write('\n</configs>')
 
-with open(dest_folder + f'A{str(v_num)} copy recipes.xml', mode='w') as xml_out:
+with open(dest_folder + 'recipes.xml', mode='w') as xml_out:
     xml_out.write('<?xml version="1.0" encoding="UTF-8"?>\n<configs>\n\t<append xpath="/recipes">\n')
     xml_out.write('\n'.join(recipes))
     xml_out.write('\n\t</append>\n</configs>')

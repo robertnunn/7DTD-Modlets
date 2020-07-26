@@ -1113,6 +1113,12 @@ Textures we might want for (terrain) imposters
 	<property name="PaintCost" value="1" />
 </paint>
 
+<paint id="182" name="txName_concrete_broken">
+  <property name="TextureId" value="606"/>
+  <property name="Group" value="txGroupMasonry"/>
+  <property name="PaintCost" value="1" />
+</paint>
+
 <!-- Localised up to here -->
 
 <!--

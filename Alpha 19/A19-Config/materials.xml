@@ -1607,14 +1607,6 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="10"/>
 </material>
 
-<!-- resourceHubcap, resourceAirFilter, resourceCandyTin -->
-<material id="MresourceHubcap">
-	<property name="damage_category" value="metal"/>
-	<property name="surface_category" value="metal"/>
-	<property name="forge_category" value="iron"/>
-	<property name="Experience" value="8"/>
-</material>
-
 <material id="MresourceSilverNugget">
 	<property name="damage_category" value="metal"/>
 	<property name="surface_category" value="metal"/>

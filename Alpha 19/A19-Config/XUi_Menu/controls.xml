@@ -19,20 +19,20 @@
 			<sprite depth="1" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" />	
 			<sprite depth="2" name="tickbox" width="${height-6|26}" height="${height-6|26}" pos="7,-4" color="[darkGrey]" sprite="Highlight - Shadowed" type="sliced" />
 			<sprite depth="3" name="tickmark" width="${height-12|20}" height="${height-12|20}" pos="10,-7" color="[iconColor]" sprite="ui_game_symbol_check" visible="{value}" />
-			<label depth="2" name="btnLabel" width="${width-height-8|160}" height="${height-2|30}" pos="${6+height|38},${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="left" font_size="${font_size|28}" />
+			<label depth="2" name="btnLabel" width="${width-height-8|160}" height="${height-2|30}" pos="${6+height|38},${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="left" font_size="${font_size|28}" parse_actions="${parse_actions|false}" />
 		</rect>
 	</togglebutton>
 	
 	<simplebutton>
-		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" button_enabled="${enabled|true}">
 			<sprite depth="1" name="border" sprite="${bordersprite|menu_empty2px}" pos="0,${Round(-height/2,0)|-16}" color="${bordercolor|[black]}" type="sliced" fillcenter="false" foregroundlayer="true" pivot="${pivot|left}" />	
 			<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="${defaultsprite|menu_empty}" defaultcolor="${defaultcolor|[mediumGrey]}" disabledcolor="[darkGrey]" hoversprite="${hoversprite|ui_game_select_row}" hovercolor="${hovercolor|[white]}" selectedsprite="${selectedsprite|ui_game_select_row}" selectedcolor="${selectedcolor|[mediumGrey]}" foregroundlayer="${foregroundlayer|true}" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}" /> 
-			<label depth="2" name="btnLabel" width="${width|200}" height="${height-2|30}" pos="0,${Round(-height/2,0)|-16}" justify="${justify|center}" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${font_size|28}" upper_case="${upper_case|false}" />
+			<label depth="2" name="btnLabel" width="${width|200}" height="${height-2|30}" pos="0,${Round(-height/2,0)|-16}" justify="${justify|center}" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${font_size|28}" upper_case="${upper_case|false}" parse_actions="${parse_actions|false}" />
 		</rect>
 	</simplebutton>
 	
 	<mainmenubutton>
-		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-16|16}" font_size_hover="${height-12|20}">
+		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" button_enabled="${enabled|true}" font_size_default="${height-16|16}" font_size_hover="${height-12|20}">
 			<button name="clickable" sprite="ui_game_popup" flip="horizontally" pos="0,${Round(-height/2,0)|-16}" defaultcolor="255,255,255,80" hovercolor="[white]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}"/>
 			<label depth="2" name="btnLabel" width="${width-20|196}" pos="10,${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${height-16|16}" upper_case="true" />
 		</rect>
@@ -40,9 +40,9 @@
 	
 	<textfield>
 		<panel name="${name}" depth="${depth|3}" controller="TextInput" pos="${pos|0,0}" width="${width|200}" height="${height|32}" value="${value|}"
-			active_text_color="${active_text_color|[white]}" caret_color="${caret_color|[white]}" selection_color="${selection_color|[mediumGrey_half_alpha]}" 
-			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
-			disableautobackground="true" search_field="${search_field|false}" password_field="${password_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}">
+			active_text_color="${active_text_color|[labelColor]}" caret_color="${caret_color|[labelColor]}" selection_color="${selection_color|[mediumGrey_half_alpha]}" 
+			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" on_scroll="${on_scroll|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
+			disableautobackground="true" search_field="${search_field|false}" password_field="${password_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}" tooltip_key="${tooltip_key|}">
 			<sprite depth="0" name="background" color="${backgroundcolor|[black]}" type="sliced" pivot="${pivot|topleft}" foregroundlayer="${foregroundlayer|false}" width="${Defined(password_field) and password_field ? width-height-10 : width|200}" />
 			<label depth="1" name="text" justify="${justify|center}" font_size="${Defined(font_size) ? font_size : height|32}" pivot="${pivot|topleft}" overflow="${overflow|ShrinkContent}" max_line_count="${max_line_count|0}" font_face="${font_face|ReferenceFont}" crispness="${crispness|Always}" width="${Defined(password_field) and password_field ? width-height-10 : width|200}" />
 			<button name="btnShowPassword" pos="${width-height/2-5|180},-${height/2|-16}" width="${height-2}" height="${height-2}" sprite="ui_game_symbol_stealth" defaultcolor="180,180,180" hovercolor="[white]" selectedcolor="[selectedColor]" foregroundlayer="true" type="simple" hoverscale="1.1" pivot="center" tooltip_key="xuiShowPassword" selected="{showpassword}" visible="{passwordfield}" />
@@ -54,7 +54,7 @@
 			<button name="back"        depth="${1+depth|4}" style="icon30px, press, hover" pos="${height/2|15},${-height/2|-15}" width="${height|30}" height="${height|30}" pivot="center" sprite="ui_game_symbol_arrow_menu" disabledcolor="[disabledColor]" sound="[paging_click]" tooltip_key="${tooltip_key|}" />
 			<sprite name="background"  depth="${1+depth|4}" style="icon30px" pos="${2+height|32},0" width="${width-height*2-4|136}" height="${height|30}" pivot="topleft" color="[black]" type="sliced" foregroundlayer="${foregroundlayer|false}" />
 			<filledsprite name="fill"  depth="${2+depth|5}" pos="${2+height|32},0" width="${width-height*2-4|136}" height="${height|30}" pivot="topleft" color="[white]" fill="{fillvalue}" filldirection="horizontal" visible="{isnumber}" foregroundlayer="true" />
-			<label name="currentValue" depth="${3+depth|6}" pos="${2+height|32},${-height/2|-15}" width="${width-height*2-4|136}" height="${height-2|28}" pivot="left" text="{val|always}" font_size="${Defined(font_size) ? font_size : height-4|26}" justify="center" color="[white]" effect="outline" effect_color="[black]" effect_distance="1,1"/>
+			<label name="currentValue" depth="${3+depth|6}" pos="${2+height|32},${-height/2|-15}" width="${width-height*2-4|136}" height="${height-2|28}" pivot="left" text="{val|always}" font_size="${Defined(font_size) ? font_size : height-4|26}" justify="center" color="[white]" effect="outline" effect_color="[black]" effect_distance="1,1" />
 			<button name="forward"     depth="${1+depth|4}" style="icon30px, press, hover" pos="${width-height/2|185},${-height/2|-15}" width="${height|30}" height="${height|30}" pivot="center" sprite="ui_game_symbol_arrow_menu" disabledcolor="[disabledColor]" sound="[paging_click]" tooltip_key="${tooltip_key|}" flip="Horizontally" />
 			<panel name="directvalue" style="press, scroll, hover, drag" pos="${2+height|32},0" width="${width-height*2-4|136}" height="${height|30}" pivot="topleft" disableautobackground="true" tooltip_key="${tooltip_key|}" />
 			<rect name="indexMarkers"  pos="${2+height|32},${-height+5|-25}" width="${width-height*2-4|136}" height="5" visible="{usesmarkers}" active_color="[white]" inactive_color="[darkGrey]">

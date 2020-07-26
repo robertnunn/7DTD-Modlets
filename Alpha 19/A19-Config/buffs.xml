@@ -40,8 +40,12 @@ List of hacks to be removed:
 	<!-- Use the redPill item to cycle through: off/bufftest1/bufftest2 etc. with primary/secondary action -->
 	<buff name="bufftest01" name_key="Buff" icon="ui_game_symbol_block_repair">
 		<display_value_key value="Test 1"/> <display_value value="xxx"/> <stack_type value="ignore"/><duration value="0"/>
+
+		<update_rate value="10"/>
 		<effect_group>
 
+			<triggered_effect trigger="onSelfBuffUpdate" action="ShakeCamera" shake_speed="0.152" shake_amplitude="80" shake_time="4"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="0"/>
 
 
 	<!--
@@ -477,7 +481,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 			</triggered_effect>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_onFire">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_onFire" shape_mesh="true">
 				<requirement name="HasBuff" buff="buffIsOnFire"/>
 			</triggered_effect>
 
@@ -1844,6 +1848,10 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$cumResistChanceCH" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$cumResistChanceCH" operation="set" value="0"/>
 
+			<!-- bonus hit on the first one -->
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$cumResistChanceCH" operation="add" value=".12">
+				<requirement name="CVarCompare" cvar="$cumResistChanceCH" operation="Equals" value="0"/>
+			</triggered_effect>
 			<!-- every hit will beat down the value this much -->
 			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$cumResistChanceCH" operation="add" value=".19"/>
 			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$cumResistChanceCH" operation="set" value="1.1">
@@ -4091,8 +4099,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group name="run particles, cleanup">
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" uses_mesh_renderer="true"/>
-			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" uses_mesh_renderer="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" shape_mesh="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="LOD0" shape_mesh="true"/>
 <!--
 			<triggered_effect trigger="onSelfBuffRemove" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
 			<triggered_effect trigger="onSelfDied" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
@@ -4401,6 +4409,9 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 		<!-- Dysentery is fully %-based. $dysenteryCounter is a float % value. Dysentery kills the player when it reaches 100%, cures when it reaches 0%. -->
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600">
+				<requirement name="CVarCompare" cvar="$dysenteryMaxDuration" operation="Equals" value="0"/></triggered_effect>
+
 			<!-- $dysenteryMaxDuration defined in buffStatusCheck01 (1 hour) -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryDisplayDivisor" operation="set" value="@$dysenteryMaxDuration"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryDisplayDivisor" operation="divide" value="100"/>
@@ -4685,6 +4696,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<!-- Infection is fully %-based. infectionCounter is a float % value. Infection kills the player when it reaches 100%, cures when it reaches 0%. -->
 		<effect_group>
 			<!-- $infectionMaxDuration defined in buffStatusCheck01 (7 hours) -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200">
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="0"/></triggered_effect>
+
+
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage2Duration" operation="set" value="14"/> <!-- % of the full buff duration -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage3Duration" operation="set" value="57"/> <!-- % of the full buff duration -->
 
@@ -5646,7 +5661,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
 		</effect_group>
 	</buff>
 	<buff name="buffBandolierLegs" hidden="true">
@@ -5654,7 +5669,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffBandolierChest"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
 		</effect_group>
 	</buff>
 

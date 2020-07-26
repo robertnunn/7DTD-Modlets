@@ -2103,6 +2103,31 @@
 	<HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>
 
+<SoundDataNode name="vulturevomitattack"> <AudioSource name="Sounds/AudioSource_HandTool"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vulturevomitattack"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.8"/> </SoundDataNode>
+
+<SoundDataNode name="vulturevomitwarning"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vulturevomitwarning"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+  <SoundDataNode name="vomit_projectile_lp"> <AudioSource name="Sounds/AudioSource_HandTool"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vomit_projectile_lp"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value=".25"/> <NoiseScale value=".25"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+  <SoundDataNode name="vomit_projectile"> <AudioSource name="Sounds/AudioSource_HandTool"/>
+	<AudioClip ClipName="Sounds/Animals/Vulture/vomit_projectile1"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value=".25"/> <NoiseScale value=".25"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
 
 
 	<!-- Snakes on a Fun Pimp Plane -->
@@ -3318,6 +3343,30 @@
     <HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
+  <SoundDataNode name="chainsawhitorganic"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic3"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic4"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawhitorganic6"/>
+    <LowestPitch name="0.9"/>
+    <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+  <SoundDataNode name="chainsawgrazeorganic"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic3"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic4"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/chainsawgrazeorganic6"/>
+    <LowestPitch name="0.9"/>
+    <HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
     <!-- Armor Impact Overrides -->
 
   <SoundDataNode name="grazearmorleather"> <AudioSource name="Sounds/AudioSource_Impact"/>
@@ -3371,6 +3420,15 @@
 	<LowestPitch name="0.9"/>
 	<HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="fx_acid"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="0" noise="7" time="2" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/fx_acid1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/fx_acid2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/fx_acid3"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 	<!-- Death/Spawn Sounds -->
 
@@ -4683,7 +4741,7 @@
 
   <!-- Junk Turret   -->
 
-  <SoundDataNode name="junkturret_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+  <SoundDataNode name="junkturret_fire"> <AudioSource name="Sounds/AudioSource_JunkWeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 	<Noise ID="0" noise="35" time="2" heat_map_strength="0.25" heat_map_time="180"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/JunkTurret/junkturret_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/JunkTurret/junkturret_fire2"/>
@@ -4704,7 +4762,7 @@
 
   <!-- Junk Sledge   -->
 
-  <SoundDataNode name="junksledge_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+  <SoundDataNode name="junksledge_fire"> <AudioSource name="Sounds/AudioSource_JunkWeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 	<Noise ID="0" noise="35" time="2" heat_map_strength="0.25" heat_map_time="180"/>
 	<AudioClip ClipName="Sounds/Weapons/Melee/JunkSledge/junksledge_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Melee/JunkSledge/junksledge_fire2"/>

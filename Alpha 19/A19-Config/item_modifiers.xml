@@ -201,7 +201,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<property name="Sound_start" value="ak47_s_fire"/>
 			<property name="Sound_end" value="silencefiller"/>
 			<property name="Sound_loop" value="ak47_s_fire"/>
-			<property name="BarrelOffset" value="-0,-0.007,.0287"/>
+			<property name="BarrelOffset" value="0,.005,.275"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
 
@@ -745,7 +745,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<item_property_overrides name="gunMGT2TacticalAR">
 			<property name="ScopeOffset" value="0,0.097,-0.098"/>
 			<property name="ScopeScale" value=".63,.63,.63"/>
-			<property name="ScopeCameraOffset" value="0,-0.018,-0.16"/>
+			<property name="ScopeCameraOffset" value="0,-.018,0.0016"/>
 		</item_property_overrides>
 
 		<item_property_overrides name="gunRifleT1HuntingRifle">

@@ -934,11 +934,10 @@
 		<block name="cntStoreShelfElectronicsDoubleBottomGoods04" prob=".085"/>
 	</placeholder>
 
-
-
-
-
-
+	<placeholder name="cntGasPumpRandomLootHelper">
+		<block name="cntGasPumpEmpty" prob=".66"/>
+		<block name="cntGasPumpFull" prob=".35"/>
+	</placeholder>
 
 	<placeholder name="wallClockRandomLootHelper">
 		<block name="wallClock" prob=".5"/>

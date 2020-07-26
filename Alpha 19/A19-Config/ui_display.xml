@@ -378,6 +378,9 @@ All the perk tags:
 		<item_display_info display_type="clothingShades" display_group="groupAttire">
 			<display_entry name="AttributeLevel" tags="attPerception" title_key="statShowPerception" display_leading_plus="true"/>
 		</item_display_info>
+		<item_display_info display_type="apparelToughGuySunglasses" display_group="groupAttire">
+			<display_entry name="AttributeLevel" tags="attFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
+		</item_display_info>		
 		<item_display_info display_type="clothingAviatorGoggles" display_group="groupAttire">
 			<display_entry name="LootGamestage" title_key="statLootGamestage" display_leading_plus="true"/>
 			<display_entry name="dTreasureBlocksPerReduction" title_key="statTreasureRadius" display_leading_plus="true" negative_preferred="true"/>

@@ -8,34 +8,34 @@
 	</backgrounds>
 
 	<tips>
-		<!--XXX <tip key="loadingTipMainHUD" /> XXX-->
+		<tip key="loadingTipMainHUD" /> 
 		<tip key="loadingTipStoneAxe" />
 		<tip key="loadingTipHarvestingResources" />
 		<tip key="loadingTipDistraction" />
 		<tip key="loadingTipStealth" />
-		<!--XXX <tip key="loadingTipEncumbrance" /> XXX-->
+		<tip key="loadingTipEncumbrance" /> 
 		<tip key="loadingTipArmor" />
 		<tip key="loadingTipBandages" />
 		<tip key="loadingTipJournalEntries" />
 		<tip key="loadingTipQuestSharing" />
-		<!--XXX <tip key="loadingTipWhatIsItGoodFor" /> XXX-->
+		<tip key="loadingTipWhatIsItGoodFor" /> 
 		<tip key="loadingTipWorkstations" />
 		<tip key="loadingTipUnlockingRecipes" />
-		<!--XXX <tip key="loadingTipCraftingBetterQL" /> XXX-->
+		<tip key="loadingTipCraftingBetterQL" /> 
 		<tip key="loadingTipBaseUpgrading" />
 		<tip key="loadingTipRadials" />
 		<tip key="loadingTipHarvestingCorpses" />
 		<tip key="loadingTipGlue" />
 		<tip key="loadingTipProperTools" />
-		<!--XXX <tip key="loadingTipItemStats" /> XXX-->
-		<!--XXX <tip key="loadingTipExtCharStats" /> XXX-->
+		<tip key="loadingTipItemStats" /> 
+		<tip key="loadingTipExtCharStats" /> 
 		<tip key="loadingTipBladedWeapons" />
 		<tip key="loadingTipPickaxes" />
 		<tip key="loadingTipAxes" />
 		<tip key="loadingTipSteelKnuckles" />
 		<tip key="loadingTipWrenches" />
 		<tip key="loadingTipSledgehammers" />
-		<!--XXX <tip key="loadingTipUsingIronTools" /> XXX-->
+		<tip key="loadingTipUsingIronTools" /> 
 		<tip key="loadingTipScrapping" />
 		<tip key="loadingTipBuffs" />
 	</tips>

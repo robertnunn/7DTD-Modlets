@@ -3095,6 +3095,13 @@ group desc for stuff like metal siding
 	<drop event="Fall" count="0" prob="0"/>
 </block>
 
+<block name="woodCross3x1">
+	<property name="Extends" value="woodCross"/>
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="CustomIcon" value="woodCross"/>
+	<property name="CustomIconTint" value="fc5000"/>
+</block>
+
 <block name="woodCrossHalf">
 	<property name="Extends" value="woodCross"/>
 	<property name="Model" value="pole_diagonal_cross_half"/>
@@ -7402,6 +7409,13 @@ group desc for stuff like metal siding
 	<drop event="Fall" count="0" prob="0"/>
 </block>
 
+<block name="scrapIronCross3x1">
+	<property name="Extends" value="scrapIronCross"/>
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="CustomIcon" value="scrapIronCross"/>
+	<property name="CustomIconTint" value="fc5000"/>
+</block>
+
 <block name="flagstoneHalf">
 	<property name="Extends" value="flagstoneMaster"/>
 	<property name="Shape" value="New"/>
@@ -8428,6 +8442,13 @@ group desc for stuff like metal siding
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<drop event="Fall" count="0" prob="0"/>
+</block>
+
+<block name="rustyIronCrossCtr3x1">
+	<property name="Extends" value="rustyIronCrossCtr"/>
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="CustomIcon" value="rustyIronCrossCtr"/>
+	<property name="CustomIconTint" value="fc5000"/>
 </block>
 
 <block name="rWoodQuarterSCtr">
@@ -12047,7 +12068,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="concrete_destroyed01"/>
-	<property name="Texture" value="8"/>
+	<property name="Texture" value="8,8,606,606,606,606"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
 	<property class="RepairItems"> <property name="resourceConcreteMix" value="5"/> </property>
 	<property class="UpgradeBlock">
@@ -12067,33 +12088,39 @@ group desc for stuff like metal siding
 <block name="concreteDestroyed02">
 	<property name="Extends" value="concreteDestroyed01"/>
 	<property name="Model" value="concrete_destroyed02"/>
+	<property name="Texture" value="8,8,606,606,606,606"/>
 </block>
 
 <block name="concreteDestroyed03">
 	<property name="Extends" value="concreteDestroyed01"/>
 	<property name="Model" value="concrete_destroyed03"/>
+	<property name="Texture" value="8,8,606,606,606,606"/>
 </block>
 
 <block name="concreteDestroyed04">
 	<property name="Extends" value="concreteDestroyed01"/>
 	<property name="Model" value="concrete_destroyed04"/>
+	<property name="Texture" value="8,8,606,606,606,606"/>
 </block>
 
 <block name="concreteDestroyed05">
 	<property name="Extends" value="concreteDestroyed01"/>
 	<property name="Model" value="concrete_destroyed05"/>
+	<property name="Texture" value="8,8,606,8,8,8"/>
 </block>
 
 <block name="concreteDestroyed06">
 	<property name="Extends" value="concreteDestroyed01" param1="Path"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Model" value="concrete_destroyed06"/>
+	<property name="Texture" value="8,8,606,8,8,8"/>
 </block>
 
 <block name="concreteDestroyed07" param1="Path">
 	<property name="Extends" value="concreteDestroyed01"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Model" value="concrete_destroyed07"/>
+	<property name="Texture" value="8,8,606,8,8,8"/>
 </block>
 
 <block name="decoConcreteBollard">
@@ -13378,7 +13405,7 @@ NOT the TextureNumber.
 <block name="newTextureBlock21">
 	<property name="Extends" value="newTextureBlock01"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="Texture" value="605,8,8,8,8,8"/>
+	<property name="Texture" value="605,606,8,8,8,8"/>
 </block>
 	<!-- #8 = concrete. That is the dummy value that can be replaced with a new texture when needed.
 		The game does not like it when you try to put a 7th texture on a block. -->
@@ -19738,6 +19765,51 @@ NOT the TextureNumber.
 	<property name="FilterTags" value="floot,ffurniture"/>
 </block>
 
+<block name="cntGasPumpRandomLootHelper">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/gasPumpFullPrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="cntGasPumpFull"/> <property name="CustomIconTint" value="ff8080"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="90"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="5000"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="3"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="150"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property class="RepairItems"> <property name="resourceWood" value="8"/> </property>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2,10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LPHardnessScale" value="0"/> <!-- disable LP for TNT blocks -->
+	<property name="EconomicValue" value="400"/> <!-- disassemble value -->
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+
+<block name="cntGasPumpEmpty">
+	<property name="Extends" value="cntGasPumpRandomLootHelper" param1="DescriptionKey,DisplayInfo,CustomIcon,CustomIconTint"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/gasPumpEmptyPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="cntGasPumpFull">
+	<property name="Extends" value="cntGasPumpEmpty"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="64"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/gasPumpFullPrefab"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
 <block name="cntNightstandRandomLootHelper">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="DisplayInfo" value="Name"/>
@@ -20133,7 +20205,6 @@ NOT the TextureNumber.
 
 <block name="cntWallSafeShamway">
 	<property name="Extends" value="cntWallSafe"/>
-	<property name="Tags" value="safes"/>
 	<property name="CustomIcon" value="cntWallSafe"/>
 	<property name="LootList" value="38"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
@@ -20141,7 +20212,6 @@ NOT the TextureNumber.
 </block>
 
 <block name="cntWallSafeShamwayInsecure">
-<property name="Tags" value="safes"/>
 	<property name="Extends" value="cntWallSafeInsecure"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="cntWallSafe"/>
@@ -20150,7 +20220,6 @@ NOT the TextureNumber.
 
 <block name="cntWallSafeBrewery">
 	<property name="Extends" value="cntWallSafe"/>
-	<property name="Tags" value="safes"/>
 	<property name="CustomIcon" value="cntWallSafe"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
 	<property name="DowngradeBlock" value="cntWallSafeBreweryInsecure"/>
@@ -20159,7 +20228,6 @@ NOT the TextureNumber.
 
 <block name="cntWallSafeBreweryInsecure">
 	<property name="Extends" value="cntWallSafeInsecure"/>
-	<property name="Tags" value="safes"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="cntWallSafe"/>
 	<property name="LootList" value="39"/>
@@ -20632,11 +20700,9 @@ NOT the TextureNumber.
 	<property name="Material" value="Mleather"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="Weight" value="40"/>
-	<property name="Shape" value="Ext3dModel"/>
-	<property name="Texture" value="282"/>
-	<property name="Mesh" value="models"/>
+	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="Furniture/office_chair01" param1="main_mesh"/>
+	<property name="Model" value="Entities/Furniture/officeChairPrefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="90"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -20884,38 +20950,38 @@ NOT the TextureNumber.
 </block>
 
 <block name="bleachersTopMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleTopPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleTopPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersTopSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportTopPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportTopPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersUnderneathMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleUnderneathPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersUnderneathSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportUnderneathPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportUnderneathPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersBottomMiddle">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersMiddleBottomPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersBottomSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportBottomPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportBottomPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="bleachersSupport">
-	<property name="Extends" value="decoEntityWoodMaster"/>
-	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportPrefab"/>	<property name="CreativeMode" value="Test"/>
+	<property name="Extends" value="decoEntityMetalMaster"/>
+	<property name="Model" value="Entities/OutdoorDecor/bleachersSupportPrefab"/>	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <block name="parkBenchA">
@@ -21922,7 +21988,6 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="1"/>
 	<property name="CustomIcon" value="cntCoffinWildWestClosed"/> <property name="CustomIconTint" value="ff8080"/>
-	<property name="DescriptionKey" value="cntGenericRandomLootHelperDesc"/>
 	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<property name="FilterTags" value="floot,ffurniture,fdesign"/>
 	<drop event="Harvest" name="resourceBone" prob=".05" count="1,4" tag="WasteTreasuresCoffinHarvest"/>
@@ -25338,6 +25403,7 @@ NOT the TextureNumber.
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#Entities/LootContainers?loot_cratePrefab.prefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="CustomIconTint" value="a0a0ff"/>
 	<property name="LootList" value="41"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="6"/>
@@ -25355,8 +25421,8 @@ NOT the TextureNumber.
 
 <block name="cntLootChestHeroInsecure">
 	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
-	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="cntLootChestHero"/>
+	<property name="CustomIconTint" value="ffffff"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="41"/>
 	<property name="DescriptionKey" value="cntLootChestHeroDesc"/>
@@ -26082,7 +26148,7 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Dev"/>
 	<property name="DescriptionKey" value="sleeperGroupDesc"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleSitPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSitPrefab.prefab"/>
 	<property name="Pose" value="0"/>
 	<property name="Material" value="Morganic"/>
 	<property name="LookIdentity" value="0,0,1"/> <!-- this "sleeper pose" is looking in a certain direction
@@ -26094,7 +26160,7 @@ NOT the TextureNumber.
 <block name="sleeperBack">
 	<property name="Extends" value="sleeperSit"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleBackPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleBackPrefab.prefab"/>
 	<property name="Pose" value="1"/>
 	<property name="LookIdentity" value="1,0,0"/>
 </block>
@@ -26102,7 +26168,7 @@ NOT the TextureNumber.
 <block name="sleeperSideLeft">
 	<property name="Extends" value="sleeperSit"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleSideLeftPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSideLeftPrefab.prefab"/>
 	<property name="Pose" value="2"/>
 	<property name="LookIdentity" value="1,0,0"/>
 </block>
@@ -26110,7 +26176,7 @@ NOT the TextureNumber.
 <block name="sleeperSideRight">
 	<property name="Extends" value="sleeperSit"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleSideRightPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSideRightPrefab.prefab"/>
 	<property name="Pose" value="3"/>
 	<property name="LookIdentity" value="-1,0,0"/>
 </block>
@@ -26118,7 +26184,7 @@ NOT the TextureNumber.
 <block name="sleeperStomach">
 	<property name="Extends" value="sleeperSit"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleStomachPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleStomachPrefab.prefab"/>
 	<property name="Pose" value="4"/>
 	<property name="LookIdentity" value="0,0,1"/>
 </block>
@@ -26127,7 +26193,7 @@ NOT the TextureNumber.
 	<property name="Extends" value="sleeperSit"/>
 	<property name="ExcludeWalkType" value="4"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Zombies/SleeperPoses/idleSleepPrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
 	<property name="Pose" value="5"/>
 	<property name="LookIdentity" value="0,0,1"/>
 </block>
@@ -27531,7 +27597,7 @@ NOT the TextureNumber.
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
-		<property name="resourceForgedSteel" value="16"/>
+		<property name="resourceForgedSteel" value="10"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,100" tag="allHarvest"/>
@@ -27715,7 +27781,7 @@ NOT the TextureNumber.
 	<property name="Material" value="Morganic"/>
 	<property name="MaxDamage" value="80"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Zombies/halfCorpsePrefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/halfCorpsePrefab.prefab"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -27734,17 +27800,17 @@ NOT the TextureNumber.
 
 <block name="goreBlockHumanCorpse1">
 	<property name="Extends" value="goreBlockHumanCorpse"/>
-	<property name="Model" value="Entities/Zombies/corpse1Prefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/corpse1Prefab.prefab"/>
 </block>
 
 <block name="goreBlockHumanCorpse2">
 	<property name="Extends" value="goreBlockHumanCorpse"/>
-	<property name="Model" value="Entities/Zombies/corpse2Prefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/corpse2Prefab.prefab"/>
 </block>
 
 <block name="goreBlockHumanCorpse3">
 	<property name="Extends" value="goreBlockHumanCorpse"/>
-	<property name="Model" value="Entities/Zombies/corpse3Prefab"/>
+	<property name="Model" value="#Entities/Zombies?Zombies/corpse3Prefab.prefab"/>
 </block>
 
 <!-- <block name="goreBlockHumanLootable">   not used in prefabs
@@ -30750,7 +30816,6 @@ NOT the TextureNumber.
 </block>
 
 <block name="hubcapNoMine">
-	<property name="CustomIcon" value="resourceHubcap"/>
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="25"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -30759,7 +30824,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="resourceHubcap" count="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="3,7"/>
 	<property name="FilterTags" value="fdecor,fother,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>
 </block>
@@ -30797,6 +30862,12 @@ NOT the TextureNumber.
 	<property name="EconomicValue" value="97"/>
 	<property name="FilterTags" value="fdecor,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>
+	<!--
+	Incendiary mine:
+	<property name="Explosion.ParticleIndex" value="10"/>
+	<property name="Explosion.Buff" value="buffShocked"/>
+	<property name="Explosion.Buff" value="buffBurningMolotov"/>
+	-->
 </block>
 
 <block name="rScrapIronPlateMine">

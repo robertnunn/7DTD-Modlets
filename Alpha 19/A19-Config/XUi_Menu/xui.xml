@@ -35,7 +35,7 @@
 			<window name="editingTools" />
 		</window_group>
 		
-		<window_group name="createWorld" controller="CreateWorld">
+		<window_group name="createWorld">
 			<window name="createWorld" />
 		</window_group>
 		

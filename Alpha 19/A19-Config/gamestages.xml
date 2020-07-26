@@ -192,6 +192,10 @@ Console command: forcegamestage
 		<spawner name="ZombieUtilityWorkerHorde" count="5,6"/>
 	</group>
 
+	<group name="S_Zom_Janitor_Only" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="ZombieJanitorOnlyHorde" count="5,6"/>
+	</group>
+
 	<group name="S_Zom_Businessman" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 		<spawner name="ZombieBusinessManHorde" count="5,6"/>
 	</group>
@@ -349,6 +353,15 @@ Console command: forcegamestage
 		<gamestage stage="200"><spawn group="zombieUtilityWorkerGroupGS200" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="400"><spawn group="zombieUtilityWorkerGroupGS400" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="800"><spawn group="zombieUtilityWorkerGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+
+	<spawner name="ZombieJanitorOnlyHorde">
+		<gamestage stage="1"><spawn group="zombieJanitorGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="zombieJanitorGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="zombieJanitorGroupGS100" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="zombieJanitorGroupGS200" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="zombieJanitorGroupGS400" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="zombieJanitorGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
 	<spawner name="SnowZombieHorde">

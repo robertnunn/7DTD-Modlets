@@ -272,7 +272,7 @@
 	<property name="Tags" value="entity,zombie,walker"/>  <!-- this property DOES NOT inherit on extends and target_tags cannot be AND connected -->
 	<property name="HideInSpawnMenu" value="true"/>
 	<!-- Mesh and class properties -->
-	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="HasRagdoll" value="true"/>
@@ -353,6 +353,7 @@
 		<property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0.3"/>
 		<property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0.3;ragePer=0.5,1.5;rageTime=1.0,2.0"/>
 
+		<property name="HighStumbleAndRage" data="anim=Stumble;height=5,13;weight=0.13;ragePer=0.5,1.5;rageTime=2,8"/>
 		<property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0.4"/>
 	</property>
 
@@ -473,7 +474,7 @@
 
 <entity_class name="zombieWightFeral" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
 	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
 	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
@@ -506,8 +507,8 @@
 
 <entity_class name="zombieWightRadiated" extends="zombieWightFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_radiated"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -559,7 +560,7 @@
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/Z_eye1.mat"/>
 	<property name="HandItem" value="meleeHandZombieBehemoth"/>
 </entity_class>
 -->
@@ -567,6 +568,7 @@
 <!-- Missing: zombieBehemothRadiated -->
 
 <entity_class name="zombieBoe" extends="zombieTemplateMale">
+	<property name="SizeScale" value="1.08"/>
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -574,13 +576,13 @@
 	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
-	<property name="Mesh" value="Zombies/zombieStandardBoeHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/Z_eye1.mat"/>
 
 	<!-- Gameplay -->
 	<property name="MoveSpeed" value="0.06"/>
@@ -593,13 +595,13 @@
 </entity_class>
 <!--
 <entity_class name="zombieBoeTest" extends="zombieBoe">
-	<property name="Mesh" value="Zombies/zombieStandardBoeHDRagdollTest"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDRagdollTest.prefab"/>
 </entity_class>
 -->
 <entity_class name="zombieBoeFeral" extends="zombieBoe">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<!--<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>-->
-	<property name="Mesh" value="Zombies/zombieStandardBoeHDFeralRagdoll"/>
+	<!--<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>-->
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDFeralRagdoll.prefab"/>
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
@@ -619,7 +621,7 @@
 
 <entity_class name="zombieBoeRadiated" extends="zombieBoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardBoeHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDRadiatedRagdoll.prefab"/>
 
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
@@ -641,7 +643,7 @@
 
 <entity_class name="zombieFootballPlayer" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardFootballRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFootballRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -672,7 +674,7 @@
 
 <entity_class name="zombieFemaleFat" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardBigMamaHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBigMamaHDRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
@@ -707,7 +709,7 @@
 
 <entity_class name="zombieFemaleFatFeral" extends="zombieFemaleFat">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardBigMamaHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBigMamaHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -729,7 +731,7 @@
 
 <entity_class name="zombieFemaleFatRadiated" extends="zombieFemaleFatFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardBigMamaHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBigMamaHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -750,7 +752,7 @@
 
 <entity_class name="zombieJoe" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardJoeHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardJoeHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="5"/>
@@ -767,7 +769,7 @@
 
 <entity_class name="zombieJoeFeral" extends="zombieJoe">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardJoeHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardJoeHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -787,7 +789,64 @@
 
 <entity_class name="zombieJoeRadiated" extends="zombieJoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardJoeHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardJoeHDRadiatedRagdoll.prefab"/>
+	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
+	<!-- Gameplay -->
+	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>
+
+	<property name="ExperienceGain" value="1200"/> <!-- XP grunt radiated -->
+	<property name="LootDropProb" value=".03"/> <!-- Radiated -->
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="541"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="zombieJanitor" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,zombie,walker"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMechanicHDRagdoll.prefab"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="5"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="TintMaterial2" value="79,40,26"/>
+
+	<!-- Gameplay -->
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+	</effect_group>
+</entity_class>
+
+<entity_class name="zombieJanitorFeral" extends="zombieJoe">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMechanicHDFeralRagdoll.prefab"/>
+
+	<!-- Gameplay -->
+	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>
+
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+
+	<property name="ExperienceGain" value="750"/> <!-- XP grunt feral -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="285"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+
+<entity_class name="zombieJanitorRadiated" extends="zombieJoeFeral">
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMechanicHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -806,8 +865,9 @@
 </entity_class>
 
 <entity_class name="zombieMoe" extends="zombieTemplateMale">
+	<property name="SizeScale" value="1.08"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardMoeHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMoeHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="1"/>
@@ -838,7 +898,7 @@
 
 <entity_class name="zombieMoeFeral" extends="zombieMoe">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardMoeHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMoeHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -859,7 +919,7 @@
 
 <entity_class name="zombieMoeRadiated" extends="zombieMoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardMoeHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMoeHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -877,8 +937,9 @@
 
 
 <entity_class name="zombieArlene" extends="zombieTemplateMale">
+	<property name="SizeScale" value="0.9"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardArleneHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardArleneHDRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
@@ -907,7 +968,7 @@
 
 <entity_class name="zombieArleneFeral" extends="zombieArlene">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardArleneHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardArleneHDFeralRagdoll.prefab"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
 
 	<!-- Gameplay -->
@@ -926,7 +987,7 @@
 
 <entity_class name="zombieArleneRadiated" extends="zombieArleneFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardArleneHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardArleneHDRadiatedRagdoll.prefab"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
@@ -945,7 +1006,7 @@
 
 <entity_class name="zombieLab" extends="zombieArlene">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardLabRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
 	<property name="AINoiseSeekDist" value="5"/>
 	<property name="AIPathCostScale" value=".9, 1"/>
 	<effect_group name="Base Effects">
@@ -956,8 +1017,8 @@
 
 <entity_class name="zombieLabFeral" extends="zombieLab">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardLabRagdoll"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
@@ -972,9 +1033,9 @@
 
 <entity_class name="zombieLabRadiated" extends="zombieLab">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardLabRagdoll"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/LabZombie_radiated"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/LabZombie_radiated.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
@@ -994,7 +1055,7 @@
 <entity_class name="legendaryZombieLab" extends="zombieLab">
 	<property name="Tags" value="entity,zombie,walker,boss"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
 	<effect_group name="Base Effects">
@@ -1009,7 +1070,7 @@
 
 <entity_class name="zombieScreamer" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardScreamerRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
 	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
@@ -1035,7 +1096,7 @@
 
 <entity_class name="zombieScreamerFeral" extends="zombieScreamer">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1055,7 +1116,7 @@
 
 <entity_class name="zombieScreamerRadiated" extends="zombieScreamerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/screamer_radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/screamer_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -1076,8 +1137,9 @@
 </entity_class>
 
 <entity_class name="zombieDarlene" extends="zombieTemplateMale">
+	<property name="SizeScale" value="0.98"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardDarleneHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDarleneHDRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
@@ -1102,7 +1164,7 @@
 
 <entity_class name="zombieDarleneFeral" extends="zombieDarlene">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardDarleneHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDarleneHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1122,7 +1184,7 @@
 
 <entity_class name="zombieDarleneRadiated" extends="zombieDarleneFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardDarleneHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDarleneHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -1139,8 +1201,9 @@
 </entity_class>
 
 <entity_class name="zombieMarlene" extends="zombieTemplateMale">
+	<property name="SizeScale" value="0.97"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardMarleneHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMarleneHDRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
@@ -1164,7 +1227,7 @@
 
 <entity_class name="zombieMarleneFeral" extends="zombieMarlene">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardMarleneHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMarleneHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1184,7 +1247,7 @@
 
 <entity_class name="zombieMarleneRadiated" extends="zombieMarlene">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardMarleneHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMarleneHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -1201,8 +1264,9 @@
 </entity_class>
 
 <entity_class name="zombieYo" extends="zombieTemplateMale">
+	<property name="SizeScale" value="1.02"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardYoHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardYoHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="5"/>
@@ -1219,7 +1283,7 @@
 
 <entity_class name="zombieYoFeral" extends="zombieYo">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardYoHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardYoHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1239,7 +1303,7 @@
 
 <entity_class name="zombieYoRadiated" extends="zombieYoFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardYoHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardYoHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -1257,8 +1321,9 @@
 </entity_class>
 
 <entity_class name="zombieSteve" extends="zombieTemplateMale">
+	<property name="SizeScale" value="0.95"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardSteveHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSteveHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="6"/>
@@ -1275,7 +1340,7 @@
 
 <entity_class name="zombieSteveFeral" extends="zombieSteve">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardSteveHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSteveHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1296,7 +1361,7 @@
 
 <entity_class name="zombieSteveRadiated" extends="zombieSteveFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardSteveHDRadiatedRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSteveHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -1316,7 +1381,7 @@
 
 <entity_class name="zombieSteveCrawler" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="Zombies/zombieStandardCrawlerHDRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCrawlerHDRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="Mass" value="140"/>
 	<property name="Class" value="EntityZombie"/>
@@ -1346,7 +1411,7 @@
 
 <entity_class name="zombieSteveCrawlerFeral" extends="zombieSteveCrawler">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="Zombies/zombieStandardCrawlerHDFeralRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCrawlerHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1367,7 +1432,7 @@
 
 <entity_class name="zombieBusinessMan" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardSuitRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSuitRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="7"/>
@@ -1384,7 +1449,7 @@
 
 <entity_class name="zombieBusinessManFeral" extends="zombieBusinessMan">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial2" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1407,7 +1472,7 @@
 <entity_class name="legendaryZombieBusinessMan" extends="zombieBusinessMan">
 	<property name="Tags" value="entity,zombie,walker,boss"/>
 	<!-- <property name="Buffs" value="buffLegendaryBoss"/> -->
-	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial2" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
@@ -1422,7 +1487,7 @@
 
 <entity_class name="zombieSnow" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSnowRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
@@ -1449,7 +1514,7 @@
 
 <entity_class name="zombieSnowFeral" extends="zombieSnow">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1473,13 +1538,15 @@
 
 <entity_class name="zombieSpider" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie"/>
-	<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSpiderRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="8"/>
 	<property name="Mass" value="150"/>
+	<property name="LookAtAngle" value="0"/>
+
 	<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
 	<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
 	<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
@@ -1525,7 +1592,7 @@
 
 <entity_class name="zombieSpiderFeral" extends="zombieSpider">
 	<property name="Tags" value="entity,zombie,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1546,8 +1613,8 @@
 
 <entity_class name="zombieSpiderRadiated" extends="zombieSpiderFeral">
 	<property name="Tags" value="entity,zombie,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/spiderzombie_radiated"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/spiderzombie_radiated.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 	<!-- Gameplay -->
@@ -1568,7 +1635,7 @@
 
 <entity_class name="zombieBurnt" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/ZombieStandardBurntRagdoll.prefab"/>
 	<property name="WalkType" value="7"/>
 	<property name="Mass" value="160"/>
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
@@ -1601,7 +1668,7 @@
 
 <entity_class name="zombieNurse" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardNurseRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
@@ -1626,7 +1693,7 @@
 
 <entity_class name="zombieNurseFeral" extends="zombieNurse">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1648,7 +1715,7 @@
 
 <entity_class name="zombieFatHawaiian" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardHawaiianRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardHawaiianRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
 	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
@@ -1663,7 +1730,7 @@
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/Z_eye1.mat"/>
 
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
@@ -1679,7 +1746,7 @@
 
 <entity_class name="zombieFatHawaiianFeral" extends="zombieFatHawaiian">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1702,7 +1769,7 @@
 
 <entity_class name="zombieFatCop" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
-	<property name="Mesh" value="Zombies/zombieStandardCopRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCopRagdoll.prefab"/>
 	<property name="Class" value="EntityZombieCop"/>
 	<property name="WalkType" value="1"/>
 	<property name="RightHandJointName" value="Jaw"/>
@@ -1741,7 +1808,7 @@
 	<property name="ArmsExplosionDamageMultiplier" value="2"/>
 	<property name="HeadExplosionDamageMultiplier" value="2"/>
 	<property name="ChestExplosionDamageMultiplier" value="2"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/Z_eye1.mat"/>
 
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
@@ -1764,7 +1831,7 @@
 
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
 	<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral Cop -->
@@ -1794,8 +1861,8 @@
 
 <entity_class name="zombieFatCopRadiated" extends="zombieFatCopFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieCop"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/cop_rad"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/cop_rad.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 	<!-- Gameplay -->
@@ -1819,7 +1886,7 @@
 
 <entity_class name="zombieMaleHazmat" extends="zombieBoe">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardHazmatRagdoll.prefab"/>
 	<property name="WalkType" value="7"/>
 	<property name="AINoiseSeekDist" value="6"/>
 	<property name="AIPathCostScale" value=".65, .9"/>
@@ -1843,7 +1910,7 @@
 	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
-	<property name="Mesh" value="Zombies/zombieStandardWorkerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardWorkerRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="6"/>
@@ -1864,7 +1931,7 @@
 
 <entity_class name="zombieUtilityWorkerFeral" extends="zombieUtilityWorker">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1888,7 +1955,7 @@
 <entity_class name="legendaryZombieUtilityWorker" extends="zombieUtilityWorker">
 	<property name="Tags" value="entity,zombie,walker,boss"/>
 	<!-- <property name="Buffs" value="buffLegendaryBoss"/> -->
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
@@ -1909,7 +1976,7 @@
 	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
-	<property name="Mesh" value="Zombies/zombieStandardSoldierRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSoldierRagdoll.prefab"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
@@ -1931,7 +1998,7 @@
 
 <entity_class name="zombieSoldierFeral" extends="zombieSoldier">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -1952,8 +2019,8 @@
 
 <entity_class name="zombieSoldierRadiated" extends="zombieSoldierFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/soldier_Zombie_radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/soldier_Zombie_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 	<!-- Gameplay -->
@@ -1978,7 +2045,7 @@
 
 <entity_class name="zombieDemolition" extends="zombieSoldier">
 	<property name="Tags" value="entity,zombie,walker,boss"/>
-	<property name="Mesh" value="Zombies/zombieStandardDemolitionRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDemolitionRagdoll.prefab"/>
 	<property name="Class" value="EntityZombieCop"/>
 	<property name="Mass" value="300"/>
 
@@ -2029,7 +2096,7 @@
 
 <entity_class name="zombieSkateboarder" extends="zombieBoe">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardHoodieRagdoll.prefab"/>
 	<property name="SoundRandom" value="zombiemaleroam"/>
 	<property name="SoundAlert" value="zombiemalealert"/>
 	<property name="SoundAttack" value="zombiemaleattack"/>
@@ -2047,7 +2114,7 @@
 
 <entity_class name="zombieSkateboarderFeral" extends="zombieSkateboarder">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2067,7 +2134,7 @@
 
 <entity_class name="zombieSkateboarderRadiated" extends="zombieSkateboarderFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/hoodieZombie_radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/hoodieZombie_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -2085,7 +2152,7 @@
 
 <entity_class name="zombieCheerleader" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardCheerleaderRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCheerleaderRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
@@ -2110,7 +2177,7 @@
 
 <entity_class name="zombieCheerleaderFeral" extends="zombieCheerleader">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2130,7 +2197,7 @@
 
 <entity_class name="zombieCheerleaderRadiated" extends="zombieCheerleaderFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/cheerleaderZombie_radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/cheerleaderZombie_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -2148,7 +2215,7 @@
 
 <entity_class name="zombieOldTimer" extends="zombieBoe">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardOldTimerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardOldTimerRagdoll.prefab"/>
 	<property name="WalkType" value="3"/>
 	<property name="Mass" value="150"/>
 
@@ -2161,7 +2228,7 @@
 
 <entity_class name="zombieOldTimerFeral" extends="zombieOldTimer">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2181,7 +2248,7 @@
 
 <entity_class name="zombieOldTimerRadiated" extends="zombieOldTimerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/oldTimer_radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/oldTimer_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
@@ -2199,8 +2266,9 @@
 </entity_class>
 
 <entity_class name="zombieBiker" extends="zombieTemplateMale">
+	<property name="SizeScale" value="1.1"/>
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDRagdoll.prefab"/>
 	<property name="Mass" value="230"/>
 	<property name="WalkType" value="7"/>
 	<property name="PainResistPerHit" value=".75"/>
@@ -2218,8 +2286,7 @@
 
 <entity_class name="zombieBikerFeral" extends="zombieBiker">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDFeralRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2239,8 +2306,7 @@
 
 <entity_class name="zombieBikerRadiated" extends="zombieBikerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
-	<property name="ReplaceMaterial0" value="entities/zombies/materials/bikerZ_radiated"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
@@ -2260,7 +2326,7 @@
 <entity_class name="legendaryZombieBiker" extends="zombieBiker">
 	<property name="Tags" value="entity,zombie,walker,boss"/>
 	<property name="Buffs" value="buffLegendaryBoss"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="600"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
@@ -2271,7 +2337,7 @@
 
 <entity_class name="zombieFarmer" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFarmerRagdoll.prefab"/>
 	<property name="WalkType" value="6"/>
 	<property name="TintMaterial1" value="84,84,84"/>
 	<property name="AIPathCostScale" value=".3, .5"/>
@@ -2287,10 +2353,10 @@
 
 <entity_class name="zombieFarmerFeral" extends="zombieFarmer">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFarmerRagdoll.prefab"/>
 	<property name="WalkType" value="6"/>
 	<property name="TintMaterial1" value="84,84,84"/>
-	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
+	<property name="ReplaceMaterial2" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2312,7 +2378,7 @@
 
 <entity_class name="zombieStripper" extends="zombieDarlene">
 	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardStripperRagdoll.prefab"/>
 
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieStripper"/>
@@ -2325,8 +2391,8 @@
 
 <entity_class name="zombieStripperFeral" extends="zombieStripper">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardStripperRagdoll.prefab"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
@@ -2348,7 +2414,7 @@
 
 <!--<entity_class name="zombieUMATemplateMale" extends="zombieTemplateMale">
 	<property name="EntityType" value="Zombie"/>
-	<property name="Mesh" value="Zombies/zombie01Ragdoll"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombie01Ragdoll.prefab"/>
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityZombie"/>
 	<property name="Parent" value="Enemies"/>
@@ -2462,6 +2528,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="50"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
 	</effect_group>
 </entity_class>
 
@@ -2558,7 +2625,7 @@
 	<property name="AITask-4" value="Wander"/>
 
 	<!-- Gameplay -->
-	<property name="MoveSpeedPanic" value="1.5"/>
+	<property name="MoveSpeedPanic" value="1.55"/>
 
 	<property name="ExperienceGain" value="130"/>
 	<property name="DeadBodyHitPoints" value="175"/>
@@ -2599,7 +2666,7 @@
 	<property name="HasDeathAnim" value="false"/>
 
 	<!-- Gameplay -->
-	<property name="MoveSpeedPanic" value="1"/>
+	<property name="MoveSpeedPanic" value="1.3"/>
 	<property name="ExperienceGain" value="130"/>
 	<property name="DeadBodyHitPoints" value="175"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
@@ -2647,7 +2714,7 @@
 <entity_class name="animalTemplateHostile">
 	<property name="Tags" value="entity,animal,hostile"/>
 	<property name="HideInSpawnMenu" value="true"/>
-	<property name="Mesh" value="Zombies/zombieDogPrefab"/>
+	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieDogPrefab.prefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityEnemyAnimal"/>
@@ -2725,6 +2792,8 @@
 			<requirement name="NotHasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
 			<requirement name="HasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
+
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
 	</effect_group>
 </entity_class>
 

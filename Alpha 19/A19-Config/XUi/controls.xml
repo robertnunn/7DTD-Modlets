@@ -63,18 +63,18 @@
 	</togglebutton>
 
 	<simplebutton>
-		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}">
+		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" button_enabled="${enabled|true}">
 			<sprite depth="1" name="border" sprite="${bordersprite|menu_empty2px}" pos="0,${Round(-height/2,0)|-16}" color="${bordercolor|[black]}" type="sliced" fillcenter="false" foregroundlayer="true" pivot="${pivot|left}" />
-			<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="${defaultsprite|menu_empty}" defaultcolor="${defaultcolor|[mediumGrey]}" disabledcolor="[darkGrey]" hoversprite="${hoversprite|ui_game_select_row}" hovercolor="${hovercolor|[white]}" selectedsprite="${selectedsprite|ui_game_select_row}" selectedcolor="${selectedcolor|[mediumGrey]}" foregroundlayer="${foregroundlayer|true}" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" />
-			<label depth="2" name="btnLabel" width="${width|200}" height="${height-2|30}" pos="0,${Round(-height/2,0)|-16}" justify="${justify|center}" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${font_size|28}" parse_actions="${parse_actions|false}" />
+			<button name="clickable" pos="0,${Round(-height/2,0)|-16}" sprite="${defaultsprite|menu_empty}" defaultcolor="${defaultcolor|[mediumGrey]}" disabledcolor="[darkGrey]" hoversprite="${hoversprite|ui_game_select_row}" hovercolor="${hovercolor|[white]}" selectedsprite="${selectedsprite|ui_game_select_row}" selectedcolor="${selectedcolor|[mediumGrey]}" foregroundlayer="${foregroundlayer|true}" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}" />
+			<label depth="2" name="btnLabel" width="${width|200}" height="${height-2|30}" pos="0,${Round(-height/2,0)|-16}" justify="${justify|center}" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${font_size|28}" upper_case="${upper_case|false}" parse_actions="${parse_actions|false}" />
 		</rect>
 	</simplebutton>
 
 	<textfield>
 		<panel name="${name}" depth="${depth|3}" controller="TextInput" pos="${pos|0,0}" width="${width|200}" height="${height|32}" value="${value|}"
-			active_text_color="${active_text_color|[white]}" caret_color="${caret_color|[white]}" selection_color="${selection_color|[mediumGrey_half_alpha]}"
-			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
-			disableautobackground="true" search_field="${search_field|false}" password_field="${password_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}">
+			active_text_color="${active_text_color|[labelColor]}" caret_color="${caret_color|[labelColor]}" selection_color="${selection_color|[mediumGrey_half_alpha]}"
+			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" on_scroll="${on_scroll|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
+			disableautobackground="true" search_field="${search_field|false}" password_field="${password_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}" tooltip_key="${tooltip_key|}">
 			<sprite depth="0" name="background" color="${backgroundcolor|[black]}" type="sliced" pivot="${pivot|topleft}" foregroundlayer="${foregroundlayer|false}" width="${Defined(password_field) and password_field ? width-height-10 : width|200}" />
 			<label depth="1" name="text" justify="${justify|center}" font_size="${Defined(font_size) ? font_size : height|32}" pivot="${pivot|topleft}" overflow="${overflow|ShrinkContent}" max_line_count="${max_line_count|0}" font_face="${font_face|ReferenceFont}" crispness="${crispness|Always}" width="${Defined(password_field) and password_field ? width-height-10 : width|200}" />
 			<button name="btnShowPassword" pos="${width-height/2-5|180},-${height/2|-16}" width="${height-2}" height="${height-2}" sprite="ui_game_symbol_stealth" defaultcolor="180,180,180" hovercolor="[white]" selectedcolor="[selectedColor]" foregroundlayer="true" type="simple" hoverscale="1.1" pivot="center" tooltip_key="xuiShowPassword" selected="{showpassword}" visible="{passwordfield}" />
@@ -83,9 +83,9 @@
 
 	<textfield_multiline>
 		<panel name="${name}" depth="${depth|3}" controller="TextInput" pos="${pos|0,0}" width="${width|200}" height="${height|32}" value="${value|}"
-			active_text_color="${active_text_color|[white]}" caret_color="${caret_color|[white]}" selection_color="${selection_color|[mediumGrey_half_alpha]}"
-			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
-			disableautobackground="true" search_field="${search_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}">
+			active_text_color="${active_text_color|[labelColor]}" caret_color="${caret_color|[labelColor]}" selection_color="${selection_color|[mediumGrey_half_alpha]}"
+			character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" style="press, select" on_hover="${on_hover|false}" on_scroll="${on_scroll|false}" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}"
+			disableautobackground="true" search_field="${search_field|false}" pivot="${pivot|topleft}" visible="${visible|true}" on_return="${on_return|submit}" tooltip_key="${tooltip_key|}">
 			<sprite depth="0" name="background" color="${backgroundcolor|[black]}" type="sliced" pivot="${pivot|topleft}" foregroundlayer="${foregroundlayer|false}" />
 			<label depth="1" name="text" justify="${justify|left}" font_size="${font_size|32}" pivot="${pivot|topleft}" />
 		</panel>
@@ -294,7 +294,7 @@
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
 
 				<sprite color="[lightGrey]" type="sliced" />
-				<sprite depth="2" name="icon" width="40" height="40" atlas="{itemiconatlas}" sprite="{itemicon}" color="{itemicontint}" pos="30,-22" pivot="center" foregroundlayer="true"/>
+				<sprite depth="2" name="icon" width="40" height="40" atlas="{itemiconatlas}" sprite="{itemicon}" pos="30,-22" pivot="center" foregroundlayer="true"/>
 			</rect>
 			<rect depth="2" width="379" height="48" pos="68,0">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="385" height="53" color="[black]" type="sliced" fillcenter="false" />

@@ -706,6 +706,84 @@
       <property key="End" value="#Sounds/Music?000cCbtSec.wav"/>
     </property>
 
+    <property type="ClipSet" name="001CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?001aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?001bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?001cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="002CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?002aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?002bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?002cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="003CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?003aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?003bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?003cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="004CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?004aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?004bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?004cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="005CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?005aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?005bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?005cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="006CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?006aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?006bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?006cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="007CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?007aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?007bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?007cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="008CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?008aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?008bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?008cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="009CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?009aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?009bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?009cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="010CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?010aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?010bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?010cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="011CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?011aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?011bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?011cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="012CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?012aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?012bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?012cCbtSec.wav"/>
+    </property>
+
+    <property type="ClipSet" name="013CbtSec" source="Sounds/AudioSource_Combat" layer="Secondary" sections="Combat" samples="2185084">
+      <property key="Begin" value="#Sounds/Music?013aCbtSec.wav"/>
+      <property key="Loop" value="#Sounds/Music?013bCbtSec.wav"/>
+      <property key="End" value="#Sounds/Music?013cCbtSec.wav"/>
+    </property>
+
     <!--Long Effects-->
     
     <property type="ClipSet" name="000CbtLfx" source="Sounds/AudioSource_Combat" layer="LongEffects" sections="Combat" samples="2185084">

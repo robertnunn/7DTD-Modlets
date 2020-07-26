@@ -74,7 +74,7 @@ Mesh files no longer used:
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/><!-- damage vs entity corpses -->
 		<property name="GrazeStart" value=".15"/>
 		<property name="GrazeEnd" value=".3"/>
 		<property name="SwingDegrees" value="45"/>
@@ -200,7 +200,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkMiner69r"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="22" tags="perkMiner69r"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="17.6" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="17.1" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="280,955" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.2" tags="perkMiner69r"/>
@@ -352,7 +352,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="15.1" tags="perkMiner69r"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="45.0" tags="perkMiner69r"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r,axe"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="20.5" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="19.9" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="188,641" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
@@ -379,7 +379,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="40.1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="39.9" tags="secondary"/>
 		<!-- Moaning and grunting sounds moved to buffs.xml, <effect_group name="Power Attack Grunt"> -->
 	</effect_group>
 
@@ -481,7 +481,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="11.2" tags="perkMiner69r"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="35.5" tags="perkMiner69r,miningTool"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkMiner69r"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="19.0" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="260,886" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkMiner69r"/>
@@ -506,7 +506,7 @@ Mesh files no longer used:
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="32.2" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="31.3" tags="secondary"/>
 	</effect_group>
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -605,7 +605,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="9.6" tags="perkMiner69r"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="38.4" tags="perkMiner69r"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkMiner69r"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="16.2" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,200" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
@@ -625,7 +625,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="33.6" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="32.5" tags="secondary"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
@@ -646,7 +646,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="11.6" tags="perkMiner69r"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="46" tags="perkMiner69r"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkMiner69r"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="21.8" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="20.3" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="220,750" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
@@ -672,7 +672,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="43.5" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="40.6" tags="secondary"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 </item>
@@ -755,6 +755,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.head" value="5"/> -->
 		<property name="SupportHarvesting" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+
 	</property>
 
 	<effect_group name="meleeToolAxeT3Chainsaw">
@@ -930,7 +931,7 @@ Mesh files no longer used:
 		<passive_effect name="EntityDamage" operation="base_set" value="16.5" tags="perkSalvageOperations"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="38.5" tags="perkSalvageOperations"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="18.9" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.3" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="180,640" tier="1,6" tags="perkSalvageOperations"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkSalvageOperations"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkSalvageOperations"/>
@@ -954,7 +955,7 @@ Mesh files no longer used:
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="32" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="31.1" tags="secondary"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -2151,22 +2152,22 @@ needed?
 		<requirement name="CVarCompare" cvar="stunBatonCharge" operation="GTE" value="40"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="ItemModEffects/baton_electricityPrefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"/>
 
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="350">
 				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
 				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
 				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="200">
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="2.5" force="350">
 				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
 				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
 				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
 			</triggered_effect>
 
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="350">
 				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
 				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="200">
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" target_tags="zombie,animal" duration="2.5" force="350">
 				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
 				<requirement name="HasBuff" buff="buffDrugNerdTats"/>
 			</triggered_effect>
@@ -2934,6 +2935,12 @@ needed?
 		<property name="GrazeEnd" value=".5"/>
 		<property name="SwingDegrees" value="90"/>
 		<property name="SwingAngle" value="-90"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="organichitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="organichitcloth"/>
+		</property>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="DynamicMelee"/>
@@ -2945,6 +2952,12 @@ needed?
 		<property name="GrazeEnd" value=".4"/>
 		<property name="SwingDegrees" value="30"/>
 		<property name="SwingAngle" value="90"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="organichitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="organichitcloth"/>
+		</property>
 	</property>
 	<effect_group name="meleeWpnKnucklesT0LeatherKnuckles">
 		<passive_effect name="EntityDamage" operation="base_set" value="6.2" tags="perkBrawler"/>
@@ -3013,6 +3026,12 @@ needed?
 		<property name="GrazeEnd" value=".5"/>
 		<property name="SwingDegrees" value="90"/>
 		<property name="SwingAngle" value="-90"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalhitcloth"/>
+		</property>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="DynamicMelee"/>
@@ -3026,6 +3045,12 @@ needed?
 		<property name="GrazeEnd" value=".4"/>
 		<property name="SwingDegrees" value="30"/>
 		<property name="SwingAngle" value="90"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalhitcloth"/>
+		</property>
 	</property>
 	<effect_group name="meleeWpnKnucklesT1IronKnuckles">
 		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkBrawler"/>
@@ -3074,6 +3099,25 @@ needed?
 	<property name="HoldType" value="79"/>
 	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
 
+	<property class="Action0">
+		<property name="ToolCategory.Butcher" value="5" param1="1.5"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	<property class="Action1">
+		<property name="ToolCategory.Butcher" value="0" param1="1.5"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+
 	<effect_group name="meleeWpnKnucklesT3SteelKnuckles">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.6" tags="perkBrawler"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.2" tags="perkBrawler"/>
@@ -3096,6 +3140,7 @@ needed?
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.7" tags="organic"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 
 		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
@@ -4113,7 +4158,7 @@ needed?
 	</property>
 
 	<effect_group name="gunShotgunT3AutoShotgun">
-		<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkBoomstick"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="70" tags="perkBoomstick"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
 
 		<passive_effect name="MagazineSize" operation="base_set" value="16" tags="perkBoomstick"/>
@@ -4519,7 +4564,7 @@ needed?
 </item>
 
 <item name="gunMGT2TacticalAR">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic"/><!-- attachmentsIncluded -->
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
@@ -6389,8 +6434,8 @@ needed?
 		<property name="Delay" value=".5"/>
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="ammoProjectileVultureVomit"/>
-		<property name="Sound_warning" value="hulkvomitwarning"/>
-		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_warning" value="vulturevomitwarning"/>
+		<property name="Sound_start" value="vulturevomitattack"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value=""/>
@@ -6677,7 +6722,7 @@ needed?
 	<property name="EconomicValue" value="11"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<effect_group name="ammoShotgunShell" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="14" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="11.2" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_add" value="20" tags="wood"/>
 		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
@@ -6708,7 +6753,7 @@ needed?
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahSlugs"/>
 	<effect_group name="ammoShotgunSlug" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="120" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="96" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
 		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
@@ -6740,7 +6785,7 @@ needed?
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahBreachingSlugs"/>
 	<effect_group name="ammoShotgunBreachingSlug" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="120" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="96" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_add" value="1000" tags="door,wood"/>
 			<display_value name="dDamageDoor" value="1000"/>
@@ -6768,7 +6813,7 @@ needed?
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="5"/>
 	<effect_group name="ammoBlunderbuss" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.6" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="1.6" tags="perkBoomstick"/>
 		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
 		<passive_effect name="TargetArmor" operation="perc_add" value=".4" tags="perkBoomstick"/><display_value name="dTargetArmor" value=".4"/>
@@ -10225,6 +10270,21 @@ perkNightStalkerSilentNight
 		</passive_effect>
 -->
 		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+	</effect_group>
+</item>
+
+<item name="apparelToughGuySunglasses">
+	<property name="Extends" value="apparelShades"/>
+	<property name="DisplayType" value="apparelToughGuySunglasses"/>
+	<property name="CustomIcon" value="apparelShades"/>
+	<property name="CustomIconTint" value="30,30,30"/>
+	<property name="Tags" value="head,clothing,canHaveCosmetic,noMods"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="30,30,30"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
 	</effect_group>
 </item>
 
@@ -16636,7 +16696,7 @@ perkNightStalkerSilentNight
 	<property name="Group" value="Resources"/>
 
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="-1000"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInternalBleeding"/>
 	</effect_group>
 </item>
@@ -17337,11 +17397,13 @@ perkNightStalkerSilentNight
 </item>-->
 
 <item name="resourceHubcap">
+	<property name="CreativeMode" value="None"/> <!-- Deprecated -->
+	<property name="CustomIcon" value="hubcapNoMine"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="Tags" value="junk"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceHubcap"/>
+	<property name="Material" value="Miron_scrap"/>
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="10"/>
 	<property class="Action1">
@@ -17354,11 +17416,12 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="resourceAirFilter">
+	<property name="CreativeMode" value="None"/> <!-- Deprecated -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="Tags" value="junk"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceHubcap"/>
+	<property name="Material" value="Miron_scrap"/>
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="15"/>
@@ -17366,11 +17429,12 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="resourceCandyTin">
+	<property name="CreativeMode" value="None"/> <!-- Deprecated -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="Tags" value="junk"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceHubcap"/>
+	<property name="Material" value="Miron_scrap"/>
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -17736,6 +17800,7 @@ perkNightStalkerSilentNight
 
 <item name="toolAnvil">
 	<property name="UnlockedBy" value="toolAnvilSchematic"/>
+	<property name="Tags" value="toolAnvil"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -17747,8 +17812,9 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="toolAnvil"/>
 	<property name="ItemTypeIcon" value="forge"/>
 	<effect_group tiered="false">
-		<passive_effect name="CraftingTime" operation="perc_add" value="-.333"/>
-		<display_value name="dCraftingTime" value=".5"/>
+		<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.333"/>
+			<display_value name="dCraftingTime" value=".5"/>
 	</effect_group>
 </item>
 
@@ -20227,7 +20293,7 @@ perkNightStalkerSilentNight
 <item name="Loadout Tier 1">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="resourceCandyTin"/> <property name="CustomIconTint" value="725E51"/>
+	<property name="CustomIcon" value="mineCandyTin"/> <property name="CustomIconTint" value="725E51"/>
 	<property class="Action0">
 	<!--	<property name="Sound_start" value="zombiefemalescoutalert"/>-->
 		<property name="Create_item" value="apparelPlantFiberShirt,apparelPlantFiberPants,apparelPlantFiberHood,medicalBandage,medicalFirstAidBandage,meleeWpnClubT0WoodenClub,gunBowT0PrimitiveBow,ammoArrowStone,meleeToolTorch,meleeToolRepairT0StoneAxe"/>
@@ -20238,7 +20304,7 @@ perkNightStalkerSilentNight
 <item name="Loadout Tier 2">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="resourceCandyTin"/><property name="CustomIconTint" value="E7821A"/>
+	<property name="CustomIcon" value="mineCandyTin"/><property name="CustomIconTint" value="E7821A"/>
 	<property class="Action0">
 	<!--	<property name="Sound_start" value="zombiefemalescoutalert"/>-->
 		<property name="Create_item" value="apparelTShirtPlain,apparelDenimPants,apparelWornBoots,ammoArrowStone,ammo9mmBulletBall,ammoShotgunShell,ammo762mmBulletBall,medicalFirstAidBandage,medicalBandage,gunRifleT1HuntingRifle,gunMGT1AK47,gunShotgunT1DoubleBarrel,gunHandgunT1Pistol,meleeWpnBladeT0BoneKnife,meleeWpnSledgeT0StoneSledgehammer,meleeWpnKnucklesT0LeatherKnuckles,meleeWpnSpearT0StoneSpear,meleeWpnBatonT2StunBaton,gunBowT0PrimitiveBow,meleeToolTorch,meleeToolRepairT0StoneAxe"/>
@@ -20249,7 +20315,7 @@ perkNightStalkerSilentNight
 <item name="Loadout Tier 3">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="resourceCandyTin"/><property name="CustomIconTint" value="D1E71A"/>
+	<property name="CustomIcon" value="mineCandyTin"/><property name="CustomIconTint" value="D1E71A"/>
 	<property class="Action0">
 	<!--	<property name="Sound_start" value="zombiefemalescoutalert"/>-->
 		<property name="Create_item" value="armorLeatherChest,armorLeatherBoots,apparelDenimPants,ammoArrowIron,ammo9mmBulletBall,ammo44MagnumBulletBall,ammoShotgunShell,ammo762mmBulletBall,medicalFirstAidBandage,medicalBandage,meleeWpnClubT1BaseballBat,meleeWpnSledgeT1IronSledgehammer,meleeWpnSpearT1IronSpear,meleeWpnBatonT2StunBaton,meleeWpnBladeT1HuntingKnife,gunBowT1WoodenBow,gunHandgunT2Magnum44,gunHandgunT3SMG5,gunShotgunT2PumpShotgun,gunMGT2TacticalAR,gunRifleT2MarksmanRifle,meleeToolTorch,meleeToolAxeT1IronFireaxe,armorMiningHelmet,modArmorHelmetLight"/>
@@ -20260,7 +20326,7 @@ perkNightStalkerSilentNight
 <item name="Loadout Tier 4">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="resourceCandyTin"/><property name="CustomIconTint" value="1AE73C"/>
+	<property name="CustomIcon" value="mineCandyTin"/><property name="CustomIconTint" value="1AE73C"/>
 	<property class="Action0">
 	<!--	<property name="Sound_start" value="zombiefemalescoutalert"/>-->
 		<property name="Create_item" value="armorIronChest,armorIronGloves,armorIronLegs,armorScrapBoots,ammoArrowSteelAP,ammo9mmBulletBall,ammo44MagnumBulletBall,ammoShotgunShell,ammo762mmBulletBall,medicalFirstAidBandage,medicalBandage,meleeWpnBladeT3Machete,meleeWpnKnucklesT3SteelKnuckles,meleeWpnSledgeT3SteelSledgehammer,meleeWpnSpearT3SteelSpear,meleeWpnClubT3SteelClub,gunBowT3CompoundBow,gunHandgunT3DesertVulture,gunShotgunT3AutoShotgun,gunMGT3M60,,gunRifleT3SniperRifle,meleeToolTorch,meleeToolAxeT2SteelAxe,armorMiningHelmet,modArmorHelmetLight"/>
@@ -20271,7 +20337,7 @@ perkNightStalkerSilentNight
 <item name="Loadout Tier 5">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="resourceCandyTin"/><property name="CustomIconTint" value="1A1DE7"/>
+	<property name="CustomIcon" value="mineCandyTin"/><property name="CustomIconTint" value="1A1DE7"/>
 	<property class="Action0">
 	<!--	<property name="Sound_start" value="zombiefemalescoutalert"/>-->
 		<property name="Create_item" value="armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots,ammoArrowSteelAP,ammo9mmBulletBall,ammo44MagnumBulletBall,ammoShotgunShell,ammo762mmBulletBall,medicalFirstAidBandage,medicalBandage,meleeWpnBladeT3Machete,meleeWpnKnucklesT3SteelKnuckles,meleeWpnSledgeT3SteelSledgehammer,meleeWpnSpearT3SteelSpear,meleeWpnClubT3SteelClub,gunBowT3CompoundBow,gunHandgunT3DesertVulture,gunShotgunT3AutoShotgun,gunMGT3M60,,gunRifleT3SniperRifle,meleeToolTorch,meleeToolAxeT2SteelAxe,armorMiningHelmet,modArmorHelmetLight"/>
