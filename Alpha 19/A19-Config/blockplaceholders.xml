@@ -93,7 +93,6 @@
 		<block name="cntChest01"/>
 		<block name="cntCardboardBox"/>
 		<block name="cntBin"/>
-		<block name="cntSuitcase"/>
 		<block name="cntBackpack01"/>
 		<block name="cntBackpack03"/>
 		<block name="cntDuffle01"/>
@@ -281,7 +280,6 @@
 		<block name="cntFetchQuestSatchel" prob="1" questtag="fetch"/>
 		<block name="cntFetchQuestSatchel" prob="1" questtag="hidden_cache"/>
 		<block name="cntPurse01"/>
-		<block name="cntSuitcase"/>
 		<block name="cntBackpack01"/>
 		<block name="cntBackpack03"/>
 		<block name="cntMedicalPileSmall" prob=".8"/>
@@ -515,7 +513,6 @@
 		<block name="cntSportsBag01" prob=".7"/>
 		<block name="cntSportsBag02" prob=".7"/>
 		<block name="cntPurse01" prob=".7"/>
-		<block name="cntSuitcase" prob=".7"/>
 	</placeholder>
 
 	<placeholder name="cntBookcaseGoodRandomLootHelper">
@@ -551,7 +548,6 @@
 		<block name="cntCoffinWildWestOpen" prob=".45"/>
 		<block name="cntCoffinWildWestClosed" prob=".15"/>
 		<block name="cntCoffinWildWestCracked" prob=".15"/>
-		<block name="cntCoffinWildWestStack" prob=".15"/>
 	</placeholder>
 
 	<placeholder name="cntLockersShortRandomLootHelper">

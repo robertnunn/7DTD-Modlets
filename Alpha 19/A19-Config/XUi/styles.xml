@@ -261,7 +261,6 @@
 		<style_entry name="size" value="128,28"/>
 		<style_entry name="text" value="00:00"/>
 		<style_entry name="font_size" value="26"/>
-		<style_entry name="color" value="[lightGrey]"/>
 		<style_entry name="justify" value="right"/>
 		<style_entry name="anchor_side" value="right"/>
 		<style_entry name="pivot" value="right"/>

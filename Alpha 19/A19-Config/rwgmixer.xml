@@ -79,7 +79,7 @@
 	</prefab_rule>
 	
 	<prefab_rule name="prefabList">
-		<prefab name="bombshelter_lg_01"/>
+		<prefab name="bombshelter_01"/>
 		<prefab name="bombshelter_md_01"/>
 		<prefab name="carlot_01"/>
 		<prefab name="carlot_02"/>
@@ -184,6 +184,7 @@
 		<prefab name="house_modern_14"/>
 		<prefab name="house_modern_15"/>
 		<prefab name="house_modern_16"/>
+		<prefab name="house_modern_17"/>
 		<prefab name="house_old_spanish_01"/>
 		<prefab name="park_01"/>
 		<prefab name="park_02"/>
@@ -290,6 +291,7 @@
 		<prefab name="remnant_house_10"/>
 		<prefab name="remnant_house_11"/>
 		<prefab name="remnant_house_12"/>
+		<prefab name="remnant_house_13"/>
 		<prefab name="remnant_business_01"/>
 		<prefab name="remnant_business_02"/>
 		<prefab name="remnant_business_03"/>

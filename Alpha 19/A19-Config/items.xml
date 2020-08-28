@@ -966,12 +966,12 @@ Mesh files no longer used:
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="72"/>
 	<property name="Meshfile" value="#Other/Items?Tools/ratchetPrefab.prefab"/>
-	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
 	<property name="EconomicValue" value="700"/>
+	<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
 	<property name="UnlockedBy" value="meleeToolSalvageT2RatchetSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
@@ -1035,12 +1035,12 @@ Mesh files no longer used:
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="74"/>
 	<property name="Meshfile" value="#Other/Items?Tools/impactDriverPrefab.prefab"/>
-	<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
 	<property name="EconomicValue" value="1500"/>
+	<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
 	<property name="UnlockedBy" value="meleeToolSalvageT3ImpactDriverSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Stacknumber" value="1"/>
@@ -2983,7 +2983,7 @@ needed?
 		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.091,-0.0075,-0.00077" localRot="3.841982,9.94,94.3">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
@@ -3000,7 +3000,7 @@ needed?
 <item name="meleeWpnKnucklesT1IronKnuckles">
 	<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attFortitude,perkBrawler,canHaveCosmetic"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesRight_Prefab.prefab"/>
 	<property name="HoldType" value="61"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -3075,10 +3075,10 @@ needed?
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
 
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.1171,0.004,-0.0187" localRot="-30.53241,-11.3179,135.1055">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
@@ -3095,7 +3095,7 @@ needed?
 <item name="meleeWpnKnucklesT3SteelKnuckles">
 	<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
 	<property name="Material" value="MmeleeWpnKnucklesParts"/>
-	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedRight_Prefab.prefab"/>
 	<property name="HoldType" value="79"/>
 	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
 
@@ -3143,10 +3143,10 @@ needed?
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.7" tags="organic"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.1171,0.004,-0.0187" localRot="-30.53241,-11.3179,135.1055">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
@@ -3617,7 +3617,7 @@ needed?
 		<property name="Sound_end" value="mp5_fire_end"/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="mp5_reload"/>
-		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
 		<!-- <property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.wood" value="5"/>
@@ -3711,9 +3711,8 @@ needed?
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="44magnum_reload"/>
-		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire" value="gunfire_magnum"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
-		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
 		<property name="ScopeOffset" value="-.00062,.1408,.02"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
@@ -3801,9 +3800,8 @@ needed?
 		<property name="Sound_loop" value="desertvulture_fire"/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="dryfire"/>
-		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
-		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+		<property name="Particles_muzzle_fire" value="gunfire_desertvulture"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_desertvulture_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 	</property>
 	<property class="Action1">
@@ -3891,10 +3889,8 @@ needed?
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="blunderbuss_reload"/>
 		<property name="AutoReload" value="false"/>
-		<property name="Particles_muzzle_fire" value="gunfire_doublebarrel"/>
-		<property name="Particles_muzzle_fire_fpv" value="gunfire_doublebarrel_fpv"/>
-		<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
-		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+		<property name="Particles_muzzle_fire" value="gunfire_blunderbuss"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_blunderbuss_fpv"/>
 		<!-- <property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.wood" value="2.5"/>
 		<property name="DamageBonus.earth" value=".2"/> -->
@@ -4109,7 +4105,7 @@ needed?
 </item>
 
 <item name="gunShotgunT3AutoShotgun">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,noScopes,invisibleReflexSight"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,noScopes"/>
 	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="76"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
@@ -4227,7 +4223,7 @@ needed?
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="hunting_rifle_reload"/>
 		<property name="AutoReload" value="false"/>
-		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire" value="gunfire_magnum"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
 		<property name="ScopeOffset" value="-.00062,.1115,.125"/>
 		<property name="SideOffset" value="0,0,0"/>
@@ -8333,10 +8329,8 @@ add knockdown resist to armor
 	<property name="Extends" value="gunMGT1AK47Parts"/>
 	<property name="Material" value="MmeleeToolSalvageParts"/>
 	<property name="EconomicValue" value="200"/>
-
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="missingIcon"/>
-
 </item>
 
 <item name="meleeToolAllSteelParts">
@@ -10387,7 +10381,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="apparelCigar">
-	<property name="Tags" value="head,noMods"/>
+	<property name="Tags" value="head,clothing,noMods"/>
 	<property name="DisplayType" value="clothingCigar"/>
 	<property name="UnlockedBy" value="perkUrbanCombatCigar"/>
 	<property name="Material" value="Mplants"/>
@@ -10416,7 +10410,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelCigarette">
 	<property name="Extends" value="apparelCigar"/>
-	<property name="Tags" value="head"/>
+	<property name="Tags" value="head,clothing"/>
 	<property class="UMA">
 		<property name="Mesh" value="cigarette"/>
 		<property name="Overlay0" value="cigarette"/>
@@ -12828,8 +12822,8 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="10"/> <!-- STK resource -->
-	<property name="EconomicValue" value="92"/>
-	<property name="EconomicBundleSize" value="5"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
 	<property name="UnlockedBy" value="perkMasterChef,foodGumboStewSchematic"/>
@@ -12858,8 +12852,8 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="10"/> <!-- STK resource -->
-	<property name="EconomicValue" value="92"/>
-	<property name="EconomicBundleSize" value="5"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
 	<property name="UnlockedBy" value="perkMasterChef,foodShepardsPieSchematic"/>
@@ -12887,8 +12881,8 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="10"/> <!-- STK resource -->
-	<property name="EconomicValue" value="92"/>
-	<property name="EconomicBundleSize" value="5"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodSpaghettiSchematic"/>
 	<property class="Action0">
@@ -12915,8 +12909,8 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="10"/> <!-- STK resource -->
-	<property name="EconomicValue" value="92"/>
-	<property name="EconomicBundleSize" value="5"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
 	<property name="UnlockedBy" value="perkMasterChef,foodTunaFishGravyToastSchematic"/>
@@ -13567,8 +13561,9 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>	
 	<property name="EconomicValue" value="68"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -13674,8 +13669,9 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="156"/>
 	<property name="UnlockedBy" value="perkMasterChef,drinkYuccaJuiceSmoothieSchematic"/>
 	<property class="Action0">
@@ -13736,7 +13732,7 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="waterCoffee"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
 	<property name="EconomicValue" value="96"/>

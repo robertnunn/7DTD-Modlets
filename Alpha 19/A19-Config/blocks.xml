@@ -835,7 +835,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" name="resourceWood" count="1" prob="1"/>
+	<drop event="Destroy" name="resourceWood" count="1"/>
 	<property name="FilterTags" value="fbuilding,fwood,fconstruction,fframes"/>
 	<property name="SortOrder1" value="g0t0"/>
 	<property name="SortOrder2" value="0002"/>
@@ -1158,7 +1158,7 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="None"/>
 	<property class="RepairItems"> <property name="resourceForgedSteel" value="8"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="15" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="160"/>
@@ -1303,7 +1303,7 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="57"/> -->
 	<property name="CreativeMode" value="None"/>
 	<property class="RepairItems"> <property name="resourceForgedIron" value="2"/> </property>
-	<drop event="Harvest" name="resourceScrapIron" count="10" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
 	<property name="EconomicValue" value="12"/>
@@ -2215,149 +2215,149 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodFrameStairs50">
-	<property name="Extends" value="woodFrameMaster" />
+	<property name="Extends" value="woodFrameMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="CanPickup" value="true" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="woodStairs50" /> </property>
+	<property name="CanPickup" value="true"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodStairs50"/> </property>
 </block>
 
 <block name="solidWoodFrameStairs50">
-	<property name="Extends" value="woodFrameStairs50" />
+	<property name="Extends" value="woodFrameStairs50"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="woodFrameStairs50" />
-	<property name="CanPickup" value="false" />
+	<property name="CustomIcon" value="woodFrameStairs50"/>
+	<property name="CanPickup" value="false"/>
 </block>
 
 <block name="woodStairs50">
-	<property name="Extends" value="woodMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodStairs50" /> </property>
-	<property name="DowngradeBlock" value="solidWoodFrameStairs50" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodStairs50"/> </property>
+	<property name="DowngradeBlock" value="solidWoodFrameStairs50"/>
 </block>
 
 <block name="rWoodStairs50">
-	<property name="Extends" value="rWoodMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="rWoodMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneStairs50" /> </property>
-	<property name="DowngradeBlock" value="woodStairs50" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneStairs50"/> </property>
+	<property name="DowngradeBlock" value="woodStairs50"/>
 </block>
 
 <block name="scrapIronFrameStairs50">
-	<property name="Extends" value="scrapIronFrameMaster" />
+	<property name="Extends" value="scrapIronFrameMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="CanPickup" value="true" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs50" /> </property>
+	<property name="CanPickup" value="true"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs50"/> </property>
 </block>
 
 <block name="solidScrapIronFrameStairs50">
-	<property name="Extends" value="scrapIronFrameStairs50" />
+	<property name="Extends" value="scrapIronFrameStairs50"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="scrapIronFrameStairs50" />
-	<property name="CanPickup" value="false" />
+	<property name="CustomIcon" value="scrapIronFrameStairs50"/>
+	<property name="CanPickup" value="false"/>
 </block>
 
 <block name="scrapIronStairs50">
-	<property name="Extends" value="scrapIronMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="scrapIronMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronStairs50" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameStairs50" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronStairs50"/> </property>
+	<property name="DowngradeBlock" value="solidScrapIronFrameStairs50"/>
 </block>
 
 <block name="rScrapIronStairs50">
-	<property name="Extends" value="rScrapIronMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="rScrapIronMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50" /> </property>
-	<property name="DowngradeBlock" value="scrapIronStairs50" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50"/> </property>
+	<property name="DowngradeBlock" value="scrapIronStairs50"/>
 </block>
 
 <block name="pouredConcreteStairs50">
-	<property name="Extends" value="pouredConcreteMaster" />
+	<property name="Extends" value="pouredConcreteMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="UpgradeRated.ToBlock" value="concreteStairs50" />
+	<property name="UpgradeRated.ToBlock" value="concreteStairs50"/>
 </block>
 
 <block name="concreteStairs50">
-	<property name="Extends" value="concreteMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteStairs50" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteStairs50"/> </property>
 </block>
 
 <block name="pouredRConcreteStairs50">
-	<property name="Extends" value="pouredRConcreteMaster" />
+	<property name="Extends" value="pouredRConcreteMaster"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="CustomIcon" value="pouredConcreteStairs50" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="CustomIcon" value="pouredConcreteStairs50"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="UpgradeRated.ToBlock" value="rConcreteStairs50" />
+	<property name="UpgradeRated.ToBlock" value="rConcreteStairs50"/>
 </block>
 
 <block name="rConcreteStairs50">
-	<property name="Extends" value="rConcreteMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="rConcreteMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs50" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs50"/> </property>
 </block>
 
 <block name="steelStairs50">
-	<property name="Extends" value="steelMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="steelMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteStairs50" />
+	<property name="Texture" value="356"/>
+	<property name="DowngradeBlock" value="rConcreteStairs50"/>
 </block>
 
 <block name="stainlessSteelStairs50">
-	<property name="Extends" value="stainlessSteelMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="stainlessSteelMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property name="DowngradeBlock" value="rConcreteStairs50" />
+	<property name="DowngradeBlock" value="rConcreteStairs50"/>
 </block>
 
 <block name="brickStairs50">
-	<property name="Extends" value="brickMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50"/> </property>
 </block>
 
 <block name="flagstoneStairs50">
 	<property name="Extends" value="flagstoneMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
 	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneStairs50"/> </property>
 </block>
 
 <block name="cobblestoneStairs50">
-	<property name="Extends" value="cobblestoneMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="stairs_filled_quarter_vertical_uv" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="cobblestoneMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="0590"/> <!-- SortShape -->
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50"/> </property>
 </block>
 
 <block name="woodQuarter">
@@ -2795,58 +2795,58 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodHalfInsideCorner">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="half_inside_corner" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="half_inside_corner"/>
 	<property name="SortOrder2" value="0091"/> <!-- SortShape -->
 </block>
 
 <block name="brickHalfInsideCorner">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="half_inside_corner" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="half_inside_corner"/>
 	<property name="SortOrder2" value="0091"/> <!-- SortShape -->
 </block>
 
 <block name="concreteHalfInsideCorner">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="half_inside_corner" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="half_inside_corner"/>
 	<property name="SortOrder2" value="0091"/> <!-- SortShape -->
 </block>
 
 <block name="corrugatedMetalHalfInsideCorner">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="half_inside_corner" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="half_inside_corner"/>
 	<property name="SortOrder2" value="0091"/> <!-- SortShape -->
 </block>
 
 <block name="woodQuarterCNRQuarterPlate">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_tip_stairs_quarter_pole" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_stairs_quarter_pole"/>
 	<property name="SortOrder2" value="0092"/> <!-- SortShape -->
 </block>
 
 <block name="brickQuarterCNRQuarterPlate">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_tip_stairs_quarter_pole" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_stairs_quarter_pole"/>
 	<property name="SortOrder2" value="0092"/> <!-- SortShape -->
 </block>
 
 <block name="concreteQuarterCNRQuarterPlate">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_tip_stairs_quarter_pole" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_stairs_quarter_pole"/>
 	<property name="SortOrder2" value="0092"/> <!-- SortShape -->
 </block>
 
 <block name="corrugatedMetalQuarterCNRQuarterPlate">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_tip_stairs_quarter_pole" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_stairs_quarter_pole"/>
 	<property name="SortOrder2" value="0092"/> <!-- SortShape -->
 </block>
 
@@ -3502,8 +3502,8 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickPlatePole">
-	<property name="Extends" value="brickPlate" />
-	<property name="Model" value="Plate_pole" />
+	<property name="Extends" value="brickPlate"/>
+	<property name="Model" value="Plate_pole"/>
 	<property name="DescriptionKey" value="shapePlatePoleGroupDesc"/>
 </block>
 
@@ -3778,8 +3778,8 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalPlatePole">
-	<property name="Extends" value="corrugatedMetalPlate" />
-	<property name="Model" value="Plate_pole" />
+	<property name="Extends" value="corrugatedMetalPlate"/>
+	<property name="Model" value="Plate_pole"/>
 	<property name="DescriptionKey" value="shapePlatePoleGroupDesc"/>
 </block>
 
@@ -4606,7 +4606,7 @@ group desc for stuff like metal siding
 
 <block name="concretePlatePole">
 	<property name="Extends" value="concretePlate" param1="CustomIcon"/>
-	<property name="Model" value="Plate_pole" />
+	<property name="Model" value="Plate_pole"/>
 	<property name="DescriptionKey" value="shapePlatePoleGroupDesc"/>
 </block>
 
@@ -10940,79 +10940,91 @@ group desc for stuff like metal siding
 	<property name="Model" value="plate_half_triangle"/>
 </block>
 
+<block name="concretePlateHalfTriangle">
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_half_triangle"/>
+</block>
+
 <block name="woodPlateQuarterTriangle">
 	<property name="Extends" value="woodWeakNoUpgradeMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="plate_quarter_triangle"/>
 </block>
 
+<block name="concretePlateQuarterTriangle">
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_quarter_triangle"/>
+</block>
+
 <block name="wood2PlateCorner">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="brick2PlateCorner">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="concrete2PlateCorner">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="corrugatedMetal2PlateCorner">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="wood2PlateCornerHalf">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner_half" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner_half"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="brick2PlateCornerHalf">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner_half" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner_half"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="concrete2PlateCornerHalf">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner_half" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner_half"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="corrugatedMetal2PlateCornerHalf">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="plate_corner_half" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="plate_corner_half"/>
 	<property name="SortOrder2" value="0152"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shape2PlateCornerGroupDesc"/>
 </block>
 
 <block name="woodPlatePole">
-	<property name="Extends" value="woodPlate" />
-	<property name="Model" value="Plate_pole" />
+	<property name="Extends" value="woodPlate"/>
+	<property name="Model" value="Plate_pole"/>
 	<property name="DescriptionKey" value="shapePlatePoleGroupDesc"/>
 </block>
 
@@ -12161,9 +12173,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodRampTrimQuarter">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_ramp" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="241,241,241,241,446,241"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12171,9 +12183,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickRampTrimQuarter">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_ramp" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="7,7,7,7,446,7"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12181,9 +12193,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteRampTrimQuarter">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_ramp" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="8,8,8,8,446,8"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12191,9 +12203,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalRampTrimQuarter">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_ramp" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="194,194,194,194,446,194"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12201,9 +12213,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimHalfSplit">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split"/>
 	<property name="Texture" value="241,446,241,241,241,241"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12211,9 +12223,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimHalfSplit">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split"/>
 	<property name="Texture" value="7,446,7,7,7,7"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12221,9 +12233,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimHalfSplit">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split"/>
 	<property name="Texture" value="8,446,8,8,8,8"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12231,9 +12243,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimHalfSplit">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split"/>
 	<property name="Texture" value="194,446,194,194,194,194"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12241,9 +12253,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimHalfSplitDiagonal">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_diagonal" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_diagonal"/>
 	<property name="Texture" value="241,446,241,241,241,241"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12251,9 +12263,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimHalfSplitDiagonal">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_diagonal" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_diagonal"/>
 	<property name="Texture" value="7,446,7,7,7,7"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12261,9 +12273,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimHalfSplitDiagonal">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_diagonal" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_diagonal"/>
 	<property name="Texture" value="8,446,8,8,8,8"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12271,9 +12283,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimHalfSplitDiagonal">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_diagonal" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_diagonal"/>
 	<property name="Texture" value="194,446,194,194,194,194"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12281,9 +12293,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimHalfSplit4Sided">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_4sided" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_4sided"/>
 	<property name="Texture" value="241,446,241,241,241,241"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12291,9 +12303,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimHalfSplit4Sided">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_4sided" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_4sided"/>
 	<property name="Texture" value="7,446,7,7,7,7"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12301,9 +12313,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimHalfSplit4Sided">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_4sided" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_4sided"/>
 	<property name="Texture" value="8,446,8,8,8,8"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12311,9 +12323,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimHalfSplit4Sided">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_half_split_4sided" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_half_split_4sided"/>
 	<property name="Texture" value="194,446,194,194,194,194"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12321,9 +12333,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterEdge">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12331,9 +12343,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterEdge">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12341,9 +12353,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterEdge">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12351,9 +12363,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterEdge">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12361,9 +12373,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterEdge2Sided">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge_twosided" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge_twosided"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12371,9 +12383,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterEdge2Sided">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge_twosided" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge_twosided"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12381,9 +12393,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterEdge2Sided">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge_twosided" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge_twosided"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12391,9 +12403,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterEdge2Sided">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_edge_twosided" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_edge_twosided"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12401,9 +12413,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterCornerInside">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12411,9 +12423,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterCornerInside">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12421,9 +12433,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterCornerInside">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12431,9 +12443,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterCornerInside">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12441,9 +12453,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterCornerInsideTriangle">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside_triangle" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside_triangle"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12451,9 +12463,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterCornerInsideTriangle">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside_triangle" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside_triangle"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12461,9 +12473,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterCornerInsideTriangle">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside_triangle" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside_triangle"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12471,9 +12483,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterCornerInsideTriangle">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_inside_triangle" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_inside_triangle"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12481,9 +12493,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterCornerOutside">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12491,9 +12503,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterCornerOutside">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12501,9 +12513,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterCornerOutside">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12511,9 +12523,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterCornerOutside">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12521,9 +12533,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimQuarterCornerOutside2Sided">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside_twosided" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside_twosided"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12531,9 +12543,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimQuarterCornerOutside2Sided">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside_twosided" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside_twosided"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12541,9 +12553,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimQuarterCornerOutside2Sided">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside_twosided" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside_twosided"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12551,9 +12563,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimQuarterCornerOutside2Sided">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_quarter_corner_outside_twosided" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_quarter_corner_outside_twosided"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12561,9 +12573,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodBlockTrimCNRRound">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_corner_round1m" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_corner_round1m"/>
 	<property name="Texture" value="241,241,241,241,241,446"/>
 	<property name="SortOrder2" value="0480"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12571,9 +12583,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickBlockTrimCNRRound">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_corner_round1m" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_corner_round1m"/>
 	<property name="Texture" value="7,7,7,7,7,446"/>
 	<property name="SortOrder2" value="0480"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12581,9 +12593,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteBlockTrimCNRRound">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_corner_round1m" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_corner_round1m"/>
 	<property name="Texture" value="8,8,8,8,8,446"/>
 	<property name="SortOrder2" value="0480"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12591,9 +12603,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalBlockTrimCNRRound">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_trim_corner_round1m" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_trim_corner_round1m"/>
 	<property name="Texture" value="194,194,194,194,194,446"/>
 	<property name="SortOrder2" value="0480"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12601,9 +12613,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodHalfTrimSplit">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_half_trim_half_split" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half_trim_half_split"/>
 	<property name="Texture" value="241,241,446,241,241,241"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12611,9 +12623,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="brickHalfTrimSplit">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_half_trim_half_split" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half_trim_half_split"/>
 	<property name="Texture" value="7,7,446,7,7,7"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12621,9 +12633,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="concreteHalfTrimSplit">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_half_trim_half_split" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half_trim_half_split"/>
 	<property name="Texture" value="8,8,446,8,8,8"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12631,9 +12643,9 @@ group desc for stuff like metal siding
 </block>
 
 <block name="corrugatedMetalHalfTrimSplit">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="cube_half_trim_half_split" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half_trim_half_split"/>
 	<property name="Texture" value="194,194,446,194,194,194"/>
 	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeTrimVariantsGroupDesc"/>
@@ -12641,385 +12653,385 @@ group desc for stuff like metal siding
 </block>
 
 <block name="woodWedgeRampLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeRampLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeRampLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeRampLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeRampRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeRampRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeRampRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeRampRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeSteepWedgeLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeSteepWedgeLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeSteepWedgeLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeSteepWedgeLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeSteepWedgeRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeSteepWedgeRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeSteepWedgeRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeSteepWedgeRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="290"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeSteepTipLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeSteepTipLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeSteepTipLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeSteepTipLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeSteepTipRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeSteepTipRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeSteepTipRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeSteepTipRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedge_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipRampLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipRampLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipRampLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipRampLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipRampRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipRampRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipRampRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipRampRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_ramp_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_ramp_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipSteepWedgeLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipSteepWedgeLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipSteepWedgeLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipSteepWedgeLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipSteepWedgeRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipSteepWedgeRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipSteepWedgeRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipSteepWedgeRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steepwedge_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steepwedge_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipSteepTipLeftIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipSteepTipLeftIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipSteepTipLeftIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipSteepTipLeftIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_left" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_left"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="woodWedgeTipSteepTipRightIntersection">
-	<property name="Extends" value="woodNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="woodNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="brickWedgeTipSteepTipRightIntersection">
-	<property name="Extends" value="brickNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="brickNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="concreteWedgeTipSteepTipRightIntersection">
-	<property name="Extends" value="concreteNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
 
 <block name="corrugatedMetalWedgeTipSteepTipRightIntersection">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="wedgetip_steeptip_right" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedgetip_steeptip_right"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="SortOrder2" value="280"/> <!-- SortShape -->
 	<property name="DescriptionKey" value="shapeWedgeIntersectionGroupDesc"/>
 </block>
@@ -13405,7 +13417,7 @@ NOT the TextureNumber.
 <block name="newTextureBlock21">
 	<property name="Extends" value="newTextureBlock01"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="Texture" value="605,606,8,8,8,8"/>
+	<property name="Texture" value="605,606,607,8,8,8"/>
 </block>
 	<!-- #8 = concrete. That is the dummy value that can be replaced with a new texture when needed.
 		The game does not like it when you try to put a 7th texture on a block. -->
@@ -13732,7 +13744,7 @@ NOT the TextureNumber.
 	<property class="RepairItems"> <property name="resourceForgedSteel" value="4"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="ladderMetal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="15" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="DescriptionKey" value="ladderMetalDesc"/>
@@ -14145,7 +14157,7 @@ NOT the TextureNumber.
 	<property name="Model" value="railing"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="ImposterExclude" value="true"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="DescriptionKey" value="railingGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 	<property name="SortOrder1" value="70m0"/>
@@ -14372,7 +14384,7 @@ NOT the TextureNumber.
 	<property name="Texture" value="46"/>
 	<property class="RepairItems"> <property name="resourceForgedIron" value="10"/> </property>
 	<property name="DowngradeBlock" value="scrapIronSheet"/>
-	<drop event="Destroy" name="resourceScrapIron" count="15,50" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15,50"/>
 	<property name="FilterTags" value="fbuilding,firon"/>
 </block>
 
@@ -15441,7 +15453,7 @@ NOT the TextureNumber.
 	<property name="IsPlant" value="true"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<drop event="Harvest" name="resourceYuccaFibers" count="10" tag="oreWoodHarvest"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="3" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
 	<drop event="Destroy" name="resourceYuccaFibers" count="5"/>
 	<property name="FilterTags" value="foutdoor,fcactus,fshrubbery"/>
 	<property name="SortOrder1" value="a0e0"/>
@@ -15452,14 +15464,14 @@ NOT the TextureNumber.
 	<property name="Extends" value="treeCactus01"/>
 	<property name="Model" value="#Entities/Trees?Saguaro_Cactus_16Prefab.prefab"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="3" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
 </block>
 
 <block name="treeCactus03">
 	<property name="Extends" value="treeCactus01"/>
 	<property name="Model" value="#Entities/Trees?Saguaro_Cactus_13Prefab.prefab"/>
 	<property name="MultiBlockDim" value="1,3,1"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="3" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
 </block>
 
 <block name="treeCactus04">
@@ -15469,7 +15481,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,0.45,0"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="2" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="2"/>
 </block>
 
 <block name="treeCactus05">
@@ -15478,7 +15490,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,0.45,0"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="2" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="2"/>
 </block>
 
 <block name="treeCactus06">
@@ -15486,7 +15498,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Plants/cactus06Prefab"/>
 	<property name="ModelOffset" value="0,0.4,0"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
-	<drop event="Destroy" name="foodCropYuccaFruit" count="3" prob="1"/>
+	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
 </block>
 
 <block name="treeSnowyGrassDiagonal"> <!-- snow biome -->
@@ -16354,7 +16366,7 @@ NOT the TextureNumber.
 	<property name="Model" value="pipe_thin"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Texture" value="519"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="FilterTags" value="fbuilding,fdecor,fother"/>
 	<property name="SortOrder1" value="7000"/>
@@ -16376,7 +16388,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Industrial/control_panel_duct" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="FilterTags" value="fbuilding,fdecor,fother"/>
 	<property name="SortOrder1" value="7000"/>
 	<property name="SortOrder2" value="0002"/>
@@ -16416,73 +16428,73 @@ NOT the TextureNumber.
 </block>
 
 <block name="corrugatedMetalAirDuct4Sides">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="vent" />
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="vent"/>
 	<property name="Texture" value="314"/>
 	<property name="SortOrder1" value="7000"/>
 	<property name="SortOrder2" value="0002"/>
 </block>
 
 <block name="corrugatedMetalAirDuctRamp">
-	<property name="Extends" value="corrugatedMetalAirDuct4Sides" />
-	<property name="Model" value="vent_ramp" />
+	<property name="Extends" value="corrugatedMetalAirDuct4Sides"/>
+	<property name="Model" value="vent_ramp"/>
 	<property name="UseGlobalUV" value="Local"/>
 </block>
 
 <block name="corrugatedMetalAirDuctRampTop">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_ramp_top" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_ramp_top"/>
 </block>
 
 <block name="corrugatedMetalAirDuctRampFiller">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_ramp_filler" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_ramp_filler"/>
 </block>
 
 <block name="corrugatedMetalAirDuctRampCap">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_ramp_cap" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_ramp_cap"/>
 </block>
 
 <block name="corrugatedMetalAirDuctRampEnd">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_ramp_end" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_ramp_end"/>
 </block>
 
 <block name="corrugatedMetalAirDuctBroken">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_broken" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_broken"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalf">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalfRamp">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half_ramp" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half_ramp"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalfRampFiller">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half_ramp_filler" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half_ramp_filler"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalfRampCap">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half_ramp_cap" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half_ramp_cap"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalfRampEnd">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half_ramp_end" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half_ramp_end"/>
 </block>
 
 <block name="corrugatedMetalAirDuctHalfBroken">
-	<property name="Extends" value="corrugatedMetalAirDuctRamp" />
-	<property name="Model" value="vent_half_broken" />
+	<property name="Extends" value="corrugatedMetalAirDuctRamp"/>
+	<property name="Model" value="vent_half_broken"/>
 </block>
 
 <block name="metalPipeStraight">
@@ -16520,7 +16532,7 @@ NOT the TextureNumber.
 	<property name="Model" value="pipe_straight_long"/>
 	<property name="MultiBlockDim" value="1,1,3"/>
 	<property name="Texture" value="597"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10,25" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,25"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 -->
@@ -16838,7 +16850,7 @@ NOT the TextureNumber.
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="8"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,15" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,15"/>
 	<property name="FilterTags" value="fdecor,fsigns,fother"/>
 	<!--<property name="SortOrder1" value="70t0"/>-->
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
@@ -17026,7 +17038,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="3,2,1"/>
 	<property name="ModelOffset" value="0,-0.15,0"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="0" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -18204,7 +18216,7 @@ NOT the TextureNumber.
 
 <block name="cntStorageGenericSigned">
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="cntStorageGeneric" />
+	<property name="CustomIcon" value="cntShippingCrateHero"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storeSignablePrefab.prefab"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
@@ -18216,12 +18228,27 @@ NOT the TextureNumber.
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
 	<property name="FuelValue" value="300"/>
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
-	<property name="DowngradeBlock" value="cntStorageGenericInsecure"/>
+	<property name="DowngradeBlock" value="cntStorageGenericSignedInsecure"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="FilterTags" value="floot"/>
 	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="cntStorageGenericSignedInsecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="cntShippingCrateHero"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot"/>
 </block>
 
 <block name="cntCabinetBottomFiller">
@@ -18274,13 +18301,13 @@ NOT the TextureNumber.
 <block name="cntWallOven">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Texture" value="346,345,341,345,262,345"/>
+	<property name="Texture" value="346,345,341,345,345,345"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LootList" value="11"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
 </block>
@@ -18295,11 +18322,10 @@ NOT the TextureNumber.
 	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
 	<property name="LootList" value="8"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="3,5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapBrass" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Harvest" name="resourceScrapLead" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,8"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
@@ -18407,10 +18433,9 @@ NOT the TextureNumber.
 	<property name="LootList" value="8"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="3,5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapBrass" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Harvest" name="resourceScrapLead" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,12"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -18473,8 +18498,7 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="156"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
@@ -18585,7 +18609,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="0,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="300"/>
 	<property name="FilterTags" value="floot,ffurniture,fdesign"/>
@@ -18633,8 +18657,7 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,5" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="2" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,5"/>
 	<property name="FilterTags" value="floot,fdecor,fother,ffurniture"/>
 </block>
 
@@ -18694,9 +18717,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,8" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20,50" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="0,3" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,15" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="192"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
@@ -19042,10 +19064,9 @@ NOT the TextureNumber.
 	<property name="Path" value="solid"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapBrass" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Harvest" name="resourceScrapLead" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -19063,17 +19084,16 @@ NOT the TextureNumber.
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapBrass" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Harvest" name="resourceScrapLead" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 </block>
 
 <block name="wallMountSinkCommercial">
-	<property name="Extends" value="pedestalSink" />
+	<property name="Extends" value="pedestalSink"/>
 	<property name="Model" value="Entities/Commercial/sinkCommercialMountedPrefab"/>
 </block>
 
@@ -19087,9 +19107,9 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="3,5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapBrass" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Harvest" name="resourceScrapLead" prob="1" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceRockSmall" count="3" prob="1"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
 	<drop event="Fall" name="resourceRockSmall" count="0" prob="0" stick_chance="0"/><property name="EconomicValue" value="80"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -19097,7 +19117,7 @@ NOT the TextureNumber.
 </block>
 
 <block name="counterMountedSinkCommercial">
-	<property name="Extends" value="pedestalSink" />
+	<property name="Extends" value="pedestalSink"/>
 	<property name="Model" value="Entities/Commercial/sinkCounterMountedPrefab"/>
 </block>
 
@@ -19307,9 +19327,8 @@ NOT the TextureNumber.
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="resourceMetalPipe" value="2"/> <property name="resourceWood" value="4"/> </property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMetalPipe" count="1" prob="1"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1,2"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="42"/>
 	<property name="FilterTags" value="floot,fdecor,fother,ffurniture"/>
@@ -19448,7 +19467,7 @@ NOT the TextureNumber.
 	<property name="Model" value="LootContainers/garbage_decor1" param1="main_mesh"/>
 	<property name="VehicleHitScale" value="999"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="resourcePaper" count="1" prob="1"/>
+	<drop event="Destroy" name="resourcePaper" count="1"/>
 	<drop event="Destroy" name="resourceMilitaryFiber" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="fdecor,fother"/>
@@ -19467,7 +19486,7 @@ NOT the TextureNumber.
 	<property name="VehicleHitScale" value="999"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="StabilitySupport" value="false"/>
-	<drop event="Destroy" name="resourceBrokenGlass" count="1" prob="1"/>
+	<drop event="Destroy" name="resourceBrokenGlass" count="1"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 </block>
@@ -19501,7 +19520,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="16"/>
 	<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
 </block>
@@ -19518,7 +19537,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="10"/>
 	<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
 </block>
@@ -19622,7 +19641,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="3,2,2"/>
 	<property name="LootList" value="66"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="136"/>
-	<drop event="Destroy" name="resourceScrapIron" count="20" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="20"/>
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -19637,7 +19656,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="3,2,2"/>
 	<property name="LootList" value="66"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="136"/>
-	<drop event="Destroy" name="resourceScrapIron" count="20" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="20"/>
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -20141,7 +20160,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceScrapIron" count="10,30" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceForgedIron" count="8,12" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel" count="2,4" prob="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="2,4" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceSpring" count="1,5" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -20195,7 +20214,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceScrapIron" count="15,45" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceForgedIron" count="16,24" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceSpring" count="2,8" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceMechanicalParts" count="2,10" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -20503,7 +20522,7 @@ NOT the TextureNumber.
 	<property name="FuelValue" value="300"/>
 	<property name="DescriptionKey" value="cntDeskRandomLootHelperDesc"/>
 	<property class="RepairItems"> <property name="resourceWood" value="15"/> </property>
-	<drop event="Destroy" name="resourceWood" count="2,6" prob="1"/>
+	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="floot,ffurniture,fdesign"/>
@@ -21047,8 +21066,8 @@ NOT the TextureNumber.
 	<property name="FilterTags" value="fdecor,ffurniture"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
-	<property name="Class" value="Loot"/>
-	<property name="LootList" value="143"/>
+	<!--<property name="Class" value="Loot"/>-->
+	<!--<property name="LootList" value="143"/>-->
 </block>
 
 <block name="wineBarrelSet">
@@ -21072,7 +21091,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="4,6" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="4,6"/>
 	<property name="FilterTags" value="floot,ffurniture,fdecor,fother"/>
 </block>
 
@@ -21352,16 +21371,10 @@ NOT the TextureNumber.
 	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
 	-->
-	<property class="RepairItems">
-		<property name="resourceCloth" value="20"/>
-		<property name="resourceSpring" value="10"/>
-		<property name="resourceMetalPipe" value="10"/>
-	</property>
+	<property class="RepairItems"><property name="resourceCloth" value="20"/></property>
 	<property name="DowngradeBlock" value="bed01Frame"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceCloth" count="8" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -21406,14 +21419,12 @@ NOT the TextureNumber.
 		<property name="resourceWood" value="20"/>
 		<property name="resourceMetalPipe" value="10"/>
 	</property>
-	<drop event="Harvest" name="resourceCloth" count="16" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceSpring" count="6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="16" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceWood" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10"/>
+	<drop event="Harvest" name="resourceSpring" count="6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,15"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="2600"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -21473,16 +21484,10 @@ NOT the TextureNumber.
 	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
 	-->
-	<property class="RepairItems">
-		<property name="resourceCloth" value="20"/>
-		<property name="resourceSpring" value="10"/>
-		<property name="resourceMetalPipe" value="10"/>
-	</property>
+	<property class="RepairItems"><property name="resourceCloth" value="20"/></property>
 	<property name="DowngradeBlock" value="bunkBedFrame"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceCloth" count="8" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -21507,9 +21512,9 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -21563,11 +21568,9 @@ NOT the TextureNumber.
 		<property name="resourceMetalPipe" value="10"/>
 	</property> -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,25"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -21592,11 +21595,10 @@ NOT the TextureNumber.
 	</property> -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="3,6" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 </block>
 
 <block name="bodyBagBlack">
@@ -21608,12 +21610,12 @@ NOT the TextureNumber.
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="foodRottingFlesh" count="1,3" prob="1" tag="butcherHarvest" tool_category="Butcher"/><!-- triggers bonus damage and harvest animation -->
+	<drop event="Harvest" name="foodRottingFlesh" count="1,3" tag="butcherHarvest" tool_category="Butcher"/><!-- triggers bonus damage and harvest animation -->
 	<drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.33" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="6,10" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="1,2"/>
-	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+	<drop event="Fall" count="0" prob="0"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 </block>
@@ -22321,8 +22323,7 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="2,4" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="3,6"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,12"/>
 	<drop event="Fall" count="0" stick_chance="0"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
@@ -24016,8 +24017,8 @@ NOT the TextureNumber.
 		<property name="resourceCloth" value="12"/>
 		<property name="resourceMechanicalParts" value="2"/>
 	</property>
-	<drop event="Harvest" name="resourceWood" count="30" prob="1" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="30" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceCloth" count="6" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
 	<property name="FilterTags" value="fdecor,fother,outdoor"/>
@@ -24027,7 +24028,7 @@ NOT the TextureNumber.
 	<property name="Extends" value="decoEntityWoodMaster"/>
 	<property name="Model" value="Entities/OutdoorDecor/wildWestWagonWheelBackPrefab"/>
 	<property class="RepairItems"> <property name="resourceWood" value="8"/> </property>
-	<drop event="Harvest" name="resourceWood" count="4" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="4" tag="allHarvest"/>
 	<property name="FilterTags" value="fdecor,fother,outdoor"/>
 </block>
 
@@ -24179,7 +24180,7 @@ NOT the TextureNumber.
 <block name="rockResource"> <!-- biome decoration -->
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="Mboulder"/>
-	<!--property name="StabilitySupport" value="false" NOT SUPPORTED FOR MULTIBLOCKS! /-->
+	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="BigDecorationRadius" value="3"/>
@@ -24459,8 +24460,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,20"/>
 	<drop event="Destroy" name="resourceRadiator" count="1" prob="0.7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/> <!-- disassemble value -->
@@ -24478,8 +24478,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/> <!-- disassemble value -->
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
@@ -24493,8 +24492,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 </block>
 
 <block name="satelliteDish">
@@ -24510,7 +24508,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="175"/>
@@ -24589,9 +24587,9 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="40"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceForgedIron" count="2,4" prob="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="2,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceForgedSteel" count="2,4" prob="0.5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="30" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="30" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="250"/> <!-- disassemble value -->
 	<property name="FilterTags" value="floot"/>
@@ -25426,7 +25424,7 @@ NOT the TextureNumber.
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="41"/>
 	<property name="DescriptionKey" value="cntLootChestHeroDesc"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 </block>
 
 <block name="cntBuriedFoodStashChest">
@@ -25538,13 +25536,13 @@ NOT the TextureNumber.
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0Master" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,4" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<!-- <drop event="Fall" name="cntCar03SedanDamage1Master" count="1" prob="1.0" stick_chance="1"/> -->
 	<property name="DowngradeBlock" value="cntCar03SedanDamage1Master"/>
 	<property name="BigDecorationRadius" value="5"/>
@@ -25581,16 +25579,13 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
 	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceAcid" prob=".05" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceOil" count="1,3" prob="0.5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceCloth" count="3,7" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceSpring" count="2,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="17,35" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="17,35" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
@@ -25625,10 +25620,12 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.45" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="1,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="12,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
@@ -25872,23 +25869,22 @@ NOT the TextureNumber.
 		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
 	</property>
-	<drop event="Harvest" name="cntBusSchool" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="ammoGasCan" count="100,1000" tag="salvageHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="carBattery" count="1" prob="0.6" tag="salvageHarvest"/>
-	<drop event="Harvest" name="smallEngine" count="1" prob="0.75" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceAcid" prob=".15" count="1" tag="WasteTreasuresAcidHarvest"/>
-	<drop event="Harvest" name="resourceCloth" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.75" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1,2" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="4,12" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="7,20" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceOil" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="0,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceRadiator" count="1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="70,180" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="8,22" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="3,6" tag="salvageHarvest"/>
-	<drop event="Destroy" name="ammoGasCan" count="100,1000"/>
+	<drop event="Harvest" name="ammoGasCan" count="200,800" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="70,180" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="floot"/>
 </block>
@@ -26048,6 +26044,8 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="CustomIcon" value="workbench"/> <property name="CustomIconTint" value="ff8080"/>
@@ -26070,6 +26068,7 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/>
+	<property name="MultiBlockDim" value="3,2,1"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 </block>
@@ -26191,7 +26190,7 @@ NOT the TextureNumber.
 
 <block name="sleeperIdle">
 	<property name="Extends" value="sleeperSit"/>
-	<property name="ExcludeWalkType" value="4"/>
+	<property name="ExcludeWalkType" value="Crawler"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
 	<property name="Pose" value="5"/>
@@ -26284,7 +26283,7 @@ NOT the TextureNumber.
 	<property class="RepairItems"> <property name="resourceForgedIron" value="1"/> <property name="resourceElectricParts" value="3"/> </property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/> <!-- HV: mounted lamp -->
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science"/>
@@ -26303,7 +26302,7 @@ NOT the TextureNumber.
 	<property name="Extends" value="porchLight01"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab"/>
-	<drop event="Destroy" name="resourceScrapBrass" count="10,30" prob="1"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="10,30"/>
 </block>
 
 <block name="ceilingLight01">
@@ -26408,7 +26407,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="EconomicValue" value="175"/>
@@ -26477,7 +26476,7 @@ NOT the TextureNumber.
 	<property name="ActivationDistance" value="6"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
@@ -26501,7 +26500,7 @@ NOT the TextureNumber.
 	<property class="RepairItems"> <property name="resourceScrapBrass" value="50"/> </property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapBrass" count="15,25" tag="salvageHarvest"/>
-	<drop event="Destroy" name="candle" count="1,3" prob="1"/>
+	<drop event="Destroy" name="candle" count="1,3"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="76"/>
@@ -26555,7 +26554,7 @@ NOT the TextureNumber.
 <block name="deskLampLight">
 	<property name="Extends" value="porchLight04Brass" param1="HandleFace"/>
 	<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
-	<drop event="Destroy" name="resourceScrapBrass" count="8,18" prob="1"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="8,18"/>
 </block>
 
 <block name="tableLampLight">
@@ -26589,7 +26588,7 @@ NOT the TextureNumber.
 	<property name="OnlySimpleRotations" value="true"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
@@ -26630,9 +26629,8 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="6"/>
 		<property name="resourceScrapIron" value="40"/>
 	</property>
-	<drop event="Harvest" name="resourceScrapIron" count="24" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="24,30" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -26672,9 +26670,8 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="6"/>
 		<property name="resourceScrapIron" value="40"/>
 	</property>
-	<drop event="Harvest" name="resourceScrapIron" count="24" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="24,30" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -26889,7 +26886,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="3,6" tag="salvageHarvest"/> <!-- HV: electronics -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="2" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2"/>
 	<drop event="Fall" count="0" prob="0"/>
 </block>
 
@@ -26991,7 +26988,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2" prob="0.7" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2" prob="0.8" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science,Decor/Miscellaneous"/>
@@ -27237,7 +27234,7 @@ NOT the TextureNumber.
 	<property class="RepairItems"> <property name="resourceForgedIron" value="1"/></property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="28"/>
@@ -27261,7 +27258,7 @@ NOT the TextureNumber.
 	<property name="TriggerType" value="Switch"/>
 	<property name="Group" value="Science"/>
 	<property class="RepairItems"> <property name="resourceForgedIron" value="2"/> </property>
-	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="50"/>
@@ -27291,7 +27288,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,20" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="124"/>
@@ -27669,7 +27666,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,40" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,40" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 
 	<property name="Stacknumber" value="10"/>
@@ -27744,8 +27741,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceElectricParts" count="0,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/>
 	<property name="Group" value="Science"/>
@@ -27766,9 +27762,9 @@ NOT the TextureNumber.
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Density" value="0.9"/>
-	<drop event="Harvest" name="foodRottingFlesh" count="1" prob="1" tag="allHarvest" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" count="1,3" prob="1" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1,3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat" count="1,2" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceBone" count="5,10" tag="butcherHarvest"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
@@ -27788,8 +27784,8 @@ NOT the TextureNumber.
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
-	<drop event="Harvest" name="foodRottingFlesh" count="1" prob="1" tag="allHarvest" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" count="1,2" prob="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1,2" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceBone" count="5,9" tag="butcherHarvest"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
@@ -27825,10 +27821,10 @@ NOT the TextureNumber.
 		<property name="UpgradeRated.ToBlock" value="air"/>
 		<property name="UpgradeRated.Rate" value="50"/>
 	<property name="LootList" value="15"/>  dummy loot list, will be overridden by the zombie that died
-	<drop event="Harvest" name="foodRottingFlesh" count="1,3" prob="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1,3" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.33" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="5,10" prob="0.2" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone" count="5,10" prob="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="5,10" tag="butcherHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block> -->
@@ -28064,7 +28060,7 @@ NOT the TextureNumber.
 	<property name="ImposterExchange" value="imposterCTRSheet" param1="144"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property class="RepairItems"> <property name="resourceForgedIron" value="8"/> </property>
-	<drop event="Harvest" name="resourceScrapIron" count="50" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="50" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/>
@@ -28114,8 +28110,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
 </block>
 
 <block name="jailDoorStaticCentered">
@@ -28127,8 +28123,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
 </block>
 
 <block name="secureDoorWooden">
@@ -28242,7 +28238,7 @@ NOT the TextureNumber.
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="secureReinforcedDoorWooden"/>
-	<drop event="Harvest" name="resourceScrapIron" count="6" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="6" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="fdecor,fdoors"/>
@@ -28281,7 +28277,7 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="40" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="40" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -28347,7 +28343,7 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="96" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -28392,7 +28388,7 @@ NOT the TextureNumber.
 	<property name="CloseSound" value="close_door_vault"/>
 	<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
 	<property name="DowngradeBlock" value="vaultDoor02"/>
-	<drop event="Harvest" name="resourceScrapIron" count="96" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -28442,9 +28438,9 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceScrapBrass" count="2,7" prob="1" tag="WasteTreasuresDoorHarvest"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="2,7" tag="WasteTreasuresDoorHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="fdecor,fdoors"/>
@@ -28467,8 +28463,8 @@ NOT the TextureNumber.
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="commercialDoor1_v1"/>
 	<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
-	<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="0" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceScrapBrass" count="0" prob="0" tag="WasteTreasuresDoorHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="SortOrder2" value="0205"/> <!-- SortDoors -->
@@ -28500,7 +28496,7 @@ NOT the TextureNumber.
 	<property name="CloseSound" value="close_door_metal"/>
 	<property name="DowngradeBlock" value="commercialDoor1_v2"/>
 	<property class="RepairItems"> <property name="resourceScrapIron" value="20"/> </property>
-	<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="FilterTags" value="fdecor,fdoors"/>
@@ -28584,8 +28580,8 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceDoorKnob" count="1" prob="1" tag="WasteTreasuresDoorHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="WasteTreasuresDoorHarvest"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="fdecor,fdoors"/>
 	<property name="SortOrder1" value="7060"/>
@@ -28680,8 +28676,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -28806,8 +28802,8 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="4,8" prob="1" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="4,8" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="4,8" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,8" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorHousePlayerDesc"/>
@@ -28831,8 +28827,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceScrapIron" count="30" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceForgedIron" count="4,8" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -28877,8 +28873,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -28930,8 +28926,8 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -29046,7 +29042,7 @@ NOT the TextureNumber.
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="6" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="6" tag="allHarvest"/>
 	<property name="DowngradeBlock" value="woodHatch1_v2"/>
 	<property name="SortOrder2" value="0510"/> <!-- SortDoors -->
 </block>
@@ -29082,7 +29078,7 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="16" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="16" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -29187,12 +29183,12 @@ NOT the TextureNumber.
 		<property name="resourceForgedIron" value="100"/>
 		<property name="resourceWood" value="800"/>
 	</property>
-	<drop event="Harvest" name="resourceScrapIron" count="400" prob="1" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceWood" count="400" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" name="resourceSpring" count="4,12" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
@@ -29230,12 +29226,12 @@ NOT the TextureNumber.
 		<property name="resourceForgedIron" value="100"/>
 		<property name="resourceWood" value="2000"/>
 	</property>
-	<drop event="Harvest" name="resourceScrapIron" count="400" prob="1" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceWood" count="800" prob="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="800" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" name="resourceSpring" count="4,12" prob="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
 	<property name="ActivationDistance" value="14"/>
@@ -30036,7 +30032,7 @@ NOT the TextureNumber.
 	<property name="Model" value="curtain"/>
 	<property name="Mesh" value="cutout"/>
 	<property name="Texture" value="63"/>
-	<drop event="Destroy" name="resourceCloth" count="1,3" prob="1"/>
+	<drop event="Destroy" name="resourceCloth" count="1,3"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="FilterTags" value="fdecor,fwindows"/>
 	<property name="SortOrder1" value="7080"/>
@@ -30258,7 +30254,7 @@ NOT the TextureNumber.
 	<!-- <property name="BuffsWhenWalkedOn" value="trapDamageZombie"/> -->
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" name="resourceWood" count="2,6" prob="1"/>
+	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Fall" count="0"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="trapSpikesGroupDesc"/>
@@ -30395,7 +30391,7 @@ NOT the TextureNumber.
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" name="resourceWood" count="2,6" prob="1"/>
+	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
@@ -30496,7 +30492,7 @@ NOT the TextureNumber.
 	<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10,20" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="160"/>
 	<property name="Group" value="Tools/Traps"/>
@@ -30593,7 +30589,7 @@ NOT the TextureNumber.
 	<property name="Group" value="Tools/Traps"/>
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
 	<property class="RepairItems"> <property name="resourceScrapIron" value="15"/> </property>
-	<drop event="Destroy" name="resourceScrapIron" count="1,12" prob="1"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="FilterTags" value="fdecor,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>

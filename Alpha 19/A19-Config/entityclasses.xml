@@ -2266,7 +2266,7 @@
 </entity_class>
 
 <entity_class name="zombieBiker" extends="zombieTemplateMale">
-	<property name="SizeScale" value="1.1"/>
+	<property name="SizeScale" value="1.08"/>
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDRagdoll.prefab"/>
 	<property name="Mass" value="230"/>

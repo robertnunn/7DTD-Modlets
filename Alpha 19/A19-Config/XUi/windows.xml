@@ -246,12 +246,22 @@
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="0" disableautobackground="true" anchor_left="queue,0,-3" anchor_right="queue,1,0" >
 			<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header" anchor_left="queue,0,-3" anchor_right="queue,1,0" />
-			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
-			<label depth="2" name="lootName" pos="39,-6" width="172" height="32" text="LOOT" text_key="xuiLoot" font_size="32" anchor_left="queue,0,39" anchor_right="queue,1,-115" />
-
-			<label depth="2" name="takeAllLabel" width="40" height="30" font_size="30" justify="left" pos="260,-8" anchor_left="queue,1,-60" anchor_right="queue,1,-20" parse_actions="true" text=" [action:permanent:Reload:emptystring:KeyboardWithAngleBrackets]" />
-
-			<sprite depth="2" name="takeAllIcon" style="icon32px" sprite="ui_game_symbol_hand" pos="220, -4" anchor_left="queue,1,-87" anchor_right="queue,1,-55" />
+			<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" />
+			<label depth="2" name="lootName" pos="39,-6" width="172" height="32" text="{lootcontainer_name}" font_size="32" anchor_left="queue,0,39" anchor_right="queue,1,-230" />
+			
+			<rect anchor_left="queue,1,-300" anchor_right="queue,1,0" pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+				<button   depth="3" name="btnSort"             sprite="ui_game_symbol_sort"          tooltip_key="lblSortContainer"        pos="194, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="274, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				<button   depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_up" tooltip_key="xuiLootTakeFillAndSmart" pos="234, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+<!--				
+				<rect pos="0,30">
+					<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+					<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeSmart"        pos="46, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+					
+					<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
+				</rect>
+-->
+			</rect>
 		</panel>
 		<rect name="content" pos="3,-49" >
 			<sprite depth="0" name="bg" color="255,255,255,1" type="sliced" sprite="menu_empty" anchor_left="queue,0,-3" anchor_bottom="queue,0,0" anchor_right="queue,1,0" anchor_top="queue,1,49" on_press="true" />
@@ -649,17 +659,29 @@
 	<window name="windowBackpack" width="606" height="349" panel="Center" controller="BackpackWindow" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" tooltip_key="lblSortInventory" sound="[paging_click]" />
+			<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" />
 			<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
 
-			<button depth="3" name="btnClearInventory" style="icon32px, press, hover" pivot="center" pos="281,-21" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" sound="[paging_click]" />
 
-			<!--
-			<button depth="3" name="btnStashFillStacks" style="icon32px, press, hover" pivot="center" pos="281,-21" sprite="ui_game_symbol_drop" tooltip_key="lblStashFillStacks" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
-			<button depth="3" name="btnStashSmart" style="icon32px, press, hover" pivot="center" pos="317,-21" sprite="ui_game_symbol_drop" tooltip_key="lblStashSmart" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
-			<button depth="3" name="btnStashAll" style="icon32px, press, hover" pivot="center" pos="353,-21" sprite="ui_game_symbol_drop" tooltip_key="lblStashAll" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
-			<combobox name="cbxLockedSlots" type="ComboBoxInt" pos="374, -6" width="140" height="30" value_min="0" value_max="45" value_wrap="true" value_increment="1" tooltip_key="xuiStashLockedSlots" visible="{lootingorvehiclestorage}" />
-			-->
+			<rect pos="303,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true">
+				<button depth="3" name="btnClearInventory" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="200, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}" />
+
+				<button depth="3" name="btnSort"           sprite="ui_game_symbol_sort"  tooltip_key="lblSortContainer"  pos="0, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				
+				<rect pos="0, 0" visible="{lootingorvehiclestorage}">
+					<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_down"     tooltip_key="lblStashAll"             pos="80, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+					<button   depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="40, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+<!--
+					<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
+-->
+<!--
+					<rect pos="0,30">
+						<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="lblStashFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+						<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="lblStashSmart"        pos="46, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+					</rect>
+-->
+				</rect>
+			</rect>
 
 			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" justify="right" />
 			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[white]" foregroundlayer="true" />
@@ -1486,23 +1508,29 @@
 		</rect>
 	</window>
 
-	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
-	<window name="windowVehicleStorage" width="228" height="262" depth="5" anchor_side="bottomright" panel="Left" backgroundcolor="[black]" cursor_area="true" >
-	<!--#$-IGS END.-$#-->
-		<panel name="header" height="43" depth="1" disableautobackground="true">
-			<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header"/>
-			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
-			<label depth="2" style="header.name" name="lootName" text="VEHICLE STORAGE" text_key="xuiVehicleStorage" />
-			<label depth="2" name="takeAllLabel" width="32" height="30" font_size="30" color="[mediumGrey]" justify="left" pos="260,-8" parse_actions="true" text=" [action:permanent:Reload:emptystring:KeyboardWithAngleBrackets]" />
+	<window name="windowVehicleStorage" width="{windowWidth}" height="262" depth="5" controller="VehicleContainer" panel="Left" anchor_side="bottomright" backgroundcolor="[black]" cursor_area="true" >
+		<panel name="header" height="43" depth="0" disableautobackground="true" anchor_left="queue,0,-3" anchor_right="queue,1,0" >
+			<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header" anchor_left="queue,0,-3" anchor_right="queue,1,0" />
+			<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" />
+			<label depth="2" name="lootName" pos="39,-6" width="172" height="32" text_key="xuiVehicleStorage" font_size="32" anchor_left="queue,0,39" anchor_right="queue,1,-230" />
 
-			<sprite depth="2" name="takeAllIcon" style="icon32px" sprite="ui_game_symbol_hand" color="[mediumGrey]" pos="220, -4"/>
+			<rect anchor_left="queue,1,-300" anchor_right="queue,1,0" pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+				<button   depth="3" name="btnSort"             sprite="ui_game_symbol_sort"          tooltip_key="lblSortContainer"        pos="194, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="274, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				<button   depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_up" tooltip_key="xuiLootTakeFillAndSmart" pos="234, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+<!--				
+				<rect pos="0,30">
+				<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeSmart"        pos="46, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+				
+				<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
+				</rect>
+-->
+			</rect>
 		</panel>
-
-		<grid depth="2" name="inventory" rows="10" cols="9" pos="3,-46" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+		<grid depth="2" name="queue" rows="10" cols="9" pos="3,-49" cell_width="75" cell_height="75" repeat_content="true">
 			<item_stack name="0"/>
 		</grid>
-
-
 	</window>
 
 

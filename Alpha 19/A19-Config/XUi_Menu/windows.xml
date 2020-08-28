@@ -1119,7 +1119,7 @@
 
 						<videooption name="WaterQuality" type="ComboBoxList&lt;System.String&gt;" values="Low,High" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
 
-						<videooption name="WaterParticles" type="ComboBoxFloat" value_increment="0.10" value_wrap="false" format_string="0%" />
+						<videooption name="Particles" type="ComboBoxFloat" value_increment="0.10" value_wrap="false" format_string="0%" />
 
 						<videooption name="ViewDistance" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
 

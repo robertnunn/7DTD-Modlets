@@ -2095,12 +2095,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="meleeToolSalvageT2Ratchet" count="1" craft_area="workbench" tags="learnable,perkSalvageOperations">
-	<ingredient name="resourceForgedIron" count="16"/>
+	<ingredient name="meleeToolAllSteelParts" count="5"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceDuctTape" count="2"/>
 	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceDuctTape" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceMechanicalParts,resourceSpring,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2108,8 +2109,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="meleeToolAxeT3ChainsawParts" count="5"/>
 	<ingredient name="resourceForgedSteel" count="16"/>
 	<ingredient name="resourceMechanicalParts" count="6"/>
-	<ingredient name="resourceDuctTape" count="3"/>
 	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="resourceDuctTape" count="3"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceDuctTape"/>
 	</effect_group>

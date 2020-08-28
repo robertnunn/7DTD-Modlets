@@ -325,9 +325,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gunlaser"/>
 
-				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="gunlaser" transform_path="laser"/>
-				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="gunlaser" transform_path="laser"/>
-				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="gunlaser" transform_path="laser"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="gunlaser" transform_path="gunlaser"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="gunlaser" transform_path="gunlaser"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="gunlaser" transform_path="gunlaser"/>
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
@@ -784,7 +784,11 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</item_property_overrides>
 
 		<item_property_overrides name="gunShotgunT3AutoShotgun">
-			<property name="ScopeCameraOffset" value="0,.0245,0.05"/>
+			<property name="ScopeCameraOffset" value="0.00135,.0245,0.05"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunRifleT3SniperRifle">
+			<property name="ScopeCameraOffset" value="0,-.0055,0"/>
 		</item_property_overrides>
 
 		<!-- visible attachment: holosight -->
@@ -793,8 +797,6 @@ Example of using the seed (creation time) on a weapon to activate an effect
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#Other/Items?Mods/Scopes/scope_laser_reflexPrefab.prefab" parent_transform="Attachments/Scope"/>
 		</effect_group>
 		<effect_group tiered="false" name="internal attachment prefab (A19)">
-			<requirement name="!HoldingItemHasTags" tags="invisibleReflexSight"/>
-
 			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
 				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="holosight"/>
 		</effect_group>

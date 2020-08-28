@@ -5285,7 +5285,6 @@
 
 
 	<!-- Bicycle      -->
-  Assets\Resources\Sounds\Vehicles\Bicycle
   <SoundDataNode name="bicycle_pedal"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
 	<Noise ID="1" noise="7" time="2" muffled_when_crouched=".5"/>
 	<AudioClip ClipName="Sounds/Vehicles/Bicycle/bicycle_pedal1"/>
