@@ -105,7 +105,8 @@ for i in schematics_set:
     items.append(item)
 
 # write files, these ***SHOULD*** be ready to rename and drop into a mod. But ALWAYS double-check
-dest_folder = f'Alpha {str(v_num)}/ignore/copy schematics'
+os.makedirs(f'Alpha {str(v_num)}/ignore/copy schematics/', exist_ok=True)
+dest_folder = f'Alpha {str(v_num)}/ignore/copy schematics/'
 with open(dest_folder + 'progression.xml', mode='w') as xml_out:
     xml_out.write('<?xml version="1.0" encoding="UTF-8"?>\n<configs>\n')
     xml_out.write('\n'.join(prog_mods))
