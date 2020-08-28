@@ -1,0 +1,893 @@
+Item,Scraps to
+meleeToolRepairT0StoneAxe,stone
+meleeToolRepairT0TazasStoneAxe,Not Scrappable
+meleeToolRepairT1ClawHammer,iron
+meleeToolRepairT3Nailgun,resourceMechanicalParts
+meleeToolAxeT1IronFireaxe,iron
+meleeToolAxeT2SteelAxe,meleeToolAllSteelParts
+meleeToolPickT1IronPickaxe,iron
+meleeToolPickT2SteelPickaxe,meleeToolAllSteelParts
+meleeToolShovelT0StoneShovel,stone
+meleeToolShovelT1IronShovel,iron
+meleeToolShovelT2SteelShovel,meleeToolAllSteelParts
+meleeToolAxeT3Chainsaw,meleeToolChainsawParts
+meleeToolPickT3Auger,meleeToolChainsawParts
+meleeToolSalvageT1Wrench,iron
+meleeToolSalvageT2Ratchet,meleeToolAllSteelParts
+meleeToolSalvageT3ImpactDriver,meleeToolChainsawParts
+meleeWpnBladeT0BoneKnife,resourceBone
+meleeWpnBladeT1HuntingKnife,iron
+meleeWpnBladeT1CandyKnife,iron
+meleeWpnBladeT3Machete,meleeWpnBladeT3MacheteParts
+meleeWpnClubT0WoodenClub,wood
+meleeWpnClubT1BaseballBat,wood
+meleeWpnClubT1CandyClub,iron
+meleeWpnClubT3SteelClub,meleeWpnClubT3SteelClubParts
+meleeWpnBatonT1JunkBaton,meleeWpnBatonT2StunBatonParts
+meleeWpnBatonT2StunBaton,meleeWpnBatonT2StunBatonParts
+meleeWpnBatonT3PlasmaBaton,meleeWpnBatonT2StunBatonParts
+meleeWpnSpearT0StoneSpear,stone
+meleeWpnSpearT1IronSpear,iron
+meleeWpnSpearT3SteelSpear,meleeWpnSpearT3SteelSpearParts
+meleeWpnSledgeT0StoneSledgehammer,stone
+meleeWpnSledgeT1IronSledgehammer,iron
+meleeWpnSledgeT3SteelSledgehammer,meleeWpnSledgeT3SteelSledgehammerParts
+meleeWpnKnucklesT0LeatherKnuckles,leather
+meleeWpnKnucklesT1IronKnuckles,iron
+meleeWpnKnucklesT3SteelKnuckles,meleeWpnKnucklesT3SteelKnucklesParts
+meleeToolFarmT1IronHoe,iron
+meleeToolFlashlight02,resourceElectricParts
+meleeToolTorch,Not Scrappable
+meleeToolWireTool,iron
+meleeToolPaintTool,wood
+meleeToolBlockReplaceTool,wood
+gunHandgunT1Pistol,gunHandgunT1PistolParts
+gunHandgunT3SMG5,gunHandgunT1PistolParts
+gunHandgunT2Magnum44,gunHandgunT1PistolParts
+gunHandgunT3DesertVulture,gunHandgunT1PistolParts
+gunShotgunT0Blunderbuss,iron
+gunShotgunT1DoubleBarrel,gunShotgunT1DoubleBarrelParts
+gunShotgunT2PumpShotgun,gunShotgunT1DoubleBarrelParts
+gunShotgunT3AutoShotgun,gunShotgunT1DoubleBarrelParts
+gunRifleT1HuntingRifle,gunRifleT1HuntingRifleParts
+gunRifleT2MarksmanRifle,gunRifleT1HuntingRifleParts
+gunRifleT3SniperRifle,gunRifleT1HuntingRifleParts
+gunMGT1AK47,gunMGT1AK47Parts
+gunMGT2TacticalAR,gunMGT1AK47Parts
+gunMGT3M60,gunMGT1AK47Parts
+gunExplosivesT3RocketLauncher,gunExplosivesT3RocketLauncherParts
+gunBowT0PrimitiveBow,wood
+gunBowT1WoodenBow,gunBowT1WoodenBowParts
+gunBowT3CompoundBow,gunBowT1WoodenBowParts
+gunBowT1IronCrossbow,gunBowT1WoodenBowParts
+gunBowT3CompoundCrossbow,gunBowT1WoodenBowParts
+gunBotT1JunkSledge,gunBotRoboticsParts
+gunBotT2JunkTurret,gunBotRoboticsParts
+gunBotT3JunkDrone,gunBotRoboticsParts
+meleeHandMaster,Not Scrappable
+meleeHandPlayer,Not Scrappable
+meleeHandZombie01,Not Scrappable
+meleeHandZombieBalancingDummy,Not Scrappable
+meleeHandZombie02,Not Scrappable
+meleeHandZombieFeral,Not Scrappable
+meleeHandZombie02Feral,Not Scrappable
+meleeHandZombieBurning,Not Scrappable
+meleeHandZombieBurningFeral,Not Scrappable
+meleeHandZombieBurningCrawler,Not Scrappable
+meleeHandZombieCop,Not Scrappable
+ammoProjectileZombieVomit,Not Scrappable
+meleeHandZombieCopFeral,Not Scrappable
+ammoProjectileZombieVomitFeral,Not Scrappable
+meleeHandZombieCopRadiated,Not Scrappable
+ammoProjectileZombieVomitRadiated,Not Scrappable
+meleeHandAnimalZombieDog,Not Scrappable
+meleeHandZombieStrong,Not Scrappable
+meleeHandZombieDemolition,Not Scrappable
+meleeHandZombieStrongFeral,Not Scrappable
+meleeHandAnimalBear,Not Scrappable
+meleeHandAnimalZombieBear,Not Scrappable
+meleeHandAnimalZombieBearFeral,Not Scrappable
+meleeHandZombieHazMat,Not Scrappable
+meleeHandZombieHazMatFeral,Not Scrappable
+meleeHandZombieWorker,Not Scrappable
+meleeHandZombieWorkerFeral,Not Scrappable
+meleeHandZombieFootballPlayer,Not Scrappable
+meleeHandZombieFootballPlayerFeral,Not Scrappable
+meleeHandZombieStripper,Not Scrappable
+meleeHandZombieStripperFeral,Not Scrappable
+meleeHandAnimalCoyote,Not Scrappable
+meleeHandAnimalZombieVulture,Not Scrappable
+meleeHandAnimalZombieVultureRadiated,Not Scrappable
+ammoProjectileVultureVomit,Not Scrappable
+meleeHandAnimalSnake,Not Scrappable
+meleeHandAnimalWolf,Not Scrappable
+meleeHandAnimalDireWolf,Not Scrappable
+meleeHandBossGrace,Not Scrappable
+ammo9mmBulletBall,brass
+ammo9mmBulletHP,Not Scrappable
+ammo9mmBulletAP,Not Scrappable
+ammo44MagnumBulletBall,Not Scrappable
+ammo44MagnumBulletHP,Not Scrappable
+ammo44MagnumBulletAP,Not Scrappable
+ammo762mmBulletBall,Not Scrappable
+ammo762mmBulletHP,Not Scrappable
+ammo762mmBulletAP,Not Scrappable
+ammoShotgunShell,lead
+ammoShotgunSlug,resourceScrapPolymers
+ammoShotgunBreachingSlug,resourceScrapPolymers
+ammoBlunderbuss,paper
+ammoJunkTurretRegular,iron
+ammoJunkTurretShell,Not Scrappable
+ammoJunkTurretAP,Not Scrappable
+ammoRocketHE,lead
+ammoRocketFrag,Not Scrappable
+ammoGasCan,Not Scrappable
+ammoArrowStone,wood
+ammoArrowIron,iron
+ammoArrowSteelAP,Not Scrappable
+ammoArrowFlaming,Not Scrappable
+ammoArrowExploding,Not Scrappable
+ammoCrossbowBoltStone,wood
+ammoCrossbowBoltIron,iron
+ammoCrossbowBoltSteelAP,Not Scrappable
+ammoCrossbowBoltFlaming,Not Scrappable
+ammoCrossbowBoltExploding,Not Scrappable
+ammoBundleMaster,iron
+ammoBundle9mmBulletBall,Not Scrappable
+ammoBundle9mmBulletHP,Not Scrappable
+ammoBundle9mmBulletAP,Not Scrappable
+ammoBundle44MagnumBulletBall,Not Scrappable
+ammoBundle44MagnumBulletHP,Not Scrappable
+ammoBundle44MagnumBulletAP,Not Scrappable
+ammoBundle762mmBulletBall,Not Scrappable
+ammoBundle762mmBulletHP,Not Scrappable
+ammoBundle762mmBulletAP,Not Scrappable
+ammoBundleShotgunShell,Not Scrappable
+ammoBundleShotgunSlug,Not Scrappable
+ammoBundleShotgunBreachingSlug,Not Scrappable
+ammoBundleBlunderbuss,Not Scrappable
+ammoBundleJunkTurretRegular,Not Scrappable
+ammoBundleJunkTurretShell,Not Scrappable
+ammoBundleJunkTurretAP,Not Scrappable
+ammoBundleArrowStone,Not Scrappable
+ammoBundleArrowIron,Not Scrappable
+ammoBundleArrowSteelAP,Not Scrappable
+ammoBundleArrowFlaming,Not Scrappable
+ammoBundleArrowExploding,Not Scrappable
+ammoBundleCrossbowBoltStone,Not Scrappable
+ammoBundleCrossbowBoltIron,Not Scrappable
+ammoBundleCrossbowBoltSteelAP,Not Scrappable
+ammoBundleCrossbowBoltFlaming,Not Scrappable
+ammoBundleCrossbowBoltExploding,Not Scrappable
+resourceRockSmallBundle,Not Scrappable
+resourceWoodBundle,Not Scrappable
+resourceIronFragmentBundle,Not Scrappable
+resourceScrapIronBundle,Not Scrappable
+resourcePotassiumNitratePowderBundle,Not Scrappable
+resourceLeadBundle,Not Scrappable
+resourceCoalBundle,Not Scrappable
+resourceOilShaleBundle,Not Scrappable
+ammoGasCanBundle,Not Scrappable
+resourceGunPowderBundle,Not Scrappable
+thrownAmmoPipeBomb,iron
+thrownGrenadeContact,iron
+thrownGrenade,Not Scrappable
+thrownTimedCharge,iron
+thrownDynamite,Not Scrappable
+thrownAmmoMolotovCocktail,Not Scrappable
+thrownAmmoFlare,iron
+ammoDartIron,Not Scrappable
+partsMaster,iron
+gunMGT1AK47Parts,gunMGT1AK47Parts
+gunHandgunT1PistolParts,gunHandgunT1PistolParts
+gunRifleT1HuntingRifleParts,gunRifleT1HuntingRifleParts
+gunShotgunT1DoubleBarrelParts,gunShotgunT1DoubleBarrelParts
+gunBowT1WoodenBowParts,gunBowT1WoodenBowParts
+gunExplosivesT3RocketLauncherParts,gunExplosivesT3RocketLauncherParts
+gunBotRoboticsParts,gunBotRoboticsParts
+meleeWpnBatonT2StunBatonParts,meleeWpnBatonT2StunBatonParts
+meleeWpnKnucklesT3SteelKnucklesParts,meleeWpnKnucklesT3SteelKnucklesParts
+meleeWpnBladeT3MacheteParts,meleeWpnBladeT3MacheteParts
+meleeWpnSpearT3SteelSpearParts,meleeWpnSpearT3SteelSpearParts
+meleeWpnClubT3SteelClubParts,meleeWpnClubT3SteelClubParts
+meleeWpnSledgeT3SteelSledgehammerParts,meleeWpnSledgeT3SteelSledgehammerParts
+meleeToolSalvageParts,meleeToolSalvageParts
+meleeToolAllSteelParts,meleeToolAllSteelParts
+armorMilitarySetParts,armorMilitarySetParts
+armorSteelSetParts,armorSteelSetParts
+meleeToolAxeT3ChainsawParts,meleeToolChainsawParts
+vehicleWheels,Not Scrappable
+vehicleMinibikeChassis,Not Scrappable
+vehicleMinibikeHandlebars,Not Scrappable
+vehicleMinibikePlaceable,iron
+vehicleBicycleChassis,Not Scrappable
+vehicleBicycleHandlebars,Not Scrappable
+vehicleBicyclePlaceable,Not Scrappable
+vehicleMotorcycleChassis,Not Scrappable
+vehicleMotorcycleHandlebars,Not Scrappable
+vehicleMotorcyclePlaceable,Not Scrappable
+vehicle4x4TruckChassis,Not Scrappable
+vehicle4x4TruckAccessories,Not Scrappable
+vehicle4x4TruckPlaceable,Not Scrappable
+vehicleGyroCopterChassis,Not Scrappable
+vehicleGyroCopterAccessories,Not Scrappable
+vehicleGyrocopterPlaceable,Not Scrappable
+armorClothMaster,cloth
+armorClothHat,Not Scrappable
+armorSantaHat,Not Scrappable
+armorClothJacket,Not Scrappable
+armorClothGloves,Not Scrappable
+armorClothPants,Not Scrappable
+armorClothBoots,Not Scrappable
+armorLeatherMaster,leather
+armorLeatherHood,Not Scrappable
+armorLeatherChest,Not Scrappable
+armorLeatherGloves,Not Scrappable
+armorLeatherPants,Not Scrappable
+armorLeatherBoots,Not Scrappable
+armorMilitaryMaster,armorMilitarySetParts
+armorMilitaryHelmet,Not Scrappable
+armorMilitaryVest,Not Scrappable
+armorMilitaryGloves,Not Scrappable
+armorMilitaryLegs,Not Scrappable
+armorMilitaryBoots,Not Scrappable
+armorMilitaryStealthBoots,Not Scrappable
+armorScrapMaster,iron
+armorScrapHelmet,Not Scrappable
+armorScrapChest,Not Scrappable
+armorScrapGloves,Not Scrappable
+armorScrapLegs,Not Scrappable
+armorScrapBoots,Not Scrappable
+armorIronMaster,iron
+armorIronHelmet,Not Scrappable
+armorIronChest,Not Scrappable
+armorIronGloves,Not Scrappable
+armorIronLegs,Not Scrappable
+armorIronBoots,Not Scrappable
+armorSteelMaster,armorSteelSetParts
+armorSteelHelmet,Not Scrappable
+armorSteelChest,Not Scrappable
+armorSteelGloves,Not Scrappable
+armorSteelLegs,Not Scrappable
+armorSteelBoots,Not Scrappable
+armorMiningHelmet,resourceScrapPolymers
+armorFirefightersHelmet,iron
+armorSwatHelmet,iron
+armorFootballHelmet,resourceScrapPolymers
+armorFootballHelmetZU,Not Scrappable
+apparelPlantFiberMaster,plants
+apparelPlantFiberPants,Not Scrappable
+apparelPlantFiberShirt,Not Scrappable
+apparelPlantFiberHood,Not Scrappable
+apparelPlantFiberShoes,Not Scrappable
+apparelPlantFiberGloves,Not Scrappable
+apparelPlantFiberHat,Not Scrappable
+apparelGhillieSuitHood,Not Scrappable
+apparelGhillieSuitPants,Not Scrappable
+apparelGhillieSuitJacket,Not Scrappable
+apparelHazmatMaster,resourceMilitaryFiber
+apparelHazmatBoots,Not Scrappable
+apparelHazmatPants,Not Scrappable
+apparelHazmatJacket,Not Scrappable
+apparelHazmatGloves,Not Scrappable
+apparelHazmatMask,Not Scrappable
+apparelCowboyHat,leather
+apparelBallCap,cloth
+apparelSkullCap,cloth
+apparelPressboyCap,Not Scrappable
+apparelGasMask,Not Scrappable
+apparelShades,iron
+apparelToughGuySunglasses,Not Scrappable
+apparelAviatorGoggles,leather
+apparelSkiGoggles,resourceScrapPolymers
+apparelNerdGlasses,Not Scrappable
+apparelNightvisionGoggles,resourceElectricParts
+apparelCigar,plants
+apparelCigarette,Not Scrappable
+apparelFacialPiercings,iron
+apparelBandana,cloth
+apparelDenimPants,cloth
+apparelDenimShortsPants,Not Scrappable
+apparelArmyPants,Not Scrappable
+apparelOveralls,Not Scrappable
+apparelSkirt,Not Scrappable
+apparelGothPants,Not Scrappable
+apparelWornBoots,cloth
+apparelRunningShoesRegular,Not Scrappable
+apparelRunningShoesHP,Not Scrappable
+apparelCowboyBoots,Not Scrappable
+apparelGothBoots,Not Scrappable
+apparelLongShirt,cloth
+apparelArmyShirt,Not Scrappable
+apparelSweatshirt,cloth
+apparelFlannelShirt,Not Scrappable
+apparelTShirtPlain,cloth
+apparelTShirtZU,Not Scrappable
+apparelTankTop,cloth
+apparelHoodySweatshirt,cloth
+apparelCoatLeatherPoncho,leather
+apparelCoatLeatherDuster,leather
+apparelCoatPufferCoat,cloth
+apparelCoatJacketGeneric,cloth
+apparelCoatJacketLetterZU,Not Scrappable
+apparelSuitPants,cloth
+apparelSuitJacket,Not Scrappable
+apparelSuitDressShoes,Not Scrappable
+backpackMedium,Not Scrappable
+medicalAloeCream,Not Scrappable
+medicalBandage,cloth
+medicalFirstAidBandage,Not Scrappable
+medicalFirstAidKit,Not Scrappable
+medicalSplint,wood
+medicalPlasterCast,Not Scrappable
+medicalBloodBag,Not Scrappable
+drugVitamins,Not Scrappable
+drugPainkillers,Not Scrappable
+drugHerbalAntibiotics,Not Scrappable
+drugAntibiotics,Not Scrappable
+sunblocker,Not Scrappable
+drugRedPillAdmin,Not Scrappable
+drugBluePillAdmin,Not Scrappable
+drugSteroids,Not Scrappable
+drugRecog,Not Scrappable
+drugFortBites,Not Scrappable
+drugAtomJunkies,Not Scrappable
+drugCovertCats,Not Scrappable
+drugEyeKandy,Not Scrappable
+drugHackers,Not Scrappable
+drugHealthBar,Not Scrappable
+drugJailBreakers,Not Scrappable
+drugNerdTats,Not Scrappable
+drugOhShitzDrops,Not Scrappable
+drugRockBusters,Not Scrappable
+drugSkullCrushers,Not Scrappable
+drugSugarButts,Not Scrappable
+foodHoney,Not Scrappable
+foodCanBeef,iron
+foodCanChicken,Not Scrappable
+foodCanLamb,Not Scrappable
+foodCanCatfood,Not Scrappable
+foodCanDogfood,Not Scrappable
+foodCanChili,Not Scrappable
+foodCanTuna,Not Scrappable
+foodCanSham,Not Scrappable
+foodCanPasta,Not Scrappable
+foodCanSalmon,Not Scrappable
+foodCanMiso,Not Scrappable
+foodCanPeas,Not Scrappable
+foodCanPears,Not Scrappable
+foodCanSoup,Not Scrappable
+foodCanStock,Not Scrappable
+foodCornOnTheCob,Not Scrappable
+foodCornBread,Not Scrappable
+foodMoldyBread,Not Scrappable
+foodShamSandwich,Not Scrappable
+foodCharredMeat,Not Scrappable
+foodGrilledMeat,Not Scrappable
+foodBoiledMeat,Not Scrappable
+foodMeatStew,Not Scrappable
+foodSteakAndPotato,plants
+foodShamChowder,Not Scrappable
+foodHoboStew,Not Scrappable
+foodFishTacos,plants
+foodChiliDog,Not Scrappable
+foodBakedPotato,Not Scrappable
+foodBlueberryPie,Not Scrappable
+foodPumpkinPie,Not Scrappable
+foodPumpkinCheesecake,Not Scrappable
+foodPumpkinBread,Not Scrappable
+foodGumboStew,plants
+foodShepardsPie,plants
+foodSpaghetti,plants
+foodTunaFishGravyToast,plants
+foodEggBoiled,Not Scrappable
+foodBaconAndEggs,Not Scrappable
+foodVegetableStew,Not Scrappable
+foodRawMeat,Not Scrappable
+foodRottingFlesh,Not Scrappable
+foodEgg,Not Scrappable
+foodCornMeal,Not Scrappable
+foodCropBlueberries,plants
+foodCropCorn,plants
+foodCropGraceCorn,plants
+foodCropPotato,plants
+foodCropMushrooms,plants
+foodCropYuccaFruit,plants
+foodCropPumpkin,plants
+drinkCanEmpty,iron
+drinkJarEmpty,glass
+drinkJarRiverWater,glass
+drinkJarBoiledWater,glass
+drinkJarPureMineralWater,glass
+drinkJarYuccaJuice,glass
+drinkJarGoldenRodTea,glass
+drinkJarRedTea,glass
+drinkJarYuccaCocktail,Not Scrappable
+drinkYuccaJuiceSmoothie,glass
+drinkCanMegaCrush,Not Scrappable
+drinkJarCoffee,glass
+drinkJarBlackStrapCoffee,Not Scrappable
+drinkJarBeer,glass
+drinkJarGrainAlcohol,glass
+drinkJarGrandpasMoonshine,glass
+drinkJarGrandpasAwesomeSauce,glass
+drinkJarGrandpasLearningElixir,glass
+drinkJarGrandpasForgettingElixir,glass
+bucketEmpty,iron
+bucketRiverWater,iron
+schematicMaster,paper
+invisibleRecipesForRepairCost,Not Scrappable
+meleeWpnClubT1BaseballBatSchematic,Not Scrappable
+meleeWpnSledgeT1IronSledgehammerSchematic,Not Scrappable
+meleeWpnSledgeT3SteelSledgehammerSchematic,Not Scrappable
+meleeWpnBladeT1HuntingKnifeSchematic,Not Scrappable
+meleeWpnBladeT3MacheteSchematic,Not Scrappable
+meleeWpnBatonT2StunBatonSchematic,Not Scrappable
+meleeToolIronSetSchematic,Not Scrappable
+meleeToolSteelSetSchematic,Not Scrappable
+meleeToolSalvageT1WrenchSchematic,Not Scrappable
+meleeToolSalvageT2RatchetSchematic,Not Scrappable
+meleeToolSalvageT3ImpactDriverSchematic,Not Scrappable
+meleeToolFarmT1IronHoeSchematic,Not Scrappable
+meleeToolPickT3AugerSchematic,Not Scrappable
+meleeToolAxeT3ChainsawSchematic,Not Scrappable
+meleeWpnSpearT1IronSpearSchematic,Not Scrappable
+meleeWpnKnucklesT1IronKnucklesSchematic,Not Scrappable
+meleeWpnKnucklesT3SteelKnucklesSchematic,Not Scrappable
+gunBowT1WoodenBowSchematic,Not Scrappable
+gunBowT3CompoundBowSchematic,Not Scrappable
+gunBowT1IronCrossbowSchematic,Not Scrappable
+gunBowT3CompoundCrossbowSchematic,Not Scrappable
+gunHandgunT1PistolSchematic,Not Scrappable
+gunHandgunT2Magnum44Schematic,Not Scrappable
+gunHandgunT3DesertVultureSchematic,Not Scrappable
+gunShotgunT1DoubleBarrelSchematic,Not Scrappable
+gunShotgunT2PumpShotgunSchematic,Not Scrappable
+gunShotgunT3AutoShotgunSchematic,Not Scrappable
+gunHandgunT3SMG5Schematic,Not Scrappable
+gunMGT1AK47Schematic,Not Scrappable
+gunMGT2TacticalARSchematic,Not Scrappable
+gunMGT3M60Schematic,Not Scrappable
+gunRifleT1HuntingRifleSchematic,Not Scrappable
+gunRifleT2MarksmanRifleSchematic,Not Scrappable
+gunRifleT3SniperRifleSchematic,Not Scrappable
+gunExplosivesT3RocketLauncherSchematic,Not Scrappable
+gunBotT1JunkSledgeSchematic,Not Scrappable
+gunBotT2JunkTurretSchematic,Not Scrappable
+armorLeatherSetSchematic,Not Scrappable
+armorMilitarySetSchematic,Not Scrappable
+resourceMilitaryFiberSchematic,Not Scrappable
+armorIronSetSchematic,Not Scrappable
+armorSteelSetSchematic,Not Scrappable
+schematicNoQualityMaster,Not Scrappable
+thrownAmmoPipeBombSchematic,Not Scrappable
+thrownGrenadeContactSchematic,Not Scrappable
+thrownGrenadeSchematic,Not Scrappable
+thrownDynamiteSchematic,Not Scrappable
+meleeToolRepairT3NailgunSchematic,Not Scrappable
+medicalFirstAidBandageSchematic,Not Scrappable
+medicalFirstAidKitSchematic,Not Scrappable
+medicalPlasterCastSchematic,Not Scrappable
+toolBellowsSchematic,Not Scrappable
+toolForgeCrucibleSchematic,Not Scrappable
+toolAnvilSchematic,Not Scrappable
+cementMixerSchematic,Not Scrappable
+workbenchSchematic,Not Scrappable
+forgeSchematic,Not Scrappable
+chemistryStationSchematic,Not Scrappable
+vehicleAnySchematic,Not Scrappable
+vehicleBicycleChassisSchematic,Not Scrappable
+vehicleBicycleHandlebarsSchematic,Not Scrappable
+vehicleMinibikeChassisSchematic,Not Scrappable
+vehicleMinibikeHandlebarsSchematic,Not Scrappable
+vehicleMotorcycleChassisSchematic,Not Scrappable
+vehicleMotorcycleHandlebarsSchematic,Not Scrappable
+vehicle4x4TruckChassisSchematic,Not Scrappable
+vehicle4x4TruckAccessoriesSchematic,Not Scrappable
+vehicleGyroCopterChassisSchematic,Not Scrappable
+vehicleGyroCopterAccessoriesSchematic,Not Scrappable
+generatorbankSchematic,Not Scrappable
+pressureplateSchematic,Not Scrappable
+poweredDoorsSchematic,Not Scrappable
+bladeTrapSchematic,Not Scrappable
+dartTrapSchematic,Not Scrappable
+shotgunTurretSchematic,Not Scrappable
+autoTurretSchematic,Not Scrappable
+electricfencepostSchematic,Not Scrappable
+motionsensorSchematic,Not Scrappable
+speakerSchematic,Not Scrappable
+spotlightPlayerSchematic,Not Scrappable
+switchSchematic,Not Scrappable
+batterybankSchematic,Not Scrappable
+electrictimerrelaySchematic,Not Scrappable
+modGunBarrelExtenderSchematic,Not Scrappable
+modGunMuzzleBrakeSchematic,Not Scrappable
+modGunSoundSuppressorSilencerSchematic,Not Scrappable
+modGunLaserSightSchematic,Not Scrappable
+modGunFlashlightSchematic,Not Scrappable
+modGunScopeSmallSchematic,Not Scrappable
+modGunScopeMediumSchematic,Not Scrappable
+modGunScopeLargeSchematic,Not Scrappable
+modGunReflexSightSchematic,Not Scrappable
+modGunTriggerGroupSemiSchematic,Not Scrappable
+modGunTriggerGroupBurst3Schematic,Not Scrappable
+modGunTriggerGroupAutomaticSchematic,Not Scrappable
+modGunBipodSchematic,Not Scrappable
+modGunForegripSchematic,Not Scrappable
+modGunRetractingStockSchematic,Not Scrappable
+modGunDuckbillSchematic,Not Scrappable
+modGunChokeSchematic,Not Scrappable
+modGunMagazineExtenderSchematic,Not Scrappable
+modShotgunSawedOffBarrelSchematic,Not Scrappable
+modGunCrippleEmSchematic,Not Scrappable
+modGunBowPolymerStringSchematic,Not Scrappable
+modGunBowArrowRestSchematic,Not Scrappable
+modGunMeleeTheHunterSchematic,Not Scrappable
+modGunMeleeRadRemoverSchematic,Not Scrappable
+modGunMeleeBlessedMetalSchematic,Not Scrappable
+modMeleeTemperedBladeSchematic,Not Scrappable
+modMeleeSerratedBladeSchematic,Not Scrappable
+modMeleeWeightedHeadSchematic,Not Scrappable
+modMeleeStructuralBraceSchematic,Not Scrappable
+modMeleeErgonomicGripSchematic,Not Scrappable
+modMeleeFortifyingGripSchematic,Not Scrappable
+modMeleeClubBarbedWireSchematic,Not Scrappable
+modMeleeClubMetalSpikesSchematic,Not Scrappable
+modMeleeGraveDiggerSchematic,Not Scrappable
+modMeleeBunkerBusterSchematic,Not Scrappable
+modMeleeIronBreakerSchematic,Not Scrappable
+modMeleeWoodSplitterSchematic,Not Scrappable
+modMeleeClubBurningShaftSchematic,Not Scrappable
+modArmorInsulatedLinerSchematic,Not Scrappable
+modArmorCoolingMeshSchematic,Not Scrappable
+modArmorImprovedFittingsSchematic,Not Scrappable
+modArmorCustomizedFittingsSchematic,Not Scrappable
+modArmorPlatingBasicSchematic,Not Scrappable
+modArmorPlatingReinforcedSchematic,Not Scrappable
+modArmorStoragePocketSchematic,Not Scrappable
+modArmorDoubleStoragePocketSchematic,Not Scrappable
+modArmorTripleStoragePocketSchematic,Not Scrappable
+modArmorMuffledConnectorsSchematic,Not Scrappable
+modArmorAdvancedMuffledConnectorsSchematic,Not Scrappable
+modArmorImpactBracingSchematic,Not Scrappable
+modArmorBandolierSchematic,Not Scrappable
+modArmorWaterPurifierSchematic,Not Scrappable
+modArmorHelmetLightSchematic,Not Scrappable
+modFuelTankSmallSchematic,Not Scrappable
+modFuelTankLargeSchematic,Not Scrappable
+schematicNoQualityRecipeMaster,Not Scrappable
+ammoGasCanSchematic,Not Scrappable
+resourceOilSchematic,Not Scrappable
+drugAntibioticsSchematic,Not Scrappable
+drugHerbalAntibioticsSchematic,Not Scrappable
+foodCanShamSchematic,Not Scrappable
+drinkJarBeerSchematic,Not Scrappable
+drinkJarCoffeeSchematic,Not Scrappable
+drinkJarGoldenRodTeaSchematic,Not Scrappable
+drinkJarGrandpasAwesomeSauceSchematic,Not Scrappable
+drinkJarGrandpasLearningElixirSchematic,Not Scrappable
+drinkJarGrandpasMoonshineSchematic,Not Scrappable
+drinkJarRedTeaSchematic,Not Scrappable
+drinkYuccaJuiceSmoothieSchematic,Not Scrappable
+foodBaconAndEggsSchematic,Not Scrappable
+foodBakedPotatoSchematic,Not Scrappable
+foodBlueberryPieSchematic,Not Scrappable
+foodPumpkinPieSchematic,Not Scrappable
+foodPumpkinCheesecakeSchematic,Not Scrappable
+foodPumpkinBreadSchematic,Not Scrappable
+foodGumboStewSchematic,Not Scrappable
+foodShepardsPieSchematic,Not Scrappable
+foodSpaghettiSchematic,Not Scrappable
+foodTunaFishGravyToastSchematic,Not Scrappable
+foodBoiledMeatSchematic,Not Scrappable
+foodChiliDogSchematic,Not Scrappable
+foodCornBreadSchematic,Not Scrappable
+foodCornOnTheCobSchematic,Not Scrappable
+foodFishTacosSchematic,Not Scrappable
+foodGrilledMeatSchematic,Not Scrappable
+foodHoboStewSchematic,Not Scrappable
+foodMeatStewSchematic,Not Scrappable
+foodShamChowderSchematic,Not Scrappable
+foodSteakAndPotatoSchematic,Not Scrappable
+foodVegetableStewSchematic,Not Scrappable
+plantedAloe1Schematic,Not Scrappable
+plantedBlueberry1Schematic,Not Scrappable
+plantedChrysanthemum1Schematic,Not Scrappable
+plantedCoffee1Schematic,Not Scrappable
+plantedCorn1Schematic,Not Scrappable
+plantedCotton1Schematic,Not Scrappable
+plantedGoldenrod1Schematic,Not Scrappable
+plantedGraceCorn1Schematic,Not Scrappable
+plantedHop1Schematic,Not Scrappable
+plantedMushroom1Schematic,Not Scrappable
+plantedPotato1Schematic,Not Scrappable
+plantedYucca1Schematic,Not Scrappable
+plantedPumpkin1Schematic,Not Scrappable
+skillBookMaster,Not Scrappable
+blankNoteMaster,paper
+noteDuke01,Not Scrappable
+questMaster,paper
+challengeQuestMaster,Not Scrappable
+treasureQuestMaster,Not Scrappable
+q_basicSurvival,Not Scrappable
+qc_silenceofthelambs,Not Scrappable
+qc_drunkanddisorderly,Not Scrappable
+qc_nurseyoubacktohealth,Not Scrappable
+qc_starvingtourists,Not Scrappable
+qc_dogdaysareover,Not Scrappable
+qc_itsbitsyspider,Not Scrappable
+qc_ladykiller,Not Scrappable
+qc_maneater,Not Scrappable
+qc_imalumberjackandimokay,Not Scrappable
+qc_yournothingspecial,Not Scrappable
+qc_killthewabbit,Not Scrappable
+qc_nailsomechicks,Not Scrappable
+qc_thatlldopig,Not Scrappable
+qc_stagparty,Not Scrappable
+qc_dontfeedthebears,Not Scrappable
+qc_buythefarm,Not Scrappable
+qc_blitzdefense,Not Scrappable
+qc_givemeaz,Not Scrappable
+qc_dishonorabledischarge,Not Scrappable
+qc_cableguysnevermadeit,Not Scrappable
+qt_taylor,Not Scrappable
+qt_nickole,Not Scrappable
+qt_stephan,Not Scrappable
+qt_jennifer,Not Scrappable
+qt_claude,Not Scrappable
+qt_sarah,Not Scrappable
+qt_raphael,Not Scrappable
+qtest_nextTraderAdmin,Not Scrappable
+resourceRockSmall,stone
+resourceSnowBall,Not Scrappable
+resourceAcid,iron
+resourceYuccaFibers,plants
+resourceWood,wood
+resourceCrushedSand,glass
+resourceBrokenGlass,glass
+resourceIronFragment,iron
+resourceScrapIron,iron
+resourceForgedIron,iron
+resourceMetalPipe,iron
+resourceForgedSteel,iron
+resourceScrapPolymers,resourceScrapPolymers
+resourceSewingKit,cloth
+resourceOilShale,stone
+resourceBone,resourceBone
+resourceLeather,leather
+resourceAnimalFat,Not Scrappable
+resourceTestosteroneExtract,Not Scrappable
+resourceCropHopsFlower,plants
+resourceCropAloeLeaf,plants
+resourceCropChrysanthemumPlant,plants
+resourceCropCottonPlant,plants
+resourceCropGoldenrodPlant,plants
+resourceCropCoffeeBeans,plants
+resourceCropSnowberryPlant,Not Scrappable
+resourceScrapBrass,brass
+resourceScrapLead,lead
+resourceClayLump,clay
+resourceCobblestones,stone
+resourceCement,stone
+resourceConcreteMix,stone
+resourceCloth,cloth
+resourcePaper,paper
+resourceFertilizer,Not Scrappable
+resourceMilitaryFiber,resourceMilitaryFiber
+resourceElectricParts,resourceElectricParts
+resourceElectronicParts,resourceElectronicParts
+resourceMechanicalParts,resourceMechanicalParts
+resourceInsulator,clay
+resourceFeather,Not Scrappable
+resourceArrowHeadIron,iron
+resourceArrowHeadSteelAP,iron
+resourceCoal,Not Scrappable
+resourcePotassiumNitratePowder,Not Scrappable
+resourceGunPowder,Not Scrappable
+resourceBuckshot,lead
+resourceBulletCasing,brass
+resourceBulletTip,lead
+resourceNail,iron
+resourceRocketTip,lead
+resourceRocketCasing,iron
+resourceRepairKit,iron
+resourceOil,Not Scrappable
+resourcePaint,resourcePaint
+resourceHubcap,iron
+resourceAirFilter,iron
+resourceCandyTin,iron
+resourceDoorKnob,brass
+resourceCandleStick,brass
+resourceRadiator,brass
+resourceFishingWeight,lead
+resourceTrophy1,brass
+resourceTrophy2,lead
+resourceTrophy3,iron
+resourceSilverNugget,Not Scrappable
+resourceGoldNugget,Not Scrappable
+resourceRawDiamond,Not Scrappable
+candle,Not Scrappable
+smallEngine,resourceMechanicalParts
+carBattery,lead
+resourceHeadlight,iron
+casinoCoin,brass
+oldCash,paper
+solarCell,glass
+resourceGlue,Not Scrappable
+resourceDuctTape,cloth
+resourceSpring,iron
+toolCookingGrill,iron
+toolCookingPot,iron
+toolBeaker,glass
+toolBellows,leather
+toolAnvil,iron
+toolAndDieSet,iron
+toolForgeCrucible,Not Scrappable
+unit_iron,iron
+unit_brass,brass
+unit_lead,lead
+unit_glass,glass
+unit_stone,stone
+unit_clay,clay
+questItem,iron
+resourceLockPick,iron
+resourceLockPickBundle,iron
+meleeToolPaintToolAdmin,wood
+meleeToolSalvageWrenchAdmin,Not Scrappable
+gunToolDiggerAdmin,Not Scrappable
+gunHandgunPistolAdmin,Not Scrappable
+meleeToolHammerOfGodAdmin,iron
+foolsCapAdmin,Not Scrappable
+rocketBootsAdmin,Not Scrappable
+coolLootShadesAdmin,Not Scrappable
+coolLootShadesAdmin200,Not Scrappable
+toughGuyShirtAdmin,Not Scrappable
+pimpMiningHelmetAdmin,Not Scrappable
+ringOfFireAdmin,Not Scrappable
+armorPlotAdmin,Not Scrappable
+drinkJarFullRespecAdmin,glass
+noteTestersDelightAdmin,iron
+noteTestersElectricityAdmin,Not Scrappable
+missingIcon,Not Scrappable
+terrainRemove,iron
+terrainAdd,iron
+toolTerrainModelerAdmin,iron
+resourceSteelPolish,iron
+bookFiremansAlmanacHeat,Not Scrappable
+bookFiremansAlmanacAxes,Not Scrappable
+bookFiremansAlmanacSpeed,Not Scrappable
+bookFiremansAlmanacMolotov,Not Scrappable
+bookFiremansAlmanacPrevention,Not Scrappable
+bookFiremansAlmanacHarvest,Not Scrappable
+bookFiremansAlmanacEquipment,Not Scrappable
+bookNightStalkerStealthDamage,Not Scrappable
+bookNightStalkerSilentNight,Not Scrappable
+bookNightStalkerBlades,Not Scrappable
+bookNightStalkerThiefAdrenaline,Not Scrappable
+bookNightStalkerArchery,Not Scrappable
+bookNightStalkerTwilightThief,Not Scrappable
+bookNightStalkerSlumberParty,Not Scrappable
+bookLuckyLooterDukes,Not Scrappable
+bookLuckyLooterAmmunition,Not Scrappable
+bookLuckyLooterBrass,Not Scrappable
+bookLuckyLooterLead,Not Scrappable
+bookLuckyLooterBooks,Not Scrappable
+bookLuckyLooterFood,Not Scrappable
+bookLuckyLooterMedical,Not Scrappable
+bookEnforcerDamage,Not Scrappable
+bookEnforcerApparel,Not Scrappable
+bookEnforcerPunks,Not Scrappable
+bookEnforcerIntimidation,Not Scrappable
+bookEnforcerAPAmmo,Not Scrappable
+bookEnforcerHPAmmo,Not Scrappable
+bookEnforcerCriminalPursuit,Not Scrappable
+bookBatterUpBigHits,Not Scrappable
+bookBatterUpMetalChain,Not Scrappable
+bookBatterUpGear,Not Scrappable
+bookBatterUpSlowPitch,Not Scrappable
+bookBatterUpKnockdown,Not Scrappable
+bookBatterUpMaintenance,Not Scrappable
+bookBatterUpBaseballBats,Not Scrappable
+bookGreatHeistSafes,Not Scrappable
+bookGreatHeistGems,Not Scrappable
+bookGreatHeistTimedCharge,Not Scrappable
+bookGreatHeistClaimed,Not Scrappable
+bookGreatHeistAdrenalineFall,Not Scrappable
+bookGreatHeistSprintSneak,Not Scrappable
+bookGreatHeistMotionDetection,Not Scrappable
+bookWasteTreasuresHoney,Not Scrappable
+bookWasteTreasuresCoffins,Not Scrappable
+bookWasteTreasuresAcid,Not Scrappable
+bookWasteTreasuresWater,Not Scrappable
+bookWasteTreasuresDoors,Not Scrappable
+bookWasteTreasuresCloth,Not Scrappable
+bookWasteTreasuresSinks,Not Scrappable
+bookNeedleAndThreadWinterWear,Not Scrappable
+bookNeedleAndThreadLegwear,Not Scrappable
+bookNeedleAndThreadFootwear,Not Scrappable
+bookNeedleAndThreadDesertWear,Not Scrappable
+bookNeedleAndThreadDusters,Not Scrappable
+bookNeedleAndThreadPufferCoats,Not Scrappable
+bookNeedleAndThreadPockets,Not Scrappable
+bookHuntingJournalBears,Not Scrappable
+bookHuntingJournalWolves,Not Scrappable
+bookHuntingJournalCoyotes,Not Scrappable
+bookHuntingJournalMountainLions,Not Scrappable
+bookHuntingJournalDeer,Not Scrappable
+bookHuntingJournalVultures,Not Scrappable
+bookHuntingJournalSelfDefense,Not Scrappable
+bookArtOfMiningLuckyStrike,Not Scrappable
+bookArtOfMiningDiamondTools,Not Scrappable
+bookArtOfMiningPallets,Not Scrappable
+bookArtOfMiningCoffee,Not Scrappable
+bookArtOfMiningBlackStrap,Not Scrappable
+bookArtOfMiningAvalanche,Not Scrappable
+bookArtOfMiningLantern,Not Scrappable
+bookRangersArrowRecovery,Not Scrappable
+bookRangersExplodingBolts,Not Scrappable
+bookRangersCripplingShot,Not Scrappable
+bookRangersAPAmmo,Not Scrappable
+bookRangersFlamingArrows,Not Scrappable
+bookRangersForestGuide,Not Scrappable
+bookRangersKnockdown,Not Scrappable
+bookPistolPeteTakeAim,Not Scrappable
+bookPistolPeteSwissKnees,Not Scrappable
+bookPistolPeteSteadyHand,Not Scrappable
+bookPistolPeteMaintenance,Not Scrappable
+bookPistolPeteHPAmmo,Not Scrappable
+bookPistolPeteAPAmmo,Not Scrappable
+bookPistolPeteDamage,Not Scrappable
+bookShotgunMessiahDamage,Not Scrappable
+bookShotgunMessiahBreachingSlugs,Not Scrappable
+bookShotgunMessiahLimbShot,Not Scrappable
+bookShotgunMessiahSlugs,Not Scrappable
+bookShotgunMessiahMaintenance,Not Scrappable
+bookShotgunMessiahMagazine,Not Scrappable
+bookShotgunMessiahPartyStarter,Not Scrappable
+bookSniperDamage,Not Scrappable
+bookSniperCripplingShot,Not Scrappable
+bookSniperHeadShot,Not Scrappable
+bookSniperReload,Not Scrappable
+bookSniperControlledBreathing,Not Scrappable
+bookSniperAPAmmo,Not Scrappable
+bookSniperHPAmmo,Not Scrappable
+bookAutoWeaponsDamage,Not Scrappable
+bookAutoWeaponsUncontrolledBurst,Not Scrappable
+bookAutoWeaponsMaintenance,Not Scrappable
+bookAutoWeaponsDrumMag,Not Scrappable
+bookAutoWeaponsRecoil,Not Scrappable
+bookAutoWeaponsRagdoll,Not Scrappable
+bookAutoWeaponsMachineGuns,Not Scrappable
+bookUrbanCombatLanding,Not Scrappable
+bookUrbanCombatCigar,Not Scrappable
+bookUrbanCombatSneaking,Not Scrappable
+bookUrbanCombatJumping,Not Scrappable
+bookUrbanCombatLandMines,Not Scrappable
+bookUrbanCombatAdrenalineRush,Not Scrappable
+bookUrbanCombatRoomClearing,Not Scrappable
+bookTechJunkie1Damage,Not Scrappable
+bookTechJunkie2Maintenance,Not Scrappable
+bookTechJunkie3APAmmo,Not Scrappable
+bookTechJunkie4Shells,Not Scrappable
+bookTechJunkie5Repulsor,Not Scrappable
+bookTechJunkie6BatonCharge,Not Scrappable
+bookTechJunkie7Hydraulics,Not Scrappable
+bookBarBrawling1BasicMoves,Not Scrappable
+bookBarBrawling2DropABomb,Not Scrappable
+bookBarBrawling3KillerInstinct,Not Scrappable
+bookBarBrawling4FinishingMoves,Not Scrappable
+bookBarBrawling5AdrenalineHealing,Not Scrappable
+bookBarBrawling6RageMode,Not Scrappable
+bookBarBrawling7BoozedUp,Not Scrappable
+bookSpearHunter1Damage,Not Scrappable
+bookSpearHunter2Maintenance,Not Scrappable
+bookSpearHunter3SteelSpears,Not Scrappable
+bookSpearHunter4StrongArm,Not Scrappable
+bookSpearHunter5RapidStrike,Not Scrappable
+bookSpearHunter6PuncturedLung,Not Scrappable
+bookSpearHunter7QuickStrike,Not Scrappable
+Loadout Tier 1,Not Scrappable
+Loadout Tier 2,Not Scrappable
+Loadout Tier 3,Not Scrappable
+Loadout Tier 4,Not Scrappable
+Loadout Tier 5,Not Scrappable
