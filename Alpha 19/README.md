@@ -22,6 +22,7 @@
 - **Vehicles Enhanced**: Increases speed and fuel efficiency for the 4x4, gyro, and motorcycle. Adds an extra seat to the motorcycle, two extra seats to the gyro.
 - **Weapon Damage 2x**: Multiplies all player (but not zombie) entity weapon damage by 2.
 - **Weapon Damage 5x**: Multiplies all player (but not zombie) entity weapon damage by 5.
+- **Weapon Damage 10x**: Multiplies all player (but not zombie) entity weapon damage by 10.
 
 ## Works in progress
 - **~~Adventure Mod~~**: Currently no way to send players to specific POIs or even specific classes of POIs. Can't have an adventure if players can't be sent to specific places. ~~Name is a placeholder. My attempt to create a "story" for players to play through on random maps. Currently being designed for very large (16k), wasteland only, water border maps. Assumes the map is using the COMPOPACK42 POI pack. See the readme in the folder for more information.~~
